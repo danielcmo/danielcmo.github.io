@@ -1,105 +1,191 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Students</title>
+    <title>Students - Daniel de Oliveira</title>
+    <meta name="description" content="Students supervised by Daniel de Oliveira">
+    <meta name="keywords" content="Students, Supervision, Daniel de Oliveira, UFF, IC-UFF">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
             margin: 0;
             padding: 0;
-            background-color: #f8f8f8;
-            color: #333;
+            line-height: 1.6;
         }
-        header, footer {
-            background-color: #003366;
-            color: white;
-            padding: 20px;
-            text-align: center;
+
+        a { color: #004f9e; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 40px;
+            border-bottom: 1px solid #ccc;
         }
+
+        header img { height: 60px; }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a { font-weight: bold; }
+
         main {
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 0 20px;
+            padding: 40px;
         }
-        h1, h2 {
-            color: #003366;
-        }
-        section {
-            margin-bottom: 40px;
-        }
+
+        h1 { margin-bottom: 20px; }
+
+        h2 { margin-top: 30px; }
+
         ul {
-            list-style-type: none;
-            padding-left: 0;
+            list-style-type: disc;
+            margin-left: 40px;
+            margin-bottom: 20px;
         }
-        li {
-            margin-bottom: 10px;
-        }
-        .student {
-            margin-bottom: 8px;
-        }
-        .category-title {
-            font-weight: bold;
-            margin-top: 20px;
-            text-decoration: underline;
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 40px;
+            border-top: 1px solid #ccc;
+            background-color: #f9f9f9;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
+    <!-- Cabeçalho idêntico -->
     <header>
-        <h1>Students</h1>
+        <a href="http://www.uff.br"><img src="arquivos/uff.png" alt="UFF Logo"></a>
+        <nav>
+            <ul>
+                <li><a href="https://danielcmo.github.io">Home</a></li>
+                <li><a href="https://danielcmo.github.io/cv.html">Publications</a></li>
+                <li><a href="https://danielcmo.github.io/ap.html">Research Areas</a></li>
+                <li><a href="https://danielcmo.github.io/cur.html">Teaching</a></li>
+                <li><a href="https://danielcmo.github.io/li.html">Students</a></li>
+                <li><a href="https://danielcmo.github.io/per.html">Personal</a></li>
+            </ul>
+        </nav>
+        <a href="http://www.ic.uff.br"><img src="arquivos/logo-ic.png" alt="IC-UFF Logo"></a>
     </header>
-    
+
+    <!-- Conteúdo principal da página -->
     <main>
-        <!-- Orientações e supervisões em andamento -->
-        <section>
-            <h2>Orientações e supervisões em andamento</h2>
-            
-            <h3 class="category-title">Dissertação de mestrado</h3>
-            <ul>
-                <li class="student">1. Wesley Santos Ferreira. A definir. Início: 2025. Dissertação (Mestrado em Computação) - Universidade Federal Fluminense. (Orientador).</li>
-                <li class="student">2. Paula do Nascimento Woyames. Em definição. Início: 2025. Dissertação (Mestrado em Computação) - Universidade Federal Fluminense. (Orientador).</li>
-                <li class="student">3. Italo Leite Ferreira Portinho. A ser definido. Início: 2025. Dissertação (Mestrado profissional em Computação) - Universidade Federal Fluminense. (Orientador).</li>
-                <li class="student">4. Thiago da Costa Jordão. A ser definido. Início: 2025. Dissertação (Mestrado profissional em Computação) - Universidade Federal Fluminense. (Orientador).</li>
-                <li class="student">5. Layse Gomes Castro. a definir. Início: 2025. Dissertação (Mestrado em Computação) - Universidade Federal Fluminense. (Orientador).</li>
-            </ul>
+        <h1>Students</h1>
 
-            <h3 class="category-title">Tese de doutorado</h3>
-            <ul>
-                <li class="student">1. Daniel Pinheiro da Silva Junior. A definir. Início: 2025. Tese (Doutorado em Computação) - Universidade Federal Fluminense. (Coorientador).</li>
-                <li class="student">2. Luis Carlos Ramos Alvarenga. A definir. Início: 2025. Tese (Doutorado em Computação) - Universidade Federal Fluminense. (Orientador).</li>
-                <li class="student">3. Camila de Oliveira Lopes. A definir. Início: 2024. Tese (Doutorado em Computação) - Universidade Federal Fluminense. (Orientador).</li>
-                <li class="student">4. Gustavo Alexandre Sousa Santos. Em definição. Início: 2024. Tese (Doutorado em Computação) - Universidade Federal Fluminense. (Orientador).</li>
-                <li class="student">5. Tobias Ribeiro Barreto. Em definição. Início: 2024. Tese (Doutorado em Computação) - Universidade Federal Fluminense. (Coorientador).</li>
-                <li class="student">6. Maria Luiza Furtuozo Falci. Em definição. Início: 2023. Tese (Doutorado em Computação) - Universidade Federal Fluminense. (Orientador).</li>
-                <li class="student">7. Annie Vianna Amorim. A definir. Início: 2023. Tese (Doutorado em Computação) - Universidade Federal Fluminense, Conselho Nacional de Desenvolvimento Científico e Tecnológico. (Coorientador).</li>
-                <li class="student">8. Lyncoln Sousa de Oliveira. Em definição. Início: 2023. Tese (Doutorado em Computação) - Universidade Federal Fluminense. (Orientador).</li>
-                <li class="student">9. Claudio Ananias Ferraz. A definir. Início: 2022. Tese (Doutorado em Computação) - Universidade Federal Fluminense. (Orientador).</li>
-                <li class="student">10. Marcello Willians Messina Ribeiro. A definir. Início: 2020. Tese (Doutorado em Computação) - Universidade Federal Fluminense. (Orientador).</li>
-            </ul>
+        <h2>Ongoing Supervisions</h2>
 
-            <h3 class="category-title">Supervisão de pós-doutorado</h3>
-            <ul>
-                <li class="student">1. Luiz Gustavo Dias. Início: 2024. Universidade Federal Fluminense.</li>
-            </ul>
+        <h3>Master's Theses</h3>
+        <ul>
+            <li>Wesley Santos Ferreira</li>
+            <li>Paula do Nascimento Woyames</li>
+            <li>Italo Leite Ferreira Portinho</li>
+            <li>Thiago da Costa Jordão</li>
+            <li>Layse Gomes Castro</li>
+        </ul>
 
-            <h3 class="category-title">Iniciação científica</h3>
-            <ul>
-                <li class="student">1. João Vítor Mendonça de Moraes. Mineração de árvores filogenéticas em larga escala. Início: 2023. Iniciação científica (Graduando em Ciência da Computação) - Universidade Federal Fluminense. (Orientador).</li>
-            </ul>
-        </section>
+        <h3>Doctoral Theses</h3>
+        <ul>
+            <li>Daniel Pinheiro da Silva Junior</li>
+            <li>Luis Carlos Ramos Alvarenga</li>
+            <li>Camila de Oliveira Lopes</li>
+            <li>Gustavo Alexandre Sousa Santos</li>
+            <li>Tobias Ribeiro Barreto</li>
+            <li>Maria Luiza Furtuozo Falci</li>
+            <li>Annie Vianna Amorim</li>
+            <li>Lyncoln Sousa de Oliveira</li>
+            <li>Claudio Ananias Ferraz</li>
+            <li>Marcello Willians Messina Ribeiro</li>
+        </ul>
 
-        <!-- Orientações e supervisões concluídas -->
-        <section>
-            <h2>Orientações e supervisões concluídas</h2>
-            <p>... conteúdo similar ao acima, seguindo o mesmo padrão de listas ...</p>
-        </section>
+        <h3>Postdoctoral Supervision</h3>
+        <ul>
+            <li>Luiz Gustavo Dias</li>
+        </ul>
+
+        <h3>Undergraduate Research</h3>
+        <ul>
+            <li>João Vítor Mendonça de Moraes</li>
+        </ul>
+
+        <h2>Completed Supervisions</h2>
+
+        <h3>Master's Theses</h3>
+        <ul>
+            <li>Naira Alice Andrade Arruda</li>
+            <li>Ygor Carlos Ferreira Rolim</li>
+            <li>Jessica Louise Monçôres de Almeida</li>
+            <li>Raiza Correia de Albuquerque</li>
+            <li>Raslan Oliveira Ribeiro</li>
+            <li>Luis Carlos Ramos Alvarenga</li>
+            <li>Raffael Muralha Paranhos</li>
+            <li>Amanda Flor</li>
+            <li>Camila de Oliveira Lopes</li>
+            <li>Fabio Victorino da Cruz</li>
+            <li>Bruna de Mello Almeida</li>
+            <li>Matheus Antunes Vieira</li>
+            <li>Elbe Alves Miranda</li>
+            <li>Annie Vianna Amorim</li>
+            <li>Wagner Guimarães Santos</li>
+            <li>Gustavo Decarlo Ferreira Secchim</li>
+            <li>Lorenna Christ'na Araújo Nascimento</li>
+            <li>Maicon Ribeiro Banni</li>
+            <li>Lucas Bertelli Martins</li>
+            <li>Daniel Leonardo Jasbick</li>
+            <li>Lucas de Souza Tito</li>
+            <li>Yan Mendes Ferreira</li>
+            <li>Débora Barbosa Pina</li>
+            <li>Liliane Neves de Oliveira Kunstmann</li>
+            <li>Leonardo Sousa Lima Ramos</li>
+            <li>Filipe Tadeu Santiago da Silva</li>
+            <li>Carlos Gracioli Neto</li>
+            <li>Kid Yonatan Valeriano Valdez</li>
+            <li>Daniel Pinheiro da Silva Junior</li>
+            <li>Marcello Willians Messina Ribeiro</li>
+            <li>Hugo Arraes Henley</li>
+            <li>André Luís da Costa Nascimento</li>
+            <li>Thaylon Guedes Santos</li>
+            <li>Augusto Consulmagnos Romeiro</li>
+            <li>Leonardo Araújo de Jesus</li>
+            <li>Igor Barreto Rodrigues</li>
+            <li>Lidson Barbosa Jacob</li>
+            <li>Rainier Augusto Ferreira Sales</li>
+            <li>Vítor Silva Sousa</li>
+        </ul>
+
+        <h3>Doctoral Theses</h3>
+        <ul>
+            <li>Débora Barbosa Pina</li>
+            <li>Claudio Vasconcelos Ribeiro</li>
+            <li>Luiz Gustavo Dias</li>
+            <li>Rodrigo Alves Prado da Silva</li>
+            <li>Liliane Neves de Oliveira Kunstmann</li>
+            <li>Wellington Moreira de Oliveira</li>
+            <li>Vítor Silva Sousa</li>
+            <li>Douglas Ericson Marcelino de Oliveira</li>
+            <li>Flavio da Silva Costa</li>
+            <li>Ary Henrique Morais de Oliveira</li>
+        </ul>
     </main>
 
+    <!-- Rodapé idêntico -->
     <footer>
-        <p>Universidade Federal Fluminense - Instituto de Computação</p>
+        <div>
+            <b>Phone: +55 (21) 2629-5637<br>Fax: +55 (21) 2629-5627</b>
+        </div>
+        <div>
+            <b>danielcmo (at) ic (dot) uff (dot) br</b>
+        </div>
     </footer>
 </body>
 </html>

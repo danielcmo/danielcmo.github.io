@@ -1,0 +1,149 @@
+Ex1: A coordenação do curso de computação deseja saber quantos alunos estão cursando ( de forma irregular ) as disciplinas de PROG1, PROG2 e PROG3 ao mesmo tempo. Faça um programa que (i) leia as matriculas (inteiro) dos 10 alunos de PROG1, dos 5 alunos de PROG2 e 7 alunos de PROG3, (ii) imprima as matrículas dos alunos irregulares (que fazem as tres disciplinas) e (iii) imprima no fim a quantidade de alunos irregulares.
+DICA: Essa questao pode ser feita com laco triplo (isto eh, 3 niveis de laco)
+
+TESTE DE ENTRADA
+
+PROG1
+mat.  0 )
+1
+mat.  1 )
+2
+mat.  2 )
+3
+mat.  3 )
+4
+mat.  4 )
+5
+mat.  5 )
+6
+mat.  6 )
+7
+mat.  7 )
+8
+mat.  8 )
+9
+mat.  9 )
+10
+
+PROG2
+mat.  0 )
+5
+mat.  1 )
+10
+mat.  2 )
+15
+mat.  3 )
+20
+mat.  4 )
+25
+
+PROG3
+mat.  0 )
+3
+mat.  1 )
+5
+mat.  2 )
+7
+mat.  3 )
+8
+mat.  4 )
+9
+mat.  5 )
+10
+mat.  6 )
+11
+
+Aluno  5  irregular
+Aluno  10  irregular
+total = 2
+
+Ex2: Escreva um programa que lê um vetor de 10 números inteiros e imprima o número que aparece mais vezes (se houver empate, pode ser qualquer um). Além disso, imprima a posição da sua primeira aparição no vetor e quantas vezes ele aparece.
+
+*DICA* Essa questao tambem pode ser feita com laco duplo, mas os dois lacos percorrerao o mesmo vetor. O primeiro laco ira percorrer cada posicao do vetor. O segundo laco percorrera o vetor novamente contando quantas vezes o elemento do primeiro laco aparece no vetor.
+
+TESTE DE ENTRADA
+
+num. 0)
+3
+num. 1)  
+5
+num. 2)  
+3
+num. 3)  
+7
+num. 4)  
+8
+num. 5)  
+7
+num. 6)  
+2
+num. 7)  
+2
+num. 8)  
+7
+num. 9)  
+8
+
+TESTE DE SAIDA
+
+número  7 aparece primeiro na posicao  3  e  3  vezes
+
+TESTE DE ENTRADA
+
+num. 0)  
+8
+num. 1)  
+5
+num. 2)  
+1
+num. 3)  
+7
+num. 4)  
+8
+num. 5)  
+7
+num. 6)  
+2
+num. 7)  
+6
+num. 8)  
+7
+num. 9)  
+8
+
+TESTE DE SAIDA
+
+número  8 aparece primeiro na posicao  0  e  3  vezes
+
+
+Ex3: Escreva um programa que, leia um valor inteiro positivo N,  depois receba 3 vetores de inteiros de tamanho N (A,B e C). O programa deve primeiro receber o vetor A, depois o vetor B e por ultimo o vetor C. DEPOIS DE RECEBER OS 3 VETORES, comece a construir um vetor D de tamanho 3*N no seguinte formato:
+
+A[0] B[0] C[0] A[1] B[1] C[1] A[2] B[2] C[2] A[3] ...
+
+*OBS* Só é permitido começar a inserir elementos no vetor D, depois que os vetores A,B e C estejam completos com os N elementos.
+
+DICA: Uma maneira de se fazer eh tentar pensar numa forma de fazer um laco com 2 variaveis de controle, uma para acessar o vetor D e outro para acessar os vetores A,B e C. As duas variaveis serao incrementadas em ritmos diferentes (passo)
+
+TESTE DE ENTRADA
+
+n? 3
+a[0]= 5
+a[1]= 10
+a[2]= 15
+
+b[0]= 1
+b[1]= 2
+b[2]= 3
+
+c[0]= 100
+c[1]= 200
+c[2]= 300
+
+TESTE DE SAIDA
+
+vetor D= [5, 1, 100, 10, 2, 200, 15, 3, 300]
+
+
+Ex4: Fazer o Exercicio 1, mas agora soh podemos usar laco duplo (isto eh, 2 niveis de laco um dentro do outro)
+Ex5: Fazer o Exercicio 3, sem usar comando "append"
+

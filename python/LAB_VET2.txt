@@ -1,0 +1,146 @@
+Ex1: Escreva um programa que leia um valor inteiro N, depois receba um vetor de inteiros de tamanho N. O programa deve 
+ordenar o vetor por algum metodo (nao usar funcoes de ordenacao do python) e a seguir perguntar para o usuario qual numero ele quer procurar. 
+O programa deve procurar o numero usando o metodo da busca binaria e imprimir a posicao do numero encontrada 
+ou o valor -1 (caso o numero nao seja encontrado). No fim, perguntar se o usuario deseja encontrar outro numero.
+
+TESTE DE EXECUÇÃO
+
+n? 10
+
+num. 0 = 7
+num. 1 = 3
+num. 2 = 9
+num. 3 = 2
+num. 4 = 1
+num. 5 = 13
+num. 6 = 57
+num. 7 = 23
+num. 8 = 100
+num. 9 = 0
+
+Vetor = [0, 1, 2, 3, 7, 9, 13, 23, 57, 100]
+numero a ser procurado? 2
+numero  2  na posição  2
+Quer procurar outro numero? 1-Sim, 0-Não 1
+numero a ser procurado? 100
+numero  100  na posição  9
+Quer procurar outro numero? 1-Sim, 0-Não 1
+numero a ser procurado? 0
+numero  0  na posição  0
+Quer procurar outro numero? 1-Sim, 0-Não 1
+numero a ser procurado? 25
+-1
+Quer procurar outro numero? 1-Sim, 0-Não 0
+
+
+
+Ex2: Jogo do Buraco
+
+-> O Jogo consiste em um tabuleiro contendo uma trilha de 15 quadrados (vetor de inteiros de tamanho 16) e duas pecas 
+de dois jogadores. No inicio cada peca de cada jogador eh colocada na posicao 0 do tabuleiro. O jogo progride em turnos, 
+-> Em cada turno, alternadamente, um jogador joga um dado de 3 faces ( numero aleatorio 1-3) e move sua peca a frente. 
+A maioria dos quadrados eh trilha normal, mas alguns sao buracos que se o jogador cair ele perde a vez ( quer dizer ele 
+nao vai andar naquela rodada). 
+-> O vetor de trilhas possui 5 buracos espalhados aleatoriamente nas 15 posicoes da trilha (1-15) e eh gerado antes do 
+jogo comecar (cuidado para nao gerar posicoes repetidas de buracos, o tabuleiro tem que ter exatamente 5 buracos. 
+Alem disso, nao deve haver buracos na posicao inicial 0 e nem na final 15)
+-> A cada turno, o valor do dado tem que ser impresso assim como qual jogador esta jogando, alem disso, o tabuleiro tem 
+que ser impresso na tela com a posicao identificada do jogador 1 (“J1”), jogador 2 (“J2”), trilha (“x”) e buraco (“o”) 
+-> Vence quem chegar (ou passar) na posicao 15 primeiro
+
+*OBS1* Se jogador 1 e 2 estão na mesma casa entao a casa marca (“J12”)
+*OBS2* Cuidado para nao deixar "rastro" por onde o jogador passa, isto eh, se uma casa eh 'x' e o jogador 2 chega nela, 
+ela se torna 'J2'. Quando o jogador 2 se mover para a proxima casa, a posicao se torna 'x' de novo.
+
+*DICA1* Uma maneira de se fazer eh manter 2 vetores (um de inteiros "v" e outro de texto "t") e dois inteiros (j1 e j2). 
+O vetor de inteiros recebe valores 0 (se trilha normal) e 1 (se buraco), este deve ser gerado primeiro. O vetor de texto 
+(gerado a partir do vetor de inteiros) recebe 'x' para trilha e 'o' para buraco (e 'J12' na posicao 0 inicial), este que 
+sera impresso a cada rodada. Os inteiros marcam as posicoes dos jogadores (inicialmente possuem valor 0). 
+A cada rodada, os inteiros (j1 e j2) e o vetor texto sao atualizados de acordo com os movimentos. 
+
+*DICA2* --------------- O arquivo "buraco_ini.py" contem o inicio do programa com esta construcao inicial.e voce quiser utilizar --------------------
+  
+
+TESTE DE EXECUÇÃO
+
+Inicio
+['J12', 'x', 'x', 'x', 'o', 'x', 'o', 'x', 'x', 'x', 'o', 'o', 'x', 'o', 'x', 'x']
+
+Jogador 1 tirou  1
+['J2', 'J1', 'x', 'x', 'o', 'x', 'o', 'x', 'x', 'x', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 2 tirou  1
+['x', 'J12', 'x', 'x', 'o', 'x', 'o', 'x', 'x', 'x', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 1 tirou  3
+Buraco
+['x', 'J12', 'x', 'x', 'o', 'x', 'o', 'x', 'x', 'x', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 2 tirou  2
+['x', 'J1', 'x', 'J2', 'o', 'x', 'o', 'x', 'x', 'x', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 1 tirou  2
+['x', 'x', 'x', 'J12', 'o', 'x', 'o', 'x', 'x', 'x', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 2 tirou  2
+['x', 'x', 'x', 'J1', 'o', 'J2', 'o', 'x', 'x', 'x', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 1 tirou  3
+Buraco
+['x', 'x', 'x', 'J1', 'o', 'J2', 'o', 'x', 'x', 'x', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 2 tirou  1
+Buraco
+['x', 'x', 'x', 'J1', 'o', 'J2', 'o', 'x', 'x', 'x', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 1 tirou  2
+['x', 'x', 'x', 'x', 'o', 'J12', 'o', 'x', 'x', 'x', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 2 tirou  2
+['x', 'x', 'x', 'x', 'o', 'J1', 'o', 'J2', 'x', 'x', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 1 tirou  1
+Buraco
+['x', 'x', 'x', 'x', 'o', 'J1', 'o', 'J2', 'x', 'x', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 2 tirou  1
+['x', 'x', 'x', 'x', 'o', 'J1', 'o', 'x', 'J2', 'x', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 1 tirou  2
+['x', 'x', 'x', 'x', 'o', 'x', 'o', 'J1', 'J2', 'x', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 2 tirou  3
+Buraco
+['x', 'x', 'x', 'x', 'o', 'x', 'o', 'J1', 'J2', 'x', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 1 tirou  2
+['x', 'x', 'x', 'x', 'o', 'x', 'o', 'x', 'J2', 'J1', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 2 tirou  2
+Buraco
+['x', 'x', 'x', 'x', 'o', 'x', 'o', 'x', 'J2', 'J1', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 1 tirou  2
+Buraco
+['x', 'x', 'x', 'x', 'o', 'x', 'o', 'x', 'J2', 'J1', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 2 tirou  1
+['x', 'x', 'x', 'x', 'o', 'x', 'o', 'x', 'x', 'J12', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 1 tirou  3
+['x', 'x', 'x', 'x', 'o', 'x', 'o', 'x', 'x', 'J2', 'o', 'o', 'J1', 'o', 'x', 'x'] 
+
+Jogador 2 tirou  2
+Buraco
+['x', 'x', 'x', 'x', 'o', 'x', 'o', 'x', 'x', 'J2', 'o', 'o', 'J1', 'o', 'x', 'x'] 
+
+Jogador 1 tirou  2
+['x', 'x', 'x', 'x', 'o', 'x', 'o', 'x', 'x', 'J2', 'o', 'o', 'x', 'o', 'J1', 'x'] 
+
+Jogador 2 tirou  1
+Buraco
+['x', 'x', 'x', 'x', 'o', 'x', 'o', 'x', 'x', 'J2', 'o', 'o', 'x', 'o', 'J1', 'x'] 
+
+Jogador 1 tirou  2
+VITORIA DO JOGADOR 1
+['x', 'x', 'x', 'x', 'o', 'x', 'o', 'x', 'x', 'J2', 'o', 'o', 'x', 'o', 'J1', 'x'] 

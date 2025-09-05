@@ -1,0 +1,164 @@
+**LEMBRE-SE** Os arquivos de leitura tem que estar na mesma pasta do seu programa para serem lidos **
+
+Ex1: Faca um programa que apure o resultado de uma votacao para determinar o personagem do desenho “The Simpsons” favorito. 
+Suponha que existam 5 candidatos cujos codigos de identificação sao: 1-Bart, 2-Homer, 3-Krusty, 4-Mr Burns, 5-Ned Flanders. 
+Considere um arquivo texto (denominado “votos.txt”) que contem, em cada linha, um determinado voto (um voto eh representado 
+pelo codigo de identificacao do candidato). O programa devera apresentar, como resultado, o nome do candidato e a quantidade 
+de votos do candidato mais votado, o codigo de identificacao e a quantidade de votos do candidato menos votado e a quantidade 
+de votos nulos (um voto nulo eh um voto cujo codigo de identificacao eh um inteiro diferente de 1,2,3,4,5).
+
+TESTE DE ENTRADA
+
+votos.txt
+
+2
+2
+4
+3
+1
+5
+4
+6
+4
+2
+8
+5
+3
+2
+1
+1
+4
+5
+7
+8
+4
+3
+2
+2
+
+TESTE DE SAIDA
+
+Homer  eleito com  6  votos!
+Candidato  1  foi o menos votado com  3  voto(s)!
+4  pessoas votaram nulo!
+
+
+Ex2: Um professor armazena em um arquivo texto “classe.txt” o numero e o nome de cada aluno da turma da disciplina sob sua responsabilidade. 
+Por questao de seguranca, ele prefere armazenar as notas obtidas pelos alunos em cada prova em um outro arquivo texto (avalia.txt), onde cada 
+linha contem o numero do aluno e os valores das notas de 4 provas. Escreva um programa que permita consultar as notas de cada aluno a partir 
+do seu nome. Seu programa deve receber o nome como entrada e buscar e imprimir a linha correspondente (com as notas) ao nome no 
+arquivo “avalia.txt”, deve-se tambem imprimir a media das notas.
+
+TESTE DE ENTRADA
+
+classe.txt
+
+1 Quico
+2 Jaiminho
+3 Jirafales
+4 Nhonho
+
+avalia.txt
+
+1 4.3 2.5 6.6 10.0
+2 7.0 4.0 2.3 4.4
+3 10.0 10.0 10.0 9.9
+4 4.4 5.5 6.6 7.7
+
+TESTE DE SAIDA
+
+Digite o nome do aluno: Jirafales
+notas = 10.0 10.0 10.0 9.9
+media = 9.975
+
+TESTE DE SAIDA
+
+Digite o nome do aluno: Nhonho
+notas =  4.4 5.5 6.6 7.7
+media =  6.05
+
+
+Ex3: Implemente um programa que abre 2 arquivos (“nomes.txt” e “notas.txt”). O primeiro arquivo contem nomes de alunos e o
+segundo arquivo contem as notas dos alunos.  No primeiro arquivo, cada linha corresponde ao nome de um aluno e no segundo arquivo,
+cada   linha   corresponde   a uma ou mais notas do aluno (separado por espaços), os dois arquivos tem o mesmo numero de linhas.
+Leia   os   dois arquivos e gere um terceiro (“medias.txt”) que armazene o nome e a media de cada aluno.
+
+* DICA * 
+**
+Para evitar problemas de quebras de linha "\n", podemos usar a funcao "strip" da string para retirar qualquer caractere indesejado das
+extremidades da  string
+**
+
+TESTE DE ENTRADA
+
+nomes.txt
+
+Joselino Barbacena
+Sandoval Quaresma
+Ze Bonitinho
+Aldemar Vigario
+Seu Boneco
+
+notas.txt
+
+7.6
+3.2 5.3 6.7
+9.2 9.8
+2.2 3.6
+6.6 7.7 4.9 9.9
+
+TESTE DE SAIDA
+
+Joselino Barbacena 7.6
+Sandoval Quaresma 5.06666666667
+Ze Bonitinho 9.5
+Aldemar Vigario 2.9
+Seu Boneco 7.275
+
+
+
+Ex4: Para uma possivel futura viagem espacial, foram coletados e escritos em um arquivo texto os dados de varias pessoas. 
+Nesse arquivo cada linha contem o primeiro nome da pessoa, seu ultimo nome, seu ano de nascimento, seu peso na Terra e 
+seu desejo de ir para Marte ou para Jupiter. Por exemplo, uma linha no arquivo seria:
+Maria Pacheco,1965,89,Marte
+Implemente um programa para ler os dados do arquivo texto (planetas.txt) e criar dois novos arquivos: o primeiro contendo 
+o nome das pessoas com menos de 30 anos que desejam ir para Marte e o peso da pessoa em Marte; o segundo contendo o 
+nome das pessoas com menos de 40 anos que desejam ir para Jupiter e o peso da pessoa em Jupiter. Sabe-se que uma pessoa 
+com peso 100 na Terra, pesa 38 em Marte e 264 em Júpiter.
+
+*DICA* 
+** Se usar a funcao split(",") para quebrar as palavras da linha, lembre-se que a ultima palavra da linha sempre vem com 
+a quebra de linha, isto eh, serah "Marte\n" ou "Jupiter\n", porem podemos usar a funcao strip da string para retirar 
+qualquer caractere indesejado da string, ex: strip('\n')
+ **
+
+
+TESTE DE ENTRADA
+
+planetas.txt
+
+Maria Pacheco,1965,89,Marte
+Goku Sayadim,1999,110,Marte
+Pikachu Pokemon,1993,12,Jupiter
+Sant Seya,1954,63,Jupiter
+John Snow,1984,83,Marte
+Rick Grimes,1976,93,Marte
+Carl Grimes,1999,55,Jupiter
+Lili Abitbol,2008,23,Marte
+
+TESTE DE SAIDA
+
+jupiter.txt
+
+Pikachu Pokemon 31.68
+Carl Grimes 145.2
+
+marte.txt
+
+Goku Sayadim 41.8
+Lili Abitbol 8.74
+
+
+
+
+ 

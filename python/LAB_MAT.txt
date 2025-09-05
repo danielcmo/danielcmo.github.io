@@ -1,0 +1,141 @@
+Ex1: Na teoria de sistemas defini-se um elemento minimax de uma matriz como sendo o menor elemento da linha 
+em que se encontra o maior elemento da matriz (considere que nao existem elementos repetidos na matriz). 
+Faca um programa que receba uma matriz 4x4 e determine a posicao (linha e coluna) do elemento minimax da matriz.
+
+TESTE DE ENTRADA
+
+Digite o valor de [0,0]:
+4
+Digite o valor de [0,1]:
+8
+Digite o valor de [0,2]:
+12
+Digite o valor de [0,3]:
+16
+Digite o valor de [1,0]:
+2
+Digite o valor de [1,1]:
+3
+Digite o valor de [1,2]:
+9
+Digite o valor de [1,3]:
+15
+Digite o valor de [2,0]:
+22
+Digite o valor de [2,1]:
+45
+Digite o valor de [2,2]:
+0
+Digite o valor de [2,3]:
+1
+Digite o valor de [3,0]:
+19
+Digite o valor de [3,1]:
+17
+Digite o valor de [3,2]:
+40
+Digite o valor de [3,3]:
+28
+
+TESTE DE SAIDA
+
+posicao minimax é linha 2  e coluna  2
+
+Ex2: Faca um programa que le dois inteiros positivos n e m (informado pelo usuario) , depois recebe do usuario 
+uma matriz A nxm (n linhas e m colunas). O programa deve  criar e preencher dois vetores SL de dimensao n e SC de dimensao m, 
+que contenham respectivamente, as somas das linhas e das colunas de A. 
+No fim imprimir A, SL e SC
+
+TESTE DE ENTRADA
+
+n=4
+m=3
+Digite o valor de [0,0]:
+7
+Digite o valor de [0,1]:
+3
+Digite o valor de [0,2]:
+9
+Digite o valor de [1,0]:
+2
+Digite o valor de [1,1]:
+1
+Digite o valor de [1,2]:
+1
+Digite o valor de [2,0]:
+0
+Digite o valor de [2,1]:
+10
+Digite o valor de [2,2]:
+8
+Digite o valor de [3,0]:
+5
+Digite o valor de [3,1]:
+6
+Digite o valor de [3,2]:
+5
+
+TESTE DE SAIDA
+
+A  = [[7, 3, 9], [2, 1, 1], [0, 10, 8], [5, 6, 5]]
+SL = [19, 4, 18, 16]
+SC = [14, 20, 23]
+
+
+Ex3: Dizemos que uma matriz A nxn eh um Quadrado Magico se a soma dos elementos da cada linha, 
+a soma dos elementos de cada coluna, e a soma dos elementos das diag. Principal e secundaria sao iguais. 
+Faca um programa para ler uma matriz A nxn (informado pelo usuario) e dizer se eh ou nao eh um quadrado magico
+
+*DICA 1* sabemos que os elementos da diagonal principal tem indices de linha (l) e coluna (c) iguais (l=c), 
+por exemplo uma matriz 5x5, temos elementos nas posicoes  0,0 1,1 2,2 3,3 e 4,4. Por outro lado, os elementos da diagonal 
+secundaria tem indices inversamente proporcionais (c=n-1-l), logo seriam os elementos das posicoes 0,4 1,3 2,2 3,1 e 4,0.
+
+* DICA 2* uma maneira simples de testar se o quadrado eh magico eh voce pegar um valor de referencia X (tipo a soma 
+da primeira linha ou a soma da primeira coluna), a partir dai o programa vai testando se as demais somas sao iguais a
+este valor X, se alguma soma for diferente deste valor X, o quadrado nao eh magico e o programa nao precisa testar as 
+demais somas. Por outro lado, para verificar se o quadrado eh magico, eh necessario que todas as somas sejam iguais ao 
+valor X, quer dizer todas as somas tem que ser verificadas.
+
+TESTE DE ENTRADA
+
+n=2
+Digite o valor de [0,0]: 
+5
+Digite o valor de [0,1]: 
+2
+Digite o valor de [1,0]: 
+7
+Digite o valor de [1,1]: 
+9
+
+TESTE DE SAIDA
+
+nao eh magico
+
+
+TESTE DE ENTRADA
+
+n=3
+Digite o valor de [0,0]: 
+2
+Digite o valor de [0,1]: 
+7
+Digite o valor de [0,2]: 
+6
+Digite o valor de [1,0]: 
+9
+Digite o valor de [1,1]: 
+5
+Digite o valor de [1,2]: 
+1
+Digite o valor de [2,0]: 
+4
+Digite o valor de [2,1]: 
+3
+Digite o valor de [2,2]: 
+8
+
+TESTE DE SAIDA
+
+magico
+

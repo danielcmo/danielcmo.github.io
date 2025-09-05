@@ -1,0 +1,283 @@
+Ex1: Implemente o jogo da velha para ser jogado com 2 jogadores. Você pode representar o tabuleiro como um vetor ou uma matriz.
+Lembre-se de:
+- proibir jogadas irregulares (espaços já preenchidos ou fora do tabuleiro).
+- alternar as jogadas entre os jogadores 1 e 2
+- imprimir o tabuleiro a cada jogada
+- testar as condições de vitoria a cada jogada
+
+*DICA* Use o arquivo "velha_ini.py" (disponivel na pagina) como base (pode tambem nao usar).
+
+TESTE DE EXECUÇÃO
+
+-----
+|1|2|3|
+ -----
+|4|5|6|
+ -----
+|7|8|9|
+ -----
+
+Jogador 1:
+posicao: 5
+
+ -----
+|1|2|3|
+ -----
+|4|X|6|
+ -----
+|7|8|9|
+ -----
+
+Jogador 2:
+posicao: 1
+
+ -----
+|O|2|3|
+ -----
+|4|X|6|
+ -----
+|7|8|9|
+ -----
+
+Jogador 1:
+posicao: 3
+
+ -----
+|O|2|X|
+ -----
+|4|X|6|
+ -----
+|7|8|9|
+
+ -----
+
+Jogador 2:
+posicao: 7
+
+ -----
+|O|2|X|
+ -----
+|4|X|6|
+ -----
+|O|8|9|
+ -----
+
+Jogador 1:
+posicao: 4
+
+ -----
+|O|2|X|
+ -----
+|X|X|6|
+ -----
+|O|8|9|
+ -----
+
+Jogador 2:
+posicao: 6
+
+ -----
+|O|2|X|
+ -----
+|X|X|O|
+ -----
+|O|8|9|
+ -----
+
+Jogador 1:
+posicao: 8
+
+ -----
+|O|2|X|
+ -----
+|X|X|O|
+ -----
+|O|X|9|
+ -----
+
+Jogador 2:
+posicao: 2
+
+ -----
+|O|O|X|
+ -----
+|X|X|O|
+ -----
+|O|X|9|
+ -----
+
+Jogador 1:
+posicao: 9
+
+ -----
+|O|O|X|
+ -----
+|X|X|O|
+ -----
+|O|X|X|
+ -----
+
+
+deu velha!!!
+
+
+Ex2: Jogo do Labirinto 1.0: Dado uma matriz de caracteres de tamanho n e m, onde "X" representa uma posicao ocupada (parede ou bloco)
+, " " representa uma posicao nao ocupada (livre), e "O" representa o avatar do jogador. O objetivo do jogo eh levar o avatar da
+posicao inicial (0,0), ate a posicao final (n,m). As letras "w,s,a,d" serao usadas como direcionais (cima, baixo, esquerda e direita).
+
+*DICA1* Cuidado quando andar com o avatar nao sair do labirinto, nao andar sobre blocos ("X"), e checar sempre a condicao de vitoria (chegar na
+posicao n,m).
+*DICA2* A cada movimento do avatar, imprimir labirinto, mas cuidado para apagar o "O" da posicao antiga do jogador para nao deixar rastro.
+*DICA3* Utilizar o modelo lab_ini.py (disponivel na pagina) como modelo para o labirinto a ser percorrido (pode tambem nao usar).
+
+TESTE DE EXECUÇÃO
+
+['O', 'X', 'X', ' ', 'X']
+[' ', ' ', 'X', ' ', 'X']
+['X', ' ', ' ', ' ', ' ']
+[' ', ' ', 'X', 'X', ' ']
+['X', ' ', ' ', ' ', ' ']
+w-cima s-baixo a-esquerda d-direita d
+['O', 'X', 'X', ' ', 'X']
+[' ', ' ', 'X', ' ', 'X']
+['X', ' ', ' ', ' ', ' ']
+[' ', ' ', 'X', 'X', ' ']
+['X', ' ', ' ', ' ', ' ']
+w-cima s-baixo a-esquerda d-direita s
+[' ', 'X', 'X', ' ', 'X']
+['O', ' ', 'X', ' ', 'X']
+['X', ' ', ' ', ' ', ' ']
+[' ', ' ', 'X', 'X', ' ']
+['X', ' ', ' ', ' ', ' ']
+w-cima s-baixo a-esquerda d-direita s
+[' ', 'X', 'X', ' ', 'X']
+['O', ' ', 'X', ' ', 'X']
+['X', ' ', ' ', ' ', ' ']
+[' ', ' ', 'X', 'X', ' ']
+['X', ' ', ' ', ' ', ' ']
+w-cima s-baixo a-esquerda d-direita d
+[' ', 'X', 'X', ' ', 'X']
+[' ', 'O', 'X', ' ', 'X']
+['X', ' ', ' ', ' ', ' ']
+[' ', ' ', 'X', 'X', ' ']
+['X', ' ', ' ', ' ', ' ']
+w-cima s-baixo a-esquerda d-direita s
+[' ', 'X', 'X', ' ', 'X']
+[' ', ' ', 'X', ' ', 'X']
+['X', 'O', ' ', ' ', ' ']
+[' ', ' ', 'X', 'X', ' ']
+['X', ' ', ' ', ' ', ' ']
+w-cima s-baixo a-esquerda d-direita s
+[' ', 'X', 'X', ' ', 'X']
+[' ', ' ', 'X', ' ', 'X']
+['X', ' ', ' ', ' ', ' ']
+[' ', 'O', 'X', 'X', ' ']
+['X', ' ', ' ', ' ', ' ']
+w-cima s-baixo a-esquerda d-direita d
+[' ', 'X', 'X', ' ', 'X']
+[' ', ' ', 'X', ' ', 'X']
+['X', ' ', ' ', ' ', ' ']
+[' ', 'O', 'X', 'X', ' ']
+['X', ' ', ' ', ' ', ' ']
+w-cima s-baixo a-esquerda d-direita s
+[' ', 'X', 'X', ' ', 'X']
+[' ', ' ', 'X', ' ', 'X']
+['X', ' ', ' ', ' ', ' ']
+[' ', ' ', 'X', 'X', ' ']
+['X', 'O', ' ', ' ', ' ']
+w-cima s-baixo a-esquerda d-direita d
+[' ', 'X', 'X', ' ', 'X']
+[' ', ' ', 'X', ' ', 'X']
+['X', ' ', ' ', ' ', ' ']
+[' ', ' ', 'X', 'X', ' ']
+['X', ' ', 'O', ' ', ' ']
+w-cima s-baixo a-esquerda d-direita d
+[' ', 'X', 'X', ' ', 'X']
+[' ', ' ', 'X', ' ', 'X']
+['X', ' ', ' ', ' ', ' ']
+[' ', ' ', 'X', 'X', ' ']
+['X', ' ', ' ', 'O', ' ']
+w-cima s-baixo a-esquerda d-direita d
+[' ', 'X', 'X', ' ', 'X']
+[' ', ' ', 'X', ' ', 'X']
+['X', ' ', ' ', ' ', ' ']
+[' ', ' ', 'X', 'X', ' ']
+['X', ' ', ' ', ' ', 'O']
+
+!!!VITORIA!!!
+
+
+Ex3 (Para o Yuri nao sair mais cedo): Jogo do Labirinto 2.0: colocar no inicio do jogo um inimigo representado por "W" numa posicao aleatoria
+do labirinto (que nao seja um bloco nem o jogador na posicao inicial 0,0). Depois de cada movimento do jogador,
+o inimigo realiza um movimento aleatorio para uma posicao vazia ( diferente de "X").
+O jogador perde se o inimigo pegar o jogador (ficarem na mesma posicao) antes do jogador chegar na saida do
+labirinto.
+
+*DICA1* o inimigo, assim como o jogador,  soh pode andar tambem para cima, baixo, esquerda e direita (nao pode andar em diagonal).
+*DICA2* Nao deixar rastro do inimigo tambem no labirinto.
+
+TESTE DE EXECUÇÃO
+
+['O', 'X', 'X', ' ', 'X']
+[' ', ' ', 'X', 'W', 'X']
+['X', ' ', ' ', ' ', ' ']
+[' ', ' ', 'X', 'X', ' ']
+['X', ' ', ' ', ' ', ' ']
+w-cima s-baixo a-esquerda d-direita d
+['O', 'X', 'X', ' ', 'X']
+[' ', ' ', 'X', ' ', 'X']
+['X', ' ', ' ', 'W', ' ']
+[' ', ' ', 'X', 'X', ' ']
+['X', ' ', ' ', ' ', ' ']
+w-cima s-baixo a-esquerda d-direita s
+[' ', 'X', 'X', ' ', 'X']
+['O', ' ', 'X', 'W', 'X']
+['X', ' ', ' ', ' ', ' ']
+[' ', ' ', 'X', 'X', ' ']
+['X', ' ', ' ', ' ', ' ']
+w-cima s-baixo a-esquerda d-direita d
+[' ', 'X', 'X', ' ', 'X']
+[' ', 'O', 'X', ' ', 'X']
+['X', ' ', ' ', 'W', ' ']
+[' ', ' ', 'X', 'X', ' ']
+['X', ' ', ' ', ' ', ' ']
+w-cima s-baixo a-esquerda d-direita s
+[' ', 'X', 'X', ' ', 'X']
+[' ', ' ', 'X', ' ', 'X']
+['X', 'O', ' ', ' ', 'W']
+[' ', ' ', 'X', 'X', ' ']
+['X', ' ', ' ', ' ', ' ']
+w-cima s-baixo a-esquerda d-direita s
+[' ', 'X', 'X', ' ', 'X']
+[' ', ' ', 'X', ' ', 'X']
+['X', ' ', ' ', 'W', ' ']
+[' ', 'O', 'X', 'X', ' ']
+['X', ' ', ' ', ' ', ' ']
+w-cima s-baixo a-esquerda d-direita s
+[' ', 'X', 'X', ' ', 'X']
+[' ', ' ', 'X', ' ', 'X']
+['X', ' ', 'W', ' ', ' ']
+[' ', ' ', 'X', 'X', ' ']
+['X', 'O', ' ', ' ', ' ']
+w-cima s-baixo a-esquerda d-direita d
+[' ', 'X', 'X', ' ', 'X']
+[' ', ' ', 'X', ' ', 'X']
+['X', 'W', ' ', ' ', ' ']
+[' ', ' ', 'X', 'X', ' ']
+['X', ' ', 'O', ' ', ' ']
+w-cima s-baixo a-esquerda d-direita d
+[' ', 'X', 'X', ' ', 'X']
+[' ', 'W', 'X', ' ', 'X']
+['X', ' ', ' ', ' ', ' ']
+[' ', ' ', 'X', 'X', ' ']
+['X', ' ', ' ', 'O', ' ']
+w-cima s-baixo a-esquerda d-direita d
+[' ', 'X', 'X', ' ', 'X']
+[' ', ' ', 'X', ' ', 'X']
+['X', 'W', ' ', ' ', ' ']
+[' ', ' ', 'X', 'X', ' ']
+['X', ' ', ' ', ' ', 'O']
+
+!!!VITORIA!!!
+
+

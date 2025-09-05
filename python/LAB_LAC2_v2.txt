@@ -1,0 +1,139 @@
+
+Ex1: Faca um programa que imprima os N (inteiro fornecido pelo usuario) primeiros numeros da serie
+de Yoshi. A serie inicia com os numeros 2,5 e 8, e cada numero posterior equivale a diferenca entre o
+numero anterior e a soma dos 2 numeros antes do anterior (ex: o proximo numero da serie eh 8-(2+5)=1)
+
+TESTE DE ENTRADA :
+
+N=20
+
+TESTE DE SAIDA :
+
+2
+5
+8
+1
+-12
+-21
+-10
+23
+54
+41
+-36
+-131
+-136
+31
+298
+403
+74
+-627
+-1104
+-551
+
+
+Ex2: Faça um programa que implementa o jogo da senha: O computador escolhe aleatoriamente 
+uma senha (valor inteiro entre 0 e 100) sem o conhecimento do jogador; O jogador  tem 
+10 chances para descobrir a senha; A cada tentativa do jogador, o programa deve avisar 
+se o valor digitado é maior,menor ou igual a senha; Se o valor digitado em uma tentativa 
+tiver uma diferença igual a 3 para a senha, o programa deve avisar que “TÁ QUENTE!”. 
+Neste caso, nenhuma outra mensagem deve ser emitida. Ao final do jogo, se for o caso, 
+enviar a mensagem “Perdeu” ou “Ganhou”; Ao final de uma partida, permita ao usuário jogar 
+novamente, isto eh, pergunte se ele quer jogar de novo, caso afirmativo, comece uma nova
+partida.
+
+EXEMPLO DE EXECUCAO:
+
+Tente adivinhar o número secreto de 1 a 100! Você terá 10 tentativas!
+
+Número:  40
+O número secreto é maior! ( 9 tentativas)
+Número:  60
+O número secreto é menor! ( 8 tentativas)
+Número:  50
+TA QUENTE
+Número:  55
+O número secreto é menor! ( 6 tentativas)
+Número:  49
+TA QUENTE
+Número:  48
+TA QUENTE
+Número:  47
+Parabéns! Você acertou! O número secreto é: 47 com 3 tentativas
+quer jogar de novo? 1-sim 2-nao 1
+
+Tente adivinhar o número secreto de 1 a 100! Você terá 10 tentativas!
+
+Número:  50
+O número secreto é maior! ( 9 tentativas)
+Número:  60
+O número secreto é maior! ( 8 tentativas)
+Número:  70
+TA QUENTE
+Número:  71
+TA QUENTE
+Número:  72
+O número secreto é menor! ( 5 tentativas)
+Número:  69
+TA QUENTE
+Número:  68
+Parabéns! Você acertou! O número secreto é: 68 com 3 tentativas
+quer jogar de novo? 1-sim 2-nao 2
+
+Ex3: Dado um valor de X inteiro, calcule a soma dos primeiros 30 termos da serie:
+
+S = X + 2*X**2/3 - 4*X**3/8 + 8*X**2/23 - 14*X**3/68 + 22*X**2/203 + ...
+
+TESTE ENTRADA:
+
+X=2
+
+TESTE SAIDA:
+
+S= 0.4388
+
+TESTE ENTRADA:
+
+X=3
+
+TESTE SAIDA:
+
+S= -7.454
+
+
+Ex4: Faca um jogo de pedra papel e tesoura (Jo-Ken-Po), onde o jogador e o computador escolhem entre 
+“1-papel 2-tesoura 3-pedra” (a jogado do computador eh aleatória). Ganha o jogo quem vender 3 vezes 
+primeiro.
+
+TESTE DE EXECUCAO:
+
+qual sua jogada: 1-papel 2-tesoura 3-pedra?  R-1
+tesoura, voce perdeu
+qual sua jogada: 1-papel 2-tesoura 3-pedra?  R-3
+papel, voce perdeu
+qual sua jogada: 1-papel 2-tesoura 3-pedra?  R-3
+papel, voce perdeu
+DERROTA :(
+
+TESTE DE EXECUCAO:
+
+qual sua jogada: 1-papel 2-tesoura 3-pedra?  R-2
+pedra, voce perdeu
+qual sua jogada: 1-papel 2-tesoura 3-pedra?  R-2
+tesoura, empatou
+qual sua jogada: 1-papel 2-tesoura 3-pedra?  R-2
+tesoura, empatou
+qual sua jogada: 1-papel 2-tesoura 3-pedra?  R-2
+pedra, voce perdeu
+qual sua jogada: 1-papel 2-tesoura 3-pedra?  R-2
+papel, voce ganhou
+qual sua jogada: 1-papel 2-tesoura 3-pedra?  R-1
+papel, empatou
+qual sua jogada: 1-papel 2-tesoura 3-pedra?  R-1
+papel, empatou
+qual sua jogada: 1-papel 2-tesoura 3-pedra?  R-1
+pedra, voce ganhou
+qual sua jogada: 1-papel 2-tesoura 3-pedra?  R-1
+pedra, voce ganhou
+VITORIA :)
+
+

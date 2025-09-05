@@ -1,0 +1,101 @@
+Ex1: Faça um programa que receba a idade (inteiro), a altura (real) e o peso (real) de 5 pessoas. Calcule e imprima:
+	- a quantidade de pessoas com idade superior a 50 anos
+	- a média das alturas das pessoas com idade entre 10 e 20 anos
+	- a porcentagem de pessoas com peso inferior a 40 quilos entre todas as pessoas
+
+TESTE DE ENTRADA
+
+52
+1.8
+80
+18
+1.6
+39
+15
+1.7
+56
+5
+0.7
+20
+76
+1.4
+38
+
+TESTE DE SAIDA
+
++50id= 2  media_alt_10_20= 1.65 -40k= 60.0
+
+
+Ex2: Faça um programa para listar todos os divisores de um número (diferentes de 1 e ele mesmo). Se nao tiver nenhum, dizer que o número é primo.
+
+TESTE DE ENTRADA
+
+126
+
+TESTE DE SAIDA
+
+2
+3
+6
+7
+9
+14
+18
+21
+42
+63
+
+TESTE DE ENTRADA
+
+17
+
+TESTE DE SAIDA
+
+primo
+
+Ex3: Repare a seguinte caracteristica do número 3025: 30+25=55 e 55**2=3025. 
+Faça um programa que liste todos os números de 4 dígitos que possuam esta propriedade.
+DICA: Dado um numero de 4 digitos, se o dividirmos (divisao inteira) por 100, com que numero 
+ficamos ? E se pegarmos o resta da divisao por 100, com que numero ficamos ?
+
+TESTE DE SAIDA
+
+2025
+3025
+9801
+
+
+Ex4: Faça um programa que leia dois valores x e y (x>=y), e calcula o valor da divisao inteira de x por y. 
+Nesta questao so sera permitido usar as operacoes (e funcoes) aritimeticas de soma (+) e subtração (-).
+DICA: Use laco para contar quantos y's tem em x.
+
+TESTE DE ENTRADA:
+
+134
+5
+
+TESTE DE SAIDA:
+
+26 
+
+TESTE DE ENTRADA:
+
+64
+8
+
+TESTE DE SAIDA:
+
+8     
+
+
+Ex5: Qual o valor de S para a soma dos primeiros 30 termos.
+DICA: Nesta questao temos que prestar atencao em duas coisa. A primeira eh que o sinal dos termos se alternam.
+E a segunda eh qual a regra de formacao do denominador ????
+
+S = 2/3 - 6/5 + 10/8 - 14/12 + 18/17 ...
+
+TESTE DE SAIDA
+
+-0.017916345338038098
+
+

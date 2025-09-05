@@ -1,0 +1,8 @@
+Maria Pacheco,1965,89,Marte
+Goku Sayadim,1999,110,Marte
+Pikachu Pokemon,1993,12,Jupiter
+Sant Seya,1954,63,Jupiter
+John Snow,1984,83,Marte
+Rick Grimes,1976,93,Marte
+Carl Grimes,1999,55,Jupiter
+Lili Abitbol,2008,23,Marte

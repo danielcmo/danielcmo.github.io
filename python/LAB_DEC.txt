@@ -1,0 +1,166 @@
+
+
+1) Ordem3 -- Receba 3 valores inteiros. Se os tres forem iguais, imprime "iguais". Se apenas dois deles forem iguais, imprima a soma dos numeros iguais menos o numero diferente. Se os 3 forem distintos, imprima de forma decrescente.
+
+TESTE ENTRADA:
+
+3 
+5
+3
+
+TESTE SAIDA:
+
+1
+
+TESTE ENTRADA:
+
+-1
+0
+-3
+
+TESTE SAIDA:
+
+0 -1 -3
+
+TESTE ENTRADA:
+
+1
+1
+1
+
+TESTE SAIDA:
+
+iguais
+
+
+
+2) Salário -- Faça um programa que dado o salário bruto SB (real) de um funcionário, calcular o salário líquido SL (real), aplicando o desconto de:
+
+10% sobre SB, se SB for maior ou igual a 500 reais e menor que 800 reais
+15% sobre SB, se SB for maior ou igual a 800 reais e menor que 1000 reais
+80% sobre SB, se SB for maior ou igual a 1000 reais
+
+Não haverá desconto se o salário for menor que 500 reais. Imprimir o salário bruto, salário líquido e o desconto
+
+TESTE ENTRADA:
+
+700
+
+TESTE SAIDA
+
+700.0 630.0 70.0
+
+TESTE ENTRADA:
+
+1200
+
+TESTE SAIDA
+
+1200.0 240.0 960.0
+
+
+
+3) Dados -- Gere uma jogada de 3 dados (de 6 lados) aleatoriamente. O programa deve imprimir a soma dos numeros se eles (os 3) forem consecutivos, caso contrario, retorne a multiplicacao dos numeros que são iguais (se eles existirem). Caso nao exista numeros iguais imprima "nao deu". OBS) Para fazer os testes, force os valores dos dados.
+
+
+TESTE ENTRADA:
+
+6
+3
+3
+
+TESTE SAIDA
+
+9
+
+TESTE DE ENTRADA
+
+5 
+1
+6
+
+TESTE SAIDA
+
+nao deu
+
+TESTE DE ENTRADA
+
+4
+2
+3
+
+TESTE DE SAIDA
+
+9
+
+TESTE DE ENTRADA
+
+2
+2
+2
+
+TESTE DE SAIDA
+
+8
+
+
+4) Semifinal de Futebol -- 
+- Recebe 4 nomes de times (times A,B,C e D) com suas medias de gols no campeonato (real). Os times irao compor as duas semifinais (isto eh: AxB e CxD). 
+- Para determinar quem vence cada semifinal, o numero de gols do time em cada partida da semifinal eh um numero aleatorio  entre 0 e o teto da media de gols do time. Em caso de empate no placar da semifinal, o time de casa se classifica (isto eh: A e C tem a vantagem do empate na semifinal)
+- O jogo final serah disputado entre os finalistas, o numero de gols da final tambem serah determinado pelo numero aleatorio  entre 0 e o teto da media de gols de cada time. Em caso de empate, havera penalidades, isto eh, um novo numero aleatorio sera gerado para cada time (entre 0 e 5) para determinar o campeao. Em caso de novo empate nas penalidades, serah jogado uma moeda para decidir o campeao (o primeiro finalista sera "cara" e o segundo "coroa").
+- Imprimir a sequencia de jogos, os placares, os vencedores e o time campeao.
+
+TESTE DE ENTRADA
+
+Milan
+Vasco
+Barca
+Ceara
+2.5
+0.3
+2.7
+2.4
+
+EXEMPLO 1 DE EXECUCAO DE SAIDA
+
+Semifinal 1
+Milan   0  x  0   Vasco
+Milan  se classificou
+Semifinal 2
+Barca   3  x  2   Ceara
+Barca  se classificou
+Final
+Milan   0  x  2   Barca
+Barca  CAMPEAO!
+
+EXEMPLO 2 DE EXECUCAO DE SAIDA (foi para as penalidades)
+
+Semifinal 1
+Milan   3  x  1   Vasco
+Milan  se classificou
+Semifinal 2
+Barca   0  x  2   Ceara
+Ceara  se classificou
+Final
+Milan   3  x  3   Ceara
+Penalidades
+Milan   2  x  1   Ceara
+Milan  CAMPEAO!
+
+EXEMPLO 3 DE EXECUCAO DE SAIDA (foi para a moeda)
+
+Milan   0  x  0   Vasco
+Milan  se classificou
+Semifinal 2
+Barca   3  x  0   Ceara
+Barca  se classificou
+Final
+Milan   1  x  1   Barca
+Penalidades
+Milan   4  x  4   Barca
+Moeda 
+deu cara, Milan CAMPEAO
+
+
+
+

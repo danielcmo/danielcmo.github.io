@@ -1,0 +1,367 @@
+Ex1: Faca um banco de dados para o professor cadastrar os nomes e as notas dos 35 alunos da
+disciplina. Os nomes dos alunos devem ser armazenados em um vetor texto de tamanho 35, enquanto
+que as notas devem ter armazenadas numa matriz de reais de tamanho 35x4 (4 notas por aluno). O
+programa interage com o usuario atraves de um menu.
+
+-- Menu --
+1) Inserir Nome aluno/Notas
+2) Alterar Nome aluno
+3) Alterar Nota
+4) Remover Aluno
+5) Imprimir relatorio de medias ordenadas
+6) Imprimir relatorio Completo
+7) Gravar relatorio Completo
+8) Sair
+opc:
+
+Cada uma das opcoes deve ser implementada em uma subrotina diferente no codigo. O banco de
+dados (vetor e matriz) comeca vazio, isto eh, vetor de nomes apenas em branco (' ') e matriz
+de notas com notas todas nulas (0). 
+
+1) Inserir Nome aluno/Notas: A opcao 1) deve receber e armazenar nas estruturas (vetor e matriz)
+o nome e as 4 notas do aluno. Depois retornar ao menu para nova operacao.
+
+6) Imprimir relatorio Completo: A opcao 6) imprime a lista dos alunos e suas respectivas notas.
+Depois retornar ao menu para nova operacao.
+
+---------- TESTE DE EXECUCAO ----------------
+
+-- Menu --
+1) Inserir Nome aluno/Notas
+2) Alterar Nome aluno
+3) Alterar Nota
+4) Remover Aluno
+5) Imprimir relatorio de medias ordenadas
+6) Imprimir relatorio Completo
+7) Gravar relatorio Completo
+8) Sair
+opc:1
+
+Nome do Aluno: Kakaroto
+Nota1: 2.2
+Nota2: 3.2
+Nota3: 1.0
+Nota4: 4.0
+
+-- Menu --
+1) Inserir Nome aluno/Notas
+2) Alterar Nome aluno
+3) Alterar Nota
+4) Remover Aluno
+5) Imprimir relatorio de medias ordenadas
+6) Imprimir relatorio Completo
+7) Gravar relatorio Completo
+8) Sair
+opc:1
+
+Nome do Aluno: Vegita
+Nota1: 5.5
+Nota2: 4.3
+Nota3: 6.6
+Nota4: 4.0
+
+-- Menu --
+1) Inserir Nome aluno/Notas
+2) Alterar Nome aluno
+3) Alterar Nota
+4) Remover Aluno
+5) Imprimir relatorio de medias ordenadas
+6) Imprimir relatorio Completo
+7) Gravar relatorio Completo
+8) Sair
+opc:1
+
+Nome do Aluno: Buma
+Nota1: 9.8
+Nota2: 8.9
+Nota3: 9.6
+Nota4: 8.7
+
+-- Menu --
+1) Inserir Nome aluno/Notas
+2) Alterar Nome aluno
+3) Alterar Nota
+4) Remover Aluno
+5) Imprimir relatorio de medias ordenadas
+6) Imprimir relatorio Completo
+7) Gravar relatorio Completo
+8) Sair
+opc:1
+
+Nome do Aluno: Kuriri
+Nota1: 1.0
+Nota2: 1.1
+Nota3: 2.0
+Nota4: 1.5
+
+-- Menu --
+1) Inserir Nome aluno/Notas
+2) Alterar Nome aluno
+3) Alterar Nota
+4) Remover Aluno
+5) Imprimir relatorio de medias ordenadas
+6) Imprimir relatorio Completo
+7) Gravar relatorio Completo
+8) Sair
+opc:6
+
+0 )  Kakaroto :      2.2 3.2 1.0 4.0
+1 )  Vegita :        5.5 4.3 6.6 4.0
+2 )  Buma :      9.8 8.9 9.6 8.7
+3 )  Kuriri :        1.0 1.1 2.0 1.5
+-------------------------------------------------------------
+
+
+2) Alterar Nome aluno: Esta opcao deve perguntar ao usuario qual nome ele quer alterar. O programa
+deve procurar em que posicao esta armazenado este nome no vetor de nomes, perguntar por qual novo nome
+ele quer trocar e realizar a mudanca (indicar com mensagem o sucesso da mudanca). Caso o nome nao seja
+encontrado, uma mensagem deve informar que o aluno nao esta cadastrado. Depois retornar ao menu para
+nova operacao.
+
+*OBS* Nao utilizar nenhuma funcao de vetores (listas) para encontrar (ou manipular) elementos nos
+vetores,  codificar voce mesmo a busca e alteracao.
+
+---------- TESTE DE EXECUCAO ----------------
+
+-- Menu --
+1) Inserir Nome aluno/Notas
+2) Alterar Nome aluno
+3) Alterar Nota
+4) Remover Aluno
+5) Imprimir relatorio de medias ordenadas
+6) Imprimir relatorio Completo
+7) Gravar relatorio Completo
+8) Sair
+opc:2
+
+Nome do Aluno: Vejita
+Aluno nao cadastrado
+
+-- Menu --
+1) Inserir Nome aluno/Notas
+2) Alterar Nome aluno
+3) Alterar Nota
+4) Remover Aluno
+5) Imprimir relatorio de medias ordenadas
+6) Imprimir relatorio Completo
+7) Gravar relatorio Completo
+8) Sair
+opc:2
+
+Nome do Aluno: Vegita
+Novo nome: Testao
+aluno de indice  1  mudou nome de  Vegita  para  Testao
+
+-- Menu --
+1) Inserir Nome aluno/Notas
+2) Alterar Nome aluno
+3) Alterar Nota
+4) Remover Aluno
+5) Imprimir relatorio de medias ordenadas
+6) Imprimir relatorio Completo
+7) Gravar relatorio Completo
+8) Sair
+opc:6
+
+0 )  Kakaroto :      2.2 3.2 1.0 4.0
+1 )  Testao :        5.5 4.3 6.6 4.0
+2 )  Buma :      9.8 8.9 9.6 8.7
+3 )  Kuriri :        1.0 1.1 2.0 1.5
+-------------------------------------------------------------
+
+
+3) Alterar Nota:  Esta opcao deve perguntar ao usuario qual aluno (nome) ele quer alterar nota.
+O programa deve procurar em que posicao esta armazenado este nome no vetor de nomes (para
+encontrar o indice do aluno), perguntar qual nota ele quer mudar (1,2,3 ou 4), perguntar a nova
+nota, e realizar a mudanca (indicar com mensagem o sucesso da mudanca). Caso o nome nao seja
+encontrado, uma mensagem deve informar que o aluno nao esta cadastrado. Depois retornar ao menu para
+nova operacao.
+
+*OBS* Nao utilizar nenhuma funcao de vetores (listas) para encontrar (ou manipular) elementos nos
+vetores,  codificar voce mesmo a busca e alteracao.
+
+
+---------- TESTE DE EXECUCAO ----------------
+
+-- Menu --
+1) Inserir Nome aluno/Notas
+2) Alterar Nome aluno
+3) Alterar Nota
+4) Remover Aluno
+5) Imprimir relatorio de medias ordenadas
+6) Imprimir relatorio Completo
+7) Gravar relatorio Completo
+8) Sair
+opc:3
+
+Nome do Aluno: Bunda
+Aluno nao cadastrado
+
+-- Menu --
+1) Inserir Nome aluno/Notas
+2) Alterar Nome aluno
+3) Alterar Nota
+4) Remover Aluno
+5) Imprimir relatorio de medias ordenadas
+6) Imprimir relatorio Completo
+7) Gravar relatorio Completo
+8) Sair
+opc:3
+
+Nome do Aluno: Buma
+Qual nota alterar (1,2,3 ou 4): 4
+Nota: 10
+aluno de indice  2  nota  4  valor  10.0
+
+-- Menu --
+1) Inserir Nome aluno/Notas
+2) Alterar Nome aluno
+3) Alterar Nota
+4) Remover Aluno
+5) Imprimir relatorio de medias ordenadas
+6) Imprimir relatorio Completo
+7) Gravar relatorio Completo
+8) Sair
+opc:6
+
+0 )  Kakaroto :      2.2 3.2 1.0 4.0
+1 )  Testao :        5.5 4.3 6.6 4.0
+2 )  Buma :      9.8 8.9 9.6 10.0
+3 )  Kuriri :        1.0 1.1 2.0 1.5
+-------------------------------------------------------------
+
+
+4) Remover Aluno:  Esta opcao deve perguntar ao usuario qual aluno (nome) ele quer remover do banco
+de dados. O programa deve procurar em que posicao esta armazenado este nome no vetor de nomes (para
+encontrar o indice do aluno). Sabendo da posicao que sera removida, o programa deve realizar um "shift" de
+todos os nomes que estejam a frente desta posicao, uma casa para tras, desta maneira, o vetor devera ser 
+reduzido em uma posicao, exemplo:
+
+tam_nomes= 5      
+nomes    = [Jose, Joao, Jorge, Januario, Jango, ' ', ' ', ' ', ' ', ' ']
+
+vamos deletar Joao, logo, ficamos com
+
+tam_nomes= 4      
+nomes    = [Jose, Jorge, Januario, Jango, ' ', ' ', ' ', ' ', ' ']
+
+A mesma coisa deve ser feita com a matriz de notas, vamos fazer um shift das 4 notas uma posicao
+para tras.
+
+*OBS* Nao usar nenhum funcao de vetores (listas) para encontrar ou remover elementos, codificar voce
+mesmo a busca e remocao.
+
+Caso o nome nao seja encontrado, uma mensagem deve informar que o aluno nao esta cadastrado.
+Depois retornar ao menu para nova operacao.
+
+---------- TESTE DE EXECUCAO ----------------
+
+-- Menu --
+1) Inserir Nome aluno/Notas
+2) Alterar Nome aluno
+3) Alterar Nota
+4) Remover Aluno
+5) Imprimir relatorio de medias ordenadas
+6) Imprimir relatorio Completo
+7) Gravar relatorio Completo
+8) Sair
+opc:4
+
+Nome do Aluno: Buma
+
+-- Menu --
+1) Inserir Nome aluno/Notas
+2) Alterar Nome aluno
+3) Alterar Nota
+4) Remover Aluno
+5) Imprimir relatorio de medias ordenadas
+6) Imprimir relatorio Completo
+7) Gravar relatorio Completo
+8) Sair
+opc:6
+
+0 )  Kakaroto :      2.2 3.2 1.0 4.0
+1 )  Testao :        5.5 4.3 6.6 4.0
+2 )  Kuriri :        1.0 1.1 2.0 1.5
+-------------------------------------------------------------
+
+5) Imprimir relatorio de medias ordenadas:  imprime a lista dos alunos e suas respectivas medias
+(das quatro notas), ordenadas de forma crescente. 
+
+*OBS* Nao usar nenhum funcao de vetores (listas) para ordenar valores, codificar voce
+mesmo a ordenacao das estruturas.
+
+*DICA* antes de ordenar gere um vetor auxiliar de nomes (copia do vetor original de nomes) e
+um vetor de reais com as medias dos alunos (dessa forma voce nao altera as estruturas originais).
+Veja que ao ordenar (realizar as trocas de posicao) voce tem que alterar os 2 vetores ao mesmo tempo
+para manter a integridade da ordenacao.
+
+---------- TESTE DE EXECUCAO ----------------
+
+-- Menu --
+1) Inserir Nome aluno/Notas
+2) Alterar Nome aluno
+3) Alterar Nota
+4) Remover Aluno
+5) Imprimir relatorio de medias ordenadas
+6) Imprimir relatorio Completo
+7) Gravar relatorio Completo
+8) Sair
+opc:6
+
+0 )  Kakaroto :      2.2 3.2 1.0 4.0
+1 )  Testao :        5.5 4.3 6.6 4.0
+2 )  Kuriri :        1.0 1.1 2.0 1.5
+
+-- Menu --
+1) Inserir Nome aluno/Notas
+2) Alterar Nome aluno
+3) Alterar Nota
+4) Remover Aluno
+5) Imprimir relatorio de medias ordenadas
+6) Imprimir relatorio Completo
+7) Gravar relatorio Completo
+8) Sair
+opc:5
+
+Kuriri :     1.4
+Kakaroto :   2.6
+Testao :     5.1
+-------------------------------------------------------------
+
+7) Gravar relatorio Completo: Grava o relatorio de nomes e notas em um arquivo chamado 'relatorio.txt'
+
+---------- TESTE DE EXECUCAO ----------------
+
+
+-- Menu --
+1) Inserir Nome aluno/Notas
+2) Alterar Nome aluno
+3) Alterar Nota
+4) Remover Aluno
+5) Imprimir relatorio de medias ordenadas
+6) Imprimir relatorio Completo
+7) Gravar relatorio Completo
+8) Sair
+opc:6
+
+0 )  Kakaroto :      2.2 3.2 1.0 4.0
+1 )  Testao :        5.5 4.3 6.6 4.0
+2 )  Kuriri :        1.0 1.1 2.0 1.5
+
+-- Menu --
+1) Inserir Nome aluno/Notas
+2) Alterar Nome aluno
+3) Alterar Nota
+4) Remover Aluno
+5) Imprimir relatorio de medias ordenadas
+6) Imprimir relatorio Completo
+7) Gravar relatorio Completo
+8) Sair
+opc:7
+
+-------- relatorio.txt ----------
+Kakaroto :      2.2 3.2 1.0 4.0
+Testao :        5.5 4.3 6.6 4.0
+Kuriri :        1.0 1.1 2.0 1.5
+---------------------------------

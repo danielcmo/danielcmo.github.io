@@ -1,0 +1,429 @@
+/* Department of Cybernetics Style Sheet */
+/* Author : r.e.sherwood@reading.ac.uk */
+/* Conforms to W3C CSS Standard (http://jigsaw.w3.org/css-validator/) */
+
+/* 20pt => 1.8em */
+/* 18pt => 1.6em */
+/* 17pt => 1.5em */
+/* 16pt => 1.4em */
+/* 14pt => 1.2em */
+/* 12pt => 1.0em */
+/* 11pt => 0.9em */
+/* 10pt => 0.8em */
+/* 8pt  => 0.7em */
+/* 7pt  => 0.6em */
+/* 6pt  => 0.5em */
+
+body	{margin: 0% 0% 0% 0%; background-color: #ffffff;}
+
+p
+	{
+	background-color: transparent;
+	color: #000000;
+	font-family:  arial, helvetica, sans-serif;
+	font-size:0.8em;
+	font-weight: normal;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	text-align: left;
+	}
+a:link		{color: #0000ff; text-decoration: none; background-color: transparent;}
+a:visited	{color: #600090; text-decoration: none; background-color: transparent;}
+a:hover		{color: #ff0000; text-decoration: none; background-color: transparent;}
+
+h1, h2, h3, h4, h5
+	{
+	background-color: transparent;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: bold;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	text-align: left;
+	}
+
+
+h1	{font-size:1.45em; color: #000000;}
+h2	{font-size:1.3em;  color: #333399;}
+/* h3	{font-size:1.1em;  color: #336633;} */
+/* h4	{font-size:1.1em;  color: #666666;} */
+/* h5	{font-size:0.8em;  color: #000000;} */
+h3	{font-size:1.0em;  color: #444444;}
+h4	{font-size:0.9em;  color: #666666;}
+h5	{font-size:0.8em;  color: #000000;}
+
+
+h2	{font-size:1.3em;  color: #333366;}
+h3	{font-size:1.0em;  color: #336633;}
+
+
+
+
+
+
+
+ul
+	{
+	background-color: transparent;
+	color: #000000;
+	font-family: arial, helvetica, sans-serif;
+	font-size:0.8em;
+	font-weight: normal;
+	list-style-image:url('/common/images/ul-big.gif');
+	margin-top:10px;
+	margin-bottom:10px;
+	text-align: left;
+	}
+ul.small
+	{
+	font-size:0.7em;
+	list-style-image:url('/common/images/ul-small.gif');
+	}
+ul.sitemap
+	{
+	background-color:transparent;
+	color: #000000;
+	font-family: arial, helvetica, sans-serif;
+	font-size:0.8em;
+	font-weight: bold;
+	list-style-image:url('/common/images/ul-big.gif');
+	margin-top:10px;
+	margin-bottom:0px;
+	text-align: left;
+	}
+ul.sitemap-sub
+	{
+	background-color: transparent;
+	color: #000000;
+	font-family: arial, helvetica, sans-serif;
+	font-size:0.7em;
+	font-weight: normal;
+	list-style-image:url('/common/images/ul-small.gif');
+	margin-top:0px;
+	margin-bottom:0px;
+	text-align: left;
+	}
+ul.sub-list { font-size:1.0em; color:#000099; }
+
+ol
+	{
+	background-color: transparent;
+	color: #000000;
+	font-family: arial, helvetica, sans-serif;
+	font-size:0.8em;
+	font-weight: normal;
+	margin-top:10px;
+	margin-bottom:10px;
+	text-align: left;
+	}
+
+b	{font-weight: bold;}
+strong	{font-weight: bold;}
+i	{font-style: italic;}
+em	{font-style: italic;}
+hr	{margin-top: 10px; margin-bottom: 10px;}
+sub	{font-size:0.8em;}
+sup	{font-size:0.8em;}
+
+
+
+.related-links, .want-to-know-more, .displaybox-title, .displaybox-title2, .image-caption
+	{
+	background-color: transparent;
+	color: #000000;
+	font-family: arial, helvetica, sans-serif;
+	font-size:0.8em;
+	font-weight: bold;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 4px;
+	margin-bottom: 0px;
+	text-align: left;
+	}
+
+.displaybox-title1	a:link 		{color: #ffffff; font-weight: bold; background-color: #6699cc;}
+.displaybox-title1	a:visited	{color: #ffffff; font-weight: bold; background-color: #6699cc;}
+.displaybox-title1	a:hover		{color: #ffe4b5; font-weight: bold; background-color: #6699cc;}
+
+.displaybox-title2	a:link 		{color: #ffffff; font-weight: bold; background-color:transparent;}
+.displaybox-title2	a:visited	{color: #ffffff; font-weight: bold; background-color:transparent;}
+.displaybox-title2	a:hover		{color: #ffe4b5; font-weight: bold; background-color:transparent;}
+
+.displaybox-title2	{margin-top: 0px; margin-bottom: 4px; color: #ffffff; }
+
+.related-links		{margin-top: 10px;}
+
+.image-caption {text-align: center;}
+
+
+.xxsmall	{font-size:0.5em;}
+.xsmall		{font-size:0.6em;}
+.small		{font-size:0.7em;}
+.big		{font-size:1.0em;}
+.xbig		{font-size:1.2em;}
+.xxbig		{font-size:1.4em;}
+.xxxbig		{font-size:1.6em;}
+.center		{text-align: center;}
+.right		{text-align: right;}
+.left		{text-align: left;}
+.normal		{font-weight: normal;}
+
+
+.top-header1			{border-bottom:1px solid #333399; background-color:#ffffff; padding:5px;}
+
+.top-header2			{color: #333366; font-size:1.5em; font-family:arial,helvetica,sans-serif; font-weight:bold; text-decoration:none; background-color:#ffffff; padding-left:5px;}
+.top-header2 a:link 		{color: #333366; background-color: #ffffff;}
+.top-header2 a:visited		{color: #333366; background-color: #ffffff;}
+.top-header2 a:hover		{color: #333366; background-color: #ffffff;}
+
+.top-header3			{background-color:#ffffff; padding:0px;}
+
+
+.search-header			{color: #ffffff; font-size:0.8em; font-family:arial,helvetica,sans-serif; font-weight: bold; text-decoration:none; background-color:#9999cc; border-top:solid 1px #333399; border-bottom:solid 1px #333399;}
+.search-header a:link 		{color: #ffffff; background-color: #9999cc;}
+.search-header a:visited	{color: #ffffff; background-color: #9999cc;}
+.search-header a:hover		{color: #ffffff; background-color: #9999cc;}
+
+.navigation			{background-color:#dddddd; padding:2px; padding-left:8px; padding-right:7px; border-right:solid 1px #999999;}
+.body				{background-color:#ffffff; padding:10px;}
+
+.bottomnavbar		{color: #ffffff; font-size:0.7em; font-family: arial, helvetica, sans-serif; font-weight: normal; text-decoration: none; background-color: #333399; border-top:solid 1px #000033; border-bottom:solid 1px #000033;}
+.bottomnavbar a:link	{color: #ffffff; font-weight: bold; background-color: #333399;}
+.bottomnavbar a:visited	{color: #ffffff; font-weight: bold; background-color: #333399;}
+.bottomnavbar a:hover	{color: #ffe4b5; font-weight: bold; background-color: #333399;}
+
+
+#nav-header-links, #nav-header-departments, #nav-header-groups, #nav-header-search, #nav-header-contacts
+{
+	color: #000000;
+	width: 100%;
+
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-left:0px;
+	padding-right:0px;
+
+	background-color: #dddddd;
+	border:0px;
+	font-family:  arial, helvetica, sans-serif;
+	font-size:0.8em;
+	font-weight: bold;
+	text-align:left;
+}
+
+#nav-container ul, #nav-container-departments ul, #nav-container-groups ul
+{
+	margin:0px;
+	padding:0px;
+	list-style-type: none;
+	list-style-image:none;
+	font-family:  arial, helvetica, sans-serif;
+	font-size:0.8em;
+	font-weight: normal;
+	margin-bottom:10px;
+	padding-bottom:10px;
+	border-bottom:1px solid #999999;
+}
+
+#nav-container a, #nav-container-departments a, #nav-container-groups a
+{
+	display:block;
+	width: 100%;
+
+	padding-top:1px;
+	padding-bottom:1px;
+	padding-left:0px;
+	padding-right:0px;
+
+	background-color: #dddddd;
+	border:1px solid #dddddd;
+}
+
+#nav-container a:link, #nav-list a:visited, #nav-container-departments a:link, #nav-list-departments a:visited, #nav-container-groups a:link, #nav-list-groups a:visited
+{
+color: #333333;
+text-decoration:none;
+
+padding-top:1px;
+padding-bottom:1px;
+padding-left:0px;
+padding-right:0px;
+}
+
+#nav-container a:hover, #nav-container-departments a:hover, #nav-container-groups a:hover
+{
+background-color:#ccccff;
+color: #333333;
+border:1px solid #6666cc;
+
+padding-top:1px;
+padding-bottom:1px;
+padding-left:0px;
+padding-right:0px;
+}
+
+#nav-detail-search
+{
+	color: #333333;
+	width: 100%;
+
+	padding-left:0px;
+	padding-right:0px;
+
+
+	background-color: #dddddd;
+	border:0px;
+	font-family:  arial, helvetica, sans-serif;
+	font-size:0.7em;
+	font-weight: normal;
+	text-align:left;
+	margin-bottom:10px;
+	padding-bottom:10px;
+	/* border-bottom:1px solid #999999; */
+}
+#nav-detail-contacts
+{
+	color: #333333;
+	width: 100%;
+	padding:3px;
+	padding-left:8px;
+	background-color: #dddddd;
+	border:0px;
+	font-family:  arial, helvetica, sans-serif;
+	font-size:0.7em;
+	font-weight: normal;
+	text-align:left;
+	margin-bottom:10px;
+	padding-bottom:10px;
+}
+#nav-detail-contacts a:link {color: #333333;}
+#nav-detail-contacts a:visited {color: #333333;}
+#nav-detail-contacts a:hover {color: #999999;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.location		{color: #000000; font-size:0.8em; font-family: arial, helvetica, sans-serif; font-weight: normal; text-decoration: none; margin-top: 0px; margin-bottom: 10px; background-color: transparent;}
+.location a:link 	{color: #0000ff; background-color: transparent;}
+.location a:visited	{color: #600090; background-color: transparent;}
+.location a:hover	{color: #ff0000; background-color: transparent;}
+
+
+
+
+
+
+
+
+
+.table-title
+	{
+	background-color: #666699;
+	color: #ffffff;
+	font-family: arial, helvetica, sans-serif;
+	font-size:0.8em;
+	font-weight: bold;
+	text-align: left;
+	}
+
+.table-headings
+	{
+	background-color: #9999cc;
+	color: #ffffff;
+	font-family: arial, helvetica, sans-serif;
+	font-size:0.7em;
+	font-weight: bold;
+	text-align: left;
+	}
+
+.table-data
+	{
+	background-color: #eeeeee;
+	color: #000000;
+	font-family: arial, helvetica, sans-serif;
+	font-size:0.7em;
+	font-weight: normal;
+	text-align: left;
+	}
+
+
+.table-data-white
+	{
+	background-color: #ffffff;
+	color: #000000;
+	font-family: arial, helvetica, sans-serif;
+	font-size:0.8em;
+	font-weight: normal;
+	text-align: left;
+	}
+
+
+
+
+
+
+fieldset
+	{
+	background-color:#ffffff;
+	border: 1px solid #dddddd;
+	margin-left:   10px;
+	margin-right:  10px;
+	padding:       10px;
+	text-align: left;
+	}
+
+fieldset legend
+	{
+	background-color:#ffffff;
+  	color: #006600;
+  	font-family: arial, helvetica, sans-serif;
+	font-size:0.8em;
+	font-weight: bold;
+	text-align: left;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Lorem-ipsum { color: #aaaaaa; }
+
+
+
+
+.notice			{color: #ffffff; font-size:1.4em; font-family: arial, helvetica, sans-serif; font-weight: bold; margin-top: 10px; margin-bottom: 10px; text-align: center; background-color: #6699cc;}
+
+
+
+
+.papers-title		{color: #000000; font-size:1.2em; font-family: arial, helvetica, sans-serif; font-weight: bold; text-align: center; background-color: transparent;}
+.papers-title2		{color: #000000; font-size:0.8em; font-family: arial, helvetica, sans-serif; font-weight: bold; text-align: center; background-color: transparent;}
+.papers-authors		{color: #000000; font-size:0.8em; font-family: arial, helvetica, sans-serif; font-weight: bold; text-align: center; background-color: transparent;}
+.papers-published	{color: #000000; font-size:0.8em; font-family: arial, helvetica, sans-serif; font-weight: normal; text-align: center; background-color: transparent;}
+.papers-orgs		{color: #000000; font-size:0.7em; font-family: arial, helvetica, sans-serif; font-weight: normal; text-align: center; background-color: transparent;}
+.papers-heading		{color: #000000; font-size:1.2em; font-family: arial, helvetica, sans-serif; font-weight: bold; text-align: center; background-color: transparent;}
+.position		{color: #000000; font-size:0.7em; font-family: arial, helvetica, sans-serif; font-weight: normal; background-color: transparent;}
+
+
+
+

@@ -1,0 +1,124 @@
+
+Ex1: Um numero inteiro eh considerado triangular se este for o produto de 3 numeros inteiros consecutivos, 
+como, por exemplo, 120 = 4 x 5 x 6. Elabore um programa que liste todos os numeros inteiros 
+triangulares pares ateh 1000.
+
+EXEMPLO DE EXECUCAO:
+
+6 triangular ( 1 2 3 )
+24 triangular ( 2 3 4 )
+60 triangular ( 3 4 5 )
+120 triangular ( 4 5 6 )
+210 triangular ( 5 6 7 )
+336 triangular ( 6 7 8 )
+504 triangular ( 7 8 9 )
+720 triangular ( 8 9 10 )
+990 triangular ( 9 10 11 )
+
+
+Ex2: Faca um programa que imprima os N (inteiro fornecido pelo usuario) primeiros numeros da serie
+de Yoshi. A serie inicia com os numeros 2,5 e 8, e cada numero posterior equivale a diferenca entre o
+numero anterior e a soma dos 2 numeros antes do anterior (ex: o proximo numero da serie eh 8-(2+5)=1). 
+No fim, pergunte se o usuario quer entrar com outro N e repetir o processo.
+DICA: Laco duplo. O laco para repetir o processo eh condicional, enquanto que o laco para calcular 
+a serie pode ser condicional ou contavel.
+
+EXEMPLO DE EXECUCAO:
+
+n= 10
+2
+5
+8
+1
+-12
+-21
+-10
+23
+54
+41
+
+quer receber outro n? (1-Sim 2-Nao) ?
+R:1
+
+n= 20
+2
+5
+8
+1
+-12
+-21
+-10
+23
+54
+41
+-36
+-131
+-136
+31
+298
+403
+74
+-627
+-1104
+-551
+
+
+Ex3: Faça um programa que implementa o jogo da senha: O computador escolhe aleatoriamente 
+uma senha (valor inteiro entre 0 e 100) sem o conhecimento do jogador; O jogador  tem 
+10 chances para descobrir a senha; A cada tentativa do jogador, o programa deve avisar 
+se o valor digitado é maior,menor ou igual a senha; Se o valor digitado em uma tentativa 
+tiver uma diferença igual a 3 para a senha, o programa deve avisar que “TA QUENTE!”. 
+Neste caso, nenhuma outra mensagem deve ser emitida. Ao final do jogo, se for o caso, 
+enviar a mensagem “Perdeu” ou “Ganhou”; Ao final de uma partida, permita ao usuário jogar novamente.
+DICA: Voce pode usar o modulo da diferenca "math.fabs()" para saber se "TA QUENTE"
+
+EXEMPLO DE EXECUCAO:
+
+Tente adivinhar o número secreto de 1 a 100! Você terá 10 tentativas!
+
+Número:  40
+O número secreto é maior! ( 9 tentativas)
+Número:  60
+O número secreto é menor! ( 8 tentativas)
+Número:  50
+TA QUENTE
+Número:  55
+O número secreto é menor! ( 6 tentativas)
+Número:  49
+TA QUENTE
+Número:  48
+TA QUENTE
+Número:  47
+Parabéns! Você acertou! O número secreto é: 47 com 3 tentativas
+quer jogar de novo? 1-sim 2-nao 1
+
+Tente adivinhar o número secreto de 1 a 100! Você terá 10 tentativas!
+
+Número:  50
+O número secreto é maior! ( 9 tentativas)
+Número:  60
+O número secreto é maior! ( 8 tentativas)
+Número:  70
+TA QUENTE
+Número:  71
+TA QUENTE
+Número:  72
+O número secreto é menor! ( 5 tentativas)
+Número:  69
+TA QUENTE
+Número:  68
+Parabéns! Você acertou! O número secreto é: 68 com 3 tentativas
+quer jogar de novo? 1-sim 2-nao 2
+
+
+Ex4: Escreva um programa para identificar os numeros AMIGUXOS entre 1000 e 1500.
+Dois números são amiguxos quando cada um é igual a soma dos divisores do outro numero
+(excluindo apenas o proprio numero). Ex: 220 e 284 são amiguxos pois a soma dos
+divisores de 220 (1 + 2 + 4 + 5 + 10 + 11 + 20 + 22 + 44 + 55 + 110) é igual a 284 e
+a soma dos divisores de 284 (1 + 2 + 4 + 71 + 142) é igual a 220. 
+DICA: Rezar
+
+TESTE DE SAIDA
+
+1184 e 1210 sao amiguxos
+

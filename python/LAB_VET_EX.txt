@@ -1,0 +1,213 @@
+Ex1: Jogo do Buraco
+
+-> O Jogo consiste em um tabuleiro contendo uma trilha de 15 quadrados (vetor de inteiros de tamanho 16) e duas pecas 
+de dois jogadores. No inicio cada peca de cada jogador eh colocada na posicao 0 do tabuleiro. O jogo progride em turnos, 
+-> Em cada turno, alternadamente, um jogador joga um dado de 3 faces ( numero aleatorio 1-3) e move sua peca a frente. 
+A maioria dos quadrados eh trilha normal, mas alguns sao buracos que se o jogador cair ele perde a vez ( quer dizer ele 
+nao vai andar naquela rodada). 
+-> O vetor de trilhas possui 5 buracos espalhados aleatoriamente nas 15 posicoes da trilha (1-15) e eh gerado antes do 
+jogo comecar (cuidado para nao gerar posicoes repetidas de buracos, o tabuleiro tem que ter exatamente 5 buracos. 
+Alem disso, nao deve haver buracos na posicao inicial 0 e nem na final 15)
+-> A cada turno, o valor do dado tem que ser impresso assim como qual jogador esta jogando, alem disso, o tabuleiro tem 
+que ser impresso na tela com a posicao identificada do jogador 1 (“J1”), jogador 2 (“J2”), trilha (“x”) e buraco (“o”) 
+-> Vence quem chegar (ou passar) na posicao 15 primeiro
+
+*OBS1* Se jogador 1 e 2 estão na mesma casa entao a casa marca (“J12”)
+*OBS2* Cuidado para nao deixar "rastro" por onde o jogador passa, isto eh, se uma casa eh 'x' e o jogador 2 chega nela, 
+ela se torna 'J2'. Quando o jogador 2 se mover para a proxima casa, a posicao se torna 'x' de novo.
+
+*DICA1* Uma maneira de se fazer eh manter 2 vetores (um de inteiros "vi" e outro de texto "vt") e dois inteiros (j1 e j2). 
+O vetor de inteiros recebe valores 0 (se trilha normal) e 1 (se buraco), este deve ser gerado primeiro. O vetor de texto 
+(gerado a partir do vetor de inteiros) recebe 'x' para trilha e 'o' para buraco (e 'J12' na posicao 0 inicial), este que 
+sera impresso a cada rodada. Os inteiros marcam as posicoes dos jogadores (inicialmente possuem valor 0). 
+A cada rodada, os inteiros (j1 e j2) e o vetor texto sao atualizados de acordo com os movimentos. 
+  
+
+TESTE DE EXECUÇÃO
+
+Inicio
+['J12', 'x', 'x', 'x', 'o', 'x', 'o', 'x', 'x', 'x', 'o', 'o', 'x', 'o', 'x', 'x']
+
+Jogador 1 tirou  1
+['J2', 'J1', 'x', 'x', 'o', 'x', 'o', 'x', 'x', 'x', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 2 tirou  1
+['x', 'J12', 'x', 'x', 'o', 'x', 'o', 'x', 'x', 'x', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 1 tirou  3
+Buraco
+['x', 'J12', 'x', 'x', 'o', 'x', 'o', 'x', 'x', 'x', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 2 tirou  2
+['x', 'J1', 'x', 'J2', 'o', 'x', 'o', 'x', 'x', 'x', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 1 tirou  2
+['x', 'x', 'x', 'J12', 'o', 'x', 'o', 'x', 'x', 'x', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 2 tirou  2
+['x', 'x', 'x', 'J1', 'o', 'J2', 'o', 'x', 'x', 'x', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 1 tirou  3
+Buraco
+['x', 'x', 'x', 'J1', 'o', 'J2', 'o', 'x', 'x', 'x', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 2 tirou  1
+Buraco
+['x', 'x', 'x', 'J1', 'o', 'J2', 'o', 'x', 'x', 'x', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 1 tirou  2
+['x', 'x', 'x', 'x', 'o', 'J12', 'o', 'x', 'x', 'x', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 2 tirou  2
+['x', 'x', 'x', 'x', 'o', 'J1', 'o', 'J2', 'x', 'x', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 1 tirou  1
+Buraco
+['x', 'x', 'x', 'x', 'o', 'J1', 'o', 'J2', 'x', 'x', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 2 tirou  1
+['x', 'x', 'x', 'x', 'o', 'J1', 'o', 'x', 'J2', 'x', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 1 tirou  2
+['x', 'x', 'x', 'x', 'o', 'x', 'o', 'J1', 'J2', 'x', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 2 tirou  3
+Buraco
+['x', 'x', 'x', 'x', 'o', 'x', 'o', 'J1', 'J2', 'x', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 1 tirou  2
+['x', 'x', 'x', 'x', 'o', 'x', 'o', 'x', 'J2', 'J1', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 2 tirou  2
+Buraco
+['x', 'x', 'x', 'x', 'o', 'x', 'o', 'x', 'J2', 'J1', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 1 tirou  2
+Buraco
+['x', 'x', 'x', 'x', 'o', 'x', 'o', 'x', 'J2', 'J1', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 2 tirou  1
+['x', 'x', 'x', 'x', 'o', 'x', 'o', 'x', 'x', 'J12', 'o', 'o', 'x', 'o', 'x', 'x'] 
+
+Jogador 1 tirou  3
+['x', 'x', 'x', 'x', 'o', 'x', 'o', 'x', 'x', 'J2', 'o', 'o', 'J1', 'o', 'x', 'x'] 
+
+Jogador 2 tirou  2
+Buraco
+['x', 'x', 'x', 'x', 'o', 'x', 'o', 'x', 'x', 'J2', 'o', 'o', 'J1', 'o', 'x', 'x'] 
+
+Jogador 1 tirou  2
+['x', 'x', 'x', 'x', 'o', 'x', 'o', 'x', 'x', 'J2', 'o', 'o', 'x', 'o', 'J1', 'x'] 
+
+Jogador 2 tirou  1
+Buraco
+['x', 'x', 'x', 'x', 'o', 'x', 'o', 'x', 'x', 'J2', 'o', 'o', 'x', 'o', 'J1', 'x'] 
+
+Jogador 1 tirou  2
+VITORIA DO JOGADOR 1
+['x', 'x', 'x', 'x', 'o', 'x', 'o', 'x', 'x', 'J2', 'o', 'o', 'x', 'o', 'J1', 'x'] 
+
+
+
+
+
+Ex2: Jogo dos Atalhos e Armadilha
+
+-> O Jogo consiste em um tabuleiro contendo uma trilha de 20 quadrados (vetor de inteiros de tamanho 21) e duas pecas 
+de dois jogadores. No inicio cada peca de cada jogador eh colocada na posicao 0 do tabuleiro. O jogo progride em turnos, 
+-> Em cada turno, alternadamente, um jogador joga um dado de 3 faces ( numero aleatorio 1-3) e move sua peca a frente.
+-> A maioria dos quadrados eh trilha normal, mas alguns sao armadilhas (escorregadas) que o jogador pode ser penalizado
+a voltar de 1 a 2 casas (aleatorio), e alguns sao atalhos que o jogador pode ser beneficiado a andar mais 1 a 2 casas (aleatorio)
+-> O vetor de trilhas possui 5 armadilhas e 5 atalhos espalhados aleatoriamente nas 20 posições da trilha (1-20) e eh gerado
+antes do jogo começar (cuidado para nao gerar posicoes repetidas de armadilhas/atalhos, o tabuleiro tem que ter exatamente 5 de cada. 
+Alem disso, nao deve haver armadilhas/atalhos na posicao inicial 0 e nem na final 20).
+-> Uma armadilha/atalho nao pode acionar uma outra armadilha/atalho, i.e., se o jogador caiu numa armadilha/atalho vindo de
+outra armadilha/atalho, ela nao se aciona.
+-> A cada turno, o valor do dado tem que ser impresso assim como qual jogador esta jogando, alem disso, o tabuleiro tem 
+que ser impresso na tela com a posicao identificada do jogador 1 (“J1”), jogador 2 (“J2”), trilha (“x”), atalho (“+1” ou "+2") e
+armadilha ("-1" ou "-2")
+-> Vence quem chegar (ou passar) na posicao 20 primeiro.
+
+*OBS1* Se jogador 1 e 2 estão na mesma casa entao a casa marca (“J12”)
+*OBS2* Cuidado para nao deixar "rastro" por onde o jogador passa, isto eh, se uma casa eh 'x' e o jogador 2 chega nela, 
+ela se torna 'J2'. Quando o jogador 2 se mover para a proxima casa, a posicao se torna 'x' de novo.
+
+*DICA1* Uma maneira de se fazer eh manter 2 vetores (um de inteiros "vi" e outro de texto "vt") e dois inteiros (j1 e j2). 
+O vetor de inteiros recebe valores 0 (se trilha normal),  1 ou 2 (se atalho) e -1 ou -2 (se armadilha), este deve ser gerado primeiro.
+O vetor de texto (gerado a partir do vetor de inteiros) recebe 'x' para trilha, '+1' ou '+2' para atalho e  '-1' ou '-2'
+para armadilha (e 'J12' na posicao 0 inicial), este que sera impresso a cada rodada. Os inteiros marcam as posicoes dos jogadores
+(inicialmente possuem valor 0). A cada rodada, os inteiros (j1 e j2) e o vetor texto sao atualizados de acordo com os movimentos.
+
+TESTE DE EXECUCAO
+
+Tabuleiro Inicial
+['J12', 'x', '-2', '-2', '+1', '+2', '+2', 'x', '+1', 'x', 'x', 'x', 'x', '-1', '-2', 'x', '-2', '+2', 'x', 'x', 'x']
+
+Jogador 1 tirou  2
+['J12', 'x', '-2', '-2', '+1', '+2', '+2', 'x', '+1', 'x', 'x', 'x', 'x', '-1', '-2', 'x', '-2', '+2', 'x', 'x', 'x']
+
+Jogador 2 tirou  1
+['J1', 'J2', '-2', '-2', '+1', '+2', '+2', 'x', '+1', 'x', 'x', 'x', 'x', '-1', '-2', 'x', '-2', '+2', 'x', 'x', 'x']
+
+Jogador 1 tirou  2
+['J1', 'J2', '-2', '-2', '+1', '+2', '+2', 'x', '+1', 'x', 'x', 'x', 'x', '-1', '-2', 'x', '-2', '+2', 'x', 'x', 'x']
+
+Jogador 2 tirou  3
+['J1', 'x', '-2', '-2', '+1', 'J2', '+2', 'x', '+1', 'x', 'x', 'x', 'x', '-1', '-2', 'x', '-2', '+2', 'x', 'x', 'x']
+
+Jogador 1 tirou  2
+['J1', 'x', '-2', '-2', '+1', 'J2', '+2', 'x', '+1', 'x', 'x', 'x', 'x', '-1', '-2', 'x', '-2', '+2', 'x', 'x', 'x']
+
+Jogador 2 tirou  1
+['J1', 'x', '-2', '-2', '+1', '+2', '+2', 'x', 'J2', 'x', 'x', 'x', 'x', '-1', '-2', 'x', '-2', '+2', 'x', 'x', 'x']
+
+Jogador 1 tirou  1
+['x', 'J1', '-2', '-2', '+1', '+2', '+2', 'x', 'J2', 'x', 'x', 'x', 'x', '-1', '-2', 'x', '-2', '+2', 'x', 'x', 'x']
+
+Jogador 2 tirou  2
+['x', 'J1', '-2', '-2', '+1', '+2', '+2', 'x', '+1', 'x', 'J2', 'x', 'x', '-1', '-2', 'x', '-2', '+2', 'x', 'x', 'x']
+
+Jogador 1 tirou  3
+['x', 'x', '-2', '-2', '+1', 'J1', '+2', 'x', '+1', 'x', 'J2', 'x', 'x', '-1', '-2', 'x', '-2', '+2', 'x', 'x', 'x']
+
+Jogador 2 tirou  1
+['x', 'x', '-2', '-2', '+1', 'J1', '+2', 'x', '+1', 'x', 'x', 'J2', 'x', '-1', '-2', 'x', '-2', '+2', 'x', 'x', 'x']
+
+Jogador 1 tirou  1
+['x', 'x', '-2', '-2', '+1', '+2', '+2', 'x', 'J1', 'x', 'x', 'J2', 'x', '-1', '-2', 'x', '-2', '+2', 'x', 'x', 'x']
+
+Jogador 2 tirou  2
+['x', 'x', '-2', '-2', '+1', '+2', '+2', 'x', 'J1', 'x', 'x', 'x', 'J2', '-1', '-2', 'x', '-2', '+2', 'x', 'x', 'x']
+
+Jogador 1 tirou  3
+['x', 'x', '-2', '-2', '+1', '+2', '+2', 'x', '+1', 'x', 'x', 'J1', 'J2', '-1', '-2', 'x', '-2', '+2', 'x', 'x', 'x']
+
+Jogador 2 tirou  1
+['x', 'x', '-2', '-2', '+1', '+2', '+2', 'x', '+1', 'x', 'x', 'J1', 'J2', '-1', '-2', 'x', '-2', '+2', 'x', 'x', 'x']
+
+Jogador 1 tirou  1
+['x', 'x', '-2', '-2', '+1', '+2', '+2', 'x', '+1', 'x', 'x', 'x', 'J12', '-1', '-2', 'x', '-2', '+2', 'x', 'x', 'x']
+
+Jogador 2 tirou  2
+['x', 'x', '-2', '-2', '+1', '+2', '+2', 'x', '+1', 'x', 'x', 'x', 'J12', '-1', '-2', 'x', '-2', '+2', 'x', 'x', 'x']
+
+Jogador 1 tirou  2
+['x', 'x', '-2', '-2', '+1', '+2', '+2', 'x', '+1', 'x', 'x', 'x', 'J12', '-1', '-2', 'x', '-2', '+2', 'x', 'x', 'x']
+
+Jogador 2 tirou  2
+['x', 'x', '-2', '-2', '+1', '+2', '+2', 'x', '+1', 'x', 'x', 'x', 'J12', '-1', '-2', 'x', '-2', '+2', 'x', 'x', 'x']
+
+Jogador 1 tirou  3
+['x', 'x', '-2', '-2', '+1', '+2', '+2', 'x', '+1', 'x', 'x', 'x', 'J2', '-1', '-2', 'J1', '-2', '+2', 'x', 'x', 'x']
+
+Jogador 2 tirou  2
+['x', 'x', '-2', '-2', '+1', '+2', '+2', 'x', '+1', 'x', 'x', 'x', 'J2', '-1', '-2', 'J1', '-2', '+2', 'x', 'x', 'x']
+
+Jogador 1 tirou  2
+['x', 'x', '-2', '-2', '+1', '+2', '+2', 'x', '+1', 'x', 'x', 'x', 'J2', '-1', '-2', 'x', '-2', '+2', 'x', 'J1', 'x']
+
+Jogador 2 tirou  1
+['x', 'x', '-2', '-2', '+1', '+2', '+2', 'x', '+1', 'x', 'x', 'x', 'J2', '-1', '-2', 'x', '-2', '+2', 'x', 'J1', 'x']
+
+VITORIA DO JOGADOR 1
+['x', 'x', '-2', '-2', '+1', '+2', '+2', 'x', '+1', 'x', 'x', 'x', 'J2', '-1', '-2', 'x', '-2', '+2', 'x', 'J1', 'x']

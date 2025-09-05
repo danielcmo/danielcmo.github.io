@@ -1,0 +1,18 @@
+5) Palindromo -- Receba um número inteiro formado por 5 dígitos positivos (assuma que o usuário vai lhe dar um inteiro com 5 dígitos positivos) e diga se o número é um palíndromo (um número palíndromo é aquele que lido da esquerda para direita ou da direita para esquerda possui o mesmo valor). Ex: 15351 ou 00000. DICA1: voce tera que comparar os digitos separadamente, veja que o resto da divisao de um numero por 10 (%10)  eh exatamente o ultimo digito do numero. DICA2:  a divisao inteira de um numero por 10 (//10) eh exatamente o numero menos o ultimo digito.
+
+TESTE DE ENTRADA
+
+12321
+
+TESTE DE SAIDA
+
+Palíndromo
+
+TESTE DE ENTRADA
+
+12341
+
+TESTE DE SAIDA
+
+Não é Palíndromo
+

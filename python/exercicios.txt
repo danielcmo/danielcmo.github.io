@@ -1,0 +1,15 @@
+1)	Para uma possível futura viagem espacial, foram coletados e escritos em um arquivo texto os dados de várias pessoas. Nesse arquivo cada linha contém o primeiro nome da pessoa, seu último nome, seu ano de nascimento, seu peso na Terra e seu desejo de ir para Marte ou para Júpiter. Por exemplo, uma linha no arquivo seria:
+Maria Pacheco, 1965, 89, Marte
+Implemente um método para ler os dados do arquivo texto e criar dois novos arquivos: o primeiro contendo o nome das pessoas com menos de 30 anos que desejam ir para Marte e o peso da pessoa em Marte; o segundo contendo o nome das pessoas com menos de 40 anos que desejam ir para Júpiter e o peso da pessoa em Júpiter. Sabe-se que uma pessoa com peso 100 na Terra, pesa 38 em Marte e 264 em Júpiter.
+
+2)	Implemente um programa que abre 2 arquivos (“nomes.txt” e “notas.txt”). O primeiro arquivo contém nomes de alunos e o segundo arquivo contém as notas dos alunos.  No primeiro arquivo, cada linha corresponde ao nome de um aluno e no segundo arquivo,   cada   linha   corresponde   a uma ou mais notas do aluno (separado por espaços), os dois arquivos tem o mesmo numero de linhas.  Leia   os   dois arquivos e gere um terceiro (“medias.txt”) que armazene o nome e a média de cada aluno.
+
+3)	F0)aça um programa que receba um inteiro qualquer  e imprima o número correspondente ao inverso dele vezes 2. Ex: 12345 → 54321 → 108642.
+OBS:  Não trabalhar com strings, apenas com inteiros, isto é, receber o número com int(input()) e não converter para string. Resolva a questão matematicamente.
+
+4)	Faça uma função para implementar um jogo de Craps. O jogador lança um par de dados, obtendo um valor entre 2 e 12. Se, na primeira jogada, você tirar 7 ou 11, você é um "natural" e ganhou. Se você tirar 2, 3 ou 12 na primeira jogada, isto é chamado de "craps" e você perdeu. Se, na primeira jogada, você fez um 4, 5, 6, 8, 9 ou 10,este é seu "Ponto". Seu objetivo agora é continuar jogando os dados até tirar este número novamente. Você perde, no entanto, se tirar um 7 antes de tirar este Ponto novamente.
+
+5)	Faça um programa que implementa o jogo da senha invertido: O jogador escolhe aleatoriamente uma senha (valor inteiro entre 0 e 100) sem o conhecimento do computador; A cada tentativa do computador, o jogador deve avisar se: “’0 - o valor digitado é menor 1 – o computador acertou 2 – o valor digitado é maior; Ao final do jogo,  o computador informa em quantas tentativas levou para acertar o número; Ao final de uma partida, permita ao usuário jogar novamente.
+
+* DESAFIO – Fazer o computar acertar em no máximo 8 tentativas sempre *
+

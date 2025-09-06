@@ -1,151 +1,199 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <title>Collaborations - Daniel de Oliveira</title>
+  <meta name="description" content="Collaborations of Daniel de Oliveira">
+  <meta name="keywords" content="Collaborations, Research, Daniel de Oliveira, UFF, IC-UFF">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #ffffff;
+      color: #333333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
 
-  <title>Yuri Frota - Home Page</title>
-  <meta name="description" content="The Home Page of Professor Kevin Yuri Frota">
-  <meta name="keywords" content="IC-UFF">
-  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-  <meta name="Generator" content="Front Page 2003">
-  <link href="arquivos/style.css" type="text/css" rel="stylesheet">
+    a { color: #004f9e; text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+      border-bottom: 1px solid #ccc;
+      background: #fafafa;
+    }
+
+    header img { height: 60px; }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a { font-weight: bold; }
+
+    main {
+      padding: 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2em;
+    }
+
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      background-color: #004f9e;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 4px;
+    }
+
+    /* News card style */
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .news-item {
+      display: flex;
+      gap: 15px;
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+    }
+
+    .news-item:hover {
+      transform: scale(1.02);
+    }
+
+    .news-item img {
+      height: 60px;
+      width: 60px;
+      border-radius: 6px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .news-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .news-content a {
+      font-weight: bold;
+      font-size: 1em;
+      margin-bottom: 5px;
+      display: inline-block;
+    }
+
+    .news-content span {
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 40px;
+      border-top: 1px solid #ccc;
+      background-color: #f1f1f1;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
-
 <body>
-	
-  <table summary="page layout table" border="0" cellpadding="0" cellspacing="0" width="100%">
-  <tbody>
-
- <tr valign="top">
-      <td width="90%" class="navigation" colspan="2" align="left"><img src="arquivos/yuri2.jpg"></td>
-      <td width="10%" class="navigation" colspan="2" align="left"> <a href="http://www.uff.br"> <img src="arquivos/uff.png"></td> </a>
-    </tr>
-
-    <tr valign="top">
-      <td class="bottomnavbar" colspan="2" align="left"></td>
-      <td class="bottomnavbar" colspan="2" align="left"></td>
-    </tr>
-
-  </tbody>
-</table>
-	
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
-<tbody>
-
-    <tr valign="top">
-
-	<td class="navigation" width="160"> 
-        <div id="nav-container">
-        <ul id="nav-list">
-			<li><a href="https://yuri-frota.github.io"><span style="text-decoration: underline;">Home</a></li>
-                        <li><a href="https://yuri-frota.github.io/cv.html"><span style="text-decoration: underline;">Curriculum</span></a></li>
-                        <li><a href="https://yuri-frota.github.io/ap.html"><span style="text-decoration: underline;">Research Areas</span></a></li>
-                        <li><a href="https://yuri-frota.github.io/cur.html"><span style="text-decoration: underline;">Teaching</span></a></li>
-                        <li><a href="https://yuri-frota.github.io/li.html"><span style="text-decoration: underline;">Links</a></li> 
-                        <li><a href="https://yuri-frota.github.io/per.html"><span style="text-decoration: underline;">Personal</a></li>
-                        <li><a href="https://yuri-frota.github.io/co.html"><span style="text-decoration: underline;">Contacts</a></li>
+  <!-- Header -->
+  <header>
+    <a href="http://www.uff.br"><img src="arquivos/uff.png" alt="UFF Logo"></a>
+    <nav>
+      <ul>
+        <li><a href="https://danielcmo.github.io">Home</a></li>
+        <li><a href="https://danielcmo.github.io/cv.html">Publications</a></li>
+        <li><a href="https://danielcmo.github.io/ap.html">Research Areas</a></li>
+        <li><a href="https://danielcmo.github.io/cur.html">Teaching</a></li>
+        <li><a href="https://danielcmo.github.io/collab.html">Collaborators</a></li>
+        <li><a href="https://danielcmo.github.io/li.html">Students</a></li>
+        <li><a href="https://danielcmo.github.io/per.html">News</a></li>
       </ul>
+    </nav>
+    <a href="http://www.ic.uff.br"><img src="arquivos/logo-ic.png" alt="IC-UFF Logo"></a>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <h1>Collaborations</h1>
+    <p>
+      This page highlights the colleagues and collaborators with whom I have had the privilege 
+      of working throughout my career. These collaborations reflect both the diversity of research 
+      initiatives and the spirit of cooperation essential to achieving results.
+    </p>
+
+    <h2>Brazil</h2>
+    <div class="news-grid">
+      <div class="news-item">
+        <img src="arquivos/Marta.jpeg" alt="Marta Mattoso">
+        <div class="news-content">
+          <a href="https://www.cos.ufrj.br/~marta/">Profa. Marta Mattoso</a>
+          <span>COPPE/UFRJ</span>
+        </div>
       </div>
-      <a href="http://www.ic.uff.br"> <img src="arquivos/logo_ic_uff.png"> </a>
-      </td>
 
+      <div class="news-item">
+        <img src="arquivos/Aline.jpeg" alt="Aline Paes">
+        <div class="news-content">
+          <a href="https://www.ic.uff.br/~alinepaes">Profa. Aline Paes</a>
+          <span>IC/UFF</span>
+        </div>
+      </div>
 
+      <!-- Repeat blocks like above for each collaborator -->
+    </div>
 
+    <h2>International</h2>
+    <div class="news-grid">
+      <div class="news-item">
+        <img src="arquivos/Patrick.jpeg" alt="Patrick Valduriez">
+        <div class="news-content">
+          <a href="https://www.inria.fr/en/patrick-valduriez">Prof. Patrick Valduriez</a>
+          <span>INRIA, France</span>
+        </div>
+      </div>
 
-      <td class="body">&nbsp;
+      <div class="news-item">
+        <img src="arquivos/Age.jpeg" alt="Adriane Chapman">
+        <div class="news-content">
+          <a href="https://www.turing.ac.uk/people/researchers/adriane-chapman">Profa. Adriane Chapman</a>
+          <span>University of Southampton, UK</span>
+        </div>
+      </div>
 
-                <dl>
--&gt; General Stuff
-                  </dl>
+      <!-- Repeat for others -->
+    </div>
+  </main>
 
-<ul>
-<table BORDER="5" CELLSPACING="3">
-
-<tr>
-  <td><img style="width: 100px; height: 100px;" src="arquivos/bitibas_futebol.png"></td>
-  <td><a style="color: rgb(51, 51, 153);" href="http://www.cearasc.com">Ceara Esporte Clube</a></td>
-</tr>
-
-</table>
-</ul>
-
-
-<dl>
--&gt; Strips
-</dl>
-
-<ul>
-<table BORDER="5" CELLSPACING="3">
-
-<tr>
-  <td>
-    <a style="color: rgb(51, 51, 153);" href="http://www.xkcd.com">xkcd</a><span style="color: rgb(51, 51,
-    153);"><br>
-    <img style="width: 400px; height: 200px;" alt="" src="arquivos/tsp.png"><br><br>
-  </td>
-</tr>
-
-<tr>
-  <td>
-  <a style="color: rgb(51, 51, 153);" href="http://www.phdcomics.com">Phd Comics</a><span style="color: rgb(51, 51,
-  153);"><br>
-  <img style="width: 450px; height: 250px;" alt="" src="arquivos/phd.gif"><br><br>
- </td>
-</tr>
-
-<tr>
-  <td>
-  <a style="color: rgb(51, 51, 153);" href="http://www.giantitp.com/Comics.html">The Order of the Stick</a><span style="color: rgb(51, 51,
-  153);"><br>
-  <img style="width: 450px; height: 250px;" alt="" src="arquivos/oots.jpg"><br><br>
- </td>
-</tr>
-
-<tr>
-  <td>
- <a style="color: rgb(51, 51, 153);" href="http://www.ic.uff.br/~yuri/strips.html">My Strips :)</a><span style="color: rgb(51, 51,
-  153);"><br>
-  <img width="50%" height="50%"  alt="" src="arquivos/b1.png"><br><br>
- </td>
-</tr>
-
-</table>
-</ul>
-
-
-
-
-
-
-
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-
-
-
-
-<table summary="page layout table" border="0" cellpadding="10" cellspacing="0" width="100%">
-  <tbody>
-    <tr valign="top">
-
-<td class="bottomnavbar" align="left">
-<b>
-Phone: +55 (21) 2629-5637<br>
-Fax: +55 (21) 2629-5627
-</b>
-</td>
-
-<td class="bottomnavbar" align="right">
-<b>yuri (a) ic (dot) uff (dot) br</b>
-</td>
-
-</tr>
-
-  </tbody>
-</table>
-
+  <!-- Footer -->
+  <footer>
+    <div>
+      <b>Phone: +55 (21) 2629-5637<br>Fax: +55 (21) 2629-5627</b>
+    </div>
+    <div>
+      <b>danielcmo (at) ic (dot) uff (dot) br</b>
+    </div>
+  </footer>
 </body>
 </html>

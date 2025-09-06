@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Courses - Daniel de Oliveira</title>
-  <meta name="description" content="News and updates about Daniel de Oliveira">
-  <meta name="keywords" content="News, Updates, Daniel de Oliveira, UFF, IC-UFF">
+  <meta name="description" content="Courses taught by Daniel de Oliveira at UFF">
+  <meta name="keywords" content="Courses, Teaching, Daniel de Oliveira, UFF, IC-UFF">
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
@@ -59,13 +59,13 @@
       border-radius: 4px;
     }
 
-    /* News card style */
-.news-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* duas colunas por linha */
-  gap: 20px;
-}
-    .news-item {
+    /* Course card style */
+    .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .course-item {
       display: flex;
       flex-direction: column;
       background: #f9f9f9;
@@ -74,33 +74,29 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.08);
       transition: transform 0.2s;
     }
-
-    .news-item:hover {
+    .course-item:hover {
       transform: scale(1.02);
     }
-
-    .news-item img {
-      height: 160px;
-      width: 100%;
-      border-radius: 6px;
-      object-fit: cover;
-      margin-bottom: 10px;
-    }
-
-    .news-content {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .news-content a {
+    .course-title {
       font-weight: bold;
       font-size: 1.1em;
-      margin-bottom: 5px;
+      margin-bottom: 8px;
+      color: #004f9e;
     }
-
-    .news-content p {
+    .course-code {
+      font-size: 0.9em;
+      color: #666;
+      margin-bottom: 10px;
+    }
+    .course-description {
       font-size: 0.95em;
-      color: #555;
+      color: #444;
+      margin-bottom: 10px;
+    }
+    .course-links a {
+      font-size: 0.9em;
+      margin-right: 10px;
+      color: #004f9e;
     }
 
     footer {
@@ -133,50 +129,70 @@
 
   <!-- Main -->
   <main>
-    <h1>News & Updates</h1>
+    <h1>Courses</h1>
     <p>
-      Here you can find the latest news, interviews, and updates related to my research, teaching, and collaborations. 
-      Stay tuned for new insights and developments.
+      This page presents undergraduate and graduate courses taught at the 
+      <b>Institute of Computing – Fluminense Federal University (UFF)</b>. 
+      Each course includes its description, main objectives, and links to materials when available.
     </p>
 
-    <div class="news-grid">
-     
-     <div class="news-item">
-  <!-- Embedding a YouTube video -->
-  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; margin-bottom: 10px;">
-    <iframe 
-      src="https://www.youtube.com/embed/uEAy256MvNk" 
-      frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen
-      style="position: absolute; top:0; left: 0; width: 100%; height: 100%;">
-    </iframe>
-  </div>
+    <!-- Undergraduate Courses -->
+    <h2>Undergraduate Courses</h2>
+    <div class="courses-grid">
+      <div class="course-item">
+        <div class="course-title">Database Systems</div>
+        <div class="course-code">INF05012</div>
+        <div class="course-description">
+          Introduction to database concepts, data modeling, relational algebra, SQL, 
+          transaction management, and fundamentals of database design.
+        </div>
+        <div class="course-links">
+          <a href="#">Syllabus</a>
+          <a href="#">Lecture Notes</a>
+        </div>
+      </div>
 
-  <div class="news-content">
-    <a href="https://www.youtube.com/live/uEAy256MvNk" target="_blank">
-      Interview for the 'Boletim Ciência' program at FioCruz to talk about research in the context of the LSST project (in Portuguese)
-    </a>
-    <p>
-      In this interview, the host Neide Diniz talks with Luiz Nicolaci, director of LIneA – Interinstitutional Laboratory for e-Astronomy and coordinator at the National Institute of Technology (INCT), and Daniel de Oliveira, professor at the Institute of Computing, Fluminense Federal University (UFF)
-    </p>
-  </div>
-</div>
+      <div class="course-item">
+        <div class="course-title">Software Engineering</div>
+        <div class="course-code">INF04021</div>
+        <div class="course-description">
+          Covers software development methodologies, requirements engineering, 
+          software design, project management, and quality assurance practices.
+        </div>
+        <div class="course-links">
+          <a href="#">Syllabus</a>
+        </div>
+      </div>
+    </div>
 
+    <!-- Graduate Courses -->
+    <h2>Graduate Courses</h2>
+    <div class="courses-grid">
+      <div class="course-item">
+        <div class="course-title">Scientific Workflows and Provenance</div>
+        <div class="course-code">INF82007</div>
+        <div class="course-description">
+          Advanced course on scientific workflow systems, provenance data management, 
+          reproducibility, and large-scale data analysis in computational science.
+        </div>
+        <div class="course-links">
+          <a href="#">Syllabus</a>
+          <a href="#">Publications</a>
+        </div>
+      </div>
 
-      <!-- Add more news items below following the same structure -->
-      <div class="news-item">
-  <img src="https://olhardigital.com.br/wp-content/uploads/2025/06/vera-c-rubin-observatory-brasil-1920x1080.jpg" alt="Vera C. Rubin Observatory">
-  <div class="news-content">
-    <a href="https://olhardigital.com.br/2025/06/23/ciencia-e-espaco/observatorio-vera-c-rubin-conta-com-a-participacao-de-mais-de-200-brasileiros/" target="_blank">
-      Vera C. Rubin Observatory counts on the participation of over 200 Brazilians
-    </a>
-    <p>
-      Brazilian scientists are directly involved in processing data for the international LSST project, which aims to map around 37 billion stars and galaxies over ten years. Brazil participates with more than 170 researchers, including students and professionals working in Chile and the USA.
-    </p>
-  </div>
-</div>
-
+      <div class="course-item">
+        <div class="course-title">Big Data Analytics</div>
+        <div class="course-code">INF82015</div>
+        <div class="course-description">
+          Focuses on big data ecosystems, distributed processing (Hadoop, Spark), 
+          machine learning applications, and real-world case studies.
+        </div>
+        <div class="course-links">
+          <a href="#">Syllabus</a>
+        </div>
+      </div>
+    </div>
   </main>
 
   <!-- Footer -->

@@ -1,343 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Collaborations - Daniel de Oliveira</title>
-    <meta name="description" content="Students supervised by Daniel de Oliveira">
-    <meta name="keywords" content="Students, Supervision, Daniel de Oliveira, UFF, IC-UFF">
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #ffffff;
-            color: #333333;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
+  <meta charset="UTF-8">
+  <title>Collaborations - Daniel de Oliveira</title>
+  <meta name="description" content="Collaborations of Daniel de Oliveira">
+  <meta name="keywords" content="Collaborations, Research, Daniel de Oliveira, UFF, IC-UFF">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #ffffff;
+      color: #333333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
 
-        a { color: #004f9e; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+    a { color: #004f9e; text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 20px 40px;
-            border-bottom: 1px solid #ccc;
-        }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+      border-bottom: 1px solid #ccc;
+      background: #fafafa;
+    }
 
-        header img { height: 60px; }
+    header img { height: 60px; }
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            gap: 20px;
-        }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 20px;
+    }
 
-        nav ul li a { font-weight: bold; }
+    nav ul li a { font-weight: bold; }
 
-        main {
-            padding: 40px;
-        }
+    main {
+      padding: 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
 
-        h1 { 
-            margin-bottom: 20px; 
-        }
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2em;
+    }
 
-        /* Faixas coloridas nos títulos */
-        h2 {
-            margin-top: 30px;
-            background-color: #004f9e;
-            color: #fff;
-            padding: 8px 12px;
-            border-radius: 4px;
-        }
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      background-color: #004f9e;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 4px;
+    }
 
-        h3 {
-            margin-top: 20px;
-            background-color: #e0e0e0;
-            color: #333;
-            padding: 6px 10px;
-            border-radius: 4px;
-        }
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
 
-        ul {
-            list-style-type: disc;
-            margin-left: 40px;
-            margin-bottom: 20px;
-        }
+    .news-item {
+      display: flex;
+      gap: 15px;
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+    }
 
-        footer {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px 40px;
-            border-top: 1px solid #ccc;
-            background-color: #f9f9f9;
-            font-size: 0.9em;
-        }
-    </style>
+    .news-item:hover {
+      transform: scale(1.02);
+    }
+
+    .news-item img {
+      height: 60px;
+      width: 60px;
+      border-radius: 6px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .news-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .news-content a {
+      font-weight: bold;
+      font-size: 1em;
+      margin-bottom: 5px;
+      display: inline-block;
+    }
+
+    .news-content span {
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 40px;
+      border-top: 1px solid #ccc;
+      background-color: #f1f1f1;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
-    <!-- Cabeçalho -->
-    <header>
-        <a href="http://www.uff.br"><img src="arquivos/uff.png" alt="UFF Logo"></a>
-        <nav>
-            <ul>
-                <li><a href="https://danielcmo.github.io">Home</a></li>
-                <li><a href="https://danielcmo.github.io/cv.html">Publications</a></li>
-                <li><a href="https://danielcmo.github.io/ap.html">Research Areas</a></li>
-                <li><a href="https://danielcmo.github.io/cur.html">Teaching</a></li>
-                <li><a href="https://danielcmo.github.io/collab.html">Collaborators</a></li>
-                <li><a href="https://danielcmo.github.io/li.html">Students</a></li>
-                <li><a href="https://danielcmo.github.io/per.html">News</a></li>
-            </ul>
-        </nav>
-        <a href="http://www.ic.uff.br"><img src="arquivos/logo-ic.png" alt="IC-UFF Logo"></a>
-    </header>
+  <!-- Header -->
+  <header>
+    <a href="http://www.uff.br"><img src="arquivos/uff.png" alt="UFF Logo"></a>
+    <nav>
+      <ul>
+        <li><a href="https://danielcmo.github.io">Home</a></li>
+        <li><a href="https://danielcmo.github.io/cv.html">Publications</a></li>
+        <li><a href="https://danielcmo.github.io/ap.html">Research Areas</a></li>
+        <li><a href="https://danielcmo.github.io/cur.html">Teaching</a></li>
+        <li><a href="https://danielcmo.github.io/collab.html">Collaborators</a></li>
+        <li><a href="https://danielcmo.github.io/li.html">Students</a></li>
+        <li><a href="https://danielcmo.github.io/per.html">News</a></li>
+      </ul>
+    </nav>
+    <a href="http://www.ic.uff.br"><img src="arquivos/logo-ic.png" alt="IC-UFF Logo"></a>
+  </header>
 
-    <!-- Conteúdo -->
-    <main>
+  <!-- Main -->
+  <main>
+    <h1>Collaborations</h1>
+    <p>
+      This page highlights the colleagues and collaborators with whom I have had the privilege 
+      of working throughout my career. These collaborations reflect both the diversity of research 
+      initiatives and the spirit of cooperation essential to achieving results.
+    </p>
 
-      This page highlights the colleagues and collaborators with whom I have had the privilege of working throughout my career. Over the years, I have engaged in a variety of research initiatives, academic projects, and professional endeavors, each of which has been enriched by the contributions and dedication of these individuals. This collection reflects not only the diversity of the work we have undertaken but also the spirit of collaboration that has been essential to achieving results.
+    <h2>Brazil</h2>
+    <div class="news-grid">
+      <div class="news-item"><img src="arquivos/Marta.jpeg"><div class="news-content"><a href="https://www.cos.ufrj.br/~marta/">Profa. Marta Mattoso</a><span>COPPE/UFRJ</span></div></div>
+      <div class="news-item"><img src="arquivos/Aline.jpeg"><div class="news-content"><a href="https://www.ic.uff.br/~alinepaes">Profa. Aline Paes</a><span>IC/UFF</span></div></div>
+      <div class="news-item"><img src="arquivos/MarcosLage.jpeg"><div class="news-content"><a href="https://www.ic.uff.br/~mlage">Prof. Marcos Lage</a><span>IC/UFF</span></div></div>
+      <div class="news-item"><img src="arquivos/Vanessa.jpeg"><div class="news-content"><a href="https://www.ic.uff.br/~vanessa">Profa. Vanessa Braganholo</a><span>IC/UFF</span></div></div>
+      <div class="news-item"><img src="arquivos/Isabel.jpeg"><div class="news-content"><a href="https://www.ic.uff.br/~rosseti">Profa. Isabel Rosseti</a><span>IC/UFF</span></div></div>
+      <div class="news-item"><img src="arquivos/Yuri.jpeg"><div class="news-content"><a href="https://www.ic.uff.br/~yuri">Prof. Yuri Frota</a><span>IC/UFF</span></div></div>
+      <div class="news-item"><img src="arquivos/MarcosBedo.jpeg"><div class="news-content"><a href="https://www.professores.uff.br/marcosbedo/">Prof. Marcos Bedo</a><span>IC/UFF</span></div></div>
+      <div class="news-item"><img src="arquivos/Vania.jpeg"><div class="news-content"><a href="https://www.ic.uff.br/~vania">Profa. Vania Neves</a><span>IC/UFF</span></div></div>
+      <div class="news-item"><img src="arquivos/Alvaro.jpeg"><div class="news-content"><a href="http://lattes.cnpq.br/6402361744624287">Prof. Alvaro Coutinho</a><span>COPPE/UFRJ</span></div></div>
+      <div class="news-item"><img src="arquivos/Fernanda.jpeg"><div class="news-content"><a href="https://www.ind.puc-rio.br/equipe/fernanda-baiao/">Profa. Fernanda Baião</a><span>PUC-Rio</span></div></div>
+      <div class="news-item"><img src="arquivos/Victor.jpeg"><div class="news-content"><a href="http://lattes.cnpq.br/7561791813071961">Prof. Victor Ströele</a><span>UFJF</span></div></div>
+      <div class="news-item"><img src="arquivos/BrunoFrancesco.jpeg"><div class="news-content">Prof. Bruno Francesco Rodrigues de Oliveira<span>Biomedicine, UFF</span></div></div>
+      <div class="news-item"><img src="arquivos/Debora.jpeg"><div class="news-content">D.Sc. Débora Barbosa Pina<span>Postdoc, UFRJ</span></div></div>
+      <div class="news-item"><img src="arquivos/LuizGustavo.jpeg"><div class="news-content"><a href="https://integra.ifgoiano.edu.br/portfolio/pessoas/luiz-gustavo-dias/rbi">Prof. Luiz Gustavo Dias</a><span>IFGoiano</span></div></div>
+      <div class="news-item"><img src="arquivos/Liliane.jpeg"><div class="news-content">D.Sc. Liliane Kunstmann<span>Postdoc, IMPA</span></div></div>
+      <div class="news-item"><img src="arquivos/Flavia.jpeg"><div class="news-content"><a href="https://www.ic.uff.br/~fcbernardini">Profa. Flavia Bernardini</a><span>IC/UFF</span></div></div>
+      <div class="news-item"><img src="arquivos/Agma.jpeg"><div class="news-content"><a href="https://sites.icmc.usp.br/agma/">Profa. Agma Traina</a><span>ICMC/USP</span></div></div>
+      <div class="news-item"><img src="arquivos/Julia.jpeg"><div class="news-content"><a href="https://orcid.org/0000-0003-3023-8362">PhD Julia Gschwend</a><span>LIneA</span></div></div>
+      <div class="news-item"><img src="arquivos/Nicolaci.jpeg"><div class="news-content"><a href="http://lattes.cnpq.br/1349310682644311">PhD Luiz Nicolaci da Costa</a><span>LIneA</span></div></div>
+      <div class="news-item"><img src="arquivos/Boeres.png"><div class="news-content"><a href="https://www.ic.uff.br/~boeres">Profa. Cristina Boeres</a><span>IC/UFF</span></div></div>
+      <div class="news-item"><img src="arquivos/Bruno.jpeg"><div class="news-content"><a href="https://www.ic.uff.br/~bruno">Prof. Bruno Lopes</a><span>IC/UFF</span></div></div>
+      <div class="news-item"><img src="arquivos/Lucia.jpeg"><div class="news-content"><a href="https://www.ic.uff.br/~lucia">Profa. Lucia Drummond</a><span>IC/UFF</span></div></div>
+      <div class="news-item"><img src="arquivos/Lenora.jpeg"><div class="news-content"><a href="http://lattes.cnpq.br/1747786817645740">Profa. Lenora Schwaitzer</a><span>UFES</span></div></div>
+      <div class="news-item"><img src="arquivos/FabioPorto.jpeg"><div class="news-content"><a href="https://dexl.lncc.br/team/fabio-porto">Prof. Fabio Porto</a><span>LNCC</span></div></div>
+      <div class="news-item"><img src="arquivos/Javam.jpeg"><div class="news-content"><a href="https://mdcc.ufc.br/pt/corpo-docente/javam-de-castro-machado/">Prof. Javam Machado</a><span>UFC</span></div></div>
+      <div class="news-item"><img src="arquivos/Sergio.jpeg"><div class="news-content"><a href="https://www.inf.puc-rio.br/blog/professor/sergio-lifschitz/">Prof. Sergio Lifschitz</a><span>PUC-Rio</span></div></div>
+      <div class="news-item"><img src="arquivos/JoseMaria.jpeg"><div class="news-content"><a href="https://mdcc.ufc.br/pt/corpo-docente/jose-maria-da-silva-monteiro-filho/">Prof. José Maria Monteiro</a><span>UFC</span></div></div>
+      <div class="news-item"><img src="arquivos/Rafaelli.jpeg"><div class="news-content"><a href="https://integra.cefet-rj.br/portfolio/pessoas/rafaelli-de-carvalho-coutinho">Profa. Rafaelli Coutinho</a><span>CEFET/RJ</span></div></div>
+      <div class="news-item"><img src="arquivos/Ubiratam.jpeg"><div class="news-content"><a href="https://sigaa.ufrrj.br/sigaa/public/docente/portal.jsf?siape=2242634">Prof. Ubiratam de Paula</a><span>UFRRJ</span></div></div>
+      <div class="news-item"><img src="arquivos/Eduardo.jpeg"><div class="news-content"><a href="https://eic.cefet-rj.br/~eogasawara/">Prof. Eduardo Ogasawara</a><span>CEFET/RJ</span></div></div>
+    </div>
 
-        <h2>Brazil</h2>
+    <h2>International</h2>
+    <div class="news-grid">
+      <div class="news-item"><img src="arquivos/Patrick.jpeg"><div class="news-content"><a href="https://www.inria.fr/en/patrick-valduriez">Prof. Patrick Valduriez</a><span>INRIA, France</span></div></div>
+      <div class="news-item"><img src="arquivos/Age.jpeg"><div class="news-content"><a href="https://www.turing.ac.uk/people/researchers/adriane-chapman">Profa. Adriane Chapman</a><span>Southampton, UK</span></div></div>
+      <div class="news-item"><img src="arquivos/FabioMiranda.jpeg"><div class="news-content"><a href="https://cs.uic.edu/profiles/miranda-fabio/">Prof. Fabio Miranda</a><span>UIC, USA</span></div></div>
+      <div class="news-item"><img src="arquivos/Rafael.jpeg"><div class="news-content"><a href="https://www.ornl.gov/staff-profile/rafael-ferreira-da-silva">PhD Rafael Ferreira da Silva</a><span>ORNL, USA</span></div></div>
+      <div class="news-item"><img src="arquivos/Vitor.jpeg"><div class="news-content">D.Sc. Vítor Sousa<span>Apple Inc., USA</span></div></div>
+      <div class="news-item"><img src="arquivos/Paolo.jpeg"><div class="news-content"><a href="https://www.birmingham.ac.uk/staff/profiles/computer-science/academic-staff/missier-paolo">Prof. Paolo Missier</a><span>University of Birmingham, UK</span></div></div>
+      <div class="news-item"><img src="arquivos/Gaetan.jpeg"><div class="news-content"><a href="https://www.uni-goettingen.de/en/662758.html">Dr. Gaëtan Heidsieck</a><span>University of Göttingen, Germany</span></div></div>
+      <div class="news-item"><img src="arquivos/Esther.jpeg"><div class="news-content"><a href="https://cv.hal.science/esther-pacitti">Profa. Esther Pacitti</a><span>INRIA/Université de Montpellier, France</span></div></div>
+      <div class="news-item"><img src="arquivos/Renan.jpeg"><div class="news-content"><a href="https://renansouza.org/">Dr. Renan Souza</a><span>ORNL, USA</span></div></div>
+      <div class="news-item"><img src="arquivos/Ji.jpeg"><div class="news-content"><a href="https://scholar.google.com/citations?user=C16EBHUAAAAJ&hl=en">Dr. Ji Liu</a><span>Hithink RoyalFlush, China</span></div></div>
+      <div class="news-item"><img src="arquivos/Carol.jpeg"><div class="news-content"><a href="https://www.linkedin.com/in/carolvfs/">Profa. Carolina Veiga</a><span>James Madison University, USA</span></div></div>
+      <div class="news-item"><img src="arquivos/Nils.jpeg"><div class="news-content"><a href="https://www.sci.pitt.edu/people/nils-murrugarra-llerena">Prof. Nils Murrugarra Llerena</a><span>University of Pittsburgh, USA</span></div></div>
+    </div>
+  </main>
 
-         <ul>
-      <li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Marta.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://www.cos.ufrj.br/~marta/">Profa. Marta Lima de Queirós Mattoso (COPPE/UFRJ)</a>
-</li>
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Aline.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://www.ic.uff.br/~alinepaes">Profa. Aline Marins Paes Carvalho (IC/UFF)</a>
-</li>
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/MarcosLage.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://www.ic.uff.br/~mlage">Prof. Marcos Lage (IC/UFF)</a>
-</li>
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Vanessa.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://www.ic.uff.br/~vanessa">Profa. Vanessa Braganholo (IC/UFF)</a>
-</li>
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Isabel.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://www.ic.uff.br/~rosseti">Profa. Isabel Rosseti (IC/UFF)</a>
-</li>
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Yuri.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://www.ic.uff.br/~yuri">Prof. Yuri Frota (IC/UFF)</a>
-</li>
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/MarcosBedo.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://www.professores.uff.br/marcosbedo/">Prof. Marcos Bedo (IC/UFF)</a>
-</li>
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Vania.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://www.ic.uff.br/~vania">Profa. Vania Neves (IC/UFF)</a>
-</li>
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Alvaro.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="http://lattes.cnpq.br/6402361744624287">Prof. Alvaro Coutinho (COPPE/UFRJ)</a>
-</li>
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Fernanda.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://www.ind.puc-rio.br/equipe/fernanda-baiao/">Profa. Fernanda Baião (PUC-Rio)</a>
-</li>
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Victor.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="http://lattes.cnpq.br/7561791813071961">Prof. Victor Ströele (UFJF)</a>
-</li>
-
-
-
-    <li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/BrunoFrancesco.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://www.ic.uff.br/~vania">Prof. Bruno Francesco Rodrigues de Oliveira  (Biomédico/UFF)</a>
-</li>
-
-       <li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Debora.jpeg" alt="Paula do Nascimento Woyames" style="height: 50px; width: auto; border-radius: 5px;">D.Sc. Débora Barbosa Pina (Postdoctoral Researcher at UFRJ)</li>
-            <li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/LuizGustavo.jpeg" alt="Camila de Oliveira Lopes" style="height: 50px; width: auto; border-radius: 5px;"><a href="https://integra.ifgoiano.edu.br/portfolio/pessoas/luiz-gustavo-dias/rbi">Prof. Luiz Gustavo Dias (IFGoiano)</a></li>
-            <li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Liliane.jpeg" alt="Paula do Nascimento Woyames" style="height: 50px; width: auto; border-radius: 5px;">D.Sc. Liliane Neves de Oliveira Kunstmann (Postdoctoral Researcher at IMPA)</li>
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Flavia.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://www.ic.uff.br/~fcbernardini">Profa. Flavia Bernardini (IC/UFF)</a>
-</li>
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Agma.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://sites.icmc.usp.br/agma/">Profa. Agma Traina (ICMC/USP)</a>
-</li>
-
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Julia.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://orcid.org/0000-0003-3023-8362">PhD Julia Gschwend (LIneA)</a>
-</li>
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Nicolaci.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="http://lattes.cnpq.br/1349310682644311">PhD Luiz Nicolaci da Costa (LIneA)</a>
-</li>
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Boeres.png" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://www.ic.uff.br/~boeres">Profa. Cristina Boeres (IC/UFF)</a>
-</li>
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Bruno.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://www.ic.uff.br/~bruno">Prof. Bruno Lopes (IC/UFF)</a>
-</li>
-
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Lucia.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://www.ic.uff.br/~lucia">Profa. Lucia Drummond (IC/UFF)</a>
-</li>
-
-   <li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Lenora.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="http://lattes.cnpq.br/1747786817645740">Profa. Lenora Beaurepaire Schwaitzer (UFES)</a>
-
-</li>
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/FabioPorto.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://dexl.lncc.br/team/fabio-porto">Prof. Fabio Porto (LNCC)</a>
-</li>
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Javam.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://mdcc.ufc.br/pt/corpo-docente/javam-de-castro-machado/">Prof. Javam Machado (UFC)</a>
-</li>
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Sergio.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://www.inf.puc-rio.br/blog/professor/sergio-lifschitz/">Prof. Sergio Lifschitz  (PUC-Rio)</a>
-</li>
-
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/JoseMaria.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://mdcc.ufc.br/pt/corpo-docente/jose-maria-da-silva-monteiro-filho/">Prof. José Maria Monteiro (UFC)</a>
-</li>
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Rafaelli.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://integra.cefet-rj.br/portfolio/pessoas/rafaelli-de-carvalho-coutinho">Profa. Rafaelli Coutinho (CEFET/RJ)</a>
-</li>
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Ubiratam.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://sigaa.ufrrj.br/sigaa/public/docente/portal.jsf?siape=2242634">Prof. Ubiratam de Paula (UFRRJ)</a>
-</li>
-
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Eduardo.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://eic.cefet-rj.br/~eogasawara/">Prof. Eduardo Ogasawara (CEFET/RJ)</a>
-</li>
-
-
-
-       
-        </ul>
-
-        
-        <h2>International</h2>
-     <ul>
-   
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Patrick.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://www.inria.fr/en/patrick-valduriez">Prof. Patrick Valduriez (INRIA - France)</a>
-</li>
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Age.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://www.turing.ac.uk/people/researchers/adriane-chapman">Profa. Adriane Chapman (University of Southampton - UK)</a>
-</li>
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/FabioMiranda.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://cs.uic.edu/profiles/miranda-fabio/">Prof. Fabio Miranda (University of Illinois at Chicago - USA)</a>
-</li>
-
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Rafael.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://www.ornl.gov/staff-profile/rafael-ferreira-da-silva">PhD. Rafael Ferreira da Silva (Oak Ridge National Laboratory - USA)</a>
-</li>
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Vitor.jpeg" alt="Camila de Oliveira Lopes" style="height: 50px; width: auto; border-radius: 5px;">D.Sc. Vítor Silva Sousa (Apple Inc. USA) </li>
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Paolo.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://www.birmingham.ac.uk/staff/profiles/computer-science/academic-staff/missier-paolo">Prof. Paolo Missier (University of Birmingham - UK)</a>
-</li>
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Gaetan.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://www.uni-goettingen.de/en/662758.html">Dr. Gaëtan Heidsieck (Georg-August University of Göttingen - Germany)</a>
-</li>
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Esther.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://cv.hal.science/esther-pacitti">Profa. Esther Pacitti (INRIA and Université de Montpellier - France)</a>
-</li>
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Renan.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://renansouza.org/">Dr. Renan Souza (Oak Ridge National Laboratory - USA)</a>
-</li>
-
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Ji.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://scholar.google.com/citations?user=C16EBHUAAAAJ&hl=en">Dr. Ji Liu (Hithink RoyalFlush - China)</a>
-</li>
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Carol.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://www.linkedin.com/in/carolvfs/">Profa. Carolina Veiga (James Madison University - USA)</a>
-</li>
-
-<li style="display: flex; align-items: center; gap: 40px;">
-    <img src="arquivos/Nils.jpeg" alt="Wesley Santos Ferreira" style="height: 50px; width: auto; border-radius: 5px;">
-    <a href="https://www.sci.pitt.edu/people/nils-murrugarra-llerena">Prof. Nils Ever Murrugarra Llerena (University of Pittsburgh  - USA)</a>
-</li>
-
-
-
-        </ul>
-
-     
-    </main>
-
-    <!-- Rodapé -->
-    <footer>
-        <div>
-            <b>Phone: +55 (21) 2629-5637<br>Fax: +55 (21) 2629-5627</b>
-        </div>
-        <div>
-            <b>danielcmo (at) ic (dot) uff (dot) br</b>
-        </div>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <div>
+      <b>Phone: +55 (21) 2629-5637<br>Fax: +55 (21) 2629-5627</b>
+    </div>
+    <div>
+      <b>danielcmo (at) ic (dot) uff (dot) br</b>
+    </div>
+  </footer>
 </body>
 </html>

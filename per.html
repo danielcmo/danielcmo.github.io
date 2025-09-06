@@ -60,12 +60,11 @@
     }
 
     /* News card style */
-    .news-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* duas colunas por linha */
+  gap: 20px;
+}
     .news-item {
       display: flex;
       flex-direction: column;

@@ -1,258 +1,192 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <title>Courses - Daniel de Oliveira</title>
+  <meta name="description" content="News and updates about Daniel de Oliveira">
+  <meta name="keywords" content="News, Updates, Daniel de Oliveira, UFF, IC-UFF">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #ffffff;
+      color: #333333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
 
-  <title>Yuri Frota - Home Page</title>
-  <meta name="description" content="The Home Page of Professor Kevin Yuri Frota">
-  <meta name="keywords" content="IC-UFF">
-  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-  <meta name="Generator" content="Front Page 2003">
-  <link href="arquivos/style.css" type="text/css" rel="stylesheet">
+    a { color: #004f9e; text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+      border-bottom: 1px solid #ccc;
+      background: #fafafa;
+    }
+
+    header img { height: 60px; }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a { font-weight: bold; }
+
+    main {
+      padding: 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2em;
+    }
+
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      background-color: #004f9e;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 4px;
+    }
+
+    /* News card style */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* duas colunas por linha */
+  gap: 20px;
+}
+    .news-item {
+      display: flex;
+      flex-direction: column;
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+    }
+
+    .news-item:hover {
+      transform: scale(1.02);
+    }
+
+    .news-item img {
+      height: 160px;
+      width: 100%;
+      border-radius: 6px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .news-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .news-content a {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 5px;
+    }
+
+    .news-content p {
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 40px;
+      border-top: 1px solid #ccc;
+      background-color: #f1f1f1;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
-
 <body>
-	
-  <table summary="page layout table" border="0" cellpadding="0" cellspacing="0" width="100%">
-  <tbody>
-
- <tr valign="top">
-      <td width="90%" class="navigation" colspan="2" align="left"><img src="arquivos/yuri2.jpg"></td>
-      <td width="10%" class="navigation" colspan="2" align="left"> <a href="http://www.uff.br"> <img src="arquivos/uff.png"></td> </a>
-    </tr>
-
-    <tr valign="top">
-      <td class="bottomnavbar" colspan="2" align="left"></td>
-      <td class="bottomnavbar" colspan="2" align="left"></td>
-    </tr>
-
-  </tbody>
-</table>
-	
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
-<tbody>
-
-    <tr valign="top">
-
-	<td class="navigation" width="160"> 
-        <div id="nav-container">
-        <ul id="nav-list">
-			<li><a href="https://yuri-frota.github.io"><span style="text-decoration: underline;">Home</a></li>
-                        <li><a href="https://yuri-frota.github.io/cv.html"><span style="text-decoration: underline;">Curriculum</span></a></li>
-                        <li><a href="https://yuri-frota.github.io/ap.html"><span style="text-decoration: underline;">Research Areas</span></a></li>
-                        <li><a href="https://yuri-frota.github.io/cur.html"><span style="text-decoration: underline;">Teaching</span></a></li>
-                        <li><a href="https://yuri-frota.github.io/li.html"><span style="text-decoration: underline;">Links</a></li> 
-                        <li><a href="https://yuri-frota.github.io/per.html"><span style="text-decoration: underline;">Personal</a></li>
-                        <li><a href="https://yuri-frota.github.io/co.html"><span style="text-decoration: underline;">Contacts</a></li>
+  <!-- Header -->
+  <header>
+    <a href="http://www.uff.br"><img src="arquivos/uff.png" alt="UFF Logo"></a>
+    <nav>
+      <ul>
+        <li><a href="https://danielcmo.github.io">Home</a></li>
+        <li><a href="https://danielcmo.github.io/cv.html">Publications</a></li>
+        <li><a href="https://danielcmo.github.io/ap.html">Research Areas</a></li>
+        <li><a href="https://danielcmo.github.io/cur.html">Teaching</a></li>
+        <li><a href="https://danielcmo.github.io/collab.html">Collaborations</a></li>
+        <li><a href="https://danielcmo.github.io/li.html">Students</a></li>
+        <li><a href="https://danielcmo.github.io/per.html">News</a></li>
       </ul>
-      </div>
-      <a href="http://www.ic.uff.br"> <img src="arquivos/logo_ic_uff.png"> </a>
-      </td>
+    </nav>
+    <a href="http://www.ic.uff.br"><img src="arquivos/logo-ic.png" alt="IC-UFF Logo"></a>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <h1>News & Updates</h1>
+    <p>
+      Here you can find the latest news, interviews, and updates related to my research, teaching, and collaborations. 
+      Stay tuned for new insights and developments.
+    </p>
+
+    <div class="news-grid">
+     
+     <div class="news-item">
+  <!-- Embedding a YouTube video -->
+  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; margin-bottom: 10px;">
+    <iframe 
+      src="https://www.youtube.com/embed/uEAy256MvNk" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen
+      style="position: absolute; top:0; left: 0; width: 100%; height: 100%;">
+    </iframe>
+  </div>
+
+  <div class="news-content">
+    <a href="https://www.youtube.com/live/uEAy256MvNk" target="_blank">
+      Interview for the 'Boletim Ciência' program at FioCruz to talk about research in the context of the LSST project (in Portuguese)
+    </a>
+    <p>
+      In this interview, the host Neide Diniz talks with Luiz Nicolaci, director of LIneA – Interinstitutional Laboratory for e-Astronomy and coordinator at the National Institute of Technology (INCT), and Daniel de Oliveira, professor at the Institute of Computing, Fluminense Federal University (UFF)
+    </p>
+  </div>
+</div>
 
 
+      <!-- Add more news items below following the same structure -->
+      <div class="news-item">
+  <img src="https://olhardigital.com.br/wp-content/uploads/2025/06/vera-c-rubin-observatory-brasil-1920x1080.jpg" alt="Vera C. Rubin Observatory">
+  <div class="news-content">
+    <a href="https://olhardigital.com.br/2025/06/23/ciencia-e-espaco/observatorio-vera-c-rubin-conta-com-a-participacao-de-mais-de-200-brasileiros/" target="_blank">
+      Vera C. Rubin Observatory counts on the participation of over 200 Brazilians
+    </a>
+    <p>
+      Brazilian scientists are directly involved in processing data for the international LSST project, which aims to map around 37 billion stars and galaxies over ten years. Brazil participates with more than 170 researchers, including students and professionals working in Chile and the USA.
+    </p>
+  </div>
+</div>
 
+  </main>
 
-      <td class="body">&nbsp;
-
-     <table style="width: 100%;" border="0" cellpadding="0" cellspacing="0">
-
-        <tbody>
-
-          <tr>
-
-            <td><dt><b>Courses:</b></dt>
-
-
-<ul>
-<table BORDER="5" CELLSPACING="3">
-
-<tr>
-  <td><img style="width: 100px; height: 100px;" src="arquivos/one_piece.png"></td>
-  <td>  <a href="https://yuri-frota.github.io/po_cc.html">2025.2-Pesquisa Operacional CC  (Sexta 9-13) (Portuguese) </a>
-</td>
-
-<tr>
-  <td><img style="width: 100px; height: 100px;" src="arquivos/demon_slayer.png"></td>
-  <td>  <a href="https://yuri-frota.github.io/pli.html">2025.2-Programação Linear Inteira  (Terça 14-18) (Portuguese) </a>
-</td>
-
-</tr>
-
-
-</table>
-</ul>
-
-<dt><b>My Grade Scale:</b></dt><br>
-(A)-Average<br>
-(B)-Below Average<br>
-(C)-Can't have dinner<br>
-(D)-Don't come home<br>
-(F)-Find new family<br><br>
-
-</td>
- </tr>
-
-        </tbody>
-
-      </table>
-
-<dt><b>Current students:</b></dt>
-
-<ul>
-<table BORDER="5" CELLSPACING="3">
-
-<tr>
-  <td><img style="width: 60px; height: 60px;" src="arquivos/heloisa.png"></td>
-  <td> Heloisa Reis Leal  (PhD student) </td>
-</tr>
-
-<tr>
-  <td><img style="width: 60px; height: 60px;" src="arquivos/gustavo_alex.png"></td>
-  <td> Gustavo Alexandre Sousa Santos  (PhD student) </td>
-</tr>
-
-<tr>
-  <td><img style="width: 60px; height: 60px;" src="arquivos/alvarenga.png"></td>
-  <td> Luis Carlos Ramos Alvarenga  (PhD student) </td>
-</tr>
-
-<tr>
-  <td><img style="width: 60px; height: 60px;" src="arquivos/italo.png"></td>
-  <td> Ítalo Leite Ferreira Portinho  (Mst student) </td>
-</tr>
-
-</table>
-</ul>
-
-
-<dt><b>Former students:</b></dt>
-
-<ul>
-<table BORDER="5" CELLSPACING="3">
-
-<tr>
-  <td><img style="width: 60px; height: 60px;" src="arquivos/rodrigo.jpg"></td>
-  <td> Rodrigo Prado (PhD student) </td>
-</tr>
-	
-<tr>
-  <td><img style="width: 60px; height: 60px;" src="arquivos/aldo.png"></td>
-  <td> Aldo E. Fernandez Perez (PhD student) </td>
-</tr>
-	
-<tr>
-  <td><img style="width: 60px; height: 60px;" src="arquivos/bruna.png"></td>
-  <td> Bruna de Mello Almeida (Mst Student) </td>
-</tr>
-	
-<tr>
-  <td><img style="width: 60px; height: 60px;" src="arquivos/felipe.png"></td>
-  <td> Luis Felipe Xavier Augusto de Oliveira (Mst Student) </td>
-</tr>
-
-<tr>
-  <td><img style="width: 60px; height: 60px;" src="arquivos/mario.jpg"></td>
-  <td> Mario Costa Levorato Jr. (PhD student) </td>
-</tr>
-
-<tr>
-  <td><img style="width: 60px; height: 60px;" src="arquivos/moreno.png"></td>
-  <td> Jorge Reynaldo Moreno Ramirez (PosDoc) </td>
-</tr>
-
-<tr>
-  <td><img style="width: 60px; height: 60px;" src="arquivos/leardine.png"></td>
-  <td> Raphael Leardini (UnderGrad student) </td>
-</tr>
-
-<tr>
-  <td><img style="width: 60px; height: 60px;" src="arquivos/queiroga.png"></td>
-  <td> Eduardo Queiroga (PhD student) </td>
-</tr>
-
-<tr>
-  <td><img style="width: 60px; height: 60px;" src="arquivos/moreno.png"></td>
-  <td> Jorge Reynaldo Moreno Ramirez (PhD student) </td>
-</tr>
-
-<tr>
-  <td><img style="width: 60px; height: 60px;" src="arquivos/raylan.png"></td>
-  <td> Marcos Raylan (Mst student) </td>
-</tr>
-
-<tr>
-  <td><img style="width: 60px; height: 60px;" src="arquivos/renatha.jpg"></td>
-  <td> Renatha Capua (PhD student)</td>
-</tr>
-
-<tr>
-  <td><img style="width: 60px; height: 60px;" src="arquivos/luan.png"></td>
-  <td> Luan Teylo Gouveia (Mst student) </td>
-</tr>
-
-<tr>
-  <td><img style="width: 60px; height: 60px;" src="arquivos/noone.jpeg"></td>
-  <td> Rodrigo Tavares Veloso (UnderGrad student) </td>
-</tr>
-
-
-<tr>
-  <td><img style="width: 60px; height: 60px;" src="arquivos/mario.jpg"></td>
-  <td> Mario Costa Levorato Jr. (Mst student) </td>
-</tr>
-
-<tr>
-  <td><img style="width: 60px; height: 60px;" src="arquivos/manu.jpg"></td>
-  <td> Emanuella Toledo (Mst student) </td>
-</tr>
-
-<tr>
-  <td><img style="width: 60px; height: 60px;" src="arquivos/victorm.jpg"></td>
-  <td> Victor Miranda Rangel (Mst student) </td>
-</tr>
-
-<tr>
-  <td><img style="width: 60px; height: 60px;" src="arquivos/daniel_silva.jpg"></td>
-  <td> Daniel Martins da Silva (Mst student) </td>
-</tr>
-
-</table>
-</ul>
-
-</br>
-
-<img style="width: 250px; height: 250px;" alt="" src="arquivos/bitibas_laptop.png"><br>
-
-
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-
-
-
-
-<table summary="page layout table" border="0" cellpadding="10" cellspacing="0" width="100%">
-  <tbody>
-    <tr valign="top">
-
-<td class="bottomnavbar" align="left">
-<b>
-Phone: +55 (21) 2629-5637<br>
-Fax: +55 (21) 2629-5627
-</b>
-</td>
-
-<td class="bottomnavbar" align="right">
-<b>yuri (a) ic (dot) uff (dot) br</b>
-</td>
-
-</tr>
-
-  </tbody>
-</table>
-
+  <!-- Footer -->
+  <footer>
+    <div>
+      <b>Phone: +55 (21) 2629-5637<br>Fax: +55 (21) 2629-5627</b>
+    </div>
+    <div>
+      <b>danielcmo (at) ic (dot) uff (dot) br</b>
+    </div>
+  </footer>
 </body>
 </html>
-

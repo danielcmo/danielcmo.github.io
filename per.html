@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Collaborations - Daniel de Oliveira</title>
-  <meta name="description" content="Collaborations of Daniel de Oliveira">
-  <meta name="keywords" content="Collaborations, Research, Daniel de Oliveira, UFF, IC-UFF">
+  <title>News - Daniel de Oliveira</title>
+  <meta name="description" content="News and updates about Daniel de Oliveira">
+  <meta name="keywords" content="News, Updates, Daniel de Oliveira, UFF, IC-UFF">
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
@@ -68,7 +68,7 @@
 
     .news-item {
       display: flex;
-      gap: 15px;
+      flex-direction: column;
       background: #f9f9f9;
       padding: 15px;
       border-radius: 6px;
@@ -81,29 +81,27 @@
     }
 
     .news-item img {
-      height: 60px;
-      width: 60px;
+      height: 160px;
+      width: 100%;
       border-radius: 6px;
       object-fit: cover;
-      flex-shrink: 0;
+      margin-bottom: 10px;
     }
 
     .news-content {
       display: flex;
       flex-direction: column;
-      justify-content: center;
     }
 
     .news-content a {
       font-weight: bold;
-      font-size: 1em;
+      font-size: 1.1em;
       margin-bottom: 5px;
-      display: inline-block;
     }
 
-    .news-content span {
-      font-size: 0.9em;
-      color: #666;
+    .news-content p {
+      font-size: 0.95em;
+      color: #555;
     }
 
     footer {
@@ -136,53 +134,39 @@
 
   <!-- Main -->
   <main>
-    <h1>Collaborations</h1>
+    <h1>News & Updates</h1>
     <p>
-      This page highlights the colleagues and collaborators with whom I have had the privilege 
-      of working throughout my career. These collaborations reflect both the diversity of research 
-      initiatives and the spirit of cooperation essential to achieving results.
+      Here you can find the latest news, interviews, and updates related to my research, teaching, and collaborations. 
+      Stay tuned for new insights and developments.
     </p>
 
-    <h2>Brazil</h2>
     <div class="news-grid">
+      <!-- Example news item -->
       <div class="news-item">
-        <img src="arquivos/Marta.jpeg" alt="Marta Mattoso">
+        <img src="arquivos/interview-thumbnail.jpg" alt="Interview with Daniel de Oliveira">
         <div class="news-content">
-          <a href="https://www.cos.ufrj.br/~marta/">Profa. Marta Mattoso</a>
-          <span>COPPE/UFRJ</span>
+          <a href="https://www.youtube.com/live/uEAy256MvNk" target="_blank">
+            Interview about Recent Research Projects
+          </a>
+          <p>
+            Watch my latest interview discussing ongoing research projects, collaborations, and future directions in computer science at IC-UFF.
+          </p>
         </div>
       </div>
 
+      <!-- Add more news items below following the same structure -->
       <div class="news-item">
-        <img src="arquivos/Aline.jpeg" alt="Aline Paes">
+        <img src="arquivos/conference.jpeg" alt="Conference Presentation">
         <div class="news-content">
-          <a href="https://www.ic.uff.br/~alinepaes">Profa. Aline Paes</a>
-          <span>IC/UFF</span>
+          <a href="https://danielcmo.github.io/conference2025.html" target="_blank">
+            Keynote at International Conference 2025
+          </a>
+          <p>
+            Presented a keynote lecture at the International Conference on Data Science, sharing recent findings on scientific workflow provenance and HPC.
+          </p>
         </div>
       </div>
 
-      <!-- Repeat blocks like above for each collaborator -->
-    </div>
-
-    <h2>International</h2>
-    <div class="news-grid">
-      <div class="news-item">
-        <img src="arquivos/Patrick.jpeg" alt="Patrick Valduriez">
-        <div class="news-content">
-          <a href="https://www.inria.fr/en/patrick-valduriez">Prof. Patrick Valduriez</a>
-          <span>INRIA, France</span>
-        </div>
-      </div>
-
-      <div class="news-item">
-        <img src="arquivos/Age.jpeg" alt="Adriane Chapman">
-        <div class="news-content">
-          <a href="https://www.turing.ac.uk/people/researchers/adriane-chapman">Profa. Adriane Chapman</a>
-          <span>University of Southampton, UK</span>
-        </div>
-      </div>
-
-      <!-- Repeat for others -->
     </div>
   </main>
 

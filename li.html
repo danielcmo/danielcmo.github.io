@@ -1,504 +1,926 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Students - Daniel de Oliveira</title>
-    <meta name="description" content="Students supervised by Daniel de Oliveira">
-    <meta name="keywords" content="Students, Supervision, Daniel de Oliveira, UFF, IC-UFF">
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #ffffff;
-            color: #333333;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-
-        a { color: #004f9e; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 20px 40px;
-            border-bottom: 1px solid #ccc;
-        }
-
-        header img { height: 60px; }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            gap: 20px;
-        }
-
-        nav ul li a { font-weight: bold; }
-
-        main {
-            padding: 40px;
-        }
-
-        h1 { margin-bottom: 20px; }
-
-        h2 {
-            margin-top: 30px;
-            background-color: #004f9e;
-            color: #fff;
-            padding: 8px 12px;
-            border-radius: 4px;
-        }
-
-        h3 {
-            margin-top: 20px;
-            background-color: #e0e0e0;
-            color: #333;
-            padding: 6px 10px;
-            border-radius: 4px;
-        }
-
-        .cards-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 220px;
-            padding: 15px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            text-align: center;
-            background-color: #f9f9f9;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-
-        .card img {
-            height: 100px;
-            width: auto;
-            border-radius: 50%;
-            margin-bottom: 10px;
-        }
-
-        footer {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px 40px;
-            border-top: 1px solid #ccc;
-            background-color: #f9f9f9;
-            font-size: 0.9em;
-        }
-    </style>
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <a href="http://www.uff.br"><img src="arquivos/uff.png" alt="UFF Logo"></a>
-        <nav>
+   <head>
+      <meta charset="UTF-8">
+      <title>Students - Daniel de Oliveira</title>
+      <meta name="description" content="Students supervised by Daniel de Oliveira">
+      <meta name="keywords" content="Students, Supervision, Daniel de Oliveira, UFF, IC-UFF">
+      <style>
+         body {
+         font-family: Arial, Helvetica, sans-serif;
+         background-color: #ffffff;
+         color: #333333;
+         margin: 0;
+         padding: 0;
+         line-height: 1.6;
+         }
+         a { color: #004f9e; text-decoration: none; }
+         a:hover { text-decoration: underline; }
+         header {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         padding: 20px 40px;
+         border-bottom: 1px solid #ccc;
+         }
+         header img { height: 60px; }
+         nav ul {
+         list-style: none;
+         padding: 0;
+         margin: 0;
+         display: flex;
+         gap: 20px;
+         }
+         nav ul li a { font-weight: bold; }
+         main {
+         padding: 40px;
+         }
+         h1 { margin-bottom: 20px; }
+         h2 {
+         margin-top: 30px;
+         background-color: #004f9e;
+         color: #fff;
+         padding: 8px 12px;
+         border-radius: 4px;
+         }
+         h3 {
+         margin-top: 20px;
+         background-color: #e0e0e0;
+         color: #333;
+         padding: 6px 10px;
+         border-radius: 4px;
+         }
+         .cards-container {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 20px;
+         margin-top: 20px;
+         }
+         .card {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         width: 220px;
+         padding: 15px;
+         border: 1px solid #ccc;
+         border-radius: 8px;
+         text-align: center;
+         background-color: #f9f9f9;
+         transition: transform 0.2s, box-shadow 0.2s;
+         }
+         .card:hover {
+         transform: translateY(-5px);
+         box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+         }
+         .card img {
+         height: 100px;
+         width: auto;
+         border-radius: 50%;
+         margin-bottom: 10px;
+         }
+         footer {
+         display: flex;
+         justify-content: space-between;
+         padding: 20px 40px;
+         border-top: 1px solid #ccc;
+         background-color: #f9f9f9;
+         font-size: 0.9em;
+         }
+      </style>
+   </head>
+   <body>
+      <!-- Header -->
+      <header>
+         <a href="http://www.uff.br"><img src="arquivos/uff.png" alt="UFF Logo"></a>
+         <nav>
             <ul>
-                <li><a href="https://danielcmo.github.io">Home</a></li>
-                <li><a href="https://danielcmo.github.io/cv.html">Publications</a></li>
-                <li><a href="https://danielcmo.github.io/books.html">Books</a></li>
-                <li><a href="https://danielcmo.github.io/ap.html">Research Areas</a></li>
-                <li><a href="https://danielcmo.github.io/cur.html">Teaching</a></li>
-                <li><a href="https://danielcmo.github.io/collab.html">Collaborations</a></li>
-                <li><a href="https://danielcmo.github.io/li.html">Students</a></li>
-                <li><a href="https://danielcmo.github.io/per.html">News</a></li>
+               <li><a href="https://danielcmo.github.io">Home</a></li>
+               <li><a href="https://danielcmo.github.io/cv.html">Publications</a></li>
+               <li><a href="https://danielcmo.github.io/books.html">Books</a></li>
+               <li><a href="https://danielcmo.github.io/ap.html">Research Areas</a></li>
+               <li><a href="https://danielcmo.github.io/cur.html">Teaching</a></li>
+               <li><a href="https://danielcmo.github.io/collab.html">Collaborations</a></li>
+               <li><a href="https://danielcmo.github.io/li.html">Students</a></li>
+               <li><a href="https://danielcmo.github.io/per.html">News</a></li>
             </ul>
-        </nav>
-        <a href="http://www.ic.uff.br"><img src="arquivos/logo-ic.png" alt="IC-UFF Logo"></a>
-    </header>
-
-    <!-- Main content -->
-    <main>
-        <h1>Students</h1>
-
-        This page highlights the students I have (had) the privilege to supervise at the undergraduate, master’s, and doctoral levels. Their dedication, curiosity, and contributions are essential to the research we pursue together. Without their active participation, the work presented here would not be possible, and I am deeply grateful for the fundamental role they play in advancing our collective scientific endeavors.
-
-        <h2>Current Supervisions</h2>
-
-        <h3>MSc</h3>
-        <div class="cards-container">
-            <div class="card"><img src="arquivos/1729136299931.jpeg" alt="Wesley Santos Ferreira"><div>Wesley Santos Ferreira</div></div>
-            <div class="card"><img src="arquivos/Paula.jpeg" alt="Paula do Nascimento Woyames"><div>Paula do Nascimento Woyames</div></div>
-            <div class="card"><img src="arquivos/Italo.jpeg" alt="Italo Leite Ferreira Portinho"><div>Italo Leite Ferreira Portinho</div></div>
-            <div class="card"><img src="arquivos/ThiagoJordao.jpg" alt="Thiago da Costa Jordão"><div>Thiago da Costa Jordão</div></div>
-            <div class="card"><img src="arquivos/Layse.jpeg" alt="Layse Gomes Castro"><div>Layse Gomes Castro</div></div>
-            <div class="card"><img src="arquivos/MatheusNascimento.jpeg" alt="Layse Gomes Castro"><div>Matheus Nascimento</div></div>
-            <div class="card"><img src="arquivos/Janaina.jpeg" alt="Layse Gomes Castro"><div>Janaina Borges</div></div>
-        </div>
-
-        <h3>PhD</h3>
-        <div class="cards-container">
-            <div class="card"><img src="arquivos/DanielJr.jpeg" alt="Daniel Pinheiro da Silva Junior"><div>Daniel Pinheiro da Silva Junior</div></div>
-            <div class="card"><img src="arquivos/alvarenga.png" alt="Luis Carlos Ramos Alvarenga"><div>Luis Carlos Ramos Alvarenga</div></div>
-            <div class="card"><img src="arquivos/CamilaLopes.jpeg" alt="Camila de Oliveira Lopes"><div>Camila de Oliveira Lopes</div></div>
-            <div class="card"><img src="arquivos/gustavo_alex.png" alt="Gustavo Alexandre Sousa Santos"><div>Gustavo Alexandre Sousa Santos</div></div>
-            <div class="card"><img src="arquivos/Tobias.jpeg" alt="Tobias Ribeiro Barreto"><div>Tobias Ribeiro Barreto</div></div>
-            <div class="card"><img src="arquivos/MariaLuiza.jpeg" alt="Maria Luiza Furtuozo Falci"><div>Maria Luiza Furtuozo Falci</div></div>
-            <div class="card"><img src="arquivos/Annie.jpeg" alt="Annie Vianna Amorim"><div>Annie Vianna Amorim</div></div>
-            <div class="card"><img src="arquivos/Lyncoln.jpeg" alt="Lyncoln Sousa de Oliveira"><div>Lyncoln Sousa de Oliveira</div></div>
-            <div class="card"><img src="arquivos/ClaudioFerraz.jpeg" alt="Claudio Ananias Ferraz"><div>Claudio Ananias Ferraz</div></div>
-            <div class="card"><img src="arquivos/Marcello.jpeg" alt="Marcello Willians Messina Ribeiro"><div>Marcello Willians Messina Ribeiro</div></div>
-        </div>
-
-        <h3>Post-Docs</h3>
-        <div class="cards-container">
-            <div class="card"><img src="arquivos/LuizGustavo.jpeg" alt="Luiz Gustavo Dias"><div>Luiz Gustavo Dias  - Federal Institute of Education, Science and Technology Goiano</div></div>
-        </div>
-
-        <h3>Undergrad</h3>
-        <div class="cards-container">
-            <div class="card"><img src="arquivos/JoaoMoraes.jpeg" alt="João Vítor Mendonça de Moraes"><div>João Vítor Mendonça de Moraes</div></div>
-
-            <div class="card"><img src="arquivos/Daniele.jpeg" alt="João Vítor Mendonça de Moraes"><div>Daniele Pimenta</div></div>
-
-            <div class="card"><img src="arquivos/Juliana.jpeg" alt="João Vítor Mendonça de Moraes"><div>Juliana Moura</div></div>
-
-            <div class="card"><img src="arquivos/Lylian.jpeg" alt="João Vítor Mendonça de Moraes"><div>Lylian Pacheco</div></div>
-
-            <div class="card"><img src="arquivos/Alonso.jpeg" alt="João Vítor Mendonça de Moraes"><div>Alonso Brêda Bassin</div></div>
-
-            <div class="card"><img src="arquivos/Miguel.jpeg" alt="João Vítor Mendonça de Moraes"><div>Miguel Jehle</div></div>
-
-            <div class="card"><img src="arquivos/Lucca.jpeg" alt="João Vítor Mendonça de Moraes"><div>Lucca Possas</div></div>
-
-                        <div class="card"><img src="arquivos/Elena.jpeg" alt="João Vítor Mendonça de Moraes"><div>Elena Costa Blanco</div></div>
-
-
-                        <div class="card"><img src="arquivos/Josue.jpeg" alt="João Vítor Mendonça de Moraes"><div>Josué Santos</div></div>
-
-                        <div class="card"><img src="arquivos/question.jpg" alt="João Vítor Mendonça de Moraes"><div>Mathews Vaz Reis</div></div>
-
-                        <div class="card"><img src="arquivos/RodrigoTeixeira.webp" alt="João Vítor Mendonça de Moraes"><div>Rodrigo Teixeira</div></div>
-
-                        <div class="card"><img src="arquivos/Raphael.jpeg" alt="João Vítor Mendonça de Moraes"><div>Raphael Reis Garcia</div></div>
-
-
-                        <div class="card"><img src="arquivos/question.jpg" alt="João Vítor Mendonça de Moraes"><div>Vinícius Barreto</div></div>
-
-                        <div class="card"><img src="arquivos/PedroCosta.webp" alt="João Vítor Mendonça de Moraes"><div>Pedro Costa Xavier</div></div>
-
-                        <div class="card"><img src="arquivos/JoaoMainoth.webp" alt="João Vítor Mendonça de Moraes"><div>João Victor Mainoth Pereira</div></div>
-
-                        <div class="card"><img src="arquivos/LucasNatan.webp" alt="João Vítor Mendonça de Moraes"><div>Lucas Natan Franca Costa</div></div>
-
-                        <div class="card"><img src="arquivos/GabrielMarinho.webp" alt="João Vítor Mendonça de Moraes"><div>Gabriel Silva Marinho</div></div>
-
-                        <div class="card"><img src="arquivos/DanielHenrique.webp" alt="João Vítor Mendonça de Moraes"><div>Daniel Henrique Vieira Fontoura</div></div>
-        </div>
-        </div>
-
-        <h2>Alumni</h2>
-
-        <h3>PhD</h3>
-        <div class="cards-container">
-            <div class="card"><img src="arquivos/Debora.jpeg" alt="Débora Barbosa Pina"><div>Débora Barbosa Pina - Postdoctoral Researcher at UFRJ (2025)</div></div>
-            <div class="card"><img src="arquivos/ClaudioRibeiro.jpeg" alt="Claudio Vasconcelos Ribeiro"><div>Claudio Vasconcelos Ribeiro - Electrical Engineer at EMGEPRON (2024) <br> <a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1177.pdf&tipo=trabalho">A Collaborative Analysis of Anomalous Trajectories of Vessels Based on Clustering Algorithms</a></div></div>
-            <div class="card"><img src="arquivos/LuizGustavo.jpeg" alt="Luiz Gustavo Dias"><div>Luiz Gustavo Dias - Federal Institute of Education, Science and Technology Goiano (2024) <br> <a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1174.pdf&tipo=trabalho">MAESTRO: Uma Abordagem para Gerência de Experimentos Científicos Apoiada por Ontologias e Dados de Proveniência</a></div></div>
-            <div class="card"><img src="arquivos/Rodrigo.jpeg" alt="Rodrigo Alves Prado da Silva"><div>Rodrigo Alves Prado da Silva - Software Engineer and Solution Architect at Qintess (2024) <br> <a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1235.pdf&tipo=trabalho">CYCLOPS: Uma Abordagem para Escalonamento de Workflows em Nuvens de Computadores com Restrições de Confidencialidade</a></div></div>
-            <div class="card"><img src="arquivos/Liliane.jpeg" alt="Liliane Neves de Oliveira Kunstmann"><div>Liliane Neves de Oliveira Kunstmann - Postdoctoral Researcher at IMPA (2024)</div></div>
-            <div class="card"><img src="arquivos/Wellington.jpeg" alt="Wellington Moreira de Oliveira"><div>Wellington Moreira de Oliveira - Professor at CEFET/MG (2018) <br> <a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=849.pdf&tipo=trabalho">Integrated Analysis of Heterogeneous Provenance Graphs</a></div></div>
-            <div class="card"><img src="arquivos/Vitor.jpeg" alt="Vítor Silva Sousa"><div>Vítor Silva Sousa - AI/ML Speech Data Engineer - Siri Understanding at Apple Inc. USA 🇺🇸 (2018)</div></div>
-            <div class="card"><img src="arquivos/Douglas.jpg" alt="Douglas Ericson Marcelino de Oliveira"><div>Douglas Ericson Marcelino de Oliveira - Researcher at National Laboratory of Scientific Computing (2017) <br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=841.pdf&tipo=trabalho">Otimização da Execução de Workflows Intensivos de Dados em Frameworks MapReduce</a></div></div>
-            <div class="card"><img src="arquivos/Flavio.jpeg" alt="Flavio da Silva Costa"><div>Flavio da Silva Costa - Professor at Colégio Pedro II (2016)</div></div>
-            <div class="card"><img src="arquivos/Ary.jpeg" alt="Ary Henrique Morais de Oliveira"><div>Ary Henrique Morais de Oliveira - Professor at Federal University of Tocantins (2015)</div></div>
-        </div>
-
-        <h3>MSc</h3>
-        <div class="cards-container">
-            <div class="card"><img src="arquivos/Naira.jpeg" alt="Naira Alice Andrade Arruda"><div>Naira Alice Andrade Arruda - Federal Institute of Education, Science and Technology of Santa Catarina (2025)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1250.pdf&tipo=trabalho">Uso de Dados de Proveniência para Análise do Ensino de Programação Baseada em Blocos</a></div></div>
-            <div class="card"><img src="arquivos/Ygor.jpeg" alt="Ygor Carlos Ferreira Rolim"><div>Ygor Carlos Ferreira Rolim - Data Engineer at GFT Group (2025)</div></div>
-            <div class="card"><img src="arquivos/question.jpg" alt="Jessica Louise Monçôres de Almeida"><div>Jessica Louise Monçôres de Almeida - Brazilian Navy (2025)</div></div>
-            <div class="card"><img src="arquivos/Raiza.jpeg" alt="Raiza Correia de Albuquerque"><div>Raiza Correia de Albuquerque - Data Engineer at Accenture (2025)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1252.pdf&tipo=trabalho">Uma Abordagem para Adequação de Pipelines de Extração, Transformação e Carga à Lei Geral de Proteção de Dados</a></div></div>
-            <div class="card"><img src="arquivos/Raslan.jpeg" alt="Raslan Oliveira Ribeiro"><div>Raslan Oliveira Ribeiro - Data Engineer at iFood (2024)<br>
-                <a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1161.pdf&tipo=trabalho">APOENA: uma Abordagem de Dimensionamento de Ambiente de Nuvem para Execução de Cargas de trabalho SQL-like por meio de Aprendizado de Máquina e Dados de Proveniência</a></div></div>
-            <div class="card"><img src="arquivos/alvarenga.png" alt="Luis Carlos Ramos Alvarenga"><div>Luis Carlos Ramos Alvarenga - IT Consultant at Light - PhD Candidate at UFF (2024)</div></div>
-            <div class="card"><img src="arquivos/Raffael.jpeg" alt="Raffael Muralha Paranhos"><div>Raffael Muralha Paranhos - Software Engineer at BTG Pactual (2024)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1158.pdf&tipo=trabalho">A Provenance-Based Approach for Land Use Analysis in Cities</a></div></div>
-            <div class="card"><img src="arquivos/Amanda.jpeg" alt="Amanda Flor"><div>Amanda Flor - Product Owner at Siplan (2024)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1234.pdf&tipo=trabalho">UTK-PROV: Analisando a Construção de Visualizações Web Urbanas Baseadas em Gramática Através de Proveniência</a></div></div>
-            <div class="card"><img src="arquivos/CamilaLopes.jpeg" alt="Camila de Oliveira Lopes"><div>Camila de Oliveira Lopes - Data Scientist at FGV - PhD Candidate at UFF (2024)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1157.pdf&tipo=trabalho">Captura e Uso de Dados de Proveniência em Aplicações de Aprendizado Federado</a></div></div>
-            <div class="card"><img src="arquivos/Fabio.jpeg" alt="Fabio Victorino da Cruz"><div>Fabio Victorino da Cruz - Full Stack developer at SEPLAG Niterói (2024)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1186.pdf&tipo=trabalho">Monitoramento em Tempo Real e Análise Histórica das Chuvas e seus Impactos em Áreas Urbanas</a></div></div>
-            <div class="card"><img src="arquivos/Bruna.jpeg" alt="Bruna de Mello Almeida"><div>Bruna de Mello Almeida - Senior Analytics Engineer at Nubank (2024)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1201.pdf&tipo=trabalho">Otimização de Parâmetros em Aplicações de Big Data Baseadas em Múltiplos Frameworks</a></div></div>
-            <div class="card"><img src="arquivos/question.jpg" alt="Matheus Antunes Vieira"><div>Matheus Antunes Vieira (2024)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1198.pdf&tipo=trabalho">Enriquecimento do Processo de ETL em Data Warehouses por meio de Dados de Proveniência</a></div></div>
-            <div class="card"><img src="arquivos/Elbe.jpeg" alt="Elbe Alves Miranda"><div>Elbe Alves Miranda - Digital and Analytical Solutions Manager at Petrobras (2023)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1146.pdf&tipo=trabalho">O SPARQL Pode Falar em Português? Respondendo a Perguntas em Linguagem Natural Direcionadas a Grafos de Conhecimento</a></div></div>
-
-<div class="card"><img src="arquivos/felipe.png" alt="Elbe Alves Miranda"><div>Luis Felipe Xavier Augusto de Oliveira (2023)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1149.pdf&tipo=trabalho">Mapeamento de Rotas para Resposta de Emergência a Eventos Climáticos: Uma Abordagem Orientada por Dados</a></div></div>
-
-            <div class="card"><img src="arquivos/Annie.jpeg" alt="Annie Vianna Amorim"><div>Annie Vianna Amorim - PhD Candidate at UFF (2023)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1088.pdf&tipo=trabalho">Uma Metodologia para a Avaliação Experimental de Modelagem de Tópicos em Textos Curtos</a></div></div>
-            <div class="card"><img src="arquivos/Wagner.jpeg" alt="Wagner Guimarães Santos"><div>Wagner Guimarães Santos - Rio de Janeiro Police Department (2023)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1141.pdf&tipo=trabalho">PANDORA: Uma Plataforma Colaborativa para Transcrição Semiautomática de Boletins de Ocorrência Manuscritos</a></div></div>
-            <div class="card"><img src="arquivos/GustavoDecarlo.jpeg" alt="Gustavo Decarlo Ferreira Secchim"><div>Gustavo Decarlo Ferreira Secchim - Data Engineer at Thoughtworks (2023)</div></div>
-            <div class="card"><img src="arquivos/Lorenna.jpeg" alt="Lorenna Christ'na Araújo Nascimento"><div>Lorenna Christ'na Araújo Nascimento - AI & Automation Consultant at Customer Science Australia 🇦🇺 (2022)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1056.pdf&tipo=trabalho">Análise de Abordagens de Gerência de Dados para Apoiar a Visualização Interativa de Dados Pluviométricos</a></div></div>
-            <div class="card"><img src="arquivos/Maicon.jpeg" alt="Maicon Ribeiro Banni"><div>Maicon Ribeiro Banni - Data & Analytics Engineering at Falconi (2022)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1070.pdf&tipo=trabalho">HURRICANE: Um Serviço para Integração de Dados de Aplicações de Cidades Inteligentes</a></div></div>
-            <div class="card"><img src="arquivos/LucasBertelli.jpeg" alt="Lucas Bertelli Martins"><div>Lucas Bertelli Martins - Agile Master (SAFe) and Project Manager at ALGO360 P&D Petrobras (2021)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1034.pdf&tipo=trabalho">DIMPLY: Uma Abordagem para Privacidade Diferencial em Sistemas Polystore</a></div></div>
-            <div class="card"><img src="arquivos/Jasbick.jpeg" alt="Daniel Leonardo Jasbick"><div>Daniel Leonardo Jasbick - Senior Data Engineer at Accruent (2021)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1017.pdf&tipo=trabalho">Buscas por Similaridade Diversificada com o Apoio de Índices Métricos</a></div></div>
-            <div class="card"><img src="arquivos/LucasTito.jpeg" alt="Lucas de Souza Tito"><div>Lucas de Souza Tito - Business Strategy Partner, Agile Expert at Itaú Unibanco (2020)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=995.pdf&tipo=trabalho">Gerência de Data Lakes Científicos com o ξ-DL: um estudo de caso da COVID-19</a></div></div>
-            <div class="card"><img src="arquivos/Yan.jpeg" alt="Yan Mendes Ferreira"><div>Yan Mendes Ferreira - Head of Product at Cayena (2020)</div></div>
-            <div class="card"><img src="arquivos/Debora.jpeg" alt="Débora Barbosa Pina"><div>Débora Barbosa Pina - Postdoctoral Researcher at UFRJ (2020)</div></div>
-            <div class="card"><img src="arquivos/Liliane.jpeg" alt="Liliane Neves de Oliveira Kunstmann"><div>Liliane Neves de Oliveira Kunstmann - Postdoctoral Researcher at IMPA (2020)</div></div>
-            <div class="card"><img src="arquivos/question.jpg" alt="Leonardo Sousa Lima Ramos"><div>Leonardo Sousa Lima Ramos (2019)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=930.pdf&tipo=trabalho">PhenoManager: Uma Abordagem para Gerência de Hipóteses Científicas</a></div></div>
-            <div class="card"><img src="arquivos/FelipeSantiago.jpeg" alt="Filipe Tadeu Santiago da Silva"><div>Filipe Tadeu Santiago da Silva - R&D Data Scientist at ExACTa, PUC-Rio (2019)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=955.pdf&tipo=trabalho">Uma Abordagem para a Execução de Workflows Científicos Intensivos em Ambientes de Computação em Nuvem Híbridos</a></div></div>
-            <div class="card"><img src="arquivos/CarlosGracioli.jpg" alt="Carlos Gracioli Neto"><div>Carlos Gracioli Neto - Federal Institute of Education, Science and Technology of Mato Grosso (2019)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=912.pdf&tipo=trabalho">Uma Abordagem baseada em Definição de Escopo e Elementos Esperados para Apoiar Inspeção de Modelos de Software</a></div></div>
-            <div class="card"><img src="arquivos/Kid.jpeg" alt="Kid Yonatan Valeriano Valdez"><div>Kid Yonatan Valeriano Valdez - in memoriam (2019)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=926.pdf&tipo=trabalho">POStURE: A Framework for Unsupervised Semantic Analysis of Political Speeches</a></div></div>
-            <div class="card"><img src="arquivos/DanielJr.jpeg" alt="Daniel Pinheiro da Silva Junior"><div>Daniel Pinheiro da Silva Junior - IT Analyst at UFF - PhD Candidate at UFF (2019)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=913.pdf&tipo=trabalho">Recomendação de Parâmetros em Workflows Científicos por meio de Aprendizado de Preferências</a></div></div>
-            <div class="card"><img src="arquivos/Marcello.jpeg" alt="Marcello Willians Messina Ribeiro"><div>Marcello Willians Messina Ribeiro - IBGE (2018)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=901.pdf&tipo=trabalho">Processamento Paralelo de Consultas OLAP em Nuvens de Computadores com C-ParGRES</a></div></div>
-            <div class="card"><img src="arquivos/Hugo.jpeg" alt="Hugo Arraes Henley"><div>Hugo Arraes Henley - Senior Engineering Manager at Datadog France 🇫🇷 (2018)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=870.pdf&tipo=trabalho">Prelude: uma Arquitetura para Análise de Evasão no Ensino Superior por meio de Aprendizado de Máquina Relacional</a></div></div>
-            <div class="card"><img src="arquivos/Andre.jpeg" alt="André Luís da Costa Nascimento"><div>André Luís da Costa Nascimento - Tech Lead & Software Architect at Darwin Seguros (2018)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=892.pdf&tipo=trabalho">Uma Estratégia de Escalonamento baseada em Aprendizado por Reforço para Workflows Científicos em Nuvens de Computadores</a></div></div>
-            <div class="card"><img src="arquivos/Thaylon.jpeg" alt="Thaylon Guedes Santos"><div>Thaylon Guedes Santos (2018)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=876.pdf&tipo=trabalho">Análise e Captura de Dados de Proveniência no Apache Spark</a></div></div>
-            <div class="card"><img src="arquivos/Augusto.jpeg" alt="Augusto Consulmagnos Romeiro"><div>Augusto Consulmagnos Romeiro - Tech Lead na Impulso (2017)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=761.pdf&tipo=trabalho">SciAgile: Uma Abordagem Ágil em Processos de Experimentação Científica</a></div></div>
-            <div class="card"><img src="arquivos/LeonardoAraujo.jpeg" alt="Leonardo Araújo de Jesus"><div>Leonardo Araújo de Jesus - Senior Software Engineer at Nubank (2017)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=788.pdf&tipo=trabalho">Tolerância a Falhas Em Workflows Científicos Executados em Nuvens Computacionais</a></div></div>
-            <div class="card"><img src="arquivos/question.jpg" alt="Leonardo Araújo de Jesus"><div>Igor Barreto Rodrigues (2016)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=728.pdf&tipo=trabalho">Uma Abordagem Hierárquica para Escalonamento de Atividades de Workflows Científicos Executados em Nuvens de Computadores</a></div></div>
-            <div class="card"><img src="arquivos/Lidson.jpeg" alt="Leonardo Araújo de Jesus"><div>Lidson Barbosa Jacob - IT Analyst at UNIVIÇOSA (2015)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=691.pdf&tipo=trabalho">Spielzyklus: Identificando Padrões de Ciclos em Dados de Proveniência Extraídos de Forma não Intrusiva</a></div></div>
-            <div class="card"><img src="arquivos/Rainier.jpg" alt="Leonardo Araújo de Jesus"><div>Rainier Augusto Ferreira Sales (2014)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=631.pdf&tipo=trabalho">Aplicação de NPC Afetivo em Jogos de Simulação</a></div></div>
-            <div class="card"><img src="arquivos/Vitor.jpeg" alt="Leonardo Araújo de Jesus"><div>Vítor Silva Sousa - AI/ML Speech Data Engineer - Siri Understanding at Apple Inc. USA 🇺🇸 (2014)</div></div>
-
-
-
-            
-        </div>
-
-             <h3>Undergrad</h3>
-        <div class="cards-container">
-             <div class="card"><img src="arquivos/Laryssa.jpeg" alt="Leonardo Araújo de Jesus"><div>Laryssa Machado Rabelo de Paiva (2025)</div></div>
-
-              <div class="card"><img src="arquivos/Willian.jpeg" alt="Leonardo Araújo de Jesus"><div>Willian de Jesus Oliveira - Data Engineer at MODEC (2025)</div></div>
-
-             <div class="card"><img src="arquivos/LeonardoMenezes.jpeg" alt="Leonardo Araújo de Jesus"><div>Leonardo Menezes - Developer at Compass.uol (2025)</div></div>
-
-             <div class="card"><img src="arquivos/Ugo.png" alt="Leonardo Araújo de Jesus"><div>Ugo Gemesio - Software Developer at Sulwork (2025)</div></div>
-
-             <div class="card"><img src="arquivos/BrunoGabriel.jpeg" alt="Leonardo Araújo de Jesus"><div>Bruno Gabriel Montate da Silva - Data Analyst at Gerar Serviços (2025)</div></div>
-
-              <div class="card"><img src="arquivos/Matheus.jpeg" alt="Leonardo Araújo de Jesus"><div>Matheus Lima - Salesforce Developer at GLOBAL HITSS (2024)</div></div>
-
-<div class="card"><img src="arquivos/TiagoMatos.jpeg" alt="Leonardo Araújo de Jesus"><div>Tiago Matos - Public Health Mannager at Hospital Alemão Oswaldo Cruz (2024)</div></div>
-
-<div class="card"><img src="arquivos/BrunoCotelo.jpeg" alt="Leonardo Araújo de Jesus"><div>Bruno Cotelo - Backend Developer at Archdecorpoints (2024)</div></div>
-
-<div class="card"><img src="arquivos/Mariana.jpeg" alt="Leonardo Araújo de Jesus"><div>Mariana Coutinho - Software Engineering Manager at Americanas (2024)</div></div>
-
-<div class="card"><img src="arquivos/FelipeGomes.jpeg" alt="Leonardo Araújo de Jesus"><div>Felipe Gomes - Software Engineer at Calindra Tech (2024)</div></div>
-
-<div class="card"><img src="arquivos/1729136299931.jpeg" alt="Leonardo Araújo de Jesus"><div>Wesley Ferreira - Tech Lead at NerdMonster (2024)</div></div>
-
-<div class="card"><img src="arquivos/Winne.jpeg" alt="Leonardo Araújo de Jesus"><div>Winne Rodrigues - System Developer at UFES (2024)</div></div>
-
-<div class="card"><img src="arquivos/Isaac.jpeg" alt="Leonardo Araújo de Jesus"><div>Isaac Ferreira - Software Engineer at Wellhub (2024)</div></div>
-
-<div class="card"><img src="arquivos/CamilaFerrari.jpeg" alt="Leonardo Araújo de Jesus"><div>Camila Ferrari - Software Developer at Bemobi (2023)</div></div>
-
-<div class="card"><img src="arquivos/Thomaz.jpeg" alt="Leonardo Araújo de Jesus"><div>Thomaz Lisbôa - Infrastructure Analyst at SPX Capital (2023)</div></div>
-
-<div class="card"><img src="arquivos/Lorenzo.jpeg" alt="Leonardo Araújo de Jesus"><div> Lorenzo Aceti - Full Stack Developer at TRACTIAN (2023)</div></div>
-
-<div class="card"><img src="arquivos/Guilherme.jpeg" alt="Leonardo Araújo de Jesus"><div> Guilherme Fernandes - TI Analyst at Banco do Brasil (2023)</div></div>
-
-<div class="card"><img src="arquivos/Janaina.jpeg" alt="Layse Gomes Castro"><div>Janaina Borges - Data Analyst, Data Scientist at Stone (2023)</div></div>
-
-<div class="card"><img src="arquivos/Philippe.jpeg" alt="Layse Gomes Castro"><div>Philippe Simões - Software Engineer at KAMiner (2023)</div></div>
-
-<div class="card"><img src="arquivos/PaulaFernandes.jpeg" alt="Layse Gomes Castro"><div>Paula Fernandes - Software Engineer at Capgemini (2023)</div></div>
-
-<div class="card"><img src="arquivos/RodrigoCavote.jpeg" alt="Layse Gomes Castro"><div>Rodrigo Cavote - Data Analyst at Grupo Boticário (2023)</div></div>
-
-<div class="card"><img src="arquivos/BrunoBelizario.jpeg" alt="Leonardo Araújo de Jesus"><div>Bruno Belizário - DevOps Engineer at ecoPortal (2022)</div></div>
-
-<div class="card"><img src="arquivos/Ana.jpeg" alt="Leonardo Araújo de Jesus"><div>Ana Luisa Esposito - Java Developer at Sensedia (2022)</div></div>
-
-<div class="card"><img src="arquivos/Lucas.jpeg" alt="Leonardo Araújo de Jesus"><div>Lucas Rogério Silva - Senior Software Engineer at PrimeUp (2022)</div></div>
-
-<div class="card"><img src="arquivos/Rodolfo.jpeg" alt="Leonardo Araújo de Jesus"><div>Rodolfo Chagas - Tech Leader at Banco BOCOM BBM (2022)</div></div>
-
-<div class="card"><img src="arquivos/question.jpg" alt="Leonardo Araújo de Jesus"><div>Geison Leonino De Souza Ferreira (2022)</div></div>
-
-<div class="card"><img src="arquivos/Maycon.jpeg" alt="Leonardo Araújo de Jesus"><div>Maycon Prata - Fullstack Developer at Digisystem (2022)</div></div>
-
-<div class="card"><img src="arquivos/Caio.jpeg" alt="Leonardo Araújo de Jesus"><div>Caio Wey de Barros - RPA Developer at Smarthis (2022)</div></div>
-
-<div class="card"><img src="arquivos/Igor.jpeg" alt="Leonardo Araújo de Jesus"><div>Igor Lisboa - Tech Leader at Prognum (2022)</div></div>
-
-<div class="card"><img src="arquivos/Yago.jpeg" alt="Leonardo Araújo de Jesus"><div>Yago Azedias - Software Engineer at Nubank (2022)</div></div>
-
-<div class="card"><img src="arquivos/question.jpg" alt="Matheus Antunes Vieira"><div>Matheus Antunes Vieira (2022)</div></div>
-
-<div class="card"><img src="arquivos/Nicolas.jpeg" alt="Leonardo Araújo de Jesus"><div>Nicolas Nascimento Atmatzides - AWS Consultant at Marlo (2022)</div></div>
-
-<div class="card"><img src="arquivos/question.jpg" alt="Matheus Antunes Vieira"><div>Victor Faria de Souza (2022)</div></div>
-
-<div class="card"><img src="arquivos/JoaoLoureiro.jpeg" alt="Leonardo Araújo de Jesus"><div>João Loureiro - Data Engineer and Data Platform Engineer at Caylent (2022)</div></div>
-
-<div class="card"><img src="arquivos/LucasKnust.jpeg" alt="Leonardo Araújo de Jesus"><div>Lucas Knust - Data Integration Specialist at CSP Tecnologia (2021)</div></div>
-
-<div class="card"><img src="arquivos/Ramon.jpeg" alt="Leonardo Araújo de Jesus"><div>Ramon Santos - BI Analyst at iFood (2021)</div></div>
-
-
-<div class="card"><img src="arquivos/Amanda.png" alt="Matheus Antunes Vieira"><div>Amanda Tamires Inacio (2022)</div></div>
-
-            <div class="card"><img src="arquivos/Sophia.jpeg" alt="Leonardo Araújo de Jesus"><div>Sophia Duboc - Software Engineer at Loggi (2021)</div></div>
-
-            <div class="card"><img src="arquivos/Anna.jpeg" alt="Leonardo Araújo de Jesus"><div>Anna Areias - Software Engineer at iFood (2021)</div></div>
-
-            <div class="card"><img src="arquivos/Lenora.jpeg" alt="Leonardo Araújo de Jesus"><div>Lenora Beaurepaire Schwaitzer - Professor at UFES (2021)</div></div>
-
-              <div class="card"><img src="arquivos/JulianaMesquita.jpeg" alt="Leonardo Araújo de Jesus"><div>Juliana Mesquita - Junior Developer at TODOS (2021)</div></div>
-
-                  <div class="card"><img src="arquivos/mateus.jpeg" alt="Leonardo Araújo de Jesus"><div>Mateus Kono - Senior Software Engineer at Stone (2021)</div></div>
-
-                          <div class="card"><img src="arquivos/Leandro.jpeg" alt="Leonardo Araújo de Jesus"><div>Leandro Shibahara - System Analyst at Prill Tecnologia (2021)</div></div>
-
-                              <div class="card"><img src="arquivos/Renato.jpeg" alt="Leonardo Araújo de Jesus"><div>Renato De Vico - Salesforce Tech Lead at DVNube (2021)</div></div>
-
-            <div class="card"><img src="arquivos/question.jpg" alt="Matheus Antunes Vieira"><div>Daniela Siqueira (2021)</div></div>
-
-            <div class="card"><img src="arquivos/Ygor.jpeg" alt="Ygor Carlos Ferreira Rolim"><div>Ygor Carlos Ferreira Rolim - Data Engineer at GFT Group (2020)</div></div>
-
-            <div class="card"><img src="arquivos/question.jpg" alt="Matheus Antunes Vieira"><div>Isabela Alves de Oliveira (2020)</div></div>
-
-            <div class="card"><img src="arquivos/Diego.jpeg" alt="Ygor Carlos Ferreira Rolim"><div>Diego Duarte - System Analyst at Mestra Informátia (2020)</div></div>
-
-            <div class="card"><img src="arquivos/ThiagoPrado.jpeg" alt="Ygor Carlos Ferreira Rolim"><div>Thiago Prado - Software Engineer at Evertec (2020)</div></div>
-
-            <div class="card"><img src="arquivos/Suzana.jpeg" alt="Ygor Carlos Ferreira Rolim"><div>Suzana Barboza Carvalho - Data Manager at Willbank (2019)</div></div>
-
-             <div class="card"><img src="arquivos/FelipeAssad.jpeg" alt="Ygor Carlos Ferreira Rolim"><div>Felipe Assad - Full Stack Developer at DNA Specialty (2019)</div></div>
-
-             <div class="card"><img src="arquivos/Jorge.jpeg" alt="Ygor Carlos Ferreira Rolim"><div>Jorge Felipe Campos Chagas - Full Stack Developer at Trybe (2019)</div></div>
-
-             <div class="card"><img src="arquivos/BrunoHilario.jpeg" alt="Ygor Carlos Ferreira Rolim"><div>Bruno Hilario - Programmer at Superlógica (2019)</div></div>
-
-
-             <div class="card"><img src="arquivos/VictorOlimpio.jpeg" alt="Ygor Carlos Ferreira Rolim"><div>Victor Olimpio - Data Scientist at Compass.uol (2018)</div></div>
-
-              <div class="card"><img src="arquivos/question.jpg" alt="Matheus Antunes Vieira"><div>Ricardo Jose Conceição Junior (2018)</div></div>
-
-              <div class="card"><img src="arquivos/question.jpg" alt="Matheus Antunes Vieira"><div>Caio de Souza e Silva (2018)</div></div>
-
-               <div class="card"><img src="arquivos/Ramalho.jpeg" alt="Ygor Carlos Ferreira Rolim"><div>Rafael Ferreira Ramalho - IT Analyst at Rede D'Or (2017)</div></div>
-
-<div class="card"><img src="arquivos/DanielJr.jpeg" alt="Daniel Pinheiro da Silva Junior"><div>Daniel Pinheiro da Silva Junior - IT Analyst at UFF - PhD Candidate at UFF (2017)</div></div>
-
-<div class="card"><img src="arquivos/Marcelo.jpeg" alt="Ygor Carlos Ferreira Rolim"><div>Marcelo D'Almeida - PhD Student at University of Pittsburgh (2017)</div></div>
-
-<div class="card"><img src="arquivos/Bernardo.jpeg" alt="Ygor Carlos Ferreira Rolim"><div>Bernardo Amaral - Software Engineer at Canva Australia 🇦🇺 (2017)</div></div>
-
-<div class="card"><img src="arquivos/Mann.jpeg" alt="Ygor Carlos Ferreira Rolim"><div>Paulo Mann - Professor at UFRJ (2017)</div></div>
-
-<div class="card"><img src="arquivos/Fred.jpeg" alt="Ygor Carlos Ferreira Rolim"><div>Frederico Queiroz - Managing Partner at BHP Australia 🇦🇺 (2017)</div></div>
-
-<div class="card"><img src="arquivos/Arthur.jpeg" alt="Ygor Carlos Ferreira Rolim"><div>Arthur Miranda Guimarães - Senior Frontend Engineer at Blue Coding (2017)</div></div>
-
-<div class="card"><img src="arquivos/question.jpg" alt="Matheus Antunes Vieira"><div>Lucas Carreiro Pinheiro (2017)</div></div>
-
- <div class="card"><img src="arquivos/LucasBertelli.jpeg" alt="Lucas Bertelli Martins"><div>Lucas Bertelli Martins - Agile Master (SAFe) and Project Manager at ALGO360 P&D Petrobras (2017)</div></div>
-
-<div class="card"><img src="arquivos/Monique.jpeg" alt="Matheus Antunes Vieira"><div>Monique Moledo - Software Engineer at Shopify Financial Services Canada 🇨🇦 (2017)</div></div>
-
-<div class="card"><img src="arquivos/MarianaTeixeira.jpeg" alt="Matheus Antunes Vieira"><div>Mariana Teixeira - Tech Lead at Timestamp:its Portugal 🇵🇹 (2017)</div></div>
-
-<div class="card"><img src="arquivos/Fabrizio.jpeg" alt="Matheus Antunes Vieira"><div>Fabrizio Moura - Software Support Engineer at Cisco Poland 🇵🇱 (2017)</div></div>
-
-<div class="card"><img src="arquivos/question.jpg" alt="Matheus Antunes Vieira"><div>Guilherme de Souza Silva (2017)</div></div>
-
-<div class="card"><img src="arquivos/Luciano.jpeg" alt="Matheus Antunes Vieira"><div>Luciano Nascimento - Data Engineer and Cloud & Big Data Architect at JOW Analytics (2017)</div></div>
-
-<div class="card"><img src="arquivos/question.jpg" alt="Matheus Antunes Vieira"><div>Rômulo Pereira Soares da Silva (2017)</div></div>
-
-<div class="card"><img src="arquivos/question.jpg" alt="Leonardo Sousa Lima Ramos"><div>Leonardo Sousa Lima Ramos (2016)</div></div>
-
-<div class="card"><img src="arquivos/FelipeSantiago.jpeg" alt="Filipe Tadeu Santiago da Silva"><div>Filipe Tadeu Santiago da Silva - R&D Data Scientist at ExACTa, PUC-Rio (2016)</div></div>
-
-<div class="card"><img src="arquivos/DanielRossi.jpeg" alt="Filipe Tadeu Santiago da Silva"><div>Daniel Rossi Marinho - Full-Stack Developer at Goboony Netherlands 🇳🇱 (2016)</div></div>
-
-<div class="card"><img src="arquivos/Pedro.jpeg" alt="Filipe Tadeu Santiago da Silva"><div>Pedro Develly - System Analyst at TopDown Sistemas (2016)</div></div>
-
-<div class="card"><img src="arquivos/Felipe.jpeg" alt="Filipe Tadeu Santiago da Silva"><div>Felipe Tavares - Senior Systems Analyst at Sinqia (2016)</div></div>
-
-<div class="card"><img src="arquivos/Gisele.jpeg" alt="Filipe Tadeu Santiago da Silva"><div>Gisele Araujo de Freitas Pereira - Java Developer at Critical Techworks Portugal 🇵🇹 (2016)</div></div>
-
-<div class="card"><img src="arquivos/Max.jpeg" alt="Filipe Tadeu Santiago da Silva"><div>Maximiano Pereira - Software Developer at Critical Techworks Portugal 🇵🇹 (2016)</div></div>
-
-<div class="card"><img src="arquivos/Fabiane.jpeg" alt="Filipe Tadeu Santiago da Silva"><div>Fabiane Lucas - Data Engineer at NTT Data (2016)</div></div>
-
-<div class="card"><img src="arquivos/FelipeVieira.jpeg" alt="Filipe Tadeu Santiago da Silva"><div>Felipe Vieira de Lima - Senior Staff Software Engineer at OLX Brasil (2016)</div></div>
-
-<div class="card"><img src="arquivos/Jorcyane.png" alt="Leonardo Sousa Lima Ramos"><div>Jorcyane Lima - Federal Institute of Education, Science and Technology of Paraíba (2016)</div></div>
-
-<div class="card"><img src="arquivos/Carlos.jpeg" alt="Filipe Tadeu Santiago da Silva"><div>Carlos Maciel -  Fullstack Developer at Global HITSS (2015)</div></div>
-
-<div class="card"><img src="arquivos/BrunoConti.jpeg" alt="Filipe Tadeu Santiago da Silva"><div>Bruno Conti - Founder of Alssie Australia 🇦🇺 (2015)</div></div>
-
-<div class="card"><img src="arquivos/RenanVinagre.jpeg" alt="Filipe Tadeu Santiago da Silva"><div>Renan Vinagre Camara - Tech lead at Colégio e Curso Start (2015)</div></div>
-
-<div class="card"><img src="arquivos/GiseleAlves.jpeg" alt="Filipe Tadeu Santiago da Silva"><div>Gisele Alves Carneiro - Engineering Manager at OLX (2015)</div></div>
-
-<div class="card"><img src="arquivos/question.jpg" alt="Leonardo Sousa Lima Ramos"><div>Pedro Silva (2015)</div></div>
-
-<div class="card"><img src="arquivos/LucasAmorim.jpeg" alt="Filipe Tadeu Santiago da Silva"><div>Lucas Amorim - Software Developer at V360 (2014)</div></div>
-
-<div class="card"><img src="arquivos/CarlosFilipe.jpeg" alt="Filipe Tadeu Santiago da Silva"><div>Carlos Filipe M. Teixeira Jr. - Staff Software Engineer at PicPay (2014)</div></div>
-
-<div class="card"><img src="arquivos/question.jpg" alt="Leonardo Sousa Lima Ramos"><div>Guilherme Rangel (2014)</div></div>
-
-<div class="card"><img src="arquivos/GuilhermeMiranda.jpeg" alt="Filipe Tadeu Santiago da Silva"><div>Guilherme Miranda - Senior Software Development Engineering at AWS Canada 🇨🇦 (2014)</div></div>
-
-<div class="card"><img src="arquivos/question.jpg" alt="Leonardo Sousa Lima Ramos"><div>João Augusto B. V. de Souza (2014)</div></div>
-
-<div class="card"><img src="arquivos/GustavoTallarida.jpeg" alt="Filipe Tadeu Santiago da Silva"><div>Gustavo Tallarida - Java Developer at MPDFT (2014)</div></div>
-
-<div class="card"><img src="arquivos/PH.jpeg" alt="Filipe Tadeu Santiago da Silva"><div>Paulo Henrique Ouverney Bastos - Senior Cloud, DevSecOps at OpsGuru Canada 🇨🇦 (2014)</div></div>
-
-<div class="card"><img src="arquivos/GuilhermeGoncalves.jpeg" alt="Leonardo Sousa Lima Ramos"><div>Guilherme Gonçalves - Software Developer at Ambev Tech (2014)</div></div>
-
-<div class="card"><img src="arquivos/FelipeHorta.jpeg" alt="Filipe Tadeu Santiago da Silva"><div>Felipe Horta - ESG & Urban Science Expert at Minnow Spain 🇪🇸 (2013)</div></div>
-
-<div class="card"><img src="arquivos/question.jpg" alt="Leonardo Sousa Lima Ramos"><div>Juliano Oliveira (2013)</div></div>
-
-<div class="card"><img src="arquivos/question.jpg" alt="Leonardo Sousa Lima Ramos"><div>Leonardo Almeida (2013)</div></div>
-
-<div class="card"><img src="arquivos/question.jpg" alt="Leonardo Sousa Lima Ramos"><div>Deulysses Dael (2013)</div></div>
-
-<div class="card"><img src="arquivos/Adeilson.jpeg" alt="Leonardo Sousa Lima Ramos"><div>Adeilson Nascimento - IT Supervisor at Grupo Bravante (2013)</div></div>
-
-<div class="card"><img src="arquivos/John.jpeg" alt="Leonardo Sousa Lima Ramos"><div>John Mavellin Ferreira de Souza - Project Manager at e-Xyon (2013)</div></div>
-
-<div class="card"><img src="arquivos/question.jpg" alt="Leonardo Sousa Lima Ramos"><div>Bruno Cruz (2013)</div></div>
-
-<div class="card"><img src="arquivos/Manuel.jpeg" alt="Leonardo Sousa Lima Ramos"><div>Manuel Almeida - Software Engineer at JDoodle Australia 🇦🇺 (2013)</div></div>
-
-<div class="card"><img src="arquivos/ThiagoDella.jpeg" alt="Leonardo Sousa Lima Ramos"><div>Thiago Della Libera Moreira - Fullstack Software Engineer at Deel Germany 🇩🇪 (2013)</div></div>
-
-<div class="card"><img src="arquivos/ArthurNascimento.jpeg" alt="Leonardo Sousa Lima Ramos"><div>Arthur Nascimento - Data Engineer at Globant (2013)</div></div>
-
-<div class="card"><img src="arquivos/Vitor.jpeg" alt="Vítor Silva Sousa"><div>Vítor Silva Sousa - AI/ML Speech Data Engineer - Siri Understanding at Apple Inc. USA 🇺🇸 (2011)</div></div>
-
-<div class="card"><img src="arquivos/DanielVega.jpeg" alt="Leonardo Sousa Lima Ramos"><div>Daniel Vega Simões - Software Engineer at AWS Canada 🇨🇦 (2010)</div></div>
-
-<div class="card"><img src="arquivos/Ricardo.jpeg" alt="Leonardo Sousa Lima Ramos"><div>Ricardo Busquet - Software Engineer at Passthrough USA 🇺🇸 (2010)</div></div>
-
-<div class="card"><img src="arquivos/PedroCaminha.jpeg" alt="Leonardo Sousa Lima Ramos"><div>Pedro Caminha - Professor at UFRJ (2010)</div></div>
-
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div>
+         </nav>
+         <a href="http://www.ic.uff.br"><img src="arquivos/logo-ic.png" alt="IC-UFF Logo"></a>
+      </header>
+      <!-- Main content -->
+      <main>
+         <h1>Students</h1>
+         This page highlights the students I have (had) the privilege to supervise at the undergraduate, master’s, and doctoral levels. Their dedication, curiosity, and contributions are essential to the research we pursue together. Without their active participation, the work presented here would not be possible, and I am deeply grateful for the fundamental role they play in advancing our collective scientific endeavors.
+         <h2>Current Supervisions</h2>
+         <h3>MSc</h3>
+         <div class="cards-container">
+            <div class="card">
+               <img src="arquivos/1729136299931.jpeg" alt="Wesley Santos Ferreira">
+               <div>Wesley Santos Ferreira</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Paula.jpeg" alt="Paula do Nascimento Woyames">
+               <div>Paula do Nascimento Woyames</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Italo.jpeg" alt="Italo Leite Ferreira Portinho">
+               <div>Italo Leite Ferreira Portinho</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/ThiagoJordao.jpg" alt="Thiago da Costa Jordão">
+               <div>Thiago da Costa Jordão</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Layse.jpeg" alt="Layse Gomes Castro">
+               <div>Layse Gomes Castro</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/MatheusNascimento.jpeg" alt="Layse Gomes Castro">
+               <div>Matheus Nascimento</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Janaina.jpeg" alt="Layse Gomes Castro">
+               <div>Janaina Borges</div>
+            </div>
+         </div>
+         <h3>PhD</h3>
+         <div class="cards-container">
+            <div class="card">
+               <img src="arquivos/DanielJr.jpeg" alt="Daniel Pinheiro da Silva Junior">
+               <div>Daniel Pinheiro da Silva Junior</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/alvarenga.png" alt="Luis Carlos Ramos Alvarenga">
+               <div>Luis Carlos Ramos Alvarenga</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/CamilaLopes.jpeg" alt="Camila de Oliveira Lopes">
+               <div>Camila de Oliveira Lopes</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/gustavo_alex.png" alt="Gustavo Alexandre Sousa Santos">
+               <div>Gustavo Alexandre Sousa Santos</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Tobias.jpeg" alt="Tobias Ribeiro Barreto">
+               <div>Tobias Ribeiro Barreto</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/MariaLuiza.jpeg" alt="Maria Luiza Furtuozo Falci">
+               <div>Maria Luiza Furtuozo Falci</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Annie.jpeg" alt="Annie Vianna Amorim">
+               <div>Annie Vianna Amorim</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Lyncoln.jpeg" alt="Lyncoln Sousa de Oliveira">
+               <div>Lyncoln Sousa de Oliveira</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/ClaudioFerraz.jpeg" alt="Claudio Ananias Ferraz">
+               <div>Claudio Ananias Ferraz</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Marcello.jpeg" alt="Marcello Willians Messina Ribeiro">
+               <div>Marcello Willians Messina Ribeiro</div>
+            </div>
+         </div>
+         <h3>Post-Docs</h3>
+         <div class="cards-container">
+            <div class="card">
+               <img src="arquivos/LuizGustavo.jpeg" alt="Luiz Gustavo Dias">
+               <div>Luiz Gustavo Dias  - Federal Institute of Education, Science and Technology Goiano</div>
+            </div>
+         </div>
+         <h3>Undergrad</h3>
+         <div class="cards-container">
+            <div class="card">
+               <img src="arquivos/JoaoMoraes.jpeg" alt="João Vítor Mendonça de Moraes">
+               <div>João Vítor Mendonça de Moraes</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Daniele.jpeg" alt="João Vítor Mendonça de Moraes">
+               <div>Daniele Pimenta</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Juliana.jpeg" alt="João Vítor Mendonça de Moraes">
+               <div>Juliana Moura</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Lylian.jpeg" alt="João Vítor Mendonça de Moraes">
+               <div>Lylian Pacheco</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Alonso.jpeg" alt="João Vítor Mendonça de Moraes">
+               <div>Alonso Brêda Bassin</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Miguel.jpeg" alt="João Vítor Mendonça de Moraes">
+               <div>Miguel Jehle</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Lucca.jpeg" alt="João Vítor Mendonça de Moraes">
+               <div>Lucca Possas</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Elena.jpeg" alt="João Vítor Mendonça de Moraes">
+               <div>Elena Costa Blanco</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Josue.jpeg" alt="João Vítor Mendonça de Moraes">
+               <div>Josué Santos</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/question.jpg" alt="João Vítor Mendonça de Moraes">
+               <div>Mathews Vaz Reis</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/RodrigoTeixeira.webp" alt="João Vítor Mendonça de Moraes">
+               <div>Rodrigo Teixeira</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Raphael.jpeg" alt="João Vítor Mendonça de Moraes">
+               <div>Raphael Reis Garcia</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/question.jpg" alt="João Vítor Mendonça de Moraes">
+               <div>Vinícius Barreto</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/PedroCosta.webp" alt="João Vítor Mendonça de Moraes">
+               <div>Pedro Costa Xavier</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/JoaoMainoth.webp" alt="João Vítor Mendonça de Moraes">
+               <div>João Victor Mainoth Pereira</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/LucasNatan.webp" alt="João Vítor Mendonça de Moraes">
+               <div>Lucas Natan Franca Costa</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/GabrielMarinho.webp" alt="João Vítor Mendonça de Moraes">
+               <div>Gabriel Silva Marinho</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/DanielHenrique.webp" alt="João Vítor Mendonça de Moraes">
+               <div>Daniel Henrique Vieira Fontoura</div>
+            </div>
+         </div>
+         </div>
+         <h2>Alumni</h2>
+         <h3>PhD</h3>
+         <div class="cards-container">
+            <div class="card">
+               <img src="arquivos/Debora.jpeg" alt="Débora Barbosa Pina">
+               <div>Débora Barbosa Pina - Postdoctoral Researcher at UFRJ (2025)<br><a href="https://www.cos.ufrj.br/uploadfile/publicacao/3208.pdf">Provenance Data as a First-Class Citizen for Deep Learning Workflow Analyses</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/ClaudioRibeiro.jpeg" alt="Claudio Vasconcelos Ribeiro">
+               <div>Claudio Vasconcelos Ribeiro - Electrical Engineer at EMGEPRON (2024) <br> <a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1177.pdf&tipo=trabalho">A Collaborative Analysis of Anomalous Trajectories of Vessels Based on Clustering Algorithms</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/LuizGustavo.jpeg" alt="Luiz Gustavo Dias">
+               <div>Luiz Gustavo Dias - Federal Institute of Education, Science and Technology Goiano (2024) <br> <a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1174.pdf&tipo=trabalho">MAESTRO: Uma Abordagem para Gerência de Experimentos Científicos Apoiada por Ontologias e Dados de Proveniência</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Rodrigo.jpeg" alt="Rodrigo Alves Prado da Silva">
+               <div>Rodrigo Alves Prado da Silva - Software Engineer and Solution Architect at Qintess (2024) <br> <a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1235.pdf&tipo=trabalho">CYCLOPS: Uma Abordagem para Escalonamento de Workflows em Nuvens de Computadores com Restrições de Confidencialidade</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Liliane.jpeg" alt="Liliane Neves de Oliveira Kunstmann">
+               <div>Liliane Neves de Oliveira Kunstmann - Postdoctoral Researcher at IMPA (2024)<br><a href="https://www.cos.ufrj.br/uploadfile/publicacao/3192.pdf">Apoio à Implantação de Workflows Conteinerizados</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Wellington.jpeg" alt="Wellington Moreira de Oliveira">
+               <div>Wellington Moreira de Oliveira - Professor at CEFET/MG (2018) <br> <a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=849.pdf&tipo=trabalho">Integrated Analysis of Heterogeneous Provenance Graphs</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Vitor.jpeg" alt="Vítor Silva Sousa">
+               <div>Vítor Silva Sousa - AI/ML Speech Data Engineer - Siri Understanding at Apple Inc. USA 🇺🇸 (2018)<br><a href="https://www.cos.ufrj.br/uploadfile/publicacao/2853.pdf">Análise de Dados Científicos Sobre Múltiplas Fontes de Dados ao Longo da Execução de Simulações Computacionais</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Douglas.jpg" alt="Douglas Ericson Marcelino de Oliveira">
+               <div>Douglas Ericson Marcelino de Oliveira - Researcher at National Laboratory of Scientific Computing (2017) <br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=841.pdf&tipo=trabalho">Otimização da Execução de Workflows Intensivos de Dados em Frameworks MapReduce</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Flavio.jpeg" alt="Flavio da Silva Costa">
+               <div>Flavio da Silva Costa - Professor at Colégio Pedro II (2016)<br><a href="https://www.cos.ufrj.br/uploadfile/publicacao/2636.pdf">Uma Abordagem Distribuída e Adaptativa para a Gerência dos Dados de Proveniência de Experimentos Científicos Executados em Nuvens Computacionais</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Ary.jpeg" alt="Ary Henrique Morais de Oliveira">
+               <div>Ary Henrique Morais de Oliveira - Professor at Federal University of Tocantins (2015)<br><a href="https://www.cos.ufrj.br/uploadfile/publicacao/2584.pdf">Reprodução de Experimentos Computacionais na Infraestrutura de Computação em Nuvem</a></div>
+            </div>
+         </div>
+         <h3>MSc</h3>
+         <div class="cards-container">
+            <div class="card">
+               <img src="arquivos/Naira.jpeg" alt="Naira Alice Andrade Arruda">
+               <div>Naira Alice Andrade Arruda - Federal Institute of Education, Science and Technology of Santa Catarina (2025)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1250.pdf&tipo=trabalho">Uso de Dados de Proveniência para Análise do Ensino de Programação Baseada em Blocos</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Ygor.jpeg" alt="Ygor Carlos Ferreira Rolim">
+               <div>Ygor Carlos Ferreira Rolim - Data Engineer at GFT Group (2025)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/question.jpg" alt="Jessica Louise Monçôres de Almeida">
+               <div>Jessica Louise Monçôres de Almeida - Brazilian Navy (2025)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Raiza.jpeg" alt="Raiza Correia de Albuquerque">
+               <div>Raiza Correia de Albuquerque - Data Engineer at Accenture (2025)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1252.pdf&tipo=trabalho">Uma Abordagem para Adequação de Pipelines de Extração, Transformação e Carga à Lei Geral de Proteção de Dados</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Raslan.jpeg" alt="Raslan Oliveira Ribeiro">
+               <div>Raslan Oliveira Ribeiro - Data Engineer at iFood (2024)<br>
+                  <a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1161.pdf&tipo=trabalho">APOENA: uma Abordagem de Dimensionamento de Ambiente de Nuvem para Execução de Cargas de trabalho SQL-like por meio de Aprendizado de Máquina e Dados de Proveniência</a>
+               </div>
+            </div>
+            <div class="card">
+               <img src="arquivos/alvarenga.png" alt="Luis Carlos Ramos Alvarenga">
+               <div>Luis Carlos Ramos Alvarenga - IT Consultant at Light - PhD Candidate at UFF (2024)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Raffael.jpeg" alt="Raffael Muralha Paranhos">
+               <div>Raffael Muralha Paranhos - Software Engineer at BTG Pactual (2024)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1158.pdf&tipo=trabalho">A Provenance-Based Approach for Land Use Analysis in Cities</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Amanda.jpeg" alt="Amanda Flor">
+               <div>Amanda Flor - Product Owner at Siplan (2024)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1234.pdf&tipo=trabalho">UTK-PROV: Analisando a Construção de Visualizações Web Urbanas Baseadas em Gramática Através de Proveniência</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/CamilaLopes.jpeg" alt="Camila de Oliveira Lopes">
+               <div>Camila de Oliveira Lopes - Data Scientist at FGV - PhD Candidate at UFF (2024)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1157.pdf&tipo=trabalho">Captura e Uso de Dados de Proveniência em Aplicações de Aprendizado Federado</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Fabio.jpeg" alt="Fabio Victorino da Cruz">
+               <div>Fabio Victorino da Cruz - Full Stack developer at SEPLAG Niterói (2024)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1186.pdf&tipo=trabalho">Monitoramento em Tempo Real e Análise Histórica das Chuvas e seus Impactos em Áreas Urbanas</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Bruna.jpeg" alt="Bruna de Mello Almeida">
+               <div>Bruna de Mello Almeida - Senior Analytics Engineer at Nubank (2024)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1201.pdf&tipo=trabalho">Otimização de Parâmetros em Aplicações de Big Data Baseadas em Múltiplos Frameworks</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/question.jpg" alt="Matheus Antunes Vieira">
+               <div>Matheus Antunes Vieira (2024)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1198.pdf&tipo=trabalho">Enriquecimento do Processo de ETL em Data Warehouses por meio de Dados de Proveniência</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Elbe.jpeg" alt="Elbe Alves Miranda">
+               <div>Elbe Alves Miranda - Digital and Analytical Solutions Manager at Petrobras (2023)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1146.pdf&tipo=trabalho">O SPARQL Pode Falar em Português? Respondendo a Perguntas em Linguagem Natural Direcionadas a Grafos de Conhecimento</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/felipe.png" alt="Elbe Alves Miranda">
+               <div>Luis Felipe Xavier Augusto de Oliveira (2023)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1149.pdf&tipo=trabalho">Mapeamento de Rotas para Resposta de Emergência a Eventos Climáticos: Uma Abordagem Orientada por Dados</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Annie.jpeg" alt="Annie Vianna Amorim">
+               <div>Annie Vianna Amorim - PhD Candidate at UFF (2023)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1088.pdf&tipo=trabalho">Uma Metodologia para a Avaliação Experimental de Modelagem de Tópicos em Textos Curtos</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Wagner.jpeg" alt="Wagner Guimarães Santos">
+               <div>Wagner Guimarães Santos - Rio de Janeiro Police Department (2023)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1141.pdf&tipo=trabalho">PANDORA: Uma Plataforma Colaborativa para Transcrição Semiautomática de Boletins de Ocorrência Manuscritos</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/GustavoDecarlo.jpeg" alt="Gustavo Decarlo Ferreira Secchim">
+               <div>Gustavo Decarlo Ferreira Secchim - Data Engineer at Thoughtworks (2023)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Lorenna.jpeg" alt="Lorenna Christ'na Araújo Nascimento">
+               <div>Lorenna Christ'na Araújo Nascimento - AI & Automation Consultant at Customer Science Australia 🇦🇺 (2022)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1056.pdf&tipo=trabalho">Análise de Abordagens de Gerência de Dados para Apoiar a Visualização Interativa de Dados Pluviométricos</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Maicon.jpeg" alt="Maicon Ribeiro Banni">
+               <div>Maicon Ribeiro Banni - Data & Analytics Engineering at Falconi (2022)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1070.pdf&tipo=trabalho">HURRICANE: Um Serviço para Integração de Dados de Aplicações de Cidades Inteligentes</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/LucasBertelli.jpeg" alt="Lucas Bertelli Martins">
+               <div>Lucas Bertelli Martins - Agile Master (SAFe) and Project Manager at ALGO360 P&D Petrobras (2021)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1034.pdf&tipo=trabalho">DIMPLY: Uma Abordagem para Privacidade Diferencial em Sistemas Polystore</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Jasbick.jpeg" alt="Daniel Leonardo Jasbick">
+               <div>Daniel Leonardo Jasbick - Senior Data Engineer at Accruent (2021)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=1017.pdf&tipo=trabalho">Buscas por Similaridade Diversificada com o Apoio de Índices Métricos</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/LucasTito.jpeg" alt="Lucas de Souza Tito">
+               <div>Lucas de Souza Tito - Business Strategy Partner, Agile Expert at Itaú Unibanco (2020)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=995.pdf&tipo=trabalho">Gerência de Data Lakes Científicos com o ξ-DL: um estudo de caso da COVID-19</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Yan.jpeg" alt="Yan Mendes Ferreira">
+               <div>Yan Mendes Ferreira - Head of Product at Cayena (2020)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Debora.jpeg" alt="Débora Barbosa Pina">
+               <div>Débora Barbosa Pina - Postdoctoral Researcher at UFRJ (2020)<br><a href="https://www.cos.ufrj.br/uploadfile/publicacao/2950.pdf">Captura de Dados de Proveniência para Apoiar a Análise de Hiperparâmetros em Redes de Aprendizado Profundo</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Liliane.jpeg" alt="Liliane Neves de Oliveira Kunstmann">
+               <div>Liliane Neves de Oliveira Kunstmann - Postdoctoral Researcher at IMPA (2020)<br><a href="https://www.cos.ufrj.br/uploadfile/publicacao/2954.pdf">PROVDEPLOY: Apoio à Coleta de Dados de Proveniência em Scripts de Execução de Códigos Científicos</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/question.jpg" alt="Leonardo Sousa Lima Ramos">
+               <div>Leonardo Sousa Lima Ramos (2019)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=930.pdf&tipo=trabalho">PhenoManager: Uma Abordagem para Gerência de Hipóteses Científicas</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/FelipeSantiago.jpeg" alt="Filipe Tadeu Santiago da Silva">
+               <div>Filipe Tadeu Santiago da Silva - R&D Data Scientist at ExACTa, PUC-Rio (2019)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=955.pdf&tipo=trabalho">Uma Abordagem para a Execução de Workflows Científicos Intensivos em Ambientes de Computação em Nuvem Híbridos</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/CarlosGracioli.jpg" alt="Carlos Gracioli Neto">
+               <div>Carlos Gracioli Neto - Federal Institute of Education, Science and Technology of Mato Grosso (2019)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=912.pdf&tipo=trabalho">Uma Abordagem baseada em Definição de Escopo e Elementos Esperados para Apoiar Inspeção de Modelos de Software</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Kid.jpeg" alt="Kid Yonatan Valeriano Valdez">
+               <div>Kid Yonatan Valeriano Valdez - in memoriam (2019)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=926.pdf&tipo=trabalho">POStURE: A Framework for Unsupervised Semantic Analysis of Political Speeches</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/DanielJr.jpeg" alt="Daniel Pinheiro da Silva Junior">
+               <div>Daniel Pinheiro da Silva Junior - IT Analyst at UFF - PhD Candidate at UFF (2019)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=913.pdf&tipo=trabalho">Recomendação de Parâmetros em Workflows Científicos por meio de Aprendizado de Preferências</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Marcello.jpeg" alt="Marcello Willians Messina Ribeiro">
+               <div>Marcello Willians Messina Ribeiro - IBGE (2018)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=901.pdf&tipo=trabalho">Processamento Paralelo de Consultas OLAP em Nuvens de Computadores com C-ParGRES</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Hugo.jpeg" alt="Hugo Arraes Henley">
+               <div>Hugo Arraes Henley - Senior Engineering Manager at Datadog France 🇫🇷 (2018)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=870.pdf&tipo=trabalho">Prelude: uma Arquitetura para Análise de Evasão no Ensino Superior por meio de Aprendizado de Máquina Relacional</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Andre.jpeg" alt="André Luís da Costa Nascimento">
+               <div>André Luís da Costa Nascimento - Tech Lead & Software Architect at Darwin Seguros (2018)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=892.pdf&tipo=trabalho">Uma Estratégia de Escalonamento baseada em Aprendizado por Reforço para Workflows Científicos em Nuvens de Computadores</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Thaylon.jpeg" alt="Thaylon Guedes Santos">
+               <div>Thaylon Guedes Santos (2018)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=876.pdf&tipo=trabalho">Análise e Captura de Dados de Proveniência no Apache Spark</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Augusto.jpeg" alt="Augusto Consulmagnos Romeiro">
+               <div>Augusto Consulmagnos Romeiro - Tech Lead na Impulso (2017)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=761.pdf&tipo=trabalho">SciAgile: Uma Abordagem Ágil em Processos de Experimentação Científica</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/LeonardoAraujo.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Leonardo Araújo de Jesus - Senior Software Engineer at Nubank (2017)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=788.pdf&tipo=trabalho">Tolerância a Falhas Em Workflows Científicos Executados em Nuvens Computacionais</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/question.jpg" alt="Leonardo Araújo de Jesus">
+               <div>Igor Barreto Rodrigues (2016)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=728.pdf&tipo=trabalho">Uma Abordagem Hierárquica para Escalonamento de Atividades de Workflows Científicos Executados em Nuvens de Computadores</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Lidson.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Lidson Barbosa Jacob - IT Analyst at UNIVIÇOSA (2015)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=691.pdf&tipo=trabalho">Spielzyklus: Identificando Padrões de Ciclos em Dados de Proveniência Extraídos de Forma não Intrusiva</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Rainier.jpg" alt="Leonardo Araújo de Jesus">
+               <div>Rainier Augusto Ferreira Sales (2014)<br><a href="https://www.ic.uff.br/wp-content/tesesedissertacoes/frontend-tesesdissertacoes/download.php?id=631.pdf&tipo=trabalho">Aplicação de NPC Afetivo em Jogos de Simulação</a></div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Vitor.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Vítor Silva Sousa - AI/ML Speech Data Engineer - Siri Understanding at Apple Inc. USA 🇺🇸 (2014)<br><a href="https://www.cos.ufrj.br/uploadfile/1411391727.pdf">Uma Estratégia de Execução Paralela Adaptável de Workflows Científicos</a></div>
+            </div>
+         </div>
+         <h3>Undergrad</h3>
+         <div class="cards-container">
+            <div class="card">
+               <img src="arquivos/Laryssa.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Laryssa Machado Rabelo de Paiva (2025)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Willian.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Willian de Jesus Oliveira - Data Engineer at MODEC (2025)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/LeonardoMenezes.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Leonardo Menezes - Developer at Compass.uol (2025)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Ugo.png" alt="Leonardo Araújo de Jesus">
+               <div>Ugo Gemesio - Software Developer at Sulwork (2025)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/BrunoGabriel.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Bruno Gabriel Montate da Silva - Data Analyst at Gerar Serviços (2025)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Matheus.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Matheus Lima - Salesforce Developer at GLOBAL HITSS (2024)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/TiagoMatos.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Tiago Matos - Public Health Mannager at Hospital Alemão Oswaldo Cruz (2024)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/BrunoCotelo.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Bruno Cotelo - Backend Developer at Archdecorpoints (2024)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Mariana.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Mariana Coutinho - Software Engineering Manager at Americanas (2024)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/FelipeGomes.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Felipe Gomes - Software Engineer at Calindra Tech (2024)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/1729136299931.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Wesley Ferreira - Tech Lead at NerdMonster (2024)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Winne.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Winne Rodrigues - System Developer at UFES (2024)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Isaac.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Isaac Ferreira - Software Engineer at Wellhub (2024)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/CamilaFerrari.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Camila Ferrari - Software Developer at Bemobi (2023)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Thomaz.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Thomaz Lisbôa - Infrastructure Analyst at SPX Capital (2023)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Lorenzo.jpeg" alt="Leonardo Araújo de Jesus">
+               <div> Lorenzo Aceti - Full Stack Developer at TRACTIAN (2023)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Guilherme.jpeg" alt="Leonardo Araújo de Jesus">
+               <div> Guilherme Fernandes - TI Analyst at Banco do Brasil (2023)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Janaina.jpeg" alt="Layse Gomes Castro">
+               <div>Janaina Borges - Data Analyst, Data Scientist at Stone (2023)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Philippe.jpeg" alt="Layse Gomes Castro">
+               <div>Philippe Simões - Software Engineer at KAMiner (2023)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/PaulaFernandes.jpeg" alt="Layse Gomes Castro">
+               <div>Paula Fernandes - Software Engineer at Capgemini (2023)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/RodrigoCavote.jpeg" alt="Layse Gomes Castro">
+               <div>Rodrigo Cavote - Data Analyst at Grupo Boticário (2023)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/BrunoBelizario.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Bruno Belizário - DevOps Engineer at ecoPortal (2022)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Ana.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Ana Luisa Esposito - Java Developer at Sensedia (2022)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Lucas.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Lucas Rogério Silva - Senior Software Engineer at PrimeUp (2022)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Rodolfo.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Rodolfo Chagas - Tech Leader at Banco BOCOM BBM (2022)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/question.jpg" alt="Leonardo Araújo de Jesus">
+               <div>Geison Leonino De Souza Ferreira (2022)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Maycon.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Maycon Prata - Fullstack Developer at Digisystem (2022)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Caio.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Caio Wey de Barros - RPA Developer at Smarthis (2022)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Igor.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Igor Lisboa - Tech Leader at Prognum (2022)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Yago.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Yago Azedias - Software Engineer at Nubank (2022)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/question.jpg" alt="Matheus Antunes Vieira">
+               <div>Matheus Antunes Vieira (2022)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Nicolas.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Nicolas Nascimento Atmatzides - AWS Consultant at Marlo (2022)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/question.jpg" alt="Matheus Antunes Vieira">
+               <div>Victor Faria de Souza (2022)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/JoaoLoureiro.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>João Loureiro - Data Engineer and Data Platform Engineer at Caylent (2022)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/LucasKnust.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Lucas Knust - Data Integration Specialist at CSP Tecnologia (2021)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Ramon.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Ramon Santos - BI Analyst at iFood (2021)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Amanda.png" alt="Matheus Antunes Vieira">
+               <div>Amanda Tamires Inacio (2022)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Sophia.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Sophia Duboc - Software Engineer at Loggi (2021)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Anna.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Anna Areias - Software Engineer at iFood (2021)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Lenora.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Lenora Beaurepaire Schwaitzer - Professor at UFES (2021)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/JulianaMesquita.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Juliana Mesquita - Junior Developer at TODOS (2021)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/mateus.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Mateus Kono - Senior Software Engineer at Stone (2021)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Leandro.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Leandro Shibahara - System Analyst at Prill Tecnologia (2021)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Renato.jpeg" alt="Leonardo Araújo de Jesus">
+               <div>Renato De Vico - Salesforce Tech Lead at DVNube (2021)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/question.jpg" alt="Matheus Antunes Vieira">
+               <div>Daniela Siqueira (2021)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Ygor.jpeg" alt="Ygor Carlos Ferreira Rolim">
+               <div>Ygor Carlos Ferreira Rolim - Data Engineer at GFT Group (2020)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/question.jpg" alt="Matheus Antunes Vieira">
+               <div>Isabela Alves de Oliveira (2020)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Diego.jpeg" alt="Ygor Carlos Ferreira Rolim">
+               <div>Diego Duarte - System Analyst at Mestra Informátia (2020)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/ThiagoPrado.jpeg" alt="Ygor Carlos Ferreira Rolim">
+               <div>Thiago Prado - Software Engineer at Evertec (2020)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Suzana.jpeg" alt="Ygor Carlos Ferreira Rolim">
+               <div>Suzana Barboza Carvalho - Data Manager at Willbank (2019)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/FelipeAssad.jpeg" alt="Ygor Carlos Ferreira Rolim">
+               <div>Felipe Assad - Full Stack Developer at DNA Specialty (2019)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Jorge.jpeg" alt="Ygor Carlos Ferreira Rolim">
+               <div>Jorge Felipe Campos Chagas - Full Stack Developer at Trybe (2019)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/BrunoHilario.jpeg" alt="Ygor Carlos Ferreira Rolim">
+               <div>Bruno Hilario - Programmer at Superlógica (2019)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/VictorOlimpio.jpeg" alt="Ygor Carlos Ferreira Rolim">
+               <div>Victor Olimpio - Data Scientist at Compass.uol (2018)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/question.jpg" alt="Matheus Antunes Vieira">
+               <div>Ricardo Jose Conceição Junior (2018)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/question.jpg" alt="Matheus Antunes Vieira">
+               <div>Caio de Souza e Silva (2018)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Ramalho.jpeg" alt="Ygor Carlos Ferreira Rolim">
+               <div>Rafael Ferreira Ramalho - IT Analyst at Rede D'Or (2017)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/DanielJr.jpeg" alt="Daniel Pinheiro da Silva Junior">
+               <div>Daniel Pinheiro da Silva Junior - IT Analyst at UFF - PhD Candidate at UFF (2017)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Marcelo.jpeg" alt="Ygor Carlos Ferreira Rolim">
+               <div>Marcelo D'Almeida - PhD Student at University of Pittsburgh (2017)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Bernardo.jpeg" alt="Ygor Carlos Ferreira Rolim">
+               <div>Bernardo Amaral - Software Engineer at Canva Australia 🇦🇺 (2017)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Mann.jpeg" alt="Ygor Carlos Ferreira Rolim">
+               <div>Paulo Mann - Professor at UFRJ (2017)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Fred.jpeg" alt="Ygor Carlos Ferreira Rolim">
+               <div>Frederico Queiroz - Managing Partner at BHP Australia 🇦🇺 (2017)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Arthur.jpeg" alt="Ygor Carlos Ferreira Rolim">
+               <div>Arthur Miranda Guimarães - Senior Frontend Engineer at Blue Coding (2017)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/question.jpg" alt="Matheus Antunes Vieira">
+               <div>Lucas Carreiro Pinheiro (2017)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/LucasBertelli.jpeg" alt="Lucas Bertelli Martins">
+               <div>Lucas Bertelli Martins - Agile Master (SAFe) and Project Manager at ALGO360 P&D Petrobras (2017)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Monique.jpeg" alt="Matheus Antunes Vieira">
+               <div>Monique Moledo - Software Engineer at Shopify Financial Services Canada 🇨🇦 (2017)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/MarianaTeixeira.jpeg" alt="Matheus Antunes Vieira">
+               <div>Mariana Teixeira - Tech Lead at Timestamp:its Portugal 🇵🇹 (2017)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Fabrizio.jpeg" alt="Matheus Antunes Vieira">
+               <div>Fabrizio Moura - Software Support Engineer at Cisco Poland 🇵🇱 (2017)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/question.jpg" alt="Matheus Antunes Vieira">
+               <div>Guilherme de Souza Silva (2017)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Luciano.jpeg" alt="Matheus Antunes Vieira">
+               <div>Luciano Nascimento - Data Engineer and Cloud & Big Data Architect at JOW Analytics (2017)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/question.jpg" alt="Matheus Antunes Vieira">
+               <div>Rômulo Pereira Soares da Silva (2017)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/question.jpg" alt="Leonardo Sousa Lima Ramos">
+               <div>Leonardo Sousa Lima Ramos (2016)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/FelipeSantiago.jpeg" alt="Filipe Tadeu Santiago da Silva">
+               <div>Filipe Tadeu Santiago da Silva - R&D Data Scientist at ExACTa, PUC-Rio (2016)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/DanielRossi.jpeg" alt="Filipe Tadeu Santiago da Silva">
+               <div>Daniel Rossi Marinho - Full-Stack Developer at Goboony Netherlands 🇳🇱 (2016)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Pedro.jpeg" alt="Filipe Tadeu Santiago da Silva">
+               <div>Pedro Develly - System Analyst at TopDown Sistemas (2016)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Felipe.jpeg" alt="Filipe Tadeu Santiago da Silva">
+               <div>Felipe Tavares - Senior Systems Analyst at Sinqia (2016)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Gisele.jpeg" alt="Filipe Tadeu Santiago da Silva">
+               <div>Gisele Araujo de Freitas Pereira - Java Developer at Critical Techworks Portugal 🇵🇹 (2016)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Max.jpeg" alt="Filipe Tadeu Santiago da Silva">
+               <div>Maximiano Pereira - Software Developer at Critical Techworks Portugal 🇵🇹 (2016)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Fabiane.jpeg" alt="Filipe Tadeu Santiago da Silva">
+               <div>Fabiane Lucas - Data Engineer at NTT Data (2016)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/FelipeVieira.jpeg" alt="Filipe Tadeu Santiago da Silva">
+               <div>Felipe Vieira de Lima - Senior Staff Software Engineer at OLX Brasil (2016)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Jorcyane.png" alt="Leonardo Sousa Lima Ramos">
+               <div>Jorcyane Lima - Federal Institute of Education, Science and Technology of Paraíba (2016)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Carlos.jpeg" alt="Filipe Tadeu Santiago da Silva">
+               <div>Carlos Maciel -  Fullstack Developer at Global HITSS (2015)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/BrunoConti.jpeg" alt="Filipe Tadeu Santiago da Silva">
+               <div>Bruno Conti - Founder of Alssie Australia 🇦🇺 (2015)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/RenanVinagre.jpeg" alt="Filipe Tadeu Santiago da Silva">
+               <div>Renan Vinagre Camara - Tech lead at Colégio e Curso Start (2015)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/GiseleAlves.jpeg" alt="Filipe Tadeu Santiago da Silva">
+               <div>Gisele Alves Carneiro - Engineering Manager at OLX (2015)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/question.jpg" alt="Leonardo Sousa Lima Ramos">
+               <div>Pedro Silva (2015)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/LucasAmorim.jpeg" alt="Filipe Tadeu Santiago da Silva">
+               <div>Lucas Amorim - Software Developer at V360 (2014)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/CarlosFilipe.jpeg" alt="Filipe Tadeu Santiago da Silva">
+               <div>Carlos Filipe M. Teixeira Jr. - Staff Software Engineer at PicPay (2014)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/question.jpg" alt="Leonardo Sousa Lima Ramos">
+               <div>Guilherme Rangel (2014)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/GuilhermeMiranda.jpeg" alt="Filipe Tadeu Santiago da Silva">
+               <div>Guilherme Miranda - Senior Software Development Engineering at AWS Canada 🇨🇦 (2014)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/question.jpg" alt="Leonardo Sousa Lima Ramos">
+               <div>João Augusto B. V. de Souza (2014)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/GustavoTallarida.jpeg" alt="Filipe Tadeu Santiago da Silva">
+               <div>Gustavo Tallarida - Java Developer at MPDFT (2014)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/PH.jpeg" alt="Filipe Tadeu Santiago da Silva">
+               <div>Paulo Henrique Ouverney Bastos - Senior Cloud, DevSecOps at OpsGuru Canada 🇨🇦 (2014)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/GuilhermeGoncalves.jpeg" alt="Leonardo Sousa Lima Ramos">
+               <div>Guilherme Gonçalves - Software Developer at Ambev Tech (2014)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/FelipeHorta.jpeg" alt="Filipe Tadeu Santiago da Silva">
+               <div>Felipe Horta - ESG & Urban Science Expert at Minnow Spain 🇪🇸 (2013)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/question.jpg" alt="Leonardo Sousa Lima Ramos">
+               <div>Juliano Oliveira (2013)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/question.jpg" alt="Leonardo Sousa Lima Ramos">
+               <div>Leonardo Almeida (2013)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/question.jpg" alt="Leonardo Sousa Lima Ramos">
+               <div>Deulysses Dael (2013)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Adeilson.jpeg" alt="Leonardo Sousa Lima Ramos">
+               <div>Adeilson Nascimento - IT Supervisor at Grupo Bravante (2013)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/John.jpeg" alt="Leonardo Sousa Lima Ramos">
+               <div>John Mavellin Ferreira de Souza - Project Manager at e-Xyon (2013)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/question.jpg" alt="Leonardo Sousa Lima Ramos">
+               <div>Bruno Cruz (2013)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Manuel.jpeg" alt="Leonardo Sousa Lima Ramos">
+               <div>Manuel Almeida - Software Engineer at JDoodle Australia 🇦🇺 (2013)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/ThiagoDella.jpeg" alt="Leonardo Sousa Lima Ramos">
+               <div>Thiago Della Libera Moreira - Fullstack Software Engineer at Deel Germany 🇩🇪 (2013)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/ArthurNascimento.jpeg" alt="Leonardo Sousa Lima Ramos">
+               <div>Arthur Nascimento - Data Engineer at Globant (2013)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Vitor.jpeg" alt="Vítor Silva Sousa">
+               <div>Vítor Silva Sousa - AI/ML Speech Data Engineer - Siri Understanding at Apple Inc. USA 🇺🇸 (2011)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/DanielVega.jpeg" alt="Leonardo Sousa Lima Ramos">
+               <div>Daniel Vega Simões - Software Engineer at AWS Canada 🇨🇦 (2010)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/Ricardo.jpeg" alt="Leonardo Sousa Lima Ramos">
+               <div>Ricardo Busquet - Software Engineer at Passthrough USA 🇺🇸 (2010)</div>
+            </div>
+            <div class="card">
+               <img src="arquivos/PedroCaminha.jpeg" alt="Leonardo Sousa Lima Ramos">
+               <div>Pedro Caminha - Professor at UFRJ (2010)</div>
+            </div>
+         </div>
+      </main>
+      <!-- Footer -->
+      <footer>
+         <div>
             <b>Phone: +55 (21) 2629-5637<br>Fax: +55 (21) 2629-5627</b>
-        </div>
-        <div>
+         </div>
+         <div>
             <b>danielcmo (at) ic (dot) uff (dot) br</b>
-        </div>
-    </footer>
-</body>
+         </div>
+      </footer>
+   </body>
 </html>

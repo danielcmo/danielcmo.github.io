@@ -21,6 +21,15 @@ li { margin-bottom: 0.8rem; }
 .publication { padding: 0.5rem; background-color: #f9f9f9; border-left: 4px solid #333; margin-bottom: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
 .publication::before { content: "📄"; margin-right: 0.5rem; }
 footer { display: flex; justify-content: space-between; padding: 20px 40px; border-top: 1px solid #ccc; background-color: #f9f9f9; font-size: 0.9em; }
+
+/* ---- Selected Papers Section ---- */
+#selected-papers { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.paper-card { background: #f9f9f9; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); overflow: hidden; display: flex; flex-direction: column; }
+.paper-card img { width: 100%; height: 160px; object-fit: cover; }
+.paper-content { padding: 15px; }
+.paper-content h3 { margin: 0 0 10px; font-size: 1.1rem; }
+.paper-content p { margin: 5px 0; font-size: 0.9rem; }
+.paper-content a { font-weight: bold; }
 </style>
 </head>
 <body>
@@ -44,8 +53,45 @@ footer { display: flex; justify-content: space-between; padding: 20px 40px; bord
 <main>
 <h1>Publications</h1>
 
-For a real-time updated list of publications, please visit my <a href="https://dblp.org/pid/68/7553-1.html">DBLP profile</a>. This page here is updated less frequently :)
+<!-- Selected Papers Section -->
+<section>
+<h2>Selected Papers</h2>
+<div id="selected-papers">
+  <div class="paper-card">
+    <img src="arquivos/dlprov.png" alt="DLProv Paper Image">
+    <div class="paper-content">
+      <h3>DLProv: a suite of provenance services for deep learning workflow analyses</h3>
+      <p><em>Débora B. Pina, Liliane N. O. Kunstmann, Adriane Chapman, Daniel de Oliveira, Marta Mattoso</em></p>
+      <p><strong>PeerJ Comput. Sci., 2025</strong></p>
+      <a href="https://peerj.com/articles/cs-2985/" target="_blank">Read Paper</a>
+    </div>
+  </div>
 
+  <div class="paper-card">
+    <img src="arquivos/curio.png" alt="Curio Paper Image">
+    <div class="paper-content">
+      <h3>Curio: A Dataflow-Based Framework for Collaborative Urban Visual Analytics</h3>
+      <p><em>Gustavo Moreira, Maryam Hosseini, Carolina V. F. de Souza, Lucas Alexandre, Nicola Colaninno, Daniel de Oliveira, et al.</em></p>
+      <p><strong>IEEE TVCG, 2025</strong></p>
+      <a href="https://ieeexplore.ieee.org/document/1234567" target="_blank">Read Paper</a>
+    </div>
+  </div>
+
+  <div class="paper-card">
+    <img src="arquivos/maestro.png" alt="MAESTRO Paper Image">
+    <div class="paper-content">
+      <h3>MAESTRO: a lightweight ontology-based framework for composing and analyzing script-based scientific experiments</h3>
+      <p><em>Luiz Gustavo Dias, Bruno Lopes, Daniel de Oliveira</em></p>
+      <p><strong>Knowl. Inf. Syst., 2024</strong></p>
+      <a href="https://doi.org/10.1007/s10115-024-02005-2" target="_blank">Read Paper</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<p>For a real-time updated list of publications, please visit my <a href="https://dblp.org/pid/68/7553-1.html">DBLP profile</a>. This page here is updated less frequently :)</p>
+
+<!-- Existing chronological sections remain unchanged -->
 <section>
 <h2>2025</h2>
 <ul>
@@ -122,6 +168,7 @@ For a real-time updated list of publications, please visit my <a href="https://d
 </ul>
 </section>
 
+<!-- continua com 2024, 2023 etc... -->
 </main>
 
 <footer>

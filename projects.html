@@ -65,6 +65,30 @@
       background-color: #f9f9f9;
       font-size: 0.9em;
     }
+  .integrantes-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.integrantes-grid img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%; /* 🔵 transforma em bola */
+  object-fit: cover;
+  border: 2px solid #004f9e; /* borda azul opcional */
+  padding: 2px;
+  background: #fff;
+  transition: transform 0.3s ease;
+}
+
+.integrantes-grid img:hover {
+  transform: scale(1.1); /* zoom suave ao passar o mouse */
+}
+.financiador {
+  margin-top: 15px;
+}
   </style>
 </head>
 <body>
@@ -92,13 +116,34 @@
     <p>This page highlights the main research projects coordinated or participated by Daniel de Oliveira.</p>
 
     <div class="project-card">
-      <h3>Execução e Análise de Workflows de Aprendizado de Máquina Federado para Astronomia em Ambientes de Computação de Alto Desempenho</h3>
-      <div class="project-meta">2024 - Atual | Situação: Em andamento | Natureza: Pesquisa</div>
-      <p><b>Descrição:</b> Nas últimas décadas, o Aprendizado de Máquina tem recebido crescente atenção tanto da academia quanto da indústria. No entanto, as abordagens tradicionais de Aprendizado de Máquina enfrentam desafios críticos, especialmente no que se refere à privacidade dos dados e ao volume e transferência de informações a serem processadas. Para lidar com essas questões, o Aprendizado Federado surge como uma solução promissora. Tal abordagem permite que diferentes nós de uma rede treinem modelos colaborativamente, sem a necessidade de compartilhamento direto dos exemplos, preservando a privacidade e minimizando o volume de dados transmitidos entre as partes. (...)</p>
-      <p><b>Alunos envolvidos:</b> Mestrado acadêmico: (3) | Doutorado: (6)</p>
-      <p><b>Integrantes:</b> Daniel Cardoso Moraes de Oliveira (Coordenador) / Isabel Rosseti / Marcos Lage / Aline Marins Paes Carvalho / Renan Santos Souza / Yuri Frota / Luiz Alberto Nicolaci da Costa / Fábio Markus Nunes Miranda / Rafael Ferreira da Silva / Julia Gschwend</p>
-      <p><b>Financiador(es):</b> Conselho Nacional de Desenvolvimento Científico e Tecnológico - Auxílio financeiro</p>
+  <h3>Execução e Análise de Workflows de Aprendizado de Máquina Federado para Astronomia em Ambientes de Computação de Alto Desempenho</h3>
+  <div class="project-meta">2024 - Atual | Situação: Em andamento | Natureza: Pesquisa</div>
+  
+  <p><b>Descrição:</b> Nas últimas décadas, o Aprendizado de Máquina tem recebido crescente atenção tanto da academia quanto da indústria. No entanto, as abordagens tradicionais de Aprendizado de Máquina enfrentam desafios críticos, especialmente no que se refere à privacidade dos dados e ao volume e transferência de informações a serem processadas. Para lidar com essas questões, o Aprendizado Federado surge como uma solução promissora. Tal abordagem permite que diferentes nós de uma rede treinem modelos colaborativamente, sem a necessidade de compartilhamento direto dos exemplos, preservando a privacidade e minimizando o volume de dados transmitidos entre as partes. (...)</p>
+  
+  <p><b>Alunos envolvidos:</b> Mestrado acadêmico: (3) | Doutorado: (6)</p>
+  
+  <div>
+    <b>Integrantes:</b>
+    <div class="integrantes-grid">
+      <img src="arquivos/Daniel.jpeg" alt="Daniel Cardoso Moraes de Oliveira" title="Daniel Cardoso Moraes de Oliveira (Coordenador)">
+      <img src="arquivos/Isabel.jpeg" alt="Isabel Rosseti" title="Isabel Rosseti">
+      <img src="arquivos/MarcosLage.jpeg" alt="Marcos Lage" title="Marcos Lage">
+      <img src="arquivos/Aline.jpeg" alt="Aline Marins Paes Carvalho" title="Aline Marins Paes Carvalho">
+      <img src="arquivos/Renan.jpeg" alt="Renan Santos Souza" title="Renan Santos Souza">
+      <img src="arquivos/Yuri.jpeg" alt="Yuri Frota" title="Yuri Frota">
+      <img src="arquivos/Nicolaci.jpeg" alt="Luiz Alberto Nicolaci da Costa" title="Luiz Alberto Nicolaci da Costa">
+      <img src="arquivos/FabioMiranda.jpeg" alt="Fábio Markus Nunes Miranda" title="Fábio Markus Nunes Miranda">
+      <img src="arquivos/Rafael.jpeg" alt="Rafael Ferreira da Silva" title="Rafael Ferreira da Silva">
+      <img src="arquivos/Julia.jpeg" alt="Julia Gschwend" title="Julia Gschwend">
     </div>
+  </div>
+
+  <div class="financiador">
+    <b>Financiador:</b><br>
+    <img src="arquivos/cnpq.png" alt="CNPq" style="height:60px;">
+  </div>
+</div>
   </main>
 
   <footer>

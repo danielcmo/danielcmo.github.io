@@ -12,10 +12,10 @@
 
 :root{
 --blue:#0F3B71;
---blue-light:#f4f8fc;
+--blue-soft:#F5F8FC;
 --text:#243343;
---muted:#64748b;
---border:#e6edf4;
+--muted:#64748B;
+--border:#E6EDF4;
 }
 
 *{
@@ -26,8 +26,8 @@ box-sizing:border-box;
 
 body{
 font-family:'Inter',sans-serif;
-background:#fff;
 color:var(--text);
+background:#fff;
 line-height:1.65;
 }
 
@@ -36,26 +36,24 @@ width:min(1180px,92%);
 margin:auto;
 }
 
+/* HEADER */
+
 header{
-border-bottom:1px solid var(--border);
 background:#fff;
+border-bottom:1px solid var(--border);
 }
 
 .nav{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:22px 0;
-}
-
-.logo{
-display:flex;
-align-items:center;
-gap:40px;
+padding:10px 0;
 }
 
 .logo img{
-height:54px;
+height:95px;
+width:auto;
+display:block;
 }
 
 nav ul{
@@ -68,40 +66,48 @@ nav a{
 text-decoration:none;
 color:#475569;
 font-size:.96rem;
+font-weight:500;
+transition:.2s;
 }
 
+nav a:hover{
+color:var(--blue);
+}
+
+/* HERO */
+
 .hero{
-padding:72px 0 90px;
+padding:70px 0 90px;
 }
 
 .hero-grid{
 display:grid;
-grid-template-columns:1.2fr .85fr;
-gap:72px;
+grid-template-columns:1.15fr .85fr;
+gap:70px;
 align-items:center;
 }
 
 .kicker{
 font-size:.82rem;
+font-weight:700;
 letter-spacing:.12em;
 text-transform:uppercase;
-font-weight:700;
 color:var(--blue);
 margin-bottom:18px;
 }
 
-h1{
+.hero h1{
 font-size:4rem;
-line-height:1.05;
-margin-bottom:28px;
+line-height:1.02;
 color:var(--blue);
+margin-bottom:28px;
 }
 
 .hero p{
 font-size:1.08rem;
 color:var(--muted);
 margin-bottom:34px;
-max-width:700px;
+max-width:720px;
 }
 
 .buttons{
@@ -120,23 +126,29 @@ transition:.25s;
 
 .primary{
 background:var(--blue);
-color:white;
+color:#fff;
 }
 
 .secondary{
-border:1px solid #ccd8e5;
+border:1px solid #CDD8E5;
 color:var(--blue);
 }
 
+.btn:hover{
+transform:translateY(-2px);
+}
+
+/* NUCA CARD */
+
 .sidebar-card{
-background:var(--blue-light);
-padding:34px;
-border-radius:10px;
+background:var(--blue-soft);
+padding:36px;
+border-radius:12px;
 }
 
 .sidebar-card img{
-width:220px;
-margin-bottom:18px;
+width:240px;
+margin-bottom:24px;
 }
 
 .sidebar-card h3{
@@ -146,80 +158,119 @@ margin-bottom:18px;
 color:var(--blue);
 }
 
+.sidebar-card p{
+color:var(--muted);
+}
+
+/* SECTIONS */
+
 section{
 padding:82px 0;
 }
 
 .section-title{
-margin-bottom:48px;
 max-width:760px;
+margin-bottom:50px;
 }
 
 .section-title h2{
 font-size:2rem;
 margin-bottom:14px;
+color:var(--blue);
 }
 
 .section-title p{
 color:var(--muted);
 }
 
+/* CARDS */
+
 .cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
 gap:22px;
 }
 
 .card{
-border:1px solid var(--border);
 padding:28px;
-border-radius:10px;
+border:1px solid var(--border);
+border-radius:12px;
+background:#fff;
+transition:.25s;
+}
+
+.card:hover{
+border-color:#C4D4E6;
 }
 
 .card h3{
-color:var(--blue);
 margin-bottom:12px;
 font-size:1.05rem;
+color:var(--blue);
 }
 
+.card p{
+color:var(--muted);
+}
+
+/* FLOW */
+
 .deposit{
-background:#f8fafc;
+background:#F8FAFC;
 }
 
 .timeline{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:18px;
 }
 
 .step{
-background:white;
+background:#fff;
 border:1px solid var(--border);
-padding:24px;
-border-radius:10px;
+padding:26px;
+border-radius:12px;
 }
 
 .step span{
 display:block;
 font-weight:700;
+font-size:1.1rem;
 color:var(--blue);
-margin-bottom:10px;
+margin-bottom:12px;
 }
+
+/* CTA */
 
 .cta{
-background:var(--blue-light);
+background:var(--blue-soft);
 text-align:center;
-padding:70px 0;
+padding:80px 0;
 }
 
+.cta h2{
+color:var(--blue);
+font-size:2rem;
+margin-bottom:18px;
+}
+
+.cta p{
+color:var(--muted);
+margin-bottom:30px;
+}
+
+/* FOOTER */
+
 footer{
-padding:45px 0;
+padding:48px 0;
 border-top:1px solid var(--border);
 }
 
 footer p{
 color:var(--muted);
 }
+
+/* MOBILE */
 
 @media(max-width:900px){
 
@@ -231,8 +282,12 @@ nav ul{
 display:none;
 }
 
-h1{
-font-size:2.6rem;
+.logo img{
+height:78px;
+}
+
+.hero h1{
+font-size:2.8rem;
 }
 
 }
@@ -278,7 +333,7 @@ REPOSITÓRIO INSTITUCIONAL DE DADOS CIENTÍFICOS
 
 <p>
 
-Infraestrutura para compartilhamento,
+Infraestrutura institucional para compartilhamento,
 preservação e disseminação de dados científicos,
 promovendo transparência, reprodutibilidade
 e os princípios de Ciência Aberta.
@@ -304,16 +359,16 @@ Como Depositar Dados
 <img src="arquivos/logo-nuca.png" alt="NuCA-UFF">
 
 <h3>
-Parte do Núcleo de Ciência Aberta da UFF (NuCA-UFF)
+Parte do Núcleo de Ciência Aberta da UFF
 </h3>
 
 <p>
 
-O Dataverse IC/UFF integra o ecossistema
-de Ciência Aberta da UFF apoiado pelo NuCA-UFF,
-que promove políticas, infraestrutura e capacitação
-para compartilhamento de dados, códigos,
-publicações e boas práticas científicas.
+O Dataverse IC/UFF integra o ecossistema do
+<strong>NuCA-UFF</strong>, iniciativa dedicada ao fortalecimento
+de políticas, infraestrutura, capacitação e boas práticas
+em Ciência Aberta, compartilhamento de dados
+e preservação digital.
 
 </p>
 
@@ -344,7 +399,7 @@ produzidos pela comunidade acadêmica.
 <div class="cards">
 
 <div class="card">
-<h3>Preservação</h3>
+<h3>Preservação Digital</h3>
 <p>Armazenamento seguro e confiável de longo prazo.</p>
 </div>
 
@@ -379,8 +434,8 @@ produzidos pela comunidade acadêmica.
 
 <p>
 
-Um processo simples e orientado para tornar seus
-dados de pesquisa disponíveis à comunidade científica.
+Um processo simples para tornar seus dados
+de pesquisa disponíveis à comunidade científica.
 
 </p>
 
@@ -389,22 +444,22 @@ dados de pesquisa disponíveis à comunidade científica.
 <div class="timeline">
 
 <div class="step">
-<span>1.</span>
+<span>1</span>
 Criar conta no Dataverse IC/UFF.
 </div>
 
 <div class="step">
-<span>2.</span>
+<span>2</span>
 Adicionar arquivos e metadados.
 </div>
 
 <div class="step">
-<span>3.</span>
-Curadoria e validação institucional.
+<span>3</span>
+Curadoria institucional.
 </div>
 
 <div class="step">
-<span>4.</span>
+<span>4</span>
 Publicação do dataset com DOI.
 </div>
 
@@ -418,11 +473,11 @@ Publicação do dataset com DOI.
 
 <div class="container">
 
-<h2 style="margin-bottom:18px;color:var(--blue);">
-Comece a compartilhar seus dados científicos.
+<h2>
+Comece a compartilhar seus dados científicos
 </h2>
 
-<p style="margin-bottom:28px;color:var(--muted);">
+<p>
 
 Fortaleça colaboração, transparência
 e impacto científico.
@@ -445,7 +500,8 @@ Entrar no Dataverse IC/UFF
 
 <strong>Dataverse IC/UFF</strong><br>
 Instituto de Computação — Universidade Federal Fluminense<br>
-Iniciativa integrante do <strong>NuCA-UFF — Núcleo de Ciência Aberta da UFF</strong>.
+Iniciativa integrante do
+<strong>NuCA-UFF — Núcleo de Ciência Aberta da UFF</strong>
 
 </p>
 

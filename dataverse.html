@@ -26,8 +26,8 @@ box-sizing:border-box;
 
 body{
 font-family:'Inter',sans-serif;
-color:var(--text);
 background:#fff;
+color:var(--text);
 line-height:1.65;
 }
 
@@ -35,8 +35,6 @@ line-height:1.65;
 width:min(1180px,92%);
 margin:auto;
 }
-
-/* HEADER */
 
 header{
 background:#fff;
@@ -47,27 +45,25 @@ border-bottom:1px solid var(--border);
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:10px 0;
+padding:8px 0;
 }
 
 .logo img{
-height:95px;
-width:auto;
+height:100px;
 display:block;
 }
 
 nav ul{
 display:flex;
-gap:34px;
+gap:32px;
 list-style:none;
 }
 
 nav a{
 text-decoration:none;
 color:#475569;
-font-size:.96rem;
 font-weight:500;
-transition:.2s;
+font-size:.95rem;
 }
 
 nav a:hover{
@@ -77,13 +73,13 @@ color:var(--blue);
 /* HERO */
 
 .hero{
-padding:70px 0 90px;
+padding:72px 0 92px;
 }
 
 .hero-grid{
 display:grid;
 grid-template-columns:1.15fr .85fr;
-gap:70px;
+gap:72px;
 align-items:center;
 }
 
@@ -99,15 +95,15 @@ margin-bottom:18px;
 .hero h1{
 font-size:4rem;
 line-height:1.02;
-color:var(--blue);
 margin-bottom:28px;
+color:var(--blue);
 }
 
 .hero p{
 font-size:1.08rem;
 color:var(--muted);
 margin-bottom:34px;
-max-width:720px;
+max-width:700px;
 }
 
 .buttons{
@@ -130,29 +126,23 @@ color:#fff;
 }
 
 .secondary{
-border:1px solid #CDD8E5;
+border:1px solid #CFD9E4;
 color:var(--blue);
 }
 
-.btn:hover{
-transform:translateY(-2px);
-}
-
-/* NUCA CARD */
-
 .sidebar-card{
 background:var(--blue-soft);
-padding:36px;
-border-radius:12px;
+padding:38px;
+border-radius:14px;
 }
 
 .sidebar-card img{
 width:240px;
-margin-bottom:24px;
+margin-bottom:22px;
 }
 
 .sidebar-card h3{
-font-size:1.7rem;
+font-size:1.65rem;
 line-height:1.2;
 margin-bottom:18px;
 color:var(--blue);
@@ -170,13 +160,13 @@ padding:82px 0;
 
 .section-title{
 max-width:760px;
-margin-bottom:50px;
+margin-bottom:52px;
 }
 
 .section-title h2{
 font-size:2rem;
-margin-bottom:14px;
 color:var(--blue);
+margin-bottom:14px;
 }
 
 .section-title p{
@@ -192,21 +182,16 @@ gap:22px;
 }
 
 .card{
-padding:28px;
+padding:30px;
 border:1px solid var(--border);
 border-radius:12px;
 background:#fff;
-transition:.25s;
-}
-
-.card:hover{
-border-color:#C4D4E6;
 }
 
 .card h3{
+color:var(--blue);
 margin-bottom:12px;
 font-size:1.05rem;
-color:var(--blue);
 }
 
 .card p{
@@ -216,7 +201,7 @@ color:var(--muted);
 /* FLOW */
 
 .deposit{
-background:#F8FAFC;
+background:#FAFBFD;
 }
 
 .timeline{
@@ -228,7 +213,7 @@ gap:18px;
 .step{
 background:#fff;
 border:1px solid var(--border);
-padding:26px;
+padding:28px;
 border-radius:12px;
 }
 
@@ -240,12 +225,48 @@ color:var(--blue);
 margin-bottom:12px;
 }
 
+/* TEAM */
+
+.team-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:26px;
+}
+
+.member{
+border:1px solid var(--border);
+padding:30px;
+border-radius:14px;
+text-align:center;
+background:#fff;
+}
+
+.member img{
+width:130px;
+height:130px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:22px;
+border:4px solid var(--blue-soft);
+}
+
+.member h3{
+font-size:1.05rem;
+margin-bottom:8px;
+color:var(--blue);
+}
+
+.role{
+font-size:.95rem;
+color:var(--muted);
+}
+
 /* CTA */
 
 .cta{
 background:var(--blue-soft);
-text-align:center;
 padding:80px 0;
+text-align:center;
 }
 
 .cta h2{
@@ -287,7 +308,7 @@ height:78px;
 }
 
 .hero h1{
-font-size:2.8rem;
+font-size:2.7rem;
 }
 
 }
@@ -333,9 +354,9 @@ REPOSITÓRIO INSTITUCIONAL DE DADOS CIENTÍFICOS
 
 <p>
 
-Infraestrutura institucional para compartilhamento,
+Infraestrutura institucional dedicada ao compartilhamento,
 preservação e disseminação de dados científicos,
-promovendo transparência, reprodutibilidade
+fortalecendo transparência, reprodutibilidade
 e os princípios de Ciência Aberta.
 
 </p>
@@ -445,22 +466,96 @@ de pesquisa disponíveis à comunidade científica.
 
 <div class="step">
 <span>1</span>
-Criar conta no Dataverse IC/UFF.
+Criar conta no Dataverse IC/UFF
 </div>
 
 <div class="step">
 <span>2</span>
-Adicionar arquivos e metadados.
+Adicionar arquivos e metadados
 </div>
 
 <div class="step">
 <span>3</span>
-Curadoria institucional.
+Curadoria institucional
 </div>
 
 <div class="step">
 <span>4</span>
-Publicação do dataset com DOI.
+Publicação do dataset com DOI
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Equipe Responsável</h2>
+
+<p>
+
+O Dataverse IC/UFF é desenvolvido e mantido por docentes,
+discentes e colaboradores vinculados ao Instituto de Computação
+e ao Núcleo de Ciência Aberta da UFF.
+
+</p>
+
+</div>
+
+<div class="team-grid">
+
+<div class="member">
+
+<img src="https://danielcmo.github.io/arquivos/Daniel.jpeg">
+
+<h3>Prof. Daniel de Oliveira</h3>
+
+<div class="role">
+Docente — Instituto de Computação / UFF
+</div>
+
+</div>
+
+<div class="member">
+
+<img src="https://observablehq.com/_next/image?url=https%3A%2F%2Favatars-next.observableusercontent.com%2F5a7bd22b657c0e1224801f5729eac05c2b33a163251a927aa4ea576bdcf55e46&w=256&q=85">
+
+<h3>Prof. Marcos Lage</h3>
+
+<div class="role">
+Docente — Instituto de Computação / UFF
+</div>
+
+</div>
+
+<div class="member">
+
+<img src="https://media.licdn.com/dms/image/v2/D4D03AQFQgx3HbV2eVA/profile-displayphoto-crop_800_800/B4DZqDqzp8GkAI-/0/1763145628954?e=1781740800&v=beta&t=ECz-gogCD1nYDsQjENIvuQgi4TN3ni8C3iCa1G2WLlw">
+
+<h3>João Moraes</h3>
+
+<div class="role">
+Discente — Instituto de Computação / UFF
+</div>
+
+</div>
+
+<div class="member">
+
+<img src="https://media.licdn.com/dms/image/v2/D4D03AQG0res753rBIg/profile-displayphoto-crop_800_800/B4DZkHgfftH4AM-/0/1756767583676?e=1781740800&v=beta&t=AJV5fqDb8Milz8FZQBtWKAdK5BbZLmThQDhTpK0cSNY">
+
+<h3>Josimara Brumatti</h3>
+
+<div class="role">
+Coordenadora — Núcleo de Ciência Aberta UFF
+</div>
+
 </div>
 
 </div>

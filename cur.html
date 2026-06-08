@@ -1,216 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C4TVS1004P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<h2>Undergraduate Courses</h2>
 
-  gtag('config', 'G-C4TVS1004P');
-</script>
-  <meta charset="UTF-8">
-  <title>Courses - Daniel de Oliveira</title>
-  <meta name="description" content="Courses taught by Daniel de Oliveira at UFF">
-  <meta name="keywords" content="Courses, Teaching, Daniel de Oliveira, UFF, IC-UFF">
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #ffffff;
-      color: #333333;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
+<div class="courses-grid">
 
-    a { color: #004f9e; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+  <!-- Course 1 -->
+  <div class="course-item">
+    <img class="course-thumb" src="arquivos/db_course.jpg" alt="Database Course">
 
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 20px 40px;
-      border-bottom: 1px solid #ccc;
-      background: #fafafa;
-    }
-
-    header img { height: 60px; }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      gap: 20px;
-    }
-
-    nav ul li a { font-weight: bold; }
-
-    main {
-      padding: 40px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    h1 {
-      margin-bottom: 20px;
-      font-size: 2em;
-    }
-
-    h2 {
-      margin-top: 40px;
-      margin-bottom: 20px;
-      background-color: #004f9e;
-      color: #fff;
-      padding: 10px 15px;
-      border-radius: 4px;
-    }
-
-    /* Course card style */
-    .courses-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-    }
-    .course-item {
-      display: flex;
-      flex-direction: column;
-      background: #f9f9f9;
-      padding: 15px;
-      border-radius: 6px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
-      transition: transform 0.2s;
-    }
-    .course-item:hover {
-      transform: scale(1.02);
-    }
-    .course-title {
-      font-weight: bold;
-      font-size: 1.1em;
-      margin-bottom: 8px;
-      color: #004f9e;
-    }
-    .course-code {
-      font-size: 0.9em;
-      color: #666;
-      margin-bottom: 10px;
-    }
-    .course-description {
-      font-size: 0.95em;
-      color: #444;
-      margin-bottom: 10px;
-    }
-    .course-links a {
-      font-size: 0.9em;
-      margin-right: 10px;
-      color: #004f9e;
-    }
-
-    footer {
-      display: flex;
-      justify-content: space-between;
-      padding: 20px 40px;
-      border-top: 1px solid #ccc;
-      background-color: #f1f1f1;
-      font-size: 0.9em;
-    }
-  </style>
-</head>
-<body>
-  <!-- Header -->
-  <header>
-    <a href="http://www.uff.br"><img src="arquivos/uff.png" alt="UFF Logo"></a>
-    <nav>
-      <ul>
-        <li><a href="https://danielcmo.github.io">Home</a></li>
-        <li><a href="https://danielcmo.github.io/cv.html">Publications</a></li>
-        <li><a href="https://danielcmo.github.io/books.html">Books</a></li>
-        <li><a href="https://danielcmo.github.io/ap.html">Research Areas</a></li>
-        <li><a href="https://danielcmo.github.io/cur.html">Teaching</a></li>
-        <li><a href="https://danielcmo.github.io/collab.html">Collaborations</a></li>
-        <li><a href="https://danielcmo.github.io/li.html">Students</a></li>
-        <li><a href="https://danielcmo.github.io/awards.html">Awards</a></li>
-<li><a href="https://danielcmo.github.io/projects.html">Projects</a></li>
-        <li><a href="https://danielcmo.github.io/per.html">News</a></li>
-      </ul>
-    </nav>
-    <a href="http://www.ic.uff.br"><img src="arquivos/logo-ic.png" alt="IC-UFF Logo"></a>
-  </header>
-
-  <!-- Main -->
-  <main>
-    <h1>Courses</h1>
-    <p>
-      This page presents undergraduate and graduate courses taught at the 
-      <b>Institute of Computing – Fluminense Federal University (UFF)</b>. 
-      Each course includes its description, main objectives, and links to materials when available.
-    </p>
-
-    <!-- Undergraduate Courses -->
-    <h2>Undergraduate Courses</h2>
-    <div class="courses-grid">
-      <div class="course-item">
-        <div class="course-title">Principles of Databases (Princípios de Bancos de Dados) 2025.2</div>
-        <div class="course-code">TCC00334</div>
-        <div class="course-description">
-          Introduction to database concepts, data modeling, relational algebra, SQL, 
-          transaction management, and fundamentals of database design.
-        </div>
-        <div class="course-links">
-          <a href="https://classroom.google.com/c/Nzc0MjA2MjAyMDU5">Google Classroom</a>
-        </div>
+    <div class="course-body">
+      <div class="course-title">
+        Principles of Databases (Princípios de Bancos de Dados) 2025.2
       </div>
 
-      <div class="course-item">
-        <div class="course-title">Data Warehouse, NoSQL and Big Data (Bancos de Dados Não Convencionais) 2025.2</div>
-        <div class="course-code">TCC00336</div>
-        <div class="course-description">
-          Focuses on big data ecosystems, distributed processing (Hadoop, Spark), 
-          machine learning applications, and real-world case studies.
-        </div>
-        <div class="course-links">
-          <a href="https://classroom.google.com/c/Nzc0MjA2Mjc4NzM5">Google Classroom</a>
-        </div>
+      <div class="course-code">TCC00334</div>
+
+      <div class="course-description">
+        Introduction to database concepts, data modeling, relational algebra, SQL,
+        transaction management, and fundamentals of database design.
       </div>
 
-        <div class="courses-grid">
-      <div class="course-item">
-        <div class="course-title">Principles of Databases (Princípios de Bancos de Dados) 2025.2</div>
-        <div class="course-code">TCC00334</div>
-        <div class="course-description">
-          Introduction to database concepts, data modeling, relational algebra, SQL, 
-          transaction management, and fundamentals of database design.
-        </div>
-        <div class="course-links">
-          <a href="https://classroom.google.com/c/Nzc0MjA2MjAyMDU5">Google Classroom</a>
-        </div>
+      <div class="course-links">
+        <a href="https://classroom.google.com/c/Nzc0MjA2MjAyMDU5">Google Classroom</a>
       </div>
-
-      <div class="course-item">
-        <div class="course-title">Data Warehouse, NoSQL and Big Data (Bancos de Dados Não Convencionais) 2025.2</div>
-        <div class="course-code">TCC00336</div>
-        <div class="course-description">
-          Focuses on big data ecosystems, distributed processing (Hadoop, Spark), 
-          machine learning applications, and real-world case studies.
-        </div>
-        <div class="course-links">
-          <a href="https://classroom.google.com/c/Nzc0MjA2Mjc4NzM5">Google Classroom</a>
-        </div>
-      </div>
-
-  
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <div>
-      <b>Phone: +55 (21) 2629-5637<br>Fax: +55 (21) 2629-5627</b>
     </div>
-    <div>
-      <b>danielcmo (at) ic (dot) uff (dot) br</b>
+  </div>
+
+  <!-- Course 2 -->
+  <div class="course-item">
+    <img class="course-thumb" src="arquivos/bigdata_course.jpg" alt="Big Data Course">
+
+    <div class="course-body">
+      <div class="course-title">
+        Data Warehouse, NoSQL and Big Data (Bancos de Dados Não Convencionais) 2025.2
+      </div>
+
+      <div class="course-code">TCC00336</div>
+
+      <div class="course-description">
+        Focuses on big data ecosystems, distributed processing (Hadoop, Spark),
+        machine learning applications, and real-world case studies.
+      </div>
+
+      <div class="course-links">
+        <a href="https://classroom.google.com/c/Nzc0MjA2Mjc4NzM5">Google Classroom</a>
+      </div>
     </div>
-  </footer>
-</body>
-</html>
+  </div>
+
+</div>

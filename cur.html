@@ -1,49 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C4TVS1004P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-C4TVS1004P');
+  </script>
+
+  <meta charset="UTF-8">
+  <title>Courses - Daniel de Oliveira</title>
+  <meta name="description" content="Courses taught by Daniel de Oliveira at UFF">
+  <meta name="keywords" content="Courses, Teaching, Daniel de Oliveira, UFF, IC-UFF">
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    a { color: #004f9e; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+      border-bottom: 1px solid #ccc;
+      background: #fafafa;
+    }
+
+    header img { height: 60px; }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li a { font-weight: bold; }
+
+    main {
+      padding: 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h1 { font-size: 2em; }
+
+    h2 {
+      margin-top: 40px;
+      background: #004f9e;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 4px;
+    }
+
+    .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .course-item {
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+    }
+
+    .course-item:hover { transform: scale(1.02); }
+
+    .course-title {
+      font-weight: bold;
+      color: #004f9e;
+      margin-bottom: 8px;
+    }
+
+    .course-code { color: #666; font-size: 0.9em; margin-bottom: 10px; }
+
+    .course-links a {
+      margin-right: 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .classroom-icon {
+      width: 18px;
+      height: 18px;
+      vertical-align: middle;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 40px;
+      border-top: 1px solid #ccc;
+      background: #f1f1f1;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <a href="http://www.uff.br"><img src="arquivos/uff.png" alt="UFF Logo"></a>
+
+  <nav>
+    <ul>
+      <li><a href="https://danielcmo.github.io">Home</a></li>
+      <li><a href="https://danielcmo.github.io/cv.html">Publications</a></li>
+      <li><a href="https://danielcmo.github.io/books.html">Books</a></li>
+      <li><a href="https://danielcmo.github.io/ap.html">Research Areas</a></li>
+      <li><a href="https://danielcmo.github.io/cur.html">Teaching</a></li>
+    </ul>
+  </nav>
+
+  <a href="http://www.ic.uff.br"><img src="arquivos/logo-ic.png" alt="IC-UFF Logo"></a>
+</header>
+
+<main>
+
+<h1>Courses</h1>
+
+<p>
+  This page presents undergraduate and graduate courses taught at UFF.
+</p>
+
 <h2>Undergraduate Courses</h2>
 
 <div class="courses-grid">
 
-  <!-- Course 1 -->
+  <!-- 2025.2 -->
   <div class="course-item">
-    <img class="course-thumb" src="arquivos/db_course.jpg" alt="Database Course">
-
-    <div class="course-body">
-      <div class="course-title">
-        Principles of Databases (Princípios de Bancos de Dados) 2025.2
-      </div>
-
-      <div class="course-code">TCC00334</div>
-
-      <div class="course-description">
-        Introduction to database concepts, data modeling, relational algebra, SQL,
-        transaction management, and fundamentals of database design.
-      </div>
-
-      <div class="course-links">
-        <a href="https://classroom.google.com/c/Nzc0MjA2MjAyMDU5">Google Classroom</a>
-      </div>
+    <div class="course-title">Principles of Databases (2025.2)</div>
+    <div class="course-code">TCC00334</div>
+    <div class="course-description">
+      Introduction to database concepts, SQL, relational model and design.
+    </div>
+    <div class="course-links">
+      <a href="https://classroom.google.com/c/Nzc0MjA2MjAyMDU5">
+        <img class="classroom-icon" src="arquivos/classroom.png" alt="Classroom">
+        Google Classroom
+      </a>
     </div>
   </div>
 
-  <!-- Course 2 -->
   <div class="course-item">
-    <img class="course-thumb" src="arquivos/bigdata_course.jpg" alt="Big Data Course">
+    <div class="course-title">Data Warehouse, NoSQL and Big Data (2025.2)</div>
+    <div class="course-code">TCC00336</div>
+    <div class="course-description">
+      Big data systems, Spark, Hadoop and distributed processing.
+    </div>
+    <div class="course-links">
+      <a href="https://classroom.google.com/c/Nzc0MjA2Mjc4NzM5">
+        <img class="classroom-icon" src="arquivos/classroom.png" alt="Classroom">
+        Google Classroom
+      </a>
+    </div>
+  </div>
 
-    <div class="course-body">
-      <div class="course-title">
-        Data Warehouse, NoSQL and Big Data (Bancos de Dados Não Convencionais) 2025.2
-      </div>
+  <!-- 2026.1 (NOVOS) -->
+  <div class="course-item">
+    <div class="course-title">Principles of Databases (2026.1)</div>
+    <div class="course-code">TCC00334</div>
+    <div class="course-description">
+      Updated edition covering relational databases, SQL optimization and transactions.
+    </div>
+    <div class="course-links">
+      <a href="#">
+        <img class="classroom-icon" src="arquivos/classroom.png" alt="Classroom">
+        Google Classroom
+      </a>
+    </div>
+  </div>
 
-      <div class="course-code">TCC00336</div>
-
-      <div class="course-description">
-        Focuses on big data ecosystems, distributed processing (Hadoop, Spark),
-        machine learning applications, and real-world case studies.
-      </div>
-
-      <div class="course-links">
-        <a href="https://classroom.google.com/c/Nzc0MjA2Mjc4NzM5">Google Classroom</a>
-      </div>
+  <div class="course-item">
+    <div class="course-title">Data Warehouse, NoSQL and Big Data (2026.1)</div>
+    <div class="course-code">TCC00336</div>
+    <div class="course-description">
+      Modern distributed systems, cloud data platforms and analytics pipelines.
+    </div>
+    <div class="course-links">
+      <a href="#">
+        <img class="classroom-icon" src="arquivos/classroom.png" alt="Classroom">
+        Google Classroom
+      </a>
     </div>
   </div>
 
 </div>
+
+</main>
+
+<footer>
+  <div><b>Phone: +55 (21) 2629-5637</b></div>
+  <div><b>danielcmo (at) ic (dot) uff (dot) br</b></div>
+</footer>
+
+</body>
+</html>

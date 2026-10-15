@@ -1,519 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C4TVS1004P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-C4TVS1004P');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C4TVS1004P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-C4TVS1004P');
+  </script>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>News - Daniel de Oliveira</title>
   <meta name="description" content="News and updates about Daniel de Oliveira">
   <meta name="keywords" content="News, Updates, Daniel de Oliveira, UFF, IC-UFF">
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #ffffff;
-      color: #333333;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
-
-    a { color: #004f9e; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 20px 40px;
-      border-bottom: 1px solid #ccc;
-      background: #fafafa;
-    }
-
-    header img { height: 60px; }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      gap: 20px;
-    }
-
-    nav ul li a { font-weight: bold; }
-
-    main {
-      padding: 40px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    h1 {
-      margin-bottom: 20px;
-      font-size: 2em;
-    }
-
-    h2 {
-      margin-top: 40px;
-      margin-bottom: 20px;
-      background-color: #004f9e;
-      color: #fff;
-      padding: 10px 15px;
-      border-radius: 4px;
-    }
-
-    /* News card style */
-.news-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* duas colunas por linha */
-  gap: 20px;
-}
-    .news-item {
-      display: flex;
-      flex-direction: column;
-      background: #f9f9f9;
-      padding: 15px;
-      border-radius: 6px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
-      transition: transform 0.2s;
-    }
-
-    .news-item:hover {
-      transform: scale(1.02);
-    }
-
-    .news-item img {
-      height: 160px;
-      width: 100%;
-      border-radius: 6px;
-      object-fit: cover;
-      margin-bottom: 10px;
-    }
-
-    .news-content {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .news-content a {
-      font-weight: bold;
-      font-size: 1.1em;
-      margin-bottom: 5px;
-    }
-
-    .news-content p {
-      font-size: 0.95em;
-      color: #555;
-    }
-
-    footer {
-      display: flex;
-      justify-content: space-between;
-      padding: 20px 40px;
-      border-top: 1px solid #ccc;
-      background-color: #f1f1f1;
-      font-size: 0.9em;
-    }
-  </style>
+  <link rel="icon" href="arquivos/uff.png">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js" defer></script>
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <a href="http://www.uff.br"><img src="arquivos/uff.png" alt="UFF Logo"></a>
-    <nav>
-      <ul>
-        <li><a href="https://danielcmo.github.io">Home</a></li>
-        <li><a href="https://danielcmo.github.io/cv.html">Publications</a></li>
-        <li><a href="https://danielcmo.github.io/books.html">Books</a></li>
-        <li><a href="https://danielcmo.github.io/ap.html">Research Areas</a></li>
-        <li><a href="https://danielcmo.github.io/cur.html">Teaching</a></li>
-        <li><a href="https://danielcmo.github.io/collab.html">Collaborations</a></li>
-        <li><a href="https://danielcmo.github.io/li.html">Students</a></li>
-        <li><a href="https://danielcmo.github.io/awards.html">Awards</a></li>
-<li><a href="https://danielcmo.github.io/projects.html">Projects</a></li>
-        <li><a href="https://danielcmo.github.io/per.html">News</a></li>
-      </ul>
+  <header class="site-header">
+    <a class="logo-link" href="index.html" aria-label="Daniel de Oliveira — home">
+      <img src="arquivos/uff.png" alt="Universidade Federal Fluminense" width="72" height="72">
+      <span>Daniel de Oliveira<small>Institute of Computing / UFF</small></span>
+    </a>
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="cv.html">Publications</a>
+        <a href="books.html">Books</a>
+        <a href="ap.html">Research Areas</a>
+        <a href="cur.html">Teaching</a>
+        <a href="collab.html">Collaborations</a>
+        <a href="li.html">Students</a>
+        <a href="awards.html">Awards</a>
+        <a href="projects.html">Projects</a>
+        <a href="per.html" aria-current="page">News</a>
     </nav>
-    <a href="http://www.ic.uff.br"><img src="arquivos/logo-ic.png" alt="IC-UFF Logo"></a>
+    <a class="header-group" href="https://uffescience.ic.uff.br" target="_blank" rel="noreferrer">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="1"/><path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z"/><path d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z"/></svg><span>UFFeScience</span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+    </a>
   </header>
 
-  <!-- Main -->
-  <main>
-    <h1>News & Updates</h1>
-    <p>
-      Here you can find the latest news, interviews, and updates related to my research, teaching, and collaborations. 
-      Stay tuned for new insights and developments.
-    </p>
-
-    <div class="news-grid">
-
-
-<div class="news-item">
-  <img src="arquivos/ornl_internship.jpeg" alt="UFF student internship at ORNL">
-  <div class="news-content">
-    <a href="#" target="_blank">
-      UFFeScience Student Begins Internship at Oak Ridge National Laboratory (ORNL)
-    </a>
-
-    <p>🚀 <strong>International research collaboration in action!</strong></p>
-
-    <p>
-      We are excited to share that <strong>Valesca Moura</strong>, a Master's student at the Institute of Computing at 
-      <strong>Universidade Federal Fluminense (UFF)</strong>, advised by me and member of the <strong>UFFeScience Research Group</strong>, 
-      has started an internship at the <strong>Oak Ridge National Laboratory (ORNL)</strong>.
-    </p>
-
-    <p>
-      During her internship, Valesca will work on her Master's dissertation topic, 
-      <strong>"Provenance Management for Agentic Workflows"</strong>, collaborating closely with the ORNL research team 
-      to advance this important area of study.
-    </p>
-
-    <p>
-      Her work will be supervised by <strong>Renan Souza</strong>, strengthening the collaboration between 
-      <strong>IC/UFF</strong>, <strong>UFFeScience</strong>, and <strong>ORNL</strong>.
-    </p>
-
-    <p><strong>💡 Why this matters:</strong></p>
-
-    <p>
-      This internship represents an important step in advancing research on <strong>agentic systems</strong> and 
-      <strong>provenance management</strong>, while also fostering international scientific collaboration.
-    </p>
-
-    <p>
-      It provides a valuable opportunity to connect academic research with real-world challenges in 
-      high-performance and distributed computing environments.
-    </p>
-
-    <p>
-      🎉 Congratulations to Valesca on this achievement! We wish her a successful and rewarding experience at ORNL.
-    </p>
-
-    <p>
-      #UFF #UFFeScience #ORNL #Research #Internship #AgenticAI #ProvenanceManagement #ScientificCollaboration
-    </p>
-  </div>
-</div>
-
-
-<div class="news-item">
-  <img src="arquivos/general.png" alt="Concurrency and Computation">
-  <div class="news-content">
-    <a href="https://link.springer.com/article/10.1007/s42979-025-04582-1" target="_blank">
-     
- New Paper in Concurrency and Computation: MemoirGRASP
-    </a>
-     <p>🔬 <strong>Do we really need to recompute everything?</strong></p>
-
-<p>
-In many scientific workflows, the same pipelines are executed repeatedly with only small changes in parameters or datasets. 
-Yet, most systems still <strong>recompute everything from scratch</strong>.
-</p>
-
-<p>
-This inefficiency motivated a question that led to our recent research.
-</p>
-
-<p>
-I’m happy to share that our paper 
-<strong>“Have We Seen these Data Before? A GRASP-based Execution Strategy for Cloud-based Workflows with Memoization”</strong> 
-has been <strong>accepted for publication in <em>Concurrency and Computation: Practice and Experience</em></strong> 🎉
-</p>
-
+  <main id="inicio">
+    <section class="page-intro">
+      <div class="kicker"><span></span> PUBLICATIONS / EVENTS / RESULTS</div>
+      <h1>News &amp; Updates</h1>
+      <p>Here you can find the latest news, interviews, and updates related to my research, teaching, and collaborations. Stay tuned for new insights and developments.</p>
+    </section>
+    <section class="section tinted">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">LATEST</div>
+          <h2>Publications and news</h2>
+        </div>
+        <a class="text-link" href="https://uffescience.ic.uff.br/publicacoes/" target="_blank" rel="noreferrer">All UFFeScience publications <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      </div>
+      <div class="publication-grid two">
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/ornl_internship.jpeg" alt="UFF student internship at ORNL" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span> UFFESCIENCE</div>
+            <h3 style="margin-top:12px">UFFeScience Student Begins Internship at Oak Ridge National Laboratory (ORNL)</h3>
+            <div class="expandable">
+              <div class="expandable-body"><p>🚀 <strong>International research collaboration in action!</strong></p>
+<p>We are excited to share that <strong>Valesca Moura</strong>, a Master's student at the Institute of Computing at <strong>Universidade Federal Fluminense (UFF)</strong>, advised by me and member of the <strong>UFFeScience Research Group</strong>, has started an internship at the <strong>Oak Ridge National Laboratory (ORNL)</strong>.</p>
+<p>During her internship, Valesca will work on her Master's dissertation topic, <strong>"Provenance Management for Agentic Workflows"</strong>, collaborating closely with the ORNL research team to advance this important area of study.</p>
+<p>Her work will be supervised by <strong>Renan Souza</strong>, strengthening the collaboration between <strong>IC/UFF</strong>, <strong>UFFeScience</strong>, and <strong>ORNL</strong>.</p>
+<p><strong>💡 Why this matters:</strong></p>
+<p>This internship represents an important step in advancing research on <strong>agentic systems</strong> and <strong>provenance management</strong>, while also fostering international scientific collaboration.</p>
+<p>It provides a valuable opportunity to connect academic research with real-world challenges in high-performance and distributed computing environments.</p>
+<p>🎉 Congratulations to Valesca on this achievement! We wish her a successful and rewarding experience at ORNL.</p></div>
+              <button type="button" class="expand-toggle" aria-expanded="false">Read more <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+            </div>
+            <p class="directory-note" style="margin:0 0 12px">#UFF #UFFeScience #ORNL #Research #Internship #AgenticAI #ProvenanceManagement #ScientificCollaboration</p>
+            
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/general.png" alt="Concurrency and Computation" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span> UFFESCIENCE</div>
+            <h3 style="margin-top:12px"><a href="https://link.springer.com/article/10.1007/s42979-025-04582-1" target="_blank" rel="noreferrer">New Paper in Concurrency and Computation: MemoirGRASP</a></h3>
+            <div class="expandable">
+              <div class="expandable-body"><p>🔬 <strong>Do we really need to recompute everything?</strong></p>
+<p>In many scientific workflows, the same pipelines are executed repeatedly with only small changes in parameters or datasets. Yet, most systems still <strong>recompute everything from scratch</strong>.</p>
+<p>This inefficiency motivated a question that led to our recent research.</p>
+<p>I’m happy to share that our paper <strong>“Have We Seen these Data Before? A GRASP-based Execution Strategy for Cloud-based Workflows with Memoization”</strong> has been <strong>accepted for publication in <em>Concurrency and Computation: Practice and Experience</em></strong> 🎉</p>
 <p><strong>💡 Key idea:</strong></p>
-
-<p>
-Instead of recomputing intermediate results, why not <strong>reuse computations that were already performed before</strong>?
-</p>
-
-<p>
-In this work we propose <strong>MemoirGRASP</strong>, a workflow execution strategy based on the 
-<strong>GRASP metaheuristic</strong> that leverages <strong>memoization</strong> to detect and reuse previously 
-computed intermediate data across workflow executions.
-</p>
-
+<p>Instead of recomputing intermediate results, why not <strong>reuse computations that were already performed before</strong>?</p>
+<p>In this work we propose <strong>MemoirGRASP</strong>, a workflow execution strategy based on the <strong>GRASP metaheuristic</strong> that leverages <strong>memoization</strong> to detect and reuse previously computed intermediate data across workflow executions.</p>
 <p><strong>📊 What we found:</strong></p>
-
-<p>
-Experiments with synthetic workflows and real-world applications such as 
-<strong>Montage</strong> and <strong>Phenomenal</strong> show that reusing intermediate results can significantly 
-<strong>reduce redundant computation and improve execution efficiency in multisite cloud environments</strong>.
-</p>
-
-<p>
-🤝 This work is the result of a great international collaboration between researchers from 
-<strong>Universidade Federal Fluminense (UFF)</strong>, 
-<strong>University of Göttingen</strong>, 
-<strong>Inria / University of Montpellier</strong>, 
-<strong>CNRS</strong>, and 
-<strong>LNCC</strong>.
-</p>
-
-<p>
-Grateful to all co-authors for this collaboration and excited to see how these ideas can help make 
-<strong>scientific computing more efficient and sustainable</strong>.
-</p>
-
-<p>
-#ScientificWorkflows #CloudComputing #DistributedSystems #HighPerformanceComputing #Research
-</p>
-  </div>
-</div>
-
-
-<div class="news-item">
-  <img src="arquivos/SN.jpeg" alt="SN Computer Science Paper">
-  <div class="news-content">
-    <a href="https://link.springer.com/article/10.1007/s42979-025-04582-1" target="_blank">
-      New Paper in SN Computer Science: CYCLOPS
-    </a>
-
-    <p>
-      A new paper has been published in <strong>SN Computer Science</strong> introducing
-      <em>CYCLOPS</em>, a novel approach for executing cloud-based scientific workflows with
-      strong <strong>data confidentiality guarantees</strong>, without compromising performance
-      or cost efficiency.
-    </p>
-
-    <p>
-      This work was led by <strong>Rodrigo A. P. Silva</strong> during his PhD, in collaboration
-      with <strong>Wesley Ferreira</strong>, <strong>Esther Pacitti</strong>,
-      <strong>Yuri Frota</strong>, and <strong>Daniel de Oliveira</strong>.
-    </p>
-
-    <p>
-      CYCLOPS addresses a fundamental challenge in cloud computing:
-      <em>how to efficiently execute complex, data-intensive scientific workflows in public
-      clouds while protecting sensitive data and preventing unintended information leakage</em>.
-      To tackle this, the approach jointly optimizes <strong>workflow scheduling</strong> and
-      <strong>data placement</strong>, instead of treating them as independent problems.
-    </p>
-
-    <p>
-      Importantly, <strong>CYCLOPS</strong> does not rely on private or on-premise infrastructure.
-      It is designed specifically for <strong>public cloud environments</strong>, enforcing
-      confidentiality through intelligent scheduling decisions, data dispersion strategies,
-      and awareness of heterogeneous security capabilities.
-    </p>
-
-    <p>
-      Congratulations to the entire team on this exciting contribution!
-      <span role="img" aria-label="rocket">🚀</span>
-    </p>
-
-    <p>#SNComputerScience #ScientificWorkflows #CloudComputing #DataConfidentiality #CYCLOPS</p>
-  </div>
-</div>
-
-        <div class="news-item">
-        <img src="arquivos/premioWesley.jpeg" alt="SBBD 2025 Conference">
-        <div class="news-content">
-          <a href="https://sol.sbc.org.br/index.php/bresci/article/view/36911" target="_blank">
-            SBBD 2025 Best Demo Award
-          </a>
+<p>Experiments with synthetic workflows and real-world applications such as <strong>Montage</strong> and <strong>Phenomenal</strong> show that reusing intermediate results can significantly <strong>reduce redundant computation and improve execution efficiency in multisite cloud environments</strong>.</p>
+<p>🤝 This work is the result of a great international collaboration between researchers from <strong>Universidade Federal Fluminense (UFF)</strong>, <strong>University of Göttingen</strong>, <strong>Inria / University of Montpellier</strong>, <strong>CNRS</strong>, and <strong>LNCC</strong>.</p>
+<p>Grateful to all co-authors for this collaboration and excited to see how these ideas can help make <strong>scientific computing more efficient and sustainable</strong>.</p></div>
+              <button type="button" class="expand-toggle" aria-expanded="false">Read more <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+            </div>
+            <p class="directory-note" style="margin:0 0 12px">#ScientificWorkflows #CloudComputing #DistributedSystems #HighPerformanceComputing #Research</p>
+            <a class="publication-read" href="https://link.springer.com/article/10.1007/s42979-025-04582-1" target="_blank" rel="noreferrer">Read publication <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/SN.jpeg" alt="SN Computer Science Paper" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span> UFFESCIENCE</div>
+            <h3 style="margin-top:12px"><a href="https://link.springer.com/article/10.1007/s42979-025-04582-1" target="_blank" rel="noreferrer">New Paper in SN Computer Science: CYCLOPS</a></h3>
+            <div class="expandable">
+              <div class="expandable-body"><p>A new paper has been published in <strong>SN Computer Science</strong> introducing <em>CYCLOPS</em>, a novel approach for executing cloud-based scientific workflows with strong <strong>data confidentiality guarantees</strong>, without compromising performance or cost efficiency.</p>
+<p>This work was led by <strong>Rodrigo A. P. Silva</strong> during his PhD, in collaboration with <strong>Wesley Ferreira</strong>, <strong>Esther Pacitti</strong>, <strong>Yuri Frota</strong>, and <strong>Daniel de Oliveira</strong>.</p>
+<p>CYCLOPS addresses a fundamental challenge in cloud computing: <em>how to efficiently execute complex, data-intensive scientific workflows in public clouds while protecting sensitive data and preventing unintended information leakage</em>. To tackle this, the approach jointly optimizes <strong>workflow scheduling</strong> and <strong>data placement</strong>, instead of treating them as independent problems.</p>
+<p>Importantly, <strong>CYCLOPS</strong> does not rely on private or on-premise infrastructure. It is designed specifically for <strong>public cloud environments</strong>, enforcing confidentiality through intelligent scheduling decisions, data dispersion strategies, and awareness of heterogeneous security capabilities.</p>
+<p>Congratulations to the entire team on this exciting contribution! <span aria-label="rocket" role="img">🚀</span></p></div>
+              <button type="button" class="expand-toggle" aria-expanded="false">Read more <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+            </div>
+            <p class="directory-note" style="margin:0 0 12px">#SNComputerScience #ScientificWorkflows #CloudComputing #DataConfidentiality #CYCLOPS</p>
+            <a class="publication-read" href="https://link.springer.com/article/10.1007/s42979-025-04582-1" target="_blank" rel="noreferrer">Read publication <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/premioWesley.jpeg" alt="SBBD 2025 Conference" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span> UFFESCIENCE</div>
+            <h3 style="margin-top:12px"><a href="https://sol.sbc.org.br/index.php/bresci/article/view/36911" target="_blank" rel="noreferrer">SBBD 2025 Best Demo Award</a></h3>
+            <div class="expandable">
+              <div class="expandable-body"><p><strong>Wesley Ferreira</strong> won the <em>Best Demo Award</em> at <strong>SBBD 2025</strong> with the paper “<em>Plug and Flow: Executing Scientific Workflows in Containers with the AkôFlow Middleware</em>,” co-authored with Liliane Kunstmann, Raphael Reis Garcia, Marcos Bedo, Aline Paes, and Daniel de Oliveira.</p>
+<p>The demo showcased <strong>AkôFlow</strong>, a middleware built on top of Kubernetes to support the parallel execution of scientific workflows in containerized environments. AkôFlow enables automatic scaling of workflow activities, each running in distinct Docker images, while also providing native provenance data capture. The paper demonstrated its use in the astronomy workflow <em>Montage</em>, exploring different resource allocation strategies. Beyond the technical contribution, this work highlights how innovative middleware solutions can foster scalable and reproducible scientific data processing.</p>
+<p>Congratulations, <strong>Wesley Ferreira</strong>, and the entire team, for this achievement at SBBD 2025! <span aria-label="trophy" role="img">🏆</span></p></div>
+              <button type="button" class="expand-toggle" aria-expanded="false">Read more <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+            </div>
+            <p class="directory-note" style="margin:0 0 12px">#BestDemo2025 #SBBD2025 #BRACIS2025 #Containers #Workflows #BigData</p>
+            <a class="publication-read" href="https://sol.sbc.org.br/index.php/bresci/article/view/36911" target="_blank" rel="noreferrer">Read publication <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/certificado.jpeg" alt="SBBD 2025 Conference" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span> UFFESCIENCE</div>
+            <h3 style="margin-top:12px"><a href="https://sol.sbc.org.br/index.php/bresci/article/view/36911" target="_blank" rel="noreferrer">BreSci 2025 Best Paper Award</a></h3>
+            <div class="expandable">
+              <div class="expandable-body"><p><strong>Paula Woyames</strong>, winner of the <em>Best Paper Award</em> at <strong>BreSci 2025</strong> with the work “<em>Evaluating the Capability of LLMs to Specify Workflows</em>,” co-authored with Débora Pina, Liliane Kunstmann, Marta Mattoso, and Daniel de Oliveira. <span aria-label="trophy" role="img">🏆</span></p>
+<p>The paper evaluated the use of Large Language Models (LLMs) to specify workflows from natural language descriptions. It compared three models (GPT-4o, DeepSeek V3, and Command-A), two prompt strategies, and four workflow systems (Nextflow, Parsl, Dask, and Airflow), applied to workflows of varying complexity.</p>
+<p>Congratulations to Paula Woyames and the entire team for this achievement at BreSci 2025!</p></div>
+              <button type="button" class="expand-toggle" aria-expanded="false">Read more <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+            </div>
+            <p class="directory-note" style="margin:0 0 12px">#BreSci2025 #SBBD2025 #BRACIS2025 #LLMs #UFFeScience #BigData</p>
+            <a class="publication-read" href="https://sol.sbc.org.br/index.php/bresci/article/view/36911" target="_blank" rel="noreferrer">Read publication <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/outlier.png" alt="SBBD 2025 Conference" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span> UFFESCIENCE</div>
+            <h3 style="margin-top:12px"><a href="https://sscad.sbc.org.br/2025/" target="_blank" rel="noreferrer">Paper accepted at SSCAD 2025!!</a></h3>
+            <div class="expandable">
+              <div class="expandable-body"><p>We are pleased to announce that our paper <strong>“Federated Outlier Detection for Astronomical Data: Performance Analysis on Commercial Clouds”</strong> has been accepted at <strong>SSCAD 2025</strong>, to be held in Bonito, MS, Brazil! ✨</p>
+<p>This work is part of <strong>Camila Lopes’</strong> PhD thesis, supervised by <strong>Prof. Daniel de Oliveira</strong> and <strong>Prof. Aline Paes</strong>, and developed in collaboration with:</p>
+<p>🔭 The paper investigates how <strong>Federated Learning (FL)</strong> can be applied to <strong>outlier detection in large astronomical catalogs</strong>, addressing scalability challenges from surveys such as the <em>Dark Energy Survey (DES)</em> and the upcoming <em>Legacy Survey of Space and Time (LSST)</em>. We emulate FL deployments on <strong>Amazon Web Services (AWS)</strong>, evaluating different compute configurations. The results show the trade-offs between training time and financial cost, providing valuable insights for configuring FL workflows at LSST scale.</p>
+<p><strong>Congratulations to all authors!</strong> 🙌</p></div>
+              <button type="button" class="expand-toggle" aria-expanded="false">Read more <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+            </div>
+            <p class="directory-note" style="margin:0 0 12px">#Astronomy #FederatedLearning #MachineLearning #CloudComputing #SSCAD2025 #BigData</p>
+            <a class="publication-read" href="https://sscad.sbc.org.br/2025/" target="_blank" rel="noreferrer">Read publication <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/heatmatrix-continua-case01.png" alt="SBBD 2025 Conference" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span> UFFESCIENCE</div>
+            <h3 style="margin-top:12px"><a href="https://sibgrapi.sbc.org.br/2025/" target="_blank" rel="noreferrer">Paper accepted at SIBGRAPI 2025</a></h3>
+            <div class="expandable">
+              <div class="expandable-body"><p>Excited to share that our paper <strong>“Real-time monitoring and historical analysis of rainfall and its impacts on urban areas”</strong> has been accepted for <strong>SIBGRAPI 2025</strong> in Salvador! 🎉</p>
+<p>This paper is the result of <strong>Fabio Victorino da Cruz</strong>’s master’s thesis, supervised by <strong>Prof. Marcos Lage</strong> and <strong>Prof. Daniel de Oliveira</strong>, with the collaboration of <strong>Prof. Aline Paes</strong> and <strong>Prof. Fabio Miranda</strong>.</p>
+<p>Our work presents the <strong>PluvWeb system</strong>, which integrates data from multiple sources, modalities, granularities, and formats to analyze the impact of rainfall in urban areas.</p>
+<p>We look forward to presenting our findings and engaging with the community at <strong>SIBGRAPI 2025</strong>.</p></div>
+              <button type="button" class="expand-toggle" aria-expanded="false">Read more <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+            </div>
+            <p class="directory-note" style="margin:0 0 12px">#SIBGRAPI2025 #UrbanFlooding #RainfallMonitoring #SmartCities #Research</p>
+            <a class="publication-read" href="https://sibgrapi.sbc.org.br/2025/" target="_blank" rel="noreferrer">Read publication <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/defesaAnnie.jpeg" alt="SBBD 2025 Conference" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span> UFFESCIENCE</div>
+            <h3 style="margin-top:12px">PhD Qualification Exam Announcement</h3>
+            <div class="expandable">
+              <div class="expandable-body"><p>We congratulate <strong>Annie Amorim</strong> on successfully passing her PhD Qualification Exam with the research:</p>
+<p>Annie is advised by <strong>Prof. Aline Paes</strong> and <strong>Prof. Daniel de Oliveira</strong>, with <strong>Prof. Artur Jordão (USP)</strong> and <strong>Flavia Bernardini (IC/UFF)</strong> serving as examiners.</p>
+<p>A well-deserved recognition for her outstanding work.</p></div>
+              <button type="button" class="expand-toggle" aria-expanded="false">Read more <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+            </div>
             
-    <p>
-    <strong>Wesley Ferreira</strong> won the <em>Best Demo Award</em> at <strong>SBBD 2025</strong> with the paper
-    “<em>Plug and Flow: Executing Scientific Workflows in Containers with the AkôFlow Middleware</em>,”
-    co-authored with Liliane Kunstmann, Raphael Reis Garcia, Marcos Bedo, Aline Paes, and Daniel de Oliveira.
-  </p>
-
-  <p>
-    The demo showcased <strong>AkôFlow</strong>, a middleware built on top of Kubernetes to support the parallel
-    execution of scientific workflows in containerized environments. AkôFlow enables automatic scaling of workflow
-    activities, each running in distinct Docker images, while also providing native provenance data capture.
-    The paper demonstrated its use in the astronomy workflow <em>Montage</em>, exploring different resource
-    allocation strategies. Beyond the technical contribution, this work highlights how innovative middleware
-    solutions can foster scalable and reproducible scientific data processing.
-  </p>
-
-  <p>
-    Congratulations, <strong>Wesley Ferreira</strong>, and the entire team, for this achievement at SBBD 2025!
-    <span role="img" aria-label="trophy">🏆</span>
-  </p>
-
-
-
-  <p>#BestDemo2025 #SBBD2025 #BRACIS2025 #Containers #Workflows #BigData</p>
-
-        </div>
-      </div>
-
-
-      <div class="news-item">
-        <img src="arquivos/certificado.jpeg" alt="SBBD 2025 Conference">
-        <div class="news-content">
-          <a href="https://sol.sbc.org.br/index.php/bresci/article/view/36911" target="_blank">
-            BreSci 2025 Best Paper Award
-          </a>
             
-  <p>
-    <strong>Paula Woyames</strong>, winner of the <em>Best Paper Award</em> at <strong>BreSci 2025</strong> with the work
-    “<em>Evaluating the Capability of LLMs to Specify Workflows</em>,” co-authored with
-    Débora Pina, Liliane Kunstmann, Marta Mattoso, and Daniel de Oliveira.
-    <span role="img" aria-label="trophy">🏆</span>
-  </p>
-
-  <p>
-    The paper evaluated the use of Large Language Models (LLMs) to specify workflows from natural language descriptions.
-    It compared three models (GPT-4o, DeepSeek V3, and Command-A), two prompt strategies, and four workflow systems
-    (Nextflow, Parsl, Dask, and Airflow), applied to workflows of varying complexity.
-  </p>
-
-  <p>
-    Congratulations to Paula Woyames and the entire team for this achievement at BreSci 2025!
-  </p>
-
-
-  <p>#BreSci2025 #SBBD2025 #BRACIS2025 #LLMs #UFFeScience #BigData</p>
-
-        </div>
-      </div>
-
-
-  <div class="news-item">
-        <img src="arquivos/outlier.png" alt="SBBD 2025 Conference">
-        <div class="news-content">
-          <a href="https://sscad.sbc.org.br/2025/" target="_blank">
-            Paper accepted at SSCAD 2025!!
-          </a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/cropped-cropped-logos.png" alt="SBBD 2025 Conference" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span> UFFESCIENCE</div>
+            <h3 style="margin-top:12px"><a href="https://sbbd.org.br" target="_blank" rel="noreferrer">Research Group Achievements at SBBD 2025</a></h3>
+            <div class="expandable">
+              <div class="expandable-body"><p>Our research group is proud to announce its strong presence at the <strong>Brazilian Symposium on Databases (SBBD 2025)</strong>, which will take place in Fortaleza from September 29 to October 2. We had <strong>six full papers</strong> and <strong>two short papers</strong> accepted, showcasing the quality and diversity of our ongoing work. Notably, the short paper derived from <strong>Lyncoln Oliveira’s PhD thesis</strong>, entitled <em>“Towards Enabling the Analysis of Visual Exploration Processes through Interaction Provenance”</em>, has been nominated for the <strong>Best Short Paper Award</strong>.</p>
+<p>In addition to these publications, we will also present a <strong>demo</strong>, two contributions at the <strong>Brazilian eScience Workshop</strong>, and our postdoctoral researcher <strong>Débora Pina</strong> will deliver a keynote at the <strong>DSW</strong>. This collective achievement reflects the dedication, creativity, and collaborative spirit of the entire team led by Professor <strong>Daniel de Oliveira</strong>.</p></div>
+              <button type="button" class="expand-toggle" aria-expanded="false">Read more <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+            </div>
             
-  <p>We are pleased to announce that our paper <strong>“Federated Outlier Detection for Astronomical Data: Performance Analysis on Commercial Clouds”</strong> has been accepted at <strong>SSCAD 2025</strong>, to be held in Bonito, MS, Brazil! ✨</p>
-
-  <p>This work is part of <strong>Camila Lopes&rsquo;</strong> PhD thesis, supervised by <strong>Prof. Daniel de Oliveira</strong> and <strong>Prof. Aline Paes</strong>, and developed in collaboration with:</p>
-  <ul>
-    <li>Wesley Ferreira (IC/UFF)</li>
-    <li>Marta Mattoso (COPPE/UFRJ)</li>
-    <li>Rafael Ferreira da Silva (ORNL)</li>
-    <li>Julia Gschwend (LIneA)</li>
-    <li>Luiz Nicolaci (LIneA)</li>
-  </ul>
-
-  <p>🔭 The paper investigates how <strong>Federated Learning (FL)</strong> can be applied to <strong>outlier detection in large astronomical catalogs</strong>, addressing scalability challenges from surveys such as the <em>Dark Energy Survey (DES)</em> and the upcoming <em>Legacy Survey of Space and Time (LSST)</em>. We emulate FL deployments on <strong>Amazon Web Services (AWS)</strong>, evaluating different compute configurations. The results show the trade-offs between training time and financial cost, providing valuable insights for configuring FL workflows at LSST scale.</p>
-
-  <p><strong>Congratulations to all authors!</strong> 🙌</p>
-
-  <p>#Astronomy #FederatedLearning #MachineLearning #CloudComputing #SSCAD2025 #BigData</p>
-
-        </div>
+            <a class="publication-read" href="https://sbbd.org.br" target="_blank" rel="noreferrer">Read publication <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/cancer-de-pulmao.webp" alt="AI for Lung Cancer Diagnosis" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span> UFFESCIENCE</div>
+            <h3 style="margin-top:12px"><a href="https://www.cnnbrasil.com.br/saude/ia-desenvolvida-no-brasil-pode-facilitar-o-diagnostico-de-cancer-de-pulmao/#goog_rewarded" target="_blank" rel="noreferrer">Brazilian AI may facilitate lung cancer diagnosis</a></h3>
+            <div class="expandable">
+              <div class="expandable-body"><p>Researchers in Brazil have developed an artificial intelligence system capable of assisting in the early detection of lung cancer, one of the leading causes of cancer-related deaths worldwide. The technology aims to improve diagnostic accuracy, reduce waiting times, and support healthcare professionals. Daniel de Oliveira, professor at the Institute of Computing at Fluminense Federal University (UFF), highlights the role of advanced computing and collaborative research in making this innovation possible.</p></div>
+              <button type="button" class="expand-toggle" aria-expanded="false">Read more <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+            </div>
+            
+            <a class="publication-read" href="https://www.cnnbrasil.com.br/saude/ia-desenvolvida-no-brasil-pode-facilitar-o-diagnostico-de-cancer-de-pulmao/#goog_rewarded" target="_blank" rel="noreferrer">Read publication <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <div style="position:relative;aspect-ratio:16/9;background:#061a2f"><iframe src="https://www.youtube.com/embed/uEAy256MvNk" title="Interview for the &#x27;Boletim Ciência&#x27; program at FioCruz to talk about research in the context of the LSST project (in Portuguese)" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;border:0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span> UFFESCIENCE</div>
+            <h3 style="margin-top:12px"><a href="https://www.youtube.com/live/uEAy256MvNk" target="_blank" rel="noreferrer">Interview for the &#x27;Boletim Ciência&#x27; program at FioCruz to talk about research in the context of the LSST project (in Portuguese)</a></h3>
+            <div class="expandable">
+              <div class="expandable-body"><p>In this interview, the host Neide Diniz talks with Luiz Nicolaci, director of LIneA – Interinstitutional Laboratory for e-Astronomy and coordinator at the National Institute of Technology (INCT), and Daniel de Oliveira, professor at the Institute of Computing, Fluminense Federal University (UFF)</p></div>
+              <button type="button" class="expand-toggle" aria-expanded="false">Read more <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+            </div>
+            
+            <a class="publication-read" href="https://www.youtube.com/live/uEAy256MvNk" target="_blank" rel="noreferrer">Read publication <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="https://olhardigital.com.br/wp-content/uploads/2025/06/vera-c-rubin-observatory-brasil-1920x1080.jpg" alt="Vera C. Rubin Observatory" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span> UFFESCIENCE</div>
+            <h3 style="margin-top:12px"><a href="https://olhardigital.com.br/2025/06/23/ciencia-e-espaco/observatorio-vera-c-rubin-conta-com-a-participacao-de-mais-de-200-brasileiros/" target="_blank" rel="noreferrer">Vera C. Rubin Observatory counts on the participation of over 200 Brazilians</a></h3>
+            <div class="expandable">
+              <div class="expandable-body"><p>Brazilian scientists are directly involved in processing data for the international LSST project, which aims to map around 37 billion stars and galaxies over ten years. Brazil participates with more than 170 researchers, including students and professionals working in Chile and the USA.</p></div>
+              <button type="button" class="expand-toggle" aria-expanded="false">Read more <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+            </div>
+            
+            <a class="publication-read" href="https://olhardigital.com.br/2025/06/23/ciencia-e-espaco/observatorio-vera-c-rubin-conta-com-a-participacao-de-mais-de-200-brasileiros/" target="_blank" rel="noreferrer">Read publication <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
       </div>
-
-      <div class="news-item">
-        <img src="arquivos/heatmatrix-continua-case01.png" alt="SBBD 2025 Conference">
-        <div class="news-content">
-          <a href="https://sibgrapi.sbc.org.br/2025/" target="_blank">
-            Paper accepted at SIBGRAPI 2025
-          </a>
-            <p>Excited to share that our paper <strong>“Real-time monitoring and historical analysis of rainfall and its impacts on urban areas”</strong> has been accepted for <strong>SIBGRAPI 2025</strong> in Salvador! 🎉</p>
-
-    <p>This paper is the result of <strong>Fabio Victorino da Cruz</strong>’s master’s thesis, supervised by <strong>Prof. Marcos Lage</strong> and <strong>Prof. Daniel de Oliveira</strong>, with the collaboration of <strong>Prof. Aline Paes</strong> and <strong>Prof. Fabio Miranda</strong>.</p>
-
-    <p>Our work presents the <strong>PluvWeb system</strong>, which integrates data from multiple sources, modalities, granularities, and formats to analyze the impact of rainfall in urban areas.</p>
-
-    <p>We look forward to presenting our findings and engaging with the community at <strong>SIBGRAPI 2025</strong>.</p>
-
-    <p>#SIBGRAPI2025 #UrbanFlooding #RainfallMonitoring #SmartCities #Research</p>
-        </div>
-      </div>
-
-       <div class="news-item">
-        <img src="arquivos/defesaAnnie.jpeg" alt="SBBD 2025 Conference">
-        <div class="news-content">
-          <a href="" target="_blank">
-            PhD Qualification Exam Announcement
-          </a>
-           <p>We congratulate <strong>Annie Amorim</strong> on successfully passing her PhD Qualification Exam with the research:</p>
-
-    <blockquote>
-        <em>"Merging Transformer Models to Improve Generalization in Text Classification in Portuguese"</em>
-    </blockquote>
-
-    <p>Annie is advised by <strong>Prof. Aline Paes</strong> and <strong>Prof. Daniel de Oliveira</strong>, with <strong>Prof. Artur Jordão (USP)</strong> and <strong>Flavia Bernardini (IC/UFF)</strong> serving as examiners.</p>
-
-    <p>A well-deserved recognition for her outstanding work.</p>
-        </div>
-      </div>
-     
-          <div class="news-item">
-        <img src="arquivos/cropped-cropped-logos.png" alt="SBBD 2025 Conference">
-        <div class="news-content">
-          <a href="https://sbbd.org.br" target="_blank">
-            Research Group Achievements at SBBD 2025
-          </a>
-          <p>
-            Our research group is proud to announce its strong presence at the <strong>Brazilian Symposium on Databases (SBBD 2025)</strong>, which will take place in Fortaleza from September 29 to October 2. We had <strong>six full papers</strong> and <strong>two short papers</strong> accepted, showcasing the quality and diversity of our ongoing work. Notably, the short paper derived from <strong>Lyncoln Oliveira’s PhD thesis</strong>, entitled <em>“Towards Enabling the Analysis of Visual Exploration Processes through Interaction Provenance”</em>, has been nominated for the <strong>Best Short Paper Award</strong>. 
-          </p>
-          <p>
-            In addition to these publications, we will also present a <strong>demo</strong>, two contributions at the <strong>Brazilian eScience Workshop</strong>, and our postdoctoral researcher <strong>Débora Pina</strong> will deliver a keynote at the <strong>DSW</strong>. This collective achievement reflects the dedication, creativity, and collaborative spirit of the entire team led by Professor <strong>Daniel de Oliveira</strong>.
-          </p>
-        </div>
-      </div>
-
-      <div class="news-item">
-        <img src="arquivos/cancer-de-pulmao.webp" alt="AI for Lung Cancer Diagnosis">
-        <div class="news-content">
-          <a href="https://www.cnnbrasil.com.br/saude/ia-desenvolvida-no-brasil-pode-facilitar-o-diagnostico-de-cancer-de-pulmao/#goog_rewarded" target="_blank">
-            Brazilian AI may facilitate lung cancer diagnosis
-          </a>
-          <p>
-            Researchers in Brazil have developed an artificial intelligence system capable of assisting in the early detection of lung cancer, one of the leading causes of cancer-related deaths worldwide. The technology aims to improve diagnostic accuracy, reduce waiting times, and support healthcare professionals. Daniel de Oliveira, professor at the Institute of Computing at Fluminense Federal University (UFF), highlights the role of advanced computing and collaborative research in making this innovation possible.
-          </p>
-        </div>
-      </div>
-
-     <div class="news-item">
-  <!-- Embedding a YouTube video -->
-  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; margin-bottom: 10px;">
-    <iframe 
-      src="https://www.youtube.com/embed/uEAy256MvNk" 
-      frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen
-      style="position: absolute; top:0; left: 0; width: 100%; height: 100%;">
-    </iframe>
-  </div>
-
-  <div class="news-content">
-    <a href="https://www.youtube.com/live/uEAy256MvNk" target="_blank">
-      Interview for the 'Boletim Ciência' program at FioCruz to talk about research in the context of the LSST project (in Portuguese)
-    </a>
-    <p>
-      In this interview, the host Neide Diniz talks with Luiz Nicolaci, director of LIneA – Interinstitutional Laboratory for e-Astronomy and coordinator at the National Institute of Technology (INCT), and Daniel de Oliveira, professor at the Institute of Computing, Fluminense Federal University (UFF)
-    </p>
-  </div>
-</div>
-
-
-      <!-- Add more news items below following the same structure -->
-      <div class="news-item">
-  <img src="https://olhardigital.com.br/wp-content/uploads/2025/06/vera-c-rubin-observatory-brasil-1920x1080.jpg" alt="Vera C. Rubin Observatory">
-  <div class="news-content">
-    <a href="https://olhardigital.com.br/2025/06/23/ciencia-e-espaco/observatorio-vera-c-rubin-conta-com-a-participacao-de-mais-de-200-brasileiros/" target="_blank">
-      Vera C. Rubin Observatory counts on the participation of over 200 Brazilians
-    </a>
-    <p>
-      Brazilian scientists are directly involved in processing data for the international LSST project, which aims to map around 37 billion stars and galaxies over ten years. Brazil participates with more than 170 researchers, including students and professionals working in Chile and the USA.
-    </p>
-  </div>
-</div>
-
+    </section>
   </main>
 
-  <!-- Footer -->
   <footer>
-    <div>
-      <b>Phone: +55 (21) 2629-5637<br>Fax: +55 (21) 2629-5627</b>
+    <div class="footer-brand">
+      <img src="arquivos/Daniel.jpeg" alt="" width="60" height="60" style="border-radius:50%;object-fit:cover">
+      <p>Daniel de Oliveira
+        <small>Associate Professor · Institute of Computing · Universidade Federal Fluminense</small>
+      </p>
     </div>
-    <div>
+    <div class="footer-contact">
+      Phone <b>+55 (21) 2629-5637</b> · Fax <b>+55 (21) 2629-5627</b><br>
       <b>danielcmo (at) ic (dot) uff (dot) br</b>
     </div>
+    <div class="footer-institutions" aria-label="Institutional affiliations">
+      <a href="https://uffescience.ic.uff.br" target="_blank" rel="noreferrer"><img src="assets/uffescience-logo.png" alt="UFFeScience Research Group" width="52" height="52"></a>
+      <a href="https://www.ic.uff.br/" target="_blank" rel="noreferrer"><img src="assets/ic-uff-logo.png" alt="Institute of Computing — UFF" width="69" height="52"></a>
+      <a href="https://www.uff.br/" target="_blank" rel="noreferrer"><img src="assets/uff-logo.svg" alt="Universidade Federal Fluminense" width="84" height="40" style="height:40px"></a>
+    </div>
+    <a href="#inicio">Back to top ↑</a>
   </footer>
 </body>
 </html>

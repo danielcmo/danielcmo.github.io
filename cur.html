@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-C4TVS1004P"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -9,205 +8,104 @@
     gtag('js', new Date());
     gtag('config', 'G-C4TVS1004P');
   </script>
-
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Courses - Daniel de Oliveira</title>
   <meta name="description" content="Courses taught by Daniel de Oliveira at UFF">
   <meta name="keywords" content="Courses, Teaching, Daniel de Oliveira, UFF, IC-UFF">
-
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #ffffff;
-      color: #333;
-      margin: 0;
-      line-height: 1.6;
-    }
-
-    a { color: #004f9e; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 20px 40px;
-      border-bottom: 1px solid #ccc;
-      background: #fafafa;
-    }
-
-    header img { height: 60px; }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-      padding: 0;
-      margin: 0;
-    }
-
-    nav ul li a { font-weight: bold; }
-
-    main {
-      padding: 40px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    h1 { font-size: 2em; }
-
-    h2 {
-      margin-top: 40px;
-      background: #004f9e;
-      color: #fff;
-      padding: 10px 15px;
-      border-radius: 4px;
-    }
-
-    .courses-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-    }
-
-    .course-item {
-      background: #f9f9f9;
-      padding: 15px;
-      border-radius: 6px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
-      transition: transform 0.2s;
-    }
-
-    .course-item:hover { transform: scale(1.02); }
-
-    .course-title {
-      font-weight: bold;
-      color: #004f9e;
-      margin-bottom: 8px;
-    }
-
-    .course-code { color: #666; font-size: 0.9em; margin-bottom: 10px; }
-
-    .course-links a {
-      margin-right: 10px;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .classroom-icon {
-      width: 150px;
-      height: 40px;
-      vertical-align: middle;
-    }
-
-    footer {
-      display: flex;
-      justify-content: space-between;
-      padding: 20px 40px;
-      border-top: 1px solid #ccc;
-      background: #f1f1f1;
-      font-size: 0.9em;
-    }
-  </style>
+  <link rel="icon" href="arquivos/uff.png">
+  <link rel="stylesheet" href="assets/site.css">
 </head>
-
 <body>
+  <header class="site-header">
+    <a class="logo-link" href="index.html" aria-label="Daniel de Oliveira — home">
+      <img src="arquivos/uff.png" alt="Universidade Federal Fluminense" width="72" height="72">
+      <span>Daniel de Oliveira<small>Institute of Computing / UFF</small></span>
+    </a>
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="cv.html">Publications</a>
+        <a href="books.html">Books</a>
+        <a href="ap.html">Research Areas</a>
+        <a href="cur.html" aria-current="page">Teaching</a>
+        <a href="collab.html">Collaborations</a>
+        <a href="li.html">Students</a>
+        <a href="awards.html">Awards</a>
+        <a href="projects.html">Projects</a>
+        <a href="per.html">News</a>
+    </nav>
+    <a class="header-group" href="https://uffescience.ic.uff.br" target="_blank" rel="noreferrer">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="1"/><path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z"/><path d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z"/></svg><span>UFFeScience</span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+    </a>
+  </header>
 
-<header>
-  <a href="http://www.uff.br"><img src="arquivos/uff.png" alt="UFF Logo"></a>
+  <main id="inicio">
+    <section class="page-intro">
+      <div class="kicker"><span></span> TEACHING / UNDERGRADUATE / GRADUATE</div>
+      <h1>Courses</h1>
+      <p>This page presents undergraduate and graduate courses taught at UFF.</p>
+    </section>
+    <section class="section ">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">COURSES / IC-UFF</div>
+          <h2>Undergraduate Courses</h2>
+        </div>
+      </div>
+      <div class="publication-grid two">
+        <article class="publication-preview">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span> TCC00334 · 2025.2</div>
+            <h3>Principles of Databases</h3>
+            <p>Introduction to database concepts, SQL, relational model and design.</p>
+            <a class="publication-read" href="https://classroom.google.com/c/Nzc0MjA2MjAyMDU5" target="_blank" rel="noreferrer">Google Classroom <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span> TCC00336 · 2025.2</div>
+            <h3>Data Warehouse, NoSQL and Big Data</h3>
+            <p>Big data systems, Spark, Hadoop and distributed processing.</p>
+            <a class="publication-read" href="https://classroom.google.com/c/Nzc0MjA2Mjc4NzM5" target="_blank" rel="noreferrer">Google Classroom <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span> TCC00334 · 2026.1</div>
+            <h3>Principles of Databases</h3>
+            <p>Updated edition covering relational databases, SQL optimization and transactions.</p>
+            <span class="publication-read disabled">Google Classroom · link coming soon</span>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span> TCC00336 · 2026.1</div>
+            <h3>Data Warehouse, NoSQL and Big Data</h3>
+            <p>Modern distributed systems, cloud data platforms and analytics pipelines.</p>
+            <span class="publication-read disabled">Google Classroom · link coming soon</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
 
-  <nav>
-    <ul>
-      <li><a href="https://danielcmo.github.io">Home</a></li>
-      <li><a href="https://danielcmo.github.io/cv.html">Publications</a></li>
-      <li><a href="https://danielcmo.github.io/books.html">Books</a></li>
-      <li><a href="https://danielcmo.github.io/ap.html">Research Areas</a></li>
-      <li><a href="https://danielcmo.github.io/cur.html">Teaching</a></li>
-    </ul>
-  </nav>
-
-  <a href="http://www.ic.uff.br"><img src="arquivos/logo-ic.png" alt="IC-UFF Logo"></a>
-</header>
-
-<main>
-
-<h1>Courses</h1>
-
-<p>
-  This page presents undergraduate and graduate courses taught at UFF.
-</p>
-
-<h2>Undergraduate Courses</h2>
-
-<div class="courses-grid">
-
-  <!-- 2025.2 -->
-  <div class="course-item">
-    <div class="course-title">Principles of Databases (2025.2)</div>
-    <div class="course-code">TCC00334</div>
-    <div class="course-description">
-      Introduction to database concepts, SQL, relational model and design.
+  <footer>
+    <div class="footer-brand">
+      <img src="arquivos/Daniel.jpeg" alt="" width="60" height="60" style="border-radius:50%;object-fit:cover">
+      <p>Daniel de Oliveira
+        <small>Associate Professor · Institute of Computing · Universidade Federal Fluminense</small>
+      </p>
     </div>
-    <div class="course-links">
-      <a href="https://classroom.google.com/c/Nzc0MjA2MjAyMDU5">
-        <img class="classroom-icon" src="arquivos/GoogleClassroomBanner.png" alt="Classroom">
-        Google Classroom
-      </a>
+    <div class="footer-contact">
+      Phone <b>+55 (21) 2629-5637</b> · Fax <b>+55 (21) 2629-5627</b><br>
+      <b>danielcmo (at) ic (dot) uff (dot) br</b>
     </div>
-  </div>
-
-  <div class="course-item">
-    <div class="course-title">Data Warehouse, NoSQL and Big Data (2025.2)</div>
-    <div class="course-code">TCC00336</div>
-    <div class="course-description">
-      Big data systems, Spark, Hadoop and distributed processing.
+    <div class="footer-institutions" aria-label="Institutional affiliations">
+      <a href="https://uffescience.ic.uff.br" target="_blank" rel="noreferrer"><img src="assets/uffescience-logo.png" alt="UFFeScience Research Group" width="52" height="52"></a>
+      <a href="https://www.ic.uff.br/" target="_blank" rel="noreferrer"><img src="assets/ic-uff-logo.png" alt="Institute of Computing — UFF" width="69" height="52"></a>
+      <a href="https://www.uff.br/" target="_blank" rel="noreferrer"><img src="assets/uff-logo.svg" alt="Universidade Federal Fluminense" width="84" height="40" style="height:40px"></a>
     </div>
-    <div class="course-links">
-      <a href="https://classroom.google.com/c/Nzc0MjA2Mjc4NzM5">
-        <img class="classroom-icon" src="arquivos/GoogleClassroomBanner.png" alt="Classroom">
-        Google Classroom
-      </a>
-    </div>
-  </div>
-
-  <!-- 2026.1 (NOVOS) -->
-  <div class="course-item">
-    <div class="course-title">Principles of Databases (2026.1)</div>
-    <div class="course-code">TCC00334</div>
-    <div class="course-description">
-      Updated edition covering relational databases, SQL optimization and transactions.
-    </div>
-    <div class="course-links">
-      <a href="#">
-        <img class="classroom-icon" src="arquivos/GoogleClassroomBanner.png" alt="Classroom">
-        Google Classroom
-      </a>
-    </div>
-  </div>
-
-  <div class="course-item">
-    <div class="course-title">Data Warehouse, NoSQL and Big Data (2026.1)</div>
-    <div class="course-code">TCC00336</div>
-    <div class="course-description">
-      Modern distributed systems, cloud data platforms and analytics pipelines.
-    </div>
-    <div class="course-links">
-      <a href="#">
-        <img class="classroom-icon" src="arquivos/GoogleClassroomBanner.png" alt="Classroom">
-        Google Classroom
-      </a>
-    </div>
-  </div>
-
-</div>
-
-</main>
-
-<footer>
-  <div><b>Phone: +55 (21) 2629-5637</b></div>
-  <div><b>danielcmo (at) ic (dot) uff (dot) br</b></div>
-</footer>
-
+    <a href="#inicio">Back to top ↑</a>
+  </footer>
 </body>
 </html>

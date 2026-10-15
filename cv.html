@@ -1,669 +1,722 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C4TVS1004P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-C4TVS1004P');
-</script>
-<meta charset="UTF-8">
-<title>Daniel de Oliveira - Publications</title>
-<meta name="description" content="Publications of Professor Daniel de Oliveira">
-<meta name="keywords" content="Publications, IC-UFF, Data Science, Cloud Computing, Bioinformatics">
-<style>
-body { font-family: Arial, Helvetica, sans-serif; background-color: #ffffff; color: #333333; margin: 0; padding: 0; line-height: 1.6; }
-a { color: #004f9e; text-decoration: none; }
-a:hover { text-decoration: underline; }
-header { display: flex; align-items: center; justify-content: space-between; padding: 20px 40px; border-bottom: 1px solid #ccc; }
-header img { height: 60px; }
-nav ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 20px; }
-nav ul li a { font-weight: bold; }
-main { padding: 40px; }
-section { margin-bottom: 40px; }
-section h2 { border-bottom: 2px solid #333; padding-bottom: 0.3rem; margin-top: 2rem; }
-ul { list-style-type: none; padding-left: 0; }
-li { margin-bottom: 0.8rem; }
-.publication { padding: 0.5rem; background-color: #f9f9f9; border-left: 4px solid #333; margin-bottom: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-.publication::before { content: "📄"; margin-right: 0.5rem; }
-footer { display: flex; justify-content: space-between; padding: 20px 40px; border-top: 1px solid #ccc; background-color: #f9f9f9; font-size: 0.9em; }
-
-/* ---- Selected Papers Section ---- */
-#selected-papers { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-.paper-card { background: #f9f9f9; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); overflow: hidden; display: flex; flex-direction: column; }
-.paper-card img { width: 100%; height: 160px; object-fit: cover; }
-.paper-content { padding: 15px; }
-.paper-content h3 { margin: 0 0 10px; font-size: 1.1rem; }
-.paper-content p { margin: 5px 0; font-size: 0.9rem; }
-.paper-content a { font-weight: bold; }
-  .authors {
-    margin-top: 10px;
-    display: flex;
-    gap: 8px;
-  }
-
-  .authors img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%; /* deixa circular */
-    object-fit: cover;
-    border: 2px solid #ddd;
-  }
-
-  .paper-card {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 20px;
-  }
-
-  .paper-image {
-    max-width: 150px;
-    border-radius: 8px;
-  }
-</style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C4TVS1004P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-C4TVS1004P');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daniel de Oliveira - Publications</title>
+  <meta name="description" content="Publications of Professor Daniel de Oliveira">
+  <meta name="keywords" content="Publications, IC-UFF, Data Science, Cloud Computing, Bioinformatics">
+  <link rel="icon" href="arquivos/uff.png">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js" defer></script>
 </head>
 <body>
-<header>
-<a href="http://www.uff.br"><img src="arquivos/uff.png" alt="UFF Logo"></a>
-<nav>
-<ul>
-<li><a href="https://danielcmo.github.io">Home</a></li>
-<li><a href="https://danielcmo.github.io/cv.html">Publications</a></li>
-<li><a href="https://danielcmo.github.io/books.html">Books</a></li>
-<li><a href="https://danielcmo.github.io/ap.html">Research Areas</a></li>
-<li><a href="https://danielcmo.github.io/cur.html">Teaching</a></li>
-<li><a href="https://danielcmo.github.io/collab.html">Collaborations</a></li>
-<li><a href="https://danielcmo.github.io/li.html">Students</a></li>
-<li><a href="https://danielcmo.github.io/awards.html">Awards</a></li>
-<li><a href="https://danielcmo.github.io/projects.html">Projects</a></li>
-<li><a href="https://danielcmo.github.io/per.html">News</a></li>
-</ul>
-</nav>
-<a href="http://www.ic.uff.br"><img src="arquivos/logo-ic.png" alt="IC-UFF Logo"></a>
-</header>
+  <header class="site-header">
+    <a class="logo-link" href="index.html" aria-label="Daniel de Oliveira — home">
+      <img src="arquivos/uff.png" alt="Universidade Federal Fluminense" width="72" height="72">
+      <span>Daniel de Oliveira<small>Institute of Computing / UFF</small></span>
+    </a>
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="cv.html" aria-current="page">Publications</a>
+        <a href="books.html">Books</a>
+        <a href="ap.html">Research Areas</a>
+        <a href="cur.html">Teaching</a>
+        <a href="collab.html">Collaborations</a>
+        <a href="li.html">Students</a>
+        <a href="awards.html">Awards</a>
+        <a href="projects.html">Projects</a>
+        <a href="per.html">News</a>
+    </nav>
+    <a class="header-group" href="https://uffescience.ic.uff.br" target="_blank" rel="noreferrer">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="1"/><path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z"/><path d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z"/></svg><span>UFFeScience</span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+    </a>
+  </header>
 
-<main>
-<h1>Publications</h1>
-
-<!-- Selected Papers Section -->
-<section>
-<h2>Selected Papers</h2>
-<div id="selected-papers">
-  
-<div class="paper-card">
-    <img src="arquivos/general.png" alt="DLProv Paper Image">
-    <div class="paper-content">
-      <h3> Have We Seen these Data Before? A GRASP-based Execution Strategy for Cloud-based Workflows with Memoization.</h3>
-      <p><em>Rodrigo A. P. Silva, Gaëtan Heisieck, Esther Pacitti, Patrick Valduriez, Yuri Frota, <b>Daniel de Oliveira</b></em></p>
-      <p><strong>Concurrency and Computation: Practice and Experience, 2026</strong></p>
-      <a href="" target="_blank">Read Paper</a>
-      <div class="authors">
-        <img src="arquivos/Rodrigo.jpeg" alt="Marcos Bedo">
-        <img src="arquivos/Gaetan.jpeg" alt="Marcos Bedo">
-        <img src="arquivos/Yuri.jpeg" alt="Marcos Bedo">
-        <img src="arquivos/Esther.jpeg" alt="Marcos Bedo">
-        <img src="arquivos/Patrick.jpeg" alt="Marcos Bedo">
-        <img src="arquivos/Daniel.jpeg" alt="Marcos Bedo">
+  <main id="inicio">
+    <section class="page-intro">
+      <div class="kicker"><span></span> PAPERS / JOURNALS / CONFERENCES</div>
+      <h1>Publications</h1>
+      <p>Selected papers and a chronological list of recent publications. For a real-time updated list, please visit my <a href="https://dblp.org/pid/68/7553-1.html" target="_blank" rel="noreferrer">DBLP profile</a> — this page is updated less frequently :)</p>
+    </section>
+    <section class="section tinted">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">HIGHLIGHTS / RECENT WORK</div>
+          <h2>Selected papers</h2>
+        </div>
       </div>
-    </div>
-  </div>
-
-  <div class="paper-card">
-    <img src="arquivos/SN.jpeg" alt="DLProv Paper Image">
-    <div class="paper-content">
-      <h3> A Greedy Constructive Heuristic for Executing Cloud-Based Workflows with Data Confidentiality Restrictions.</h3>
-      <p><em>Rodrigo A. P. Silva, Wesley Ferreira, Esther Pacitti, Yuri Frota, <b>Daniel de Oliveira</b></em></p>
-      <p><strong>SN Computer Science, 2026</strong></p>
-      <a href="https://link.springer.com/article/10.1007/s42979-025-04582-1" target="_blank">Read Paper</a>
-      <div class="authors">
-        <img src="arquivos/Rodrigo.jpeg" alt="Marcos Bedo">
-        <img src="arquivos/1729136299931.jpeg" alt="Marcos Bedo">
-        <img src="arquivos/Yuri.jpeg" alt="Marcos Bedo">
-        <img src="arquivos/Esther.jpeg" alt="Marcos Bedo">
-        <img src="arquivos/Daniel.jpeg" alt="Marcos Bedo">
+      <div class="publication-grid">
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/general.png" alt="" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker">2026</div>
+            <h3>Have We Seen these Data Before? A GRASP-based Execution Strategy for Cloud-based Workflows with Memoization</h3>
+            <p>Rodrigo A. P. Silva, Gaëtan Heisieck, Esther Pacitti, Patrick Valduriez, Yuri Frota, <b>Daniel de Oliveira</b></p>
+            <p><i>Concurrency and Computation: Practice and Experience</i></p>
+            <div class="avatar-stack"><img src="arquivos/Rodrigo.jpeg" alt="" loading="lazy"><img src="arquivos/Gaetan.jpeg" alt="" loading="lazy"><img src="arquivos/Yuri.jpeg" alt="" loading="lazy"><img src="arquivos/Esther.jpeg" alt="" loading="lazy"><img src="arquivos/Patrick.jpeg" alt="" loading="lazy"><img src="arquivos/Daniel.jpeg" alt="" loading="lazy"></div>
+            <span class="publication-read disabled">Link coming soon</span>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/SN.jpeg" alt="" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker">2026</div>
+            <h3>A Greedy Constructive Heuristic for Executing Cloud-Based Workflows with Data Confidentiality Restrictions</h3>
+            <p>Rodrigo A. P. Silva, Wesley Ferreira, Esther Pacitti, Yuri Frota, <b>Daniel de Oliveira</b></p>
+            <p><i>SN Computer Science</i></p>
+            <div class="avatar-stack"><img src="arquivos/Rodrigo.jpeg" alt="" loading="lazy"><img src="arquivos/1729136299931.jpeg" alt="" loading="lazy"><img src="arquivos/Yuri.jpeg" alt="" loading="lazy"><img src="arquivos/Esther.jpeg" alt="" loading="lazy"><img src="arquivos/Daniel.jpeg" alt="" loading="lazy"></div>
+            <a class="publication-read" href="https://link.springer.com/article/10.1007/s42979-025-04582-1" target="_blank" rel="noreferrer">Read paper <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/outlier.png" alt="" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker">2025</div>
+            <h3>Federated Outlier Detection for Astronomical Data: Performance Analysis on Commercial Clouds</h3>
+            <p>Camila Lopes, Wesley Ferreira, Rafael Ferreira da Silva, Julia Gschwend, Luiz Nicolaci, Marta Mattoso, Aline Paes, <b>Daniel de Oliveira</b></p>
+            <p><i>XXVI Brazilian Symposium on High Performance Computing Systems</i></p>
+            <div class="avatar-stack"><img src="arquivos/CamilaLopes.jpeg" alt="" loading="lazy"><img src="arquivos/1729136299931.jpeg" alt="" loading="lazy"><img src="arquivos/Rafael.jpeg" alt="" loading="lazy"><img src="arquivos/Marta.jpeg" alt="" loading="lazy"><img src="arquivos/Julia.jpeg" alt="" loading="lazy"><img src="arquivos/Nicolaci.jpeg" alt="" loading="lazy"><img src="arquivos/Aline.jpeg" alt="" loading="lazy"><img src="arquivos/Daniel.jpeg" alt="" loading="lazy"></div>
+            <a class="publication-read" href="https://sscad2025.ufms.br/" target="_blank" rel="noreferrer">Read paper <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/akoflow.png" alt="" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker">2025</div>
+            <h3>A Weighted Bi-objective Strategy for Executing Scientific Workflows in Containerized Environments</h3>
+            <p>Wesley Ferreira, Liliane Kunstmann, Yuri Frota, Luan Teylo, <b>Daniel de Oliveira</b></p>
+            <p><i>XXVI Brazilian Symposium on High Performance Computing Systems</i></p>
+            <div class="avatar-stack"><img src="arquivos/1729136299931.jpeg" alt="" loading="lazy"><img src="arquivos/Liliane.jpeg" alt="" loading="lazy"><img src="arquivos/Yuri.jpeg" alt="" loading="lazy"><img src="arquivos/luan.png" alt="" loading="lazy"><img src="arquivos/Daniel.jpeg" alt="" loading="lazy"></div>
+            <a class="publication-read" href="https://sscad2025.ufms.br/" target="_blank" rel="noreferrer">Read paper <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/fusion.png" alt="" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker">2025</div>
+            <h3>Exploring Language Model Fusion to Improve Generalization in Portuguese Hate Speech Detection</h3>
+            <p>Annie Amorim, Gabriel Assis, <b>Daniel de Oliveira</b>, Aline Paes</p>
+            <p><i>28th International Conference on Information Fusion (FUSION)</i></p>
+            <div class="avatar-stack"><img src="arquivos/Annie.jpeg" alt="" loading="lazy"><img src="arquivos/Daniel.jpeg" alt="" loading="lazy"><img src="arquivos/Aline.jpeg" alt="" loading="lazy"></div>
+            <a class="publication-read" href="https://ieeexplore.ieee.org/document/11124084" target="_blank" rel="noreferrer">Read paper <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/infedu.png" alt="" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker">2025</div>
+            <h3>Provenance-based Data Analysis in Block-based Programming for Application Development</h3>
+            <p>Naira Arruda, Simone Martins, <b>Daniel de Oliveira</b></p>
+            <p><i>Informatics In Education (Accepted)</i></p>
+            <div class="avatar-stack"><img src="arquivos/Naira.jpeg" alt="" loading="lazy"><img src="arquivos/simone.png" alt="" loading="lazy"><img src="arquivos/Daniel.jpeg" alt="" loading="lazy"></div>
+            <a class="publication-read" href="https://infedu.vu.lt/journal/INFEDU" target="_blank" rel="noreferrer">Read paper <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/dlprov.png" alt="" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker">2025</div>
+            <h3>DLProv: a suite of provenance services for deep learning workflow analyses</h3>
+            <p>Débora B. Pina, Liliane N. O. Kunstmann, Adriane Chapman, <b>Daniel de Oliveira</b>, Marta Mattoso</p>
+            <p><i>PeerJ Computer Science</i></p>
+            <div class="avatar-stack"><img src="arquivos/Debora.jpeg" alt="" loading="lazy"><img src="arquivos/Liliane.jpeg" alt="" loading="lazy"><img src="arquivos/Daniel.jpeg" alt="" loading="lazy"><img src="arquivos/Marta.jpeg" alt="" loading="lazy"></div>
+            <a class="publication-read" href="https://peerj.com/articles/cs-2985/" target="_blank" rel="noreferrer">Read paper <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/texturagranular.png" alt="" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker">2025</div>
+            <h3>PATSA-BIL: Pipeline for automated texture and structure analysis of borehole image logs</h3>
+            <p>André M. Souza, Matheus A. Cruz, Paola M.C. Braga, Rodrigo B. Piva, Rodrigo A.C. Dias, Paulo R. Siqueira, Willian A. Trevizan, Candida M. de Jesus, Camilla Bazzarella, Rodrigo S. Monteiro, Flavia C. Bernardini, Leandro A.F. Fernandes, Elaine P.M. de Sousa, <b>Daniel de Oliveira</b>, Marcos Bedo</p>
+            <p><i>Expert Systems with Applications</i></p>
+            <div class="avatar-stack"><img src="arquivos/RodrigoSalvador.png" alt="" loading="lazy"><img src="arquivos/Flavia.jpeg" alt="" loading="lazy"><img src="arquivos/Elaine.png" alt="" loading="lazy"><img src="arquivos/Daniel.jpeg" alt="" loading="lazy"><img src="arquivos/MarcosBedo.jpeg" alt="" loading="lazy"></div>
+            <a class="publication-read" href="https://www.sciencedirect.com/science/article/abs/pii/S0957417425009674?via%3Dihub" target="_blank" rel="noreferrer">Read paper <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/Curio.png" alt="" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker">2025</div>
+            <h3>Curio: A Dataflow-Based Framework for Collaborative Urban Visual Analytics</h3>
+            <p>Gustavo Moreira, Maryam Hosseini, Carolina V. F. de Souza, Lucas Alexandre, Nicola Colaninno, <b>Daniel de Oliveira</b>, Nivan Ferreira, Marcos Lage, Fabio Miranda</p>
+            <p><i>IEEE Transactions on Visualization and Computer Graphics</i></p>
+            <div class="avatar-stack"><img src="arquivos/Carol.jpeg" alt="" loading="lazy"><img src="arquivos/Daniel.jpeg" alt="" loading="lazy"><img src="arquivos/Nivan.jpg" alt="" loading="lazy"><img src="arquivos/MarcosLage.jpeg" alt="" loading="lazy"><img src="arquivos/FabioMiranda.jpeg" alt="" loading="lazy"></div>
+            <a class="publication-read" href="https://ieeexplore.ieee.org/document/10670514" target="_blank" rel="noreferrer">Read paper <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/cpe8381-fig-0001-m.jpg" alt="" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker">2025</div>
+            <h3>Optimizing Resource Estimation for Scientific Workflows in HPC Environments: A Layered-Bucket Heuristic Approach</h3>
+            <p>Luis Alvarenga, Yuri Frota, <b>Daniel de Oliveira</b>, Rafaelli Coutinho</p>
+            <p><i>Concurrency and Computation: Practice and Experience</i></p>
+            <div class="avatar-stack"><img src="arquivos/alvarenga.png" alt="" loading="lazy"><img src="arquivos/Yuri.jpeg" alt="" loading="lazy"><img src="arquivos/Daniel.jpeg" alt="" loading="lazy"><img src="arquivos/Rafaelli.jpeg" alt="" loading="lazy"></div>
+            <a class="publication-read" href="https://onlinelibrary.wiley.com/doi/10.1002/cpe.8381" target="_blank" rel="noreferrer">Read paper <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/bandeiras.png" alt="" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker">2025</div>
+            <h3>Language Flavors in the Lusophone World: A BERT-Based Social Media Study of Portuguese in Brazil, Portugal, and Mozambique</h3>
+            <p>Annie Amorim, Gabriel Assis, Laura Ribeiro, <b>Daniel de Oliveira</b>, Aline Paes</p>
+            <p><i>40th ACM/SIGAPP Symposium on Applied Computing</i></p>
+            <div class="avatar-stack"><img src="arquivos/Annie.jpeg" alt="" loading="lazy"><img src="arquivos/Daniel.jpeg" alt="" loading="lazy"><img src="arquivos/Aline.jpeg" alt="" loading="lazy"></div>
+            <a class="publication-read" href="https://dl.acm.org/doi/10.1145/3672608.3707931" target="_blank" rel="noreferrer">Read paper <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/aaai.png" alt="" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker">2025</div>
+            <h3>Scalable Reputation Management: A Multi-task Prompting Approach Using Fine-tuned PLMs for Sentiment and Topic Classification</h3>
+            <p>Paulo R. S. da Costa Jr., Matheus Utino, João Silva-Leite, Lyncoln S. de Oliveira, Rodrigo S. Monteiro, Rodrigo Dias, <b>Daniel de Oliveira</b>, Paulo Mann, Marcos Bedo</p>
+            <p><i>International AAAI Conference on Web and Social Media</i></p>
+            <div class="avatar-stack"><img src="arquivos/Lyncoln.jpeg" alt="" loading="lazy"><img src="arquivos/RodrigoSalvador.png" alt="" loading="lazy"><img src="arquivos/Daniel.jpeg" alt="" loading="lazy"><img src="arquivos/Mann.jpeg" alt="" loading="lazy"><img src="arquivos/MarcosBedo.jpeg" alt="" loading="lazy"></div>
+            <a class="publication-read" href="https://ojs.aaai.org/index.php/ICWSM/article/view/35898" target="_blank" rel="noreferrer">Read paper <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/ExampleCurio.jpg" alt="" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker">2025</div>
+            <h3>Towards Enabling the Analysis of Visual Exploration Processes through Interaction Provenance</h3>
+            <p>Lyncoln S. de Oliveira, Gustavo Moreira, Fabio Miranda, Marcos Lage, <b>Daniel de Oliveira</b></p>
+            <p><i>Brazilian Symposium on Databases</i></p>
+            <div class="avatar-stack"><img src="arquivos/Lyncoln.jpeg" alt="" loading="lazy"><img src="arquivos/FabioMiranda.jpeg" alt="" loading="lazy"><img src="arquivos/MarcosLage.jpeg" alt="" loading="lazy"><img src="arquivos/Daniel.jpeg" alt="" loading="lazy"></div>
+            <span class="publication-read disabled">Link coming soon</span>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/ontoexpline_api_graph.png" alt="" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker">2024</div>
+            <h3>MAESTRO: a lightweight ontology-based framework for composing and analyzing script-based scientific experiments</h3>
+            <p>Luiz Gustavo Dias, Bruno Lopes, <b>Daniel de Oliveira</b></p>
+            <p><i>Knowledge and Information Systems</i></p>
+            <div class="avatar-stack"><img src="arquivos/LuizGustavo.jpeg" alt="" loading="lazy"><img src="arquivos/Bruno.jpeg" alt="" loading="lazy"><img src="arquivos/Daniel.jpeg" alt="" loading="lazy"></div>
+            <a class="publication-read" href="https://link.springer.com/article/10.1007/s10115-024-02134-2" target="_blank" rel="noreferrer">Read paper <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/liliane.png" alt="" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker">2024</div>
+            <h3>Scientific Workflow Deployment: Container Provenance in High-Performance Computing</h3>
+            <p>Liliane Kunstmann, Debora Pina, <b>Daniel de Oliveira</b>, Marta Mattoso</p>
+            <p><i>Brazilian Symposium on Databases</i></p>
+            <div class="avatar-stack"><img src="arquivos/Liliane.jpeg" alt="" loading="lazy"><img src="arquivos/Debora.jpeg" alt="" loading="lazy"><img src="arquivos/Daniel.jpeg" alt="" loading="lazy"><img src="arquivos/Marta.jpeg" alt="" loading="lazy"></div>
+            <a class="publication-read" href="https://sol.sbc.org.br/index.php/sbbd/article/view/30713" target="_blank" rel="noreferrer">Read paper <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/grafo.png" alt="" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker">2024</div>
+            <h3>DLProv: A Data-Centric Support for Deep Learning Workflow Analyses</h3>
+            <p>Debora Pina, Adriane Chapman, Liliane Kunstmann, <b>Daniel de Oliveira</b>, Marta Mattoso</p>
+            <p><i>Data Management for End-to-End Machine Learning Workshop (in conjunction with SIGMOD/PODS)</i></p>
+            <div class="avatar-stack"><img src="arquivos/Debora.jpeg" alt="" loading="lazy"><img src="arquivos/Age.jpeg" alt="" loading="lazy"><img src="arquivos/Liliane.jpeg" alt="" loading="lazy"><img src="arquivos/Daniel.jpeg" alt="" loading="lazy"><img src="arquivos/Marta.jpeg" alt="" loading="lazy"></div>
+            <a class="publication-read" href="https://dl.acm.org/doi/10.1145/3650203.3663337" target="_blank" rel="noreferrer">Read paper <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/cbms.png" alt="" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker">2024</div>
+            <h3>Aggregating embeddings from image and radiology reports for multimodal Chest-CT retrieval</h3>
+            <p>João Leite, Cristina Fontes, Alair Santos, Diogo Gomes, Paulo M. Azevedo-Marques, <b>Daniel de Oliveira</b>, Aline Paes, Marcos Bedo</p>
+            <p><i>IEEE International Symposium on Computer-Based Medical Systems (IEEE CBMS)</i></p>
+            <div class="avatar-stack"><img src="arquivos/Cristina.png" alt="" loading="lazy"><img src="arquivos/Daniel.jpeg" alt="" loading="lazy"><img src="arquivos/Aline.jpeg" alt="" loading="lazy"><img src="arquivos/MarcosBedo.jpeg" alt="" loading="lazy"></div>
+            <a class="publication-read" href="https://ieeexplore.ieee.org/document/10600852" target="_blank" rel="noreferrer">Read paper <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/prowis.png" alt="" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker">2024</div>
+            <h3>PROWIS: A visual approach for building, managing, and analyzing weather simulation ensembles in runtime</h3>
+            <p>Carolina Souza, Suzanna Bonnet, <b>Daniel de Oliveira</b>, Marcio Cataldi, Fabio Miranda, Marcos Lage</p>
+            <p><i>IEEE Transactions on Visualization and Computer Graphics</i></p>
+            <div class="avatar-stack"><img src="arquivos/Carol.jpeg" alt="" loading="lazy"><img src="arquivos/Daniel.jpeg" alt="" loading="lazy"><img src="arquivos/MarcosLage.jpeg" alt="" loading="lazy"><img src="arquivos/FabioMiranda.jpeg" alt="" loading="lazy"></div>
+            <a class="publication-read" href="https://www.computer.org/csdl/journal/tg/2024/01/10290915/1RtZzTSFaqk" target="_blank" rel="noreferrer">Read paper <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/ako.png" alt="" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker">2024</div>
+            <h3>AkôFlow: um Middleware para Execução de Workflows Científicos em Múltiplos Ambientes Conteinerizados</h3>
+            <p>Wesley Ferreira, Liliane Kunstmann, Aline Paes, Marcos Bedo, <b>Daniel de Oliveira</b></p>
+            <p><i>Brazilian Symposium on Databases</i></p>
+            <div class="avatar-stack"><img src="arquivos/1729136299931.jpeg" alt="" loading="lazy"><img src="arquivos/Liliane.jpeg" alt="" loading="lazy"><img src="arquivos/Aline.jpeg" alt="" loading="lazy"><img src="arquivos/MarcosBedo.jpeg" alt="" loading="lazy"><img src="arquivos/Daniel.jpeg" alt="" loading="lazy"></div>
+            <a class="publication-read" href="https://sol.sbc.org.br/index.php/sbbd/article/view/30680" target="_blank" rel="noreferrer">Read paper <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/samba.jpg" alt="" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker">2024</div>
+            <h3>SAMbA-RaP is music to scientists&#x27; ears: Adding provenance support to spark-based scientific workflows</h3>
+            <p>Thaylon Guedes, Marta Mattoso, Marcos Bedo, <b>Daniel de Oliveira</b></p>
+            <p><i>SoftwareX</i></p>
+            <div class="avatar-stack"><img src="arquivos/Thaylon.jpeg" alt="" loading="lazy"><img src="arquivos/Marta.jpeg" alt="" loading="lazy"><img src="arquivos/MarcosBedo.jpeg" alt="" loading="lazy"><img src="arquivos/Daniel.jpeg" alt="" loading="lazy"></div>
+            <a class="publication-read" href="https://www.sciencedirect.com/science/article/pii/S2352711024002978?via%3Dihub" target="_blank" rel="noreferrer">Read paper <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/flower.png" alt="" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker">2023</div>
+            <h3>Provenance-based Dynamic Fine-Tuning of Cross-Silo Federated Learning</h3>
+            <p>Camila Lopes, Alan Nunes, Cristina Boeres, Lucia Drummond, <b>Daniel de Oliveira</b></p>
+            <p><i>Latin America High Performance Computing Conference (CARLA)</i></p>
+            <div class="avatar-stack"><img src="arquivos/CamilaLopes.jpeg" alt="" loading="lazy"><img src="arquivos/Boeres.png" alt="" loading="lazy"><img src="arquivos/Lucia.jpeg" alt="" loading="lazy"><img src="arquivos/Daniel.jpeg" alt="" loading="lazy"></div>
+            <a class="publication-read" href="https://link.springer.com/chapter/10.1007/978-3-031-52186-7_8" target="_blank" rel="noreferrer">Read paper <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/anomaly.png" alt="" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker">2023</div>
+            <h3>AIS-based maritime anomaly traffic detection</h3>
+            <p>Claudio Ribeiro, Alines Paes, <b>Daniel de Oliveira</b></p>
+            <p><i>Expert Systems with Applications</i></p>
+            <div class="avatar-stack"><img src="arquivos/ClaudioRibeiro.jpeg" alt="" loading="lazy"><img src="arquivos/Aline.jpeg" alt="" loading="lazy"><img src="arquivos/Daniel.jpeg" alt="" loading="lazy"></div>
+            <a class="publication-read" href="linkinghub.elsevier.com/retrieve/pii/S0957417423010631" target="_blank" rel="noreferrer">Read paper <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/Rotas.png" alt="" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker">2023</div>
+            <h3>Defining Routes for Emergency Response from Climate Events: a Data-oriented Approach</h3>
+            <p>Felipe Oliveira, Yuri Frota, <b>Daniel de Oliveira</b></p>
+            <p><i>IEEE Latin America Transactions</i></p>
+            <div class="avatar-stack"><img src="arquivos/FelipeOliveira.png" alt="" loading="lazy"><img src="arquivos/Yuri.jpeg" alt="" loading="lazy"><img src="arquivos/Daniel.jpeg" alt="" loading="lazy"></div>
+            <a class="publication-read" href="https://ieeexplore.ieee.org/document/10255445" target="_blank" rel="noreferrer">Read paper <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/cache.png" alt="" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker">2020</div>
+            <h3>Distributed Caching of Scientific Workflows in Multisite Cloud</h3>
+            <p>Gaëtan Heisieck, <b>Daniel de Oliveira</b>, Christophe Pradal, Francois Tardieu, Esther Pacitti, Patrick Valduriez</p>
+            <p><i>International Conference on Database and Expert Systems Applications (DEXA)</i></p>
+            <div class="avatar-stack"><img src="arquivos/Gaetan.jpeg" alt="" loading="lazy"><img src="arquivos/Daniel.jpeg" alt="" loading="lazy"><img src="arquivos/Pradal.jpeg" alt="" loading="lazy"><img src="arquivos/Tardieu.jpeg" alt="" loading="lazy"><img src="arquivos/Esther.jpeg" alt="" loading="lazy"><img src="arquivos/Patrick.jpeg" alt="" loading="lazy"></div>
+            <a class="publication-read" href="https://link.springer.com/chapter/10.1007/978-3-030-59051-2_4" target="_blank" rel="noreferrer">Read paper <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/survey.png" alt="" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker">2018</div>
+            <h3>Provenance Analytics for Workflow-Based Computational Experiments</h3>
+            <p>Wellington Oliveira, <b>Daniel de Oliveira</b>, Vanessa Braganholo</p>
+            <p><i>ACM Computing Surveys</i></p>
+            <div class="avatar-stack"><img src="arquivos/Wellington.jpeg" alt="" loading="lazy"><img src="arquivos/Daniel.jpeg" alt="" loading="lazy"><img src="arquivos/Vanessa.jpeg" alt="" loading="lazy"></div>
+            <a class="publication-read" href="https://dl.acm.org/doi/10.1145/3184900" target="_blank" rel="noreferrer">Read paper <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <img class="publication-cover" src="arquivos/sci.png" alt="" loading="lazy">
+          <div class="publication-preview-content">
+            <div class="kicker">2010</div>
+            <h3>SciCumulus: A Lightweight Cloud Middleware to Explore Many Task Computing Paradigm in Scientific Workflows</h3>
+            <p><b>Daniel de Oliveira</b>, Eduardo Ogasawara, Fernanda Baião, Marta Mattoso</p>
+            <p><i>IEEE International Conference in Cloud Computing</i></p>
+            <div class="avatar-stack"><img src="arquivos/Daniel.jpeg" alt="" loading="lazy"><img src="arquivos/Eduardo.jpeg" alt="" loading="lazy"><img src="arquivos/Fernanda.jpeg" alt="" loading="lazy"><img src="arquivos/Marta.jpeg" alt="" loading="lazy"></div>
+            <a class="publication-read" href="https://ieeexplore.ieee.org/document/5557969" target="_blank" rel="noreferrer">Read paper <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
       </div>
-    </div>
-  </div>
-
-   <div class="paper-card">
-    <img src="arquivos/outlier.png" alt="DLProv Paper Image">
-    <div class="paper-content">
-      <h3> Federated Outlier Detection for Astronomical Data: Performance Analysis on Commercial Clouds.</h3>
-      <p><em>Camila Lopes, Wesley Ferreira, Rafael Ferreira da Silva, Julia Gschwend, Luiz Nicolaci, Marta Mattoso, Aline Paes, <b>Daniel de Oliveira</b></em></p>
-      <p><strong>XXVI Brazilian Symposium on High Performance Computing Systems, 2025</strong></p>
-      <a href="https://sscad2025.ufms.br/" target="_blank">Read Paper</a>
-      <div class="authors">
-        <img src="arquivos/CamilaLopes.jpeg" alt="Wesley Ferreira">
-        <img src="arquivos/1729136299931.jpeg" alt="Wesley Ferreira">
-        <img src="arquivos/Rafael.jpeg" alt="Daniel de Oliveira">
-        <img src="arquivos/Marta.jpeg" alt="Marcos Bedo">
+    </section>
+    <section class="section ">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">BY YEAR / FULL LIST</div>
+          <h2>All publications</h2>
+        </div>
       </div>
-      <div class="authors">
-        <img src="arquivos/Julia.jpeg" alt="Marcos Bedo">
-        <img src="arquivos/Nicolaci.jpeg" alt="Marcos Bedo">
-        <img src="arquivos/Aline.jpeg" alt="Marcos Bedo">
-        <img src="arquivos/Daniel.jpeg" alt="Marcos Bedo">
-      </div>
-    </div>
-  </div>
+      <div class="year-filter" role="group" aria-label="Filter by year"><button type="button" class="active" data-year="all">All</button><button type="button" data-year="2025">2025</button><button type="button" data-year="2024">2024</button><button type="button" data-year="2023">2023</button></div>
+      <ol class="papers-list" id="papers-list">
+        <li class="paper-entry" data-year="2025">
+          <span class="paper-year">2025</span>
+          <div>
+            <h3>Optimizing Resource Estimation for Scientific Workflows in HPC Environments: A Layered-Bucket Heuristic Approach</h3>
+            <p class="paper-authors">Luis C. R. Alvarenga, Yuri Frota, <b>Daniel de Oliveira</b>, Rafaelli Coutinho</p>
+            <p class="paper-venue">Concurr. Comput. Pract. Exp. 37(4-5) (2025)</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2025">
+          <span class="paper-year">2025</span>
+          <div>
+            <h3>PATSA-BIL: Pipeline for automated texture and structure analysis of borehole image logs</h3>
+            <p class="paper-authors">André M. Souza, Matheus A. Cruz, Paola M. C. Braga, Rodrigo B. Piva, Rodrigo A. C. Dias, Paulo R. Siqueira, Willian A. Trevizan, Candida M. de Jesus, Camilla Bazzarella, Rodrigo Salvador Monteiro, Flávia Cristina Bernardini, Leandro A. F. Fernandes, Elaine P. M. de Sousa, <b>Daniel de Oliveira</b>, Marcos Bedo</p>
+            <p class="paper-venue">Expert Syst. Appl. 278: 127345 (2025)</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2025">
+          <span class="paper-year">2025</span>
+          <div>
+            <h3>DLProv: a suite of provenance services for deep learning workflow analyses</h3>
+            <p class="paper-authors">Débora B. Pina, Liliane N. O. Kunstmann, Adriane Chapman, <b>Daniel de Oliveira</b>, Marta Mattoso</p>
+            <p class="paper-venue">PeerJ Comput. Sci. 11: e2985 (2025)</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2025">
+          <span class="paper-year">2025</span>
+          <div>
+            <h3>Breadcrumbs for your Deep Learning Model: Following Provenance Traces with DLProv</h3>
+            <p class="paper-authors">Débora B. Pina, Liliane N. O. Kunstmann, <b>Daniel de Oliveira</b>, Marta Mattoso</p>
+            <p class="paper-venue">Softw. Impacts 23: 100730 (2025)</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2025">
+          <span class="paper-year">2025</span>
+          <div>
+            <h3>Curio: A Dataflow-Based Framework for Collaborative Urban Visual Analytics</h3>
+            <p class="paper-authors">Gustavo Moreira, Maryam Hosseini, Carolina Veiga Ferreira de Souza, Lucas Alexandre, Nicola Colaninno, <b>Daniel de Oliveira</b>, Nivan Ferreira, Marcos Lage, Fabio Miranda</p>
+            <p class="paper-venue">IEEE Trans. Vis. Comput. Graph. 31(1): 1224-1234 (2025)</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2025">
+          <span class="paper-year">2025</span>
+          <div>
+            <h3>Warehousing Data for Brand Health and Reputation with AI-Driven Scores in NewSQL Architectures: Opportunities and Challenges</h3>
+            <p class="paper-authors">Paulo R. Siqueira, Rodrigo A. C. Dias, João Silva-Leite, Paulo Mann, Rodrigo Salvador Monteiro, <b>Daniel de Oliveira</b>, Marcos Bedo</p>
+            <p class="paper-venue">ICEIS (1) 2025: 51-62</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2025">
+          <span class="paper-year">2025</span>
+          <div>
+            <h3>Scalable Reputation Management: A Multi-Task Prompting Approach Using Fine-Tuned PLMs for Sentiment and Topic Classification</h3>
+            <p class="paper-authors">Paulo R. S. da Costa Jr., Matheus Utino, João Silva-Leite, Lyncoln S. de Oliveira, Rodrigo Salvador Monteiro, Rodrigo A. C. Dias, <b>Daniel de Oliveira</b>, Paulo Mann, Marcos Bedo</p>
+            <p class="paper-venue">ICWSM 2025: 1735-1747</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2025">
+          <span class="paper-year">2025</span>
+          <div>
+            <h3>Language Flavors in the Lusophone World: A BERT-Based Social Media Study of Portuguese in Brazil, Portugal, and Mozambique</h3>
+            <p class="paper-authors">Annie Amorim, Gabriel Assis, Laura Ribeiro, <b>Daniel de Oliveira</b>, Aline Paes</p>
+            <p class="paper-venue">SAC 2025: 1927-1934</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2024">
+          <span class="paper-year">2024</span>
+          <div>
+            <h3>MAESTRO: a lightweight ontology-based framework for composing and analyzing script-based scientific experiments</h3>
+            <p class="paper-authors">Luiz Gustavo Dias, Bruno Lopes, <b>Daniel de Oliveira</b></p>
+            <p class="paper-venue">Knowl. Inf. Syst. 66(10): 5959-6000 (2024)</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2024">
+          <span class="paper-year">2024</span>
+          <div>
+            <h3>Explorando Técnicas de Aprendizado em Modelos de Linguagem para Classificação de Discurso de Ódio e Ofensivo em Português</h3>
+            <p class="paper-authors">Gabriel Assis, Annie Amorim, Jonnathan Carvalho, Mariza Ferro, <b>Daniel de Oliveira</b>, Daniela Vianna, Aline Paes</p>
+            <p class="paper-venue">Linguamática 16(2): 91-113 (2024)</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2024">
+          <span class="paper-year">2024</span>
+          <div>
+            <h3>SAMbA-RaP is music to scientists&#x27; ears: Adding provenance support to spark-based scientific workflows</h3>
+            <p class="paper-authors">Thaylon Guedes, Marta Mattoso, Marcos V. N. Bedo, <b>Daniel de Oliveira</b></p>
+            <p class="paper-venue">SoftwareX 28: 101927 (2024)</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2024">
+          <span class="paper-year">2024</span>
+          <div>
+            <h3>PW: A Visual Approach for Building, Managing, and Analyzing Weather Simulation Ensembles at Runtime</h3>
+            <p class="paper-authors">Carolina Veiga Ferreira de Souza, Suzanna Maria Bonnet, <b>Daniel de Oliveira</b>, Márcio Cataldi, Fabio Miranda, Marcos Lage</p>
+            <p class="paper-venue">IEEE Trans. Vis. Comput. Graph. 30(1): 738-747 (2024)</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2024">
+          <span class="paper-year">2024</span>
+          <div>
+            <h3>Aggregating embeddings from image and radiology reports for multimodal Chest-CT retrieval</h3>
+            <p class="paper-authors">João Silva-Leite, Cristina A. P. Fontes, Alair S. Santos, Diogo G. Correa, Marcel Koenigkam-Santos, Paulo M. Azevedo-Marques, <b>Daniel de Oliveira</b>, Aline Paes, Marcos V. N. Bedo</p>
+            <p class="paper-venue">CBMS 2024: 309-314</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2024">
+          <span class="paper-year">2024</span>
+          <div>
+            <h3>DLProv: A Data-Centric Support for Deep Learning Workflow Analyses</h3>
+            <p class="paper-authors">Débora B. Pina, Adriane Chapman, Liliane N. O. Kunstmann, <b>Daniel de Oliveira</b>, Marta Mattoso</p>
+            <p class="paper-venue">DEEM@SIGMOD 2024: 77-85</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2024">
+          <span class="paper-year">2024</span>
+          <div>
+            <h3>Enriching Hierarchical Navigable Small World Searches with Result Diversification</h3>
+            <p class="paper-authors">Mauro Weber, João Silva-Leite, Lúcio F. D. Santos, <b>Daniel de Oliveira</b>, Marcos V. N. Bedo</p>
+            <p class="paper-venue">DEXA (1) 2024: 75-80</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2024">
+          <span class="paper-year">2024</span>
+          <div>
+            <h3>APOENA: Towards a Cloud Dimensioning Approach for Executing SQL-like Workloads Using Machine Learning and Provenance</h3>
+            <p class="paper-authors">Raslan Ribeiro, Rafaelli Coutinho, <b>Daniel de Oliveira</b></p>
+            <p class="paper-venue">ICEIS (1) 2024: 289-296</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2024">
+          <span class="paper-year">2024</span>
+          <div>
+            <h3>From Tracking Lineage to Enhancing Data Quality and Auditing: Adding Provenance Support to Data Warehouses with ProvETL</h3>
+            <p class="paper-authors">Matheus Vieira, Thiago de Oliveira, Leandro Cicco, <b>Daniel de Oliveira</b>, Marcos V. N. Bedo</p>
+            <p class="paper-venue">ICEIS (1) 2024: 313-320</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2024">
+          <span class="paper-year">2024</span>
+          <div>
+            <h3>SPARQL can also talk in Portuguese: answering natural language questions with knowledge graphs</h3>
+            <p class="paper-authors">Elbe Miranda, Aline Paes, <b>Daniel de Oliveira</b></p>
+            <p class="paper-venue">PROPOR (1) 2024: 56-66</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2024">
+          <span class="paper-year">2024</span>
+          <div>
+            <h3>Exploring Portuguese Hate Speech Detection in Low-Resource Settings: Lightly Tuning Encoder Models or In-Context Learning of Large Models?</h3>
+            <p class="paper-authors">Gabriel Assis, Annie Amorim, Jonnatahn Carvalho, <b>Daniel de Oliveira</b>, Daniela Q. C. Vianna, Aline Paes</p>
+            <p class="paper-venue">PROPOR (1) 2024: 301-311</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2024">
+          <span class="paper-year">2024</span>
+          <div>
+            <h3>Adicionando suporte à diversificação de resultados em índices HNSW considerando espaços de baixa e alta dimensionalidade</h3>
+            <p class="paper-authors">Mauro Weber, João Silva-Leite, Lúcio F. D. Santos, <b>Daniel de Oliveira</b>, Marcos Bedo</p>
+            <p class="paper-venue">SBBD 2024: 14-26</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2024">
+          <span class="paper-year">2024</span>
+          <div>
+            <h3>AkôFlow: um Middleware para Execução de Workflows Científicos em Múltiplos Ambientes Conteinerizados</h3>
+            <p class="paper-authors">Wesley Ferreira, Liliane N. O. Kunstmann, Aline Paes, Marcos Bedo, <b>Daniel de Oliveira</b></p>
+            <p class="paper-venue">SBBD 2024: 27-39</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2024">
+          <span class="paper-year">2024</span>
+          <div>
+            <h3>Otimização de Parâmetros em Aplicações de Big Data Baseadas em Múltiplos Frameworks</h3>
+            <p class="paper-authors">Bruna de Mello Almeida, Yuri Frota, <b>Daniel de Oliveira</b></p>
+            <p class="paper-venue">SBBD 2024: 418-430</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2024">
+          <span class="paper-year">2024</span>
+          <div>
+            <h3>Scientific Workflow Deployment: Container Provenance in High-Performance Computing</h3>
+            <p class="paper-authors">Liliane N. O. Kunstmann, Débora B. Pina, <b>Daniel de Oliveira</b>, Marta Mattoso</p>
+            <p class="paper-venue">SBBD 2024: 457-470</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2024">
+          <span class="paper-year">2024</span>
+          <div>
+            <h3>Uma Heurística para a Execução de Workflows com Restrições de Confidencialidade em Ambientes Conteinerizados</h3>
+            <p class="paper-authors">Rodrigo A. P. Silva, Wesley Ferreira, Esther Pacitti, Yuri Frota, <b>Daniel de Oliveira</b></p>
+            <p class="paper-venue">SBBD 2024: 536-548</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2024">
+          <span class="paper-year">2024</span>
+          <div>
+            <h3>ProvDeploy: Provenance-oriented Containerization of High Performance Computing Scientific Workflows</h3>
+            <p class="paper-authors">Liliane N. O. Kunstmann, Débora B. Pina, <b>Daniel de Oliveira</b>, Marta Mattoso</p>
+            <p class="paper-venue">CoRR abs/2403.15324 (2024)</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2024">
+          <span class="paper-year">2024</span>
+          <div>
+            <h3>Curio: A Dataflow-Based Framework for Collaborative Urban Visual Analytics</h3>
+            <p class="paper-authors">Gustavo Moreira, Maryam Hosseini, Carolina Veiga Ferreira de Souza, Lucas Alexandre, Nicola Colaninno, <b>Daniel de Oliveira</b>, Nivan Ferreira, Marcos Lage, Fabio Miranda</p>
+            <p class="paper-venue">CoRR abs/2408.06139 (2024)</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2024">
+          <span class="paper-year">2024</span>
+          <div>
+            <h3>Urban Computing for Climate and Environmental Justice: Early Perspectives From Two Research Initiatives</h3>
+            <p class="paper-authors">Carolina Veiga Ferreira de Souza, Ashish Sharma, <b>Daniel de Oliveira</b>, Marcos Lage, Fabio Miranda</p>
+            <p class="paper-venue">CoRR abs/2410.04318 (2024)</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2024">
+          <span class="paper-year">2024</span>
+          <div>
+            <h3>Workflows Community Summit 2024: Future Trends and Challenges in Scientific Workflows</h3>
+            <p class="paper-authors">Rafael Ferreira da Silva et al., <b>Daniel de Oliveira</b></p>
+            <p class="paper-venue">CoRR abs/2410.14943 (2024)</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2023">
+          <span class="paper-year">2023</span>
+          <div>
+            <h3>Optimizing computational costs of Spark for SARS-CoV-2 sequences comparisons on a commercial cloud</h3>
+            <p class="paper-authors">Alan L. Nunes, Alba C. M. A. Melo, Claude Tadonki, Cristina Boeres, <b>Daniel de Oliveira</b>, Lúcia Maria de Assumpção Drummond</p>
+            <p class="paper-venue">Concurr. Comput. Pract. Exp. 35(18) (2023)</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2023">
+          <span class="paper-year">2023</span>
+          <div>
+            <h3>AIS-based maritime anomaly traffic detection: A review</h3>
+            <p class="paper-authors">Claudio V. Ribeiro, Aline Paes, <b>Daniel de Oliveira</b></p>
+            <p class="paper-venue">Expert Syst. Appl. 231: 120561 (2023)</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2023">
+          <span class="paper-year">2023</span>
+          <div>
+            <h3>Pushing diversity into higher dimensions: The LID effect on diversified similarity searching</h3>
+            <p class="paper-authors">Daniel L. Jasbick, Lúcio F. D. Santos, Paulo M. Azevedo-Marques, Agma J. M. Traina, <b>Daniel de Oliveira</b>, Marcos V. N. Bedo</p>
+            <p class="paper-venue">Inf. Syst. 114: 102166 (2023)</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2023">
+          <span class="paper-year">2023</span>
+          <div>
+            <h3>Hurricane: a Dataflow-oriented Data Service for Smart Cities Applications</h3>
+            <p class="paper-authors">Maicon Banni, Maria Luiza Furtuozo Falci, Isabel Rosseti, <b>Daniel de Oliveira</b></p>
+            <p class="paper-venue">J. Inf. Data Manag. 14(1) (2023)</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2023">
+          <span class="paper-year">2023</span>
+          <div>
+            <h3>Life Science Workflow Services (LifeSWS): Motivations and Architecture</h3>
+            <p class="paper-authors">Reza Akbarinia, Christophe Botella, Alexis Joly, Florent Masseglia, Marta Mattoso, Eduardo S. Ogasawara, <b>Daniel de Oliveira</b>, Esther Pacitti, Fábio Porto, Christophe Pradal, Dennis E. Shasha, Patrick Valduriez</p>
+            <p class="paper-venue">Trans. Large Scale Data Knowl. Centered Syst. 55: 1-24 (2023)</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2023">
+          <span class="paper-year">2023</span>
+          <div>
+            <h3>Provenance-Based Dynamic Fine-Tuning of Cross-Silo Federated Learning</h3>
+            <p class="paper-authors">Camila R. Lopes, Alan L. Nunes, Cristina Boeres, Lúcia M. A. Drummond, <b>Daniel de Oliveira</b></p>
+            <p class="paper-venue">CARLA 2023: 113-127</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2023">
+          <span class="paper-year">2023</span>
+          <div>
+            <h3>NewsCollab: Fostering Data-driven Journalism with Crowdsourcing</h3>
+            <p class="paper-authors">Ygor Rolim, Danielly Alves, Flávia Clemente, <b>Daniel de Oliveira</b></p>
+            <p class="paper-venue">CSCWD 2023: 1008-1013</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2023">
+          <span class="paper-year">2023</span>
+          <div>
+            <h3>Adding Result Diversification to kNN-Based Joins in a Map-Reduce Framework</h3>
+            <p class="paper-authors">Vinícius Souza, Luiz Olmes Carvalho, <b>Daniel de Oliveira</b>, Marcos V. N. Bedo, Lúcio F. D. Santos</p>
+            <p class="paper-venue">DEXA (1) 2023: 68-83</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2023">
+          <span class="paper-year">2023</span>
+          <div>
+            <h3>PINNProv: Provenance for Physics-Informed Neural Networks</h3>
+            <p class="paper-authors">Lyncoln S. de Oliveira, Liliane N. O. Kunstmann, Débora B. Pina, <b>Daniel de Oliveira</b>, Marta Mattoso</p>
+            <p class="paper-venue">SBAC-PADW 2023: 16-23</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2023">
+          <span class="paper-year">2023</span>
+          <div>
+            <h3>MAESTRO: Uma Abordagem para a Composição e Análise de Workflows Baseados em Scripts por Meio de Ontologias</h3>
+            <p class="paper-authors">Luiz Gustavo Dias, Bruno Lopes, <b>Daniel de Oliveira</b></p>
+            <p class="paper-venue">SBBD 2023: 256-268</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2023">
+          <span class="paper-year">2023</span>
+          <div>
+            <h3>Uso de Grafos de Proveniência para Análise Temporal de Uso do Solo em Centros Urbanos: uma Abordagem Prática</h3>
+            <p class="paper-authors">Raffael M. Paranhos, Marcos Lage, <b>Daniel de Oliveira</b></p>
+            <p class="paper-venue">SBBD 2023: 457-462</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2023">
+          <span class="paper-year">2023</span>
+          <div>
+            <h3>Visual Analytics Using Heterogeneous Urban Data</h3>
+            <p class="paper-authors">Sandro Bonadia, Rogério Gama, <b>Daniel de Oliveira</b>, Fabio Miranda, Marcos Lage</p>
+            <p class="paper-venue">SIBGRAPI 2023: 25-30</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2023">
+          <span class="paper-year">2023</span>
+          <div>
+            <h3>Deep Learning Provenance Data Integration: a Practical Approach</h3>
+            <p class="paper-authors">Débora B. Pina, Adriane Chapman, <b>Daniel de Oliveira</b>, Marta Mattoso</p>
+            <p class="paper-venue">WWW (Companion Volume) 2023: 1542-1550</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2023">
+          <span class="paper-year">2023</span>
+          <div>
+            <h3>Datasets for Portuguese Legal Semantic Textual Similarity: Comparing weak supervision and an annotation process approaches</h3>
+            <p class="paper-authors">Daniel da Silva Junior, Paulo Roberto dos S. Corval, Aline Paes, <b>Daniel de Oliveira</b></p>
+            <p class="paper-venue">CoRR abs/2306.00007 (2023)</p>
+          </div>
+        </li>
+        <li class="paper-entry" data-year="2023">
+          <span class="paper-year">2023</span>
+          <div>
+            <h3>ProWis: A Visual Approach for Building, Managing, and Analyzing Weather Simulation Ensembles at Runtime</h3>
+            <p class="paper-authors">Carolina Veiga Ferreira de Souza, Suzanna Maria Bonnet, <b>Daniel de Oliveira</b>, Márcio Cataldi, Fabio Miranda, Marcos Lage</p>
+            <p class="paper-venue">CoRR abs/2308.05019 (2023)</p>
+          </div>
+        </li>
+      </ol>
+      <p class="directory-note">Older publications are listed on <a href="https://dblp.org/pid/68/7553-1.html" target="_blank" rel="noreferrer">DBLP</a> and <a href="https://scholar.google.com/citations?user=T_YePXEAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a>.</p>
+    </section>
+  </main>
 
-   <div class="paper-card">
-    <img src="arquivos/akoflow.png" alt="DLProv Paper Image">
-    <div class="paper-content">
-      <h3>  A Weighted Bi-objective Strategy for Executing Scientific Workflows in Containerized Environments.</h3>
-      <p><em>Wesley Ferreira, Liliane Kunstmann, Yuri Frota, Luan Teylo, <b>Daniel de Oliveira</b></em></p>
-      <p><strong>XXVI Brazilian Symposium on High Performance Computing Systems, 2025</strong></p>
-      <a href="https://sscad2025.ufms.br/" target="_blank">Read Paper</a>
-      <div class="authors">
-        <img src="arquivos/1729136299931.jpeg" alt="Wesley Ferreira">
-        <img src="arquivos/Liliane.jpeg" alt="Wesley Ferreira">
-        <img src="arquivos/Yuri.jpeg" alt="Daniel de Oliveira">
-        <img src="arquivos/luan.png" alt="Marcos Bedo">
-                <img src="arquivos/Daniel.jpeg" alt="Marcos Bedo">
-      </div>
-    </div>
-  </div>
-
-
-  <div class="paper-card">
-    <img src="arquivos/fusion.png" alt="DLProv Paper Image">
-    <div class="paper-content">
-      <h3>Exploring Language Model Fusion to Improve Generalization in Portuguese Hate Speech Detection</h3>
-      <p><em>Annie Amorim, Gabriel Assis, <b>Daniel de Oliveira</b>, Aline Paes</em></p>
-      <p><strong>28th International Conference on Information Fusion (FUSION), 2025</strong></p>
-      <a href="https://ieeexplore.ieee.org/document/11124084" target="_blank">Read Paper</a>
-      <div class="authors">
-        <img src="arquivos/Annie.jpeg" alt="Wesley Ferreira">
-        <img src="arquivos/Daniel.jpeg" alt="Marcos Bedo">
-        <img src="arquivos/Aline.jpeg" alt="Daniel de Oliveira">
-      </div>
-    </div>
-  </div>
-
- 
-</div>
-<br> 
-<div id="selected-papers">
-
-
- <div class="paper-card">
-    <img src="arquivos/infedu.png" alt="MAESTRO Paper Image">
-    <div class="paper-content">
-      <h3>Provenance-based Data Analysis in Block-based Programming for Application Development</h3>
-      <p><em>Naira Arruda, Simone Martins, <b>Daniel de Oliveira</b></em></p>
-      <p><strong>Informatics In Education (Accepted), 2025</strong></p>
-      <a href="https://infedu.vu.lt/journal/INFEDU" target="_blank">Read Paper</a>
-        <div class="authors">
-        <img src="arquivos/Naira.jpeg" alt="Wesley Ferreira">
-        <img src="arquivos/simone.png" alt="Marcos Bedo">
-        <img src="arquivos/Daniel.jpeg" alt="Liliane Kunstmann">
-
-      </div>
-    </div>
-  </div>
-
- <div class="paper-card">
-    <img src="arquivos/dlprov.png" alt="DLProv Paper Image">
-    <div class="paper-content">
-      <h3>DLProv: a suite of provenance services for deep learning workflow analyses</h3>
-      <p><em>Débora B. Pina, Liliane N. O. Kunstmann, Adriane Chapman, <b>Daniel de Oliveira</b>, Marta Mattoso</em></p>
-      <p><strong>PeerJ Computer Science, 2025</strong></p>
-      <a href="https://peerj.com/articles/cs-2985/" target="_blank">Read Paper</a>
-      <div class="authors">
-        <img src="arquivos/Debora.jpeg" alt="Wesley Ferreira">
-        <img src="arquivos/Liliane.jpeg" alt="Liliane Kunstmann">
-        <img src="arquivos/Daniel.jpeg" alt="Marcos Bedo">
-        <img src="arquivos/Marta.jpeg" alt="Daniel de Oliveira">
-      </div>
-    </div>
-  </div>
-
-
-   <div class="paper-card">
-    <img src="arquivos/texturagranular.png" alt="DLProv Paper Image">
-    <div class="paper-content">
-      <h3>PATSA-BIL: Pipeline for automated texture and structure analysis of borehole image logs</h3>
-      <p><em>André M. Souza, Matheus A. Cruz, Paola M.C. Braga, Rodrigo B. Piva, Rodrigo A.C. Dias, Paulo R. Siqueira, Willian A. Trevizan, Candida M. de Jesus, Camilla Bazzarella, Rodrigo S. Monteiro, Flavia C. Bernardini, Leandro A.F. Fernandes, Elaine P.M. de Sousa, <b>Daniel de Oliveira</b>, Marcos Bedo</em></p>
-      <p><strong>Expert Systems with Applications, 2025</strong></p>
-      <a href="https://www.sciencedirect.com/science/article/abs/pii/S0957417425009674?via%3Dihub" target="_blank">Read Paper</a>
-      <div class="authors">
-        <img src="arquivos/RodrigoSalvador.png" alt="Wesley Ferreira">
-        <img src="arquivos/Flavia.jpeg" alt="Wesley Ferreira">
-        <img src="arquivos/Elaine.png" alt="Daniel de Oliveira">
-        <img src="arquivos/Daniel.jpeg" alt="Marcos Bedo">
-        <img src="arquivos/MarcosBedo.jpeg" alt="Marcos Bedo">
-
-      </div>
-    </div>
-  </div>
-
-
-
-   <div class="paper-card">
-    <img src="arquivos/Curio.png" alt="Curio Paper Image">
-    <div class="paper-content">
-      <h3>Curio: A Dataflow-Based Framework for Collaborative Urban Visual Analytics</h3>
-      <p><em>Gustavo Moreira, Maryam Hosseini, Carolina V. F. de Souza, Lucas Alexandre, Nicola Colaninno, <b>Daniel de Oliveira</b>, Nivan Ferreira, Marcos Lage, Fabio Miranda</em></p>
-      <p><strong>IEEE Transactions on Visualization and Computer Graphics, 2025</strong></p>
-      <a href="https://ieeexplore.ieee.org/document/10670514" target="_blank">Read Paper</a>
-      <div class="authors">
-        <img src="arquivos/Carol.jpeg" alt="Wesley Ferreira">
-        <img src="arquivos/Daniel.jpeg" alt="Wesley Ferreira">
-        <img src="arquivos/Nivan.jpg" alt="Marcos Bedo">
-        <img src="arquivos/MarcosLage.jpeg" alt="Liliane Kunstmann">
-        <img src="arquivos/FabioMiranda.jpeg" alt="Marcos Bedo">
-      </div>
-    </div>
-  </div>
-
-  <div class="paper-card">
-    <img src="arquivos/cpe8381-fig-0001-m.jpg" alt="MAESTRO Paper Image">
-    <div class="paper-content">
-      <h3>Optimizing Resource Estimation for Scientific Workflows in HPC Environments: A Layered-Bucket Heuristic Approach</h3>
-      <p><em>Luis Alvarenga, Yuri Frota, <b>Daniel de Oliveira</b>, Rafaelli Coutinho</em></p>
-      <p><strong>Concurrency and Computation: Practice and Experience, 2025</strong></p>
-      <a href="https://onlinelibrary.wiley.com/doi/10.1002/cpe.8381" target="_blank">Read Paper</a>
-        <div class="authors">
-        <img src="arquivos/alvarenga.png" alt="Wesley Ferreira">
-        <img src="arquivos/Yuri.jpeg" alt="Wesley Ferreira">
-        <img src="arquivos/Daniel.jpeg" alt="Liliane Kunstmann">
-        <img src="arquivos/Rafaelli.jpeg" alt="Marcos Bedo">
-      </div>
-    </div>
-  </div>
-</div>
-
-<br>
-
-<div id="selected-papers">
-  <div class="paper-card">
-    <img src="arquivos/bandeiras.png" alt="DLProv Paper Image">
-    <div class="paper-content">
-      <h3>Language Flavors in the Lusophone World: A BERT-Based Social Media Study of Portuguese in Brazil, Portugal, and Mozambique</h3>
-      <p><em>Annie Amorim, Gabriel Assis, Laura Ribeiro, <b>Daniel de Oliveira</b>, Aline Paes</em></p>
-      <p><strong>40th ACM/SIGAPP Symposium on Applied Computing, 2025</strong></p>
-      <p>🏅 <em>Best Paper Award</em></p>
-      <a href="https://dl.acm.org/doi/10.1145/3672608.3707931" target="_blank">Read Paper</a>
-           <div class="authors">
-        <img src="arquivos/Annie.jpeg" alt="Wesley Ferreira">
-        <img src="arquivos/Daniel.jpeg" alt="Wesley Ferreira">
-        <img src="arquivos/Aline.jpeg" alt="Liliane Kunstmann">
-      </div>
-    </div>
-  </div>
-
-
-   <div class="paper-card">
-    <img src="arquivos/aaai.png" alt="DLProv Paper Image">
-    <div class="paper-content">
-      <h3>Scalable Reputation Management: A Multi-task Prompting Approach Using Fine-tuned PLMs for Sentiment and Topic Classification</h3>
-      <p><em>Paulo R. S. da Costa Jr., Matheus Utino, João Silva-Leite, Lyncoln S. de Oliveira, Rodrigo S. Monteiro, Rodrigo Dias, <b>Daniel de Oliveira</b>, Paulo Mann, Marcos Bedo</em></p>
-      <p><strong>International AAAI Conference on Web and Social Media, 2025</strong></p>
-      <a href="https://ojs.aaai.org/index.php/ICWSM/article/view/35898" target="_blank">Read Paper</a>
-           <div class="authors">
-        <img src="arquivos/Lyncoln.jpeg" alt="Wesley Ferreira">
-        <img src="arquivos/RodrigoSalvador.png" alt="Wesley Ferreira">
-        <img src="arquivos/Daniel.jpeg" alt="Liliane Kunstmann">
-        <img src="arquivos/Mann.jpeg" alt="Marcos Bedo">
-        <img src="arquivos/MarcosBedo.jpeg" alt="Marcos Bedo">
-      </div>
-    </div>
-  </div>
-
-
-
-   <div class="paper-card">
-    <img src="arquivos/ExampleCurio.jpg" alt="Curio Paper Image">
-    <div class="paper-content">
-      <h3>Towards Enabling the Analysis of Visual Exploration Processes through Interaction Provenance</h3>
-      <p><em>Lyncoln S. de Oliveira, Gustavo Moreira, Fabio Miranda, Marcos Lage, <b>Daniel de Oliveira</b></em></p>
-      <p><strong>Brazilian Symposium on Databases, 2025</strong></p>
-            <p>🏅 <em>Best Paper Nominee</em></p>
-      <a href="" target="_blank">Read Paper</a>
-           <div class="authors">
-        <img src="arquivos/Lyncoln.jpeg" alt="Wesley Ferreira">
-        <img src="arquivos/FabioMiranda.jpeg" alt="Wesley Ferreira">
-        <img src="arquivos/MarcosLage.jpeg" alt="Liliane Kunstmann">
-                <img src="arquivos/Daniel.jpeg" alt="Marcos Bedo">
-      </div>
-    </div>
-  </div>
-
-  <div class="paper-card">
-    <img src="arquivos/ontoexpline_api_graph.png" alt="MAESTRO Paper Image">
-    <div class="paper-content">
-      <h3>MAESTRO: a lightweight ontology-based framework for composing and analyzing script-based scientific experiments</h3>
-      <p><em>Luiz Gustavo Dias, Bruno Lopes, <b>Daniel de Oliveira</b></em></p>
-      <p><strong>Knowledge and Information Systems, 2024</strong></p>
-      <a href="https://link.springer.com/article/10.1007/s10115-024-02134-2" target="_blank">Read Paper</a>
-           <div class="authors">
-        <img src="arquivos/LuizGustavo.jpeg" alt="Wesley Ferreira">
-        <img src="arquivos/Bruno.jpeg" alt="Wesley Ferreira">
-        <img src="arquivos/Daniel.jpeg" alt="Liliane Kunstmann">
-      </div>
-    </div>
-  </div>
-</div>
-
-<br>
-
-<div id="selected-papers">
-  <div class="paper-card">
-    <img src="arquivos/liliane.png" alt="DLProv Paper Image">
-    <div class="paper-content">
-      <h3>Scientific Workflow Deployment: Container Provenance in High-Performance Computing</h3>
-      <p><em>Liliane Kunstmann, Debora Pina, <b>Daniel de Oliveira</b>, Marta Mattoso</em></p>
-      <p><strong>Brazilian Symposium on Databases, 2024</strong></p>
-      <p>🏅 <em>Best Paper Award - José Mauro Castilho Prize</em></p>
-      <a href="https://sol.sbc.org.br/index.php/sbbd/article/view/30713" target="_blank">Read Paper</a>
-           <div class="authors">
-        <img src="arquivos/Liliane.jpeg" alt="Wesley Ferreira">
-        <img src="arquivos/Debora.jpeg" alt="Wesley Ferreira">
-        <img src="arquivos/Daniel.jpeg" alt="Liliane Kunstmann">
-        <img src="arquivos/Marta.jpeg" alt="Marcos Bedo">
-      </div>
-    </div>
-  </div>
-
-
-   <div class="paper-card">
-    <img src="arquivos/grafo.png" alt="DLProv Paper Image">
-    <div class="paper-content">
-      <h3>DLProv: A Data-Centric Support for Deep Learning Workflow Analyses</h3>
-      <p><em>Debora Pina, Adriane Chapman, Liliane Kunstmann, <b>Daniel de Oliveira</b>, Marta Mattoso</em></p></em></p>
-      <p><strong>Data Management for End-to-End Machine Learning Workshop (in conjunction with SIGMOD/PODS), 2024</strong></p>
-            <p>🏅 <em>Best Paper Award</em></p>
-      <a href="https://dl.acm.org/doi/10.1145/3650203.3663337" target="_blank">Read Paper</a>
-           <div class="authors">
-        <img src="arquivos/Debora.jpeg" alt="Wesley Ferreira">
-        <img src="arquivos/Age.jpeg" alt="Wesley Ferreira">
-        <img src="arquivos/Liliane.jpeg" alt="Liliane Kunstmann">
-        <img src="arquivos/Daniel.jpeg" alt="Marcos Bedo">
-        <img src="arquivos/Marta.jpeg" alt="Marcos Bedo">
-      </div>
-    </div>
-  </div>
-
-
-
-   <div class="paper-card">
-    <img src="arquivos/cbms.png" alt="Curio Paper Image">
-    <div class="paper-content">
-      <h3>Aggregating embeddings from image and radiology reports for multimodal Chest-CT retrieval</h3>
-      <p><em>João Leite, Cristina Fontes, Alair Santos, Diogo Gomes, Paulo M. Azevedo-Marques, <b>Daniel de Oliveira</b>, Aline Paes, Marcos Bedo</em></p>
-      <p><strong>IEEE International Symposium on Computer-Based Medical Systems (IEEE CBMS), 2024</strong></p>
-            <p>🏅 <em>Best Paper Award</em></p>
-      <a href="https://ieeexplore.ieee.org/document/10600852" target="_blank">Read Paper</a>
-           <div class="authors">
-        <img src="arquivos/Cristina.png" alt="Wesley Ferreira">
-        <img src="arquivos/Daniel.jpeg" alt="Liliane Kunstmann">
-        <img src="arquivos/Aline.jpeg" alt="Marcos Bedo">
-        <img src="arquivos/MarcosBedo.jpeg" alt="Marcos Bedo">
-      </div>
-    </div>
-  </div>
-
-  <div class="paper-card">
-    <img src="arquivos/prowis.png" alt="MAESTRO Paper Image">
-    <div class="paper-content">
-      <h3>PROWIS: A visual approach for building, managing, and analyzing weather simulation ensembles in runtime</h3>
-      <p><em>Carolina Souza, Suzanna Bonnet, <b>Daniel de Oliveira</b>, Marcio Cataldi, Fabio Miranda, Marcos Lage</em></p>
-      <p><strong>IEEE Transactions on Visualization and Computer Graphics, 2024</strong>
+  <footer>
+    <div class="footer-brand">
+      <img src="arquivos/Daniel.jpeg" alt="" width="60" height="60" style="border-radius:50%;object-fit:cover">
+      <p>Daniel de Oliveira
+        <small>Associate Professor · Institute of Computing · Universidade Federal Fluminense</small>
       </p>
-      <p>🏅 <em>Best Paper Honorable Mention</em></p>
-      <a href="https://www.computer.org/csdl/journal/tg/2024/01/10290915/1RtZzTSFaqk" target="_blank">Read Paper</a>
-       <div class="authors">
-        <img src="arquivos/Carol.jpeg" alt="Wesley Ferreira">
-        <img src="arquivos/Daniel.jpeg" alt="Wesley Ferreira">
-        <img src="arquivos/MarcosLage.jpeg" alt="Liliane Kunstmann">
-        <img src="arquivos/FabioMiranda.jpeg" alt="Marcos Bedo">
-      </div>
     </div>
-  </div>
-</div>
-
-<br>
-
-<div id="selected-papers">
-  <div class="paper-card">
-    <img src="arquivos/ako.png" alt="DLProv Paper Image">
-    <div class="paper-content">
-      <h3>AkôFlow: um Middleware para Execução de Workflows Científicos em Múltiplos Ambientes Conteinerizados</h3>
-      <p><em>Wesley Ferreira, Liliane Kunstmann, Aline Paes, Marcos Bedo, <b>Daniel de Oliveira</b></em></p>
-      <p><strong>Brazilian Symposium on Databases, 2024</strong></p>
-      <p>🏅 <em>Best Paper Nominee</em></p>
-      <a href="https://sol.sbc.org.br/index.php/sbbd/article/view/30680" target="_blank">Read Paper (in Portuguese)</a>
-       <div class="authors">
-        <img src="arquivos/1729136299931.jpeg" alt="Wesley Ferreira">
-        <img src="arquivos/Liliane.jpeg" alt="Wesley Ferreira">
-        <img src="arquivos/Aline.jpeg" alt="Liliane Kunstmann">
-        <img src="arquivos/MarcosBedo.jpeg" alt="Marcos Bedo">
-         <img src="arquivos/Daniel.jpeg" alt="Marcos Bedo">
-      </div>
+    <div class="footer-contact">
+      Phone <b>+55 (21) 2629-5637</b> · Fax <b>+55 (21) 2629-5627</b><br>
+      <b>danielcmo (at) ic (dot) uff (dot) br</b>
     </div>
-  </div>
-
-  <div class="paper-card">
-    <img src="arquivos/samba.jpg" alt="MAESTRO Paper Image">
-    <div class="paper-content">
-      <h3>SAMbA-RaP is music to scientists' ears: Adding provenance support to spark-based scientific workflows</h3>
-      <p><em>Thaylon Guedes, Marta Mattoso, Marcos Bedo, <b>Daniel de Oliveira</b></em></p>
-      <p><strong>SoftwareX, 2024</strong></p>
-      <a href="https://www.sciencedirect.com/science/article/pii/S2352711024002978?via%3Dihub" target="_blank">Read Paper</a>
-      <div class="authors">
-        <img src="arquivos/Thaylon.jpeg" alt="Wesley Ferreira">
-        <img src="arquivos/Marta.jpeg" alt="Liliane Kunstmann">
-        <img src="arquivos/MarcosBedo.jpeg" alt="Marcos Bedo">
-        <img src="arquivos/Daniel.jpeg" alt="Daniel de Oliveira">
-      </div>
+    <div class="footer-institutions" aria-label="Institutional affiliations">
+      <a href="https://uffescience.ic.uff.br" target="_blank" rel="noreferrer"><img src="assets/uffescience-logo.png" alt="UFFeScience Research Group" width="52" height="52"></a>
+      <a href="https://www.ic.uff.br/" target="_blank" rel="noreferrer"><img src="assets/ic-uff-logo.png" alt="Institute of Computing — UFF" width="69" height="52"></a>
+      <a href="https://www.uff.br/" target="_blank" rel="noreferrer"><img src="assets/uff-logo.svg" alt="Universidade Federal Fluminense" width="84" height="40" style="height:40px"></a>
     </div>
-  </div>
-
-
-   <div class="paper-card">
-    <img src="arquivos/flower.png" alt="DLProv Paper Image">
-    <div class="paper-content">
-      <h3>Provenance-based Dynamic Fine-Tuning of Cross-Silo Federated Learning</h3>
-      <p><em>Camila Lopes, Alan Nunes, Cristina Boeres, Lucia Drummond, <b>Daniel de Oliveira</b></em></p></em></p>
-      <p><strong>Latin America High Performance Computing Conference (CARLA), 2023</strong></p>
-      <a href="https://link.springer.com/chapter/10.1007/978-3-031-52186-7_8" target="_blank">Read Paper</a>
-            <div class="authors">
-        <img src="arquivos/CamilaLopes.jpeg" alt="Wesley Ferreira">
-        <img src="arquivos/Boeres.png" alt="Wesley Ferreira">
-        <img src="arquivos/Lucia.jpeg" alt="Liliane Kunstmann">
-         <img src="arquivos/Daniel.jpeg" alt="Marcos Bedo">
-      </div>
-    </div>
-  </div>
-
-
-
-<div class="paper-card">
-    <img src="arquivos/anomaly.png" alt="DLProv Paper Image">
-    <div class="paper-content">
-      <h3>AIS-based maritime anomaly traffic detection</h3>
-      <p><em>Claudio Ribeiro, Alines Paes, <b>Daniel de Oliveira</b></em></p>
-      <p><strong>Expert Systems with Applications, 2023</strong></p>
-      <a href="linkinghub.elsevier.com/retrieve/pii/S0957417423010631" target="_blank">Read Paper</a>
-      <div class="authors">
-        <img src="arquivos/ClaudioRibeiro.jpeg" alt="Wesley Ferreira">
-        <img src="arquivos/Aline.jpeg" alt="Liliane Kunstmann">
-        <img src="arquivos/Daniel.jpeg" alt="Daniel de Oliveira">
-      </div>
-    </div>
-  </div>
-
-
-  
-</div>
-
-<br>
-
-<div id="selected-papers">
-  <div class="paper-card">
-    <img src="arquivos/Rotas.png" alt="DLProv Paper Image">
-    <div class="paper-content">
-      <h3>Defining Routes for Emergency Response from Climate Events: a Data-oriented Approach</h3>
-      <p><em>Felipe Oliveira, Yuri Frota, <b>Daniel de Oliveira</b></em></p>
-      <p><strong>IEEE Latin America Transactions, 2023</strong></p>
-      <a href="https://ieeexplore.ieee.org/document/10255445" target="_blank">Read Paper</a>
-            <div class="authors">
-        <img src="arquivos/FelipeOliveira.png" alt="Wesley Ferreira">
-        <img src="arquivos/Yuri.jpeg" alt="Liliane Kunstmann">
-        <img src="arquivos/Daniel.jpeg" alt="Daniel de Oliveira">
-      </div>
-    </div>
-  </div>
-
-  <div class="paper-card">
-    <img src="arquivos/cache.png" alt="MAESTRO Paper Image">
-    <div class="paper-content">
-      <h3>Distributed Caching of Scientific Workflows in Multisite Cloud</h3>
-      <p><em>Gaëtan Heisieck, <b>Daniel de Oliveira</b>, Christophe Pradal, Francois Tardieu, Esther Pacitti, Patrick Valduriez</em></p>
-      <p><strong>International Conference on Database and Expert Systems Applications (DEXA), 2020</strong></p>
-      <p>🏅 <em>Gabriela & Roland Wagner Best Paper Award</em></p>
-      <a href="https://link.springer.com/chapter/10.1007/978-3-030-59051-2_4" target="_blank">Read Paper</a>
-
-      <div class="authors">
-        <img src="arquivos/Gaetan.jpeg" alt="Wesley Ferreira">
-        <img src="arquivos/Daniel.jpeg" alt="Liliane Kunstmann">
-        <img src="arquivos/Pradal.jpeg" alt="Liliane Kunstmann">
-        <img src="arquivos/Tardieu.jpeg" alt="Liliane Kunstmann">
-        <img src="arquivos/Esther.jpeg" alt="Marcos Bedo">
-        <img src="arquivos/Patrick.jpeg" alt="Daniel de Oliveira">
-      </div>
-    </div>
-  </div>
-
-
-   <div class="paper-card">
-    <img src="arquivos/survey.png" alt="DLProv Paper Image">
-    <div class="paper-content">
-      <h3>Provenance Analytics for Workflow-Based Computational Experiments</h3>
-      <p><em>Wellington Oliveira, <b>Daniel de Oliveira</b>, Vanessa Braganholo</em></p></em></p>
-      <p><strong>ACM Computing Surveys, 2018</strong></p>
-      <a href="https://dl.acm.org/doi/10.1145/3184900" target="_blank">Read Paper</a>
-          <div class="authors">
-        <img src="arquivos/Wellington.jpeg" alt="Wesley Ferreira">
-        <img src="arquivos/Daniel.jpeg" alt="Liliane Kunstmann">
-        <img src="arquivos/Vanessa.jpeg" alt="Liliane Kunstmann">
-      </div>
-    </div>
-  </div>
-
-
-
-<div class="paper-card">
-    <img src="arquivos/sci.png" alt="DLProv Paper Image">
-    <div class="paper-content">
-      <h3>SciCumulus: A Lightweight Cloud Middleware to Explore Many Task Computing Paradigm in Scientific Workflows</h3>
-      <p><em><b>Daniel de Oliveira</b>, Eduardo Ogasawara, Fernanda Baião, Marta Mattoso</em></p>
-      <p><strong>IEEE International Conference in Cloud Computing, 2010</strong></p>
-      <a href="https://ieeexplore.ieee.org/document/5557969" target="_blank">Read Paper</a>
-          <div class="authors">
-        <img src="arquivos/Daniel.jpeg" alt="Wesley Ferreira">
-        <img src="arquivos/Eduardo.jpeg" alt="Liliane Kunstmann">
-        <img src="arquivos/Fernanda.jpeg" alt="Liliane Kunstmann">
-        <img src="arquivos/Marta.jpeg" alt="Liliane Kunstmann">
-      </div>
-    </div>
-  </div>
-
-
-  
-</div>
-
-
-</section>
-
-<p>For a real-time updated list of publications, please visit my <a href="https://dblp.org/pid/68/7553-1.html">DBLP profile</a>. This page here is updated less frequently :)</p>
-
-<!-- Existing chronological sections remain unchanged -->
-<section>
-<h2>2025</h2>
-<ul>
-<li class="publication">Luis C. R. Alvarenga, Yuri Frota, Daniel de Oliveira, Rafaelli Coutinho: <strong>Optimizing Resource Estimation for Scientific Workflows in HPC Environments: A Layered-Bucket Heuristic Approach</strong>. Concurr. Comput. Pract. Exp. 37(4-5) (2025)</li>
-<li class="publication">André M. Souza, Matheus A. Cruz, Paola M. C. Braga, Rodrigo B. Piva, Rodrigo A. C. Dias, Paulo R. Siqueira, Willian A. Trevizan, Candida M. de Jesus, Camilla Bazzarella, Rodrigo Salvador Monteiro, Flávia Cristina Bernardini, Leandro A. F. Fernandes, Elaine P. M. de Sousa, Daniel de Oliveira, Marcos Bedo: <strong>PATSA-BIL: Pipeline for automated texture and structure analysis of borehole image logs</strong>. Expert Syst. Appl. 278: 127345 (2025)</li>
-<li class="publication">Débora B. Pina, Liliane N. O. Kunstmann, Adriane Chapman, Daniel de Oliveira, Marta Mattoso: <strong>DLProv: a suite of provenance services for deep learning workflow analyses</strong>. PeerJ Comput. Sci. 11: e2985 (2025)</li>
-<li class="publication">Débora B. Pina, Liliane N. O. Kunstmann, Daniel de Oliveira, Marta Mattoso: <strong>Breadcrumbs for your Deep Learning Model: Following Provenance Traces with DLProv</strong>. Softw. Impacts 23: 100730 (2025)</li>
-<li class="publication">Gustavo Moreira, Maryam Hosseini, Carolina Veiga Ferreira de Souza, Lucas Alexandre, Nicola Colaninno, Daniel de Oliveira, Nivan Ferreira, Marcos Lage, Fabio Miranda: <strong>Curio: A Dataflow-Based Framework for Collaborative Urban Visual Analytics</strong>. IEEE Trans. Vis. Comput. Graph. 31(1): 1224-1234 (2025)</li>
-<li class="publication">Paulo R. Siqueira, Rodrigo A. C. Dias, João Silva-Leite, Paulo Mann, Rodrigo Salvador Monteiro, Daniel de Oliveira, Marcos Bedo: <strong>Warehousing Data for Brand Health and Reputation with AI-Driven Scores in NewSQL Architectures: Opportunities and Challenges</strong>. ICEIS (1) 2025: 51-62</li>
-<li class="publication">Paulo R. S. da Costa Jr., Matheus Utino, João Silva-Leite, Lyncoln S. de Oliveira, Rodrigo Salvador Monteiro, Rodrigo A. C. Dias, Daniel de Oliveira, Paulo Mann, Marcos Bedo: <strong>Scalable Reputation Management: A Multi-Task Prompting Approach Using Fine-Tuned PLMs for Sentiment and Topic Classification</strong>. ICWSM 2025: 1735-1747</li>
-<li class="publication">Annie Amorim, Gabriel Assis, Laura Ribeiro, Daniel de Oliveira, Aline Paes: <strong>Language Flavors in the Lusophone World: A BERT-Based Social Media Study of Portuguese in Brazil, Portugal, and Mozambique</strong>. SAC 2025: 1927-1934</li>
-</ul>
-</section>
-
-<section>
-<h2>2024</h2>
-<ul>
-<li class="publication">Luiz Gustavo Dias, Bruno Lopes, Daniel de Oliveira: <strong>MAESTRO: a lightweight ontology-based framework for composing and analyzing script-based scientific experiments</strong>. Knowl. Inf. Syst. 66(10): 5959-6000 (2024)</li>
-<li class="publication">Gabriel Assis, Annie Amorim, Jonnathan Carvalho, Mariza Ferro, Daniel de Oliveira, Daniela Vianna, Aline Paes: <strong>Explorando Técnicas de Aprendizado em Modelos de Linguagem para Classificação de Discurso de Ódio e Ofensivo em Português</strong>. Linguamática 16(2): 91-113 (2024)</li>
-<li class="publication">Thaylon Guedes, Marta Mattoso, Marcos V. N. Bedo, Daniel de Oliveira: <strong>SAMbA-RaP is music to scientists' ears: Adding provenance support to spark-based scientific workflows</strong>. SoftwareX 28: 101927 (2024)</li>
-<li class="publication">Carolina Veiga Ferreira de Souza, Suzanna Maria Bonnet, Daniel de Oliveira, Márcio Cataldi, Fabio Miranda, Marcos Lage: <strong>PW: A Visual Approach for Building, Managing, and Analyzing Weather Simulation Ensembles at Runtime</strong>. IEEE Trans. Vis. Comput. Graph. 30(1): 738-747 (2024)</li>
-<li class="publication">João Silva-Leite, Cristina A. P. Fontes, Alair S. Santos, Diogo G. Correa, Marcel Koenigkam-Santos, Paulo M. Azevedo-Marques, Daniel de Oliveira, Aline Paes, Marcos V. N. Bedo: <strong>Aggregating embeddings from image and radiology reports for multimodal Chest-CT retrieval</strong>. CBMS 2024: 309-314</li>
-<li class="publication">Débora B. Pina, Adriane Chapman, Liliane N. O. Kunstmann, Daniel de Oliveira, Marta Mattoso: <strong>DLProv: A Data-Centric Support for Deep Learning Workflow Analyses</strong>. DEEM@SIGMOD 2024: 77-85</li>
-<li class="publication">Mauro Weber, João Silva-Leite, Lúcio F. D. Santos, Daniel de Oliveira, Marcos V. N. Bedo: <strong>Enriching Hierarchical Navigable Small World Searches with Result Diversification</strong>. DEXA (1) 2024: 75-80</li>
-<li class="publication">Raslan Ribeiro, Rafaelli Coutinho, Daniel de Oliveira: <strong>APOENA: Towards a Cloud Dimensioning Approach for Executing SQL-like Workloads Using Machine Learning and Provenance</strong>. ICEIS (1) 2024: 289-296</li>
-<li class="publication">Matheus Vieira, Thiago de Oliveira, Leandro Cicco, Daniel de Oliveira, Marcos V. N. Bedo: <strong>From Tracking Lineage to Enhancing Data Quality and Auditing: Adding Provenance Support to Data Warehouses with ProvETL</strong>. ICEIS (1) 2024: 313-320</li>
-<li class="publication">Elbe Miranda, Aline Paes, Daniel de Oliveira: <strong>SPARQL can also talk in Portuguese: answering natural language questions with knowledge graphs</strong>. PROPOR (1) 2024: 56-66</li>
-<li class="publication">Gabriel Assis, Annie Amorim, Jonnatahn Carvalho, Daniel de Oliveira, Daniela Q. C. Vianna, Aline Paes: <strong>Exploring Portuguese Hate Speech Detection in Low-Resource Settings: Lightly Tuning Encoder Models or In-Context Learning of Large Models?</strong> PROPOR (1) 2024: 301-311</li>
-<li class="publication">Mauro Weber, João Silva-Leite, Lúcio F. D. Santos, Daniel de Oliveira, Marcos Bedo: <strong>Adicionando suporte à diversificação de resultados em índices HNSW considerando espaços de baixa e alta dimensionalidade</strong>. SBBD 2024: 14-26</li>
-<li class="publication">Wesley Ferreira, Liliane N. O. Kunstmann, Aline Paes, Marcos Bedo, Daniel de Oliveira: <strong>AkôFlow: um Middleware para Execução de Workflows Científicos em Múltiplos Ambientes Conteinerizados</strong>. SBBD 2024: 27-39</li>
-<li class="publication">Bruna de Mello Almeida, Yuri Frota, Daniel de Oliveira: <strong>Otimização de Parâmetros em Aplicações de Big Data Baseadas em Múltiplos Frameworks</strong>. SBBD 2024: 418-430</li>
-<li class="publication">Liliane N. O. Kunstmann, Débora B. Pina, Daniel de Oliveira, Marta Mattoso: <strong>Scientific Workflow Deployment: Container Provenance in High-Performance Computing</strong>. SBBD 2024: 457-470</li>
-<li class="publication">Rodrigo A. P. Silva, Wesley Ferreira, Esther Pacitti, Yuri Frota, Daniel de Oliveira: <strong>Uma Heurística para a Execução de Workflows com Restrições de Confidencialidade em Ambientes Conteinerizados</strong>. SBBD 2024: 536-548</li>
-<li class="publication">Liliane N. O. Kunstmann, Débora B. Pina, Daniel de Oliveira, Marta Mattoso: <strong>ProvDeploy: Provenance-oriented Containerization of High Performance Computing Scientific Workflows</strong>. CoRR abs/2403.15324 (2024)</li>
-<li class="publication">Gustavo Moreira, Maryam Hosseini, Carolina Veiga Ferreira de Souza, Lucas Alexandre, Nicola Colaninno, Daniel de Oliveira, Nivan Ferreira, Marcos Lage, Fabio Miranda: <strong>Curio: A Dataflow-Based Framework for Collaborative Urban Visual Analytics</strong>. CoRR abs/2408.06139 (2024)</li>
-<li class="publication">Carolina Veiga Ferreira de Souza, Ashish Sharma, Daniel de Oliveira, Marcos Lage, Fabio Miranda: <strong>Urban Computing for Climate and Environmental Justice: Early Perspectives From Two Research Initiatives</strong>. CoRR abs/2410.04318 (2024)</li>
-<li class="publication">Rafael Ferreira da Silva et al., Daniel de Oliveira: <strong>Workflows Community Summit 2024: Future Trends and Challenges in Scientific Workflows</strong>. CoRR abs/2410.14943 (2024)</li>
-</ul>
-</section>
-
-<section>
-<h2>2023</h2>
-<ul>
-  <li class="publication">Alan L. Nunes, Alba C. M. A. Melo, Claude Tadonki, Cristina Boeres, Daniel de Oliveira, Lúcia Maria de Assumpção Drummond: <strong>Optimizing computational costs of Spark for SARS-CoV-2 sequences comparisons on a commercial cloud</strong>. Concurr. Comput. Pract. Exp. 35(18) (2023)</li>
-
-    <li class="publication">Claudio V. Ribeiro, Aline Paes, Daniel de Oliveira: <strong>AIS-based maritime anomaly traffic detection: A review</strong>. Expert Syst. Appl. 231: 120561 (2023)</li>
-
-    <li class="publication">Daniel L. Jasbick, Lúcio F. D. Santos, Paulo M. Azevedo-Marques, Agma J. M. Traina, Daniel de Oliveira, Marcos V. N. Bedo: <strong>Pushing diversity into higher dimensions: The LID effect on diversified similarity searching</strong>. Inf. Syst. 114: 102166 (2023)</li>
-
-    <li class="publication">Maicon Banni, Maria Luiza Furtuozo Falci, Isabel Rosseti, Daniel de Oliveira: <strong>Hurricane: a Dataflow-oriented Data Service for Smart Cities Applications</strong>. J. Inf. Data Manag. 14(1) (2023)</li>
-
-    <li class="publication">Reza Akbarinia, Christophe Botella, Alexis Joly, Florent Masseglia, Marta Mattoso, Eduardo S. Ogasawara, Daniel de Oliveira, Esther Pacitti, Fábio Porto, Christophe Pradal, Dennis E. Shasha, Patrick Valduriez: <strong>Life Science Workflow Services (LifeSWS): Motivations and Architecture</strong>. Trans. Large Scale Data Knowl. Centered Syst. 55: 1-24 (2023)</li>
-
-    <li class="publication">Camila R. Lopes, Alan L. Nunes, Cristina Boeres, Lúcia M. A. Drummond, Daniel de Oliveira: <strong>Provenance-Based Dynamic Fine-Tuning of Cross-Silo Federated Learning</strong>. CARLA 2023: 113-127</li>
-
-    <li class="publication">Ygor Rolim, Danielly Alves, Flávia Clemente, Daniel de Oliveira: <strong>NewsCollab: Fostering Data-driven Journalism with Crowdsourcing</strong>. CSCWD 2023: 1008-1013</li>
-
-    <li class="publication">Vinícius Souza, Luiz Olmes Carvalho, Daniel de Oliveira, Marcos V. N. Bedo, Lúcio F. D. Santos: <strong>Adding Result Diversification to kNN-Based Joins in a Map-Reduce Framework</strong>. DEXA (1) 2023: 68-83</li>
-
-    <li class="publication">Lyncoln S. de Oliveira, Liliane N. O. Kunstmann, Débora B. Pina, Daniel de Oliveira, Marta Mattoso: <strong>PINNProv: Provenance for Physics-Informed Neural Networks</strong>. SBAC-PADW 2023: 16-23</li>
-
-    <li class="publication">Luiz Gustavo Dias, Bruno Lopes, Daniel de Oliveira: <strong>MAESTRO: Uma Abordagem para a Composição e Análise de Workflows Baseados em Scripts por Meio de Ontologias</strong>. SBBD 2023: 256-268</li>
-
-    <li class="publication">Raffael M. Paranhos, Marcos Lage, Daniel de Oliveira: <strong>Uso de Grafos de Proveniência para Análise Temporal de Uso do Solo em Centros Urbanos: uma Abordagem Prática</strong>. SBBD 2023: 457-462</li>
-
-    <li class="publication">Sandro Bonadia, Rogério Gama, Daniel de Oliveira, Fabio Miranda, Marcos Lage: <strong>Visual Analytics Using Heterogeneous Urban Data</strong>. SIBGRAPI 2023: 25-30</li>
-
-    <li class="publication">Débora B. Pina, Adriane Chapman, Daniel de Oliveira, Marta Mattoso: <strong>Deep Learning Provenance Data Integration: a Practical Approach</strong>. WWW (Companion Volume) 2023: 1542-1550</li>
-
-    <li class="publication">Daniel da Silva Junior, Paulo Roberto dos S. Corval, Aline Paes, Daniel de Oliveira: <strong>Datasets for Portuguese Legal Semantic Textual Similarity: Comparing weak supervision and an annotation process approaches</strong>. CoRR abs/2306.00007 (2023)</li>
-
-    <li class="publication">Carolina Veiga Ferreira de Souza, Suzanna Maria Bonnet, Daniel de Oliveira, Márcio Cataldi, Fabio Miranda, Marcos Lage: <strong>ProWis: A Visual Approach for Building, Managing, and Analyzing Weather Simulation Ensembles at Runtime</strong>. CoRR abs/2308.05019 (2023)</li>
-
-</ul>
-</section>
-
-<!-- continua com 2024, 2023 etc... -->
-</main>
-
-<footer>
-<div><b>Phone: +55 (21) 2629-5637<br>Fax: +55 (21) 2629-5627</b></div>
-<div><b>danielcmo (at) ic (dot) uff (dot) br</b></div>
-</footer>
+    <a href="#inicio">Back to top ↑</a>
+  </footer>
 </body>
 </html>

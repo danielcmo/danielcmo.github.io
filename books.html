@@ -1,80 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C4TVS1004P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-C4TVS1004P');
-</script>
-<meta charset="UTF-8">
-<title>Daniel de Oliveira - Featured Book</title>
-<meta name="description" content="Featured Book of Professor Daniel de Oliveira">
-<meta name="keywords" content="IC-UFF, Data Science, Cloud Computing, Bioinformatics, Provenance, Scientific Workflows">
-<style>
-body { font-family: Arial, Helvetica, sans-serif; background-color: #ffffff; color: #333333; margin: 0; padding: 0; line-height: 1.6; }
-a { color: #004f9e; text-decoration: none; }
-a:hover { text-decoration: underline; }
-header { display: flex; align-items: center; justify-content: space-between; padding: 20px 40px; border-bottom: 1px solid #ccc; }
-header img { height: 60px; }
-nav ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 20px; }
-nav ul li a { font-weight: bold; }
-main { padding: 40px; max-width: 900px; margin: auto; }
-.book-container { display: flex; align-items: flex-start; gap: 20px; }
-.book-container img { width: 300px; height: auto; border-radius: 8px; }
-.book-details { flex: 1; }
-h1, h2 { color: #004f9e; }
-ul { margin-left: 20px; }
-footer { display: flex; justify-content: space-between; padding: 20px 40px; border-top: 1px solid #ccc; background-color: #f9f9f9; font-size: 0.9em; }
-</style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C4TVS1004P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-C4TVS1004P');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daniel de Oliveira - Featured Book</title>
+  <meta name="description" content="Featured Book of Professor Daniel de Oliveira">
+  <meta name="keywords" content="IC-UFF, Data Science, Cloud Computing, Bioinformatics, Provenance, Scientific Workflows">
+  <link rel="icon" href="arquivos/uff.png">
+  <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-<header>
-<a href="http://www.uff.br"><img src="arquivos/uff.png" alt="UFF Logo"></a>
-<nav>
-<ul>
-<li><a href="https://danielcmo.github.io">Home</a></li>
-<li><a href="https://danielcmo.github.io/cv.html">Publications</a></li>
-<li><a href="https://danielcmo.github.io/books.html">Books</a></li>
-<li><a href="https://danielcmo.github.io/ap.html">Research Areas</a></li>
-<li><a href="https://danielcmo.github.io/cur.html">Teaching</a></li>
-<li><a href="https://danielcmo.github.io/collab.html">Collaborations</a></li>
-<li><a href="https://danielcmo.github.io/li.html">Students</a></li>
-<li><a href="https://danielcmo.github.io/awards.html">Awards</a></li>
-<li><a href="https://danielcmo.github.io/projects.html">Projects</a></li>
-<li><a href="https://danielcmo.github.io/per.html">News</a></li>
-</ul>
-</nav>
-<a href="http://www.ic.uff.br"><img src="arquivos/logo-ic.png" alt="IC-UFF Logo"></a>
-</header>
+  <header class="site-header">
+    <a class="logo-link" href="index.html" aria-label="Daniel de Oliveira — home">
+      <img src="arquivos/uff.png" alt="Universidade Federal Fluminense" width="72" height="72">
+      <span>Daniel de Oliveira<small>Institute of Computing / UFF</small></span>
+    </a>
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="cv.html">Publications</a>
+        <a href="books.html" aria-current="page">Books</a>
+        <a href="ap.html">Research Areas</a>
+        <a href="cur.html">Teaching</a>
+        <a href="collab.html">Collaborations</a>
+        <a href="li.html">Students</a>
+        <a href="awards.html">Awards</a>
+        <a href="projects.html">Projects</a>
+        <a href="per.html">News</a>
+    </nav>
+    <a class="header-group" href="https://uffescience.ic.uff.br" target="_blank" rel="noreferrer">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="1"/><path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z"/><path d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z"/></svg><span>UFFeScience</span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+    </a>
+  </header>
 
-<main>
-<div class="book-container">
-  <img src="https://m.media-amazon.com/images/I/71fV2uEquWL._SY385_.jpg" alt="Provenance and Data Management for Scientific Workflows">
-  <div class="book-details">
-    <h1>Featured Book</h1>
-    <p>I would like to highlight the book <strong><a href="https://link.springer.com/book/10.1007/978-3-031-01872-5" target="_blank">Provenance and Data Management for Scientific Workflows</a></strong>, co-authored by <strong>Daniel de Oliveira, Ji Liu, and Esther Pacitti</strong>. This work provides a thorough exploration of managing data-intensive workflows in scientific research, focusing on reproducibility, transparency, and efficiency.</p>
+  <main id="inicio">
+    <section class="page-intro">
+      <div class="kicker"><span></span> BOOKS / SPRINGER</div>
+      <h1>Featured Book</h1>
 
-    <h2>Key Topics Covered</h2>
-    <ul>
-      <li>Workflow management principles and best practices</li>
-      <li>Workflow Execution in a Single-Site Cloud</li>
-      <li>Workflow Execution in a Multi-Site Cloud</li>
-      <li>Real-world case studies in bioinformatics, astronomy, and engineering</li>
-      <li>Workflow Execution in DISC Environments</li>
-    </ul>
+    </section>
+    <section class="section">
+      <div class="book-layout">
+        <img src="https://m.media-amazon.com/images/I/71fV2uEquWL._SY385_.jpg" alt="Provenance and Data Management for Scientific Workflows">
+        <div>
+          <div class="kicker"><span></span> SYNTHESIS LECTURES ON DATA MANAGEMENT · SPRINGER</div>
+          <h3 style="margin-top:14px"><a href="https://link.springer.com/book/10.1007/978-3-031-01872-5" target="_blank" rel="noreferrer">Provenance and Data Management for Scientific Workflows</a></h3>
+          <p class="book-authors">Daniel de Oliveira, Ji Liu and Esther Pacitti</p>
+          <p>I would like to highlight the book <strong><a href="https://link.springer.com/book/10.1007/978-3-031-01872-5" target="_blank">Provenance and Data Management for Scientific Workflows</a></strong>, co-authored by <strong>Daniel de Oliveira, Ji Liu, and Esther Pacitti</strong>. This work provides a thorough exploration of managing data-intensive workflows in scientific research, focusing on reproducibility, transparency, and efficiency.</p>
+          <div class="kicker" style="margin-top:28px">KEY TOPICS COVERED</div>
+          <ul class="topic-list">
+          <li>Workflow management principles and best practices</li>
+          <li>Workflow Execution in a Single-Site Cloud</li>
+          <li>Workflow Execution in a Multi-Site Cloud</li>
+          <li>Real-world case studies in bioinformatics, astronomy, and engineering</li>
+          <li>Workflow Execution in DISC Environments</li>
+          </ul>
+          <p>This book is a valuable resource for researchers, data scientists, and professionals interested in practical and theoretical insights on scientific workflow management.</p>
+          <div class="intro-actions">
+            <a class="primary-button" href="https://link.springer.com/book/10.1007/978-3-031-01872-5" target="_blank" rel="noreferrer">View on Springer <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <p>This book is a valuable resource for researchers, data scientists, and professionals interested in practical and theoretical insights on scientific workflow management.</p>
-  </div>
-</div>
-</main>
-
-<footer>
-<div><b>Phone: +55 (21) 2629-5637<br>Fax: +55 (21) 2629-5627</b></div>
-<div><b>danielcmo (at) ic (dot) uff (dot) br</b></div>
-</footer>
+  <footer>
+    <div class="footer-brand">
+      <img src="arquivos/Daniel.jpeg" alt="" width="60" height="60" style="border-radius:50%;object-fit:cover">
+      <p>Daniel de Oliveira
+        <small>Associate Professor · Institute of Computing · Universidade Federal Fluminense</small>
+      </p>
+    </div>
+    <div class="footer-contact">
+      Phone <b>+55 (21) 2629-5637</b> · Fax <b>+55 (21) 2629-5627</b><br>
+      <b>danielcmo (at) ic (dot) uff (dot) br</b>
+    </div>
+    <div class="footer-institutions" aria-label="Institutional affiliations">
+      <a href="https://uffescience.ic.uff.br" target="_blank" rel="noreferrer"><img src="assets/uffescience-logo.png" alt="UFFeScience Research Group" width="52" height="52"></a>
+      <a href="https://www.ic.uff.br/" target="_blank" rel="noreferrer"><img src="assets/ic-uff-logo.png" alt="Institute of Computing — UFF" width="69" height="52"></a>
+      <a href="https://www.uff.br/" target="_blank" rel="noreferrer"><img src="assets/uff-logo.svg" alt="Universidade Federal Fluminense" width="84" height="40" style="height:40px"></a>
+    </div>
+    <a href="#inicio">Back to top ↑</a>
+  </footer>
 </body>
 </html>

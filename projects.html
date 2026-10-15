@@ -1,231 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C4TVS1004P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-C4TVS1004P');
+  </script>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projects - Daniel de Oliveira</title>
   <meta name="description" content="Research Projects of Daniel de Oliveira">
   <meta name="keywords" content="Projects, Research, Daniel de Oliveira, UFF, IC-UFF">
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #ffffff;
-      color: #333333;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
-    a { color: #004f9e; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 20px 40px;
-      border-bottom: 1px solid #ccc;
-    }
-    header img { height: 60px; }
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      gap: 20px;
-    }
-    nav ul li a { font-weight: bold; }
-    main { padding: 40px; }
-    h1 { margin-bottom: 20px; }
-    h2 {
-      margin-top: 30px;
-      background-color: #004f9e;
-      color: #fff;
-      padding: 8px 12px;
-      border-radius: 4px;
-    }
-    .project-card {
-      background: #f9f9f9;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 20px;
-      margin-bottom: 25px;
-    }
-    .project-card h3 {
-      margin-top: 0;
-      color: #004f9e;
-    }
-    .project-meta {
-      font-style: italic;
-      color: #555;
-      margin-bottom: 10px;
-    }
-    footer {
-      display: flex;
-      justify-content: space-between;
-      padding: 20px 40px;
-      border-top: 1px solid #ccc;
-      background-color: #f9f9f9;
-      font-size: 0.9em;
-    }
-  .integrantes-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 10px;
-}
-
-.integrantes-grid img {
-  height: 70px;
-  width: 70px;
-  border-radius: 50%; /* 🔵 transforma em bola */
-  object-fit: cover;
-  border: 2px solid #004f9e; /* borda azul opcional */
-  padding: 2px;
-  background: #fff;
-  transition: transform 0.3s ease;
-}
-
-.integrantes-grid img:hover {
-  transform: scale(1.1); /* zoom suave ao passar o mouse */
-}
-.financiador {
-  margin-top: 15px;
-}
-  </style>
+  <link rel="icon" href="arquivos/uff.png">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js" defer></script>
 </head>
 <body>
-  <header>
-    <a href="http://www.uff.br"><img src="arquivos/uff.png" alt="UFF Logo"></a>
-    <nav>
-      <ul>
-        <li><a href="https://danielcmo.github.io">Home</a></li>
-        <li><a href="https://danielcmo.github.io/cv.html">Publications</a></li>
-        <li><a href="https://danielcmo.github.io/books.html">Books</a></li>
-        <li><a href="https://danielcmo.github.io/ap.html">Research Areas</a></li>
-        <li><a href="https://danielcmo.github.io/cur.html">Teaching</a></li>
-        <li><a href="https://danielcmo.github.io/collab.html">Collaborations</a></li>
-        <li><a href="https://danielcmo.github.io/li.html">Students</a></li>
-        <li><a href="https://danielcmo.github.io/awards.html">Awards</a></li>
-<li><a href="https://danielcmo.github.io/projects.html">Projects</a></li>
-        <li><a href="https://danielcmo.github.io/per.html">News</a></li>
-      </ul>
+  <header class="site-header">
+    <a class="logo-link" href="index.html" aria-label="Daniel de Oliveira — home">
+      <img src="arquivos/uff.png" alt="Universidade Federal Fluminense" width="72" height="72">
+      <span>Daniel de Oliveira<small>Institute of Computing / UFF</small></span>
+    </a>
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="cv.html">Publications</a>
+        <a href="books.html">Books</a>
+        <a href="ap.html">Research Areas</a>
+        <a href="cur.html">Teaching</a>
+        <a href="collab.html">Collaborations</a>
+        <a href="li.html">Students</a>
+        <a href="awards.html">Awards</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="per.html">News</a>
     </nav>
-    <a href="http://www.ic.uff.br"><img src="arquivos/logo-ic.png" alt="IC-UFF Logo"></a>
+    <a class="header-group" href="https://uffescience.ic.uff.br" target="_blank" rel="noreferrer">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="1"/><path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z"/><path d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z"/></svg><span>UFFeScience</span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+    </a>
   </header>
 
-  <main>
-    <h1>Research Projects</h1>
-    <p>This page highlights the main research projects coordinated by Daniel de Oliveira.</p>
-
-
-<div class="project-card">
-  <h3>PROV4DistML: Gerência de Dados de Proveniência para Análise de Aplicações de Aprendizado de Máquina Distribuído 🇧🇷</h3>
-  <h3>PROV4DistML: Provenance Data Management for the Analysis of Distributed Machine Learning Applications 🇺🇸</h3>
-    <div class="project-meta grid grid-cols-2 gap-4 bg-gray-100 p-3 rounded-xl shadow-sm">
-  <div><b>📅 Period:</b> 2025 - Current</div>
-  <div><b>✅ Status:</b> Active</div>
-  <div><b>🔍 Nature:</b> Research</div>
-  <div><b>💲 Funding:</b> R$ 75,600.00</div>
-</div>
-  
-  <p><b>Description:</b> Distributed Machine Learning (or simply Distributed Learning) and its branches, such as Federated Learning, represent approaches that enable collaboration among multiple devices or users in training Machine Learning models, including deep neural networks and clustering algorithms. These techniques have been widely applied in areas such as Astronomy, Medicine, and Biology due to their ability to accelerate the training of complex models by distributing the processing across multiple machines.  In particular, Federated Learning allows training to occur without the need to centralize data, thereby preserving privacy and security, making it ideal for scenarios involving sensitive data, such as personal information. In a typical configuration, each worker (e.g., smartphones, computers, or clusters) trains a model locally and sends model updates to a central server. This server combines the contributions into a global model, which is redistributed for new training rounds.   Distributed training is an iterative process that can be time-intensive, with its duration influenced by factors such as aggregation methods, hyperparameter choices, and the characteristics of the datasets used. The analysis of metrics such as accuracy and fine-tuning of configurations during distributed training enables important improvements, such as increased efficiency, better model interpretability, and higher fault tolerance. In this context, provenance data emerges as a promising solution to represent and track the lifecycle of artifacts generated during the distributed learning process, such as datasets, applied transformations, trained models, and adopted configurations. These data not only enable the monitoring and analysis of training but also allow interventions, such as dynamic parameter adjustments and configuration adaptations. The PROV4DistML project aims to develop solutions to capture, model, store, and manage provenance data in Distributed and Federated Learning applications. Additionally, the project seeks to leverage these data to support actions such as automatic parameter tuning, improving result interpretability, and increasing the robustness of training. In this way, PROV4DistML contributes to the development of more efficient, transparent, and resilient solutions in Distributed Learning.</p>
-  
-  <div>
-    <b>Team:</b>
-    <div class="integrantes-grid">
-      <img src="arquivos/Daniel.jpeg" alt="Daniel Cardoso Moraes de Oliveira" title="Daniel Cardoso Moraes de Oliveira (Coordinator)">
-      <img src="arquivos/MarcosLage.jpeg" alt="Marcos Lage" title="Marcos Lage">
-      <img src="arquivos/Aline.jpeg" alt="Aline Marins Paes Carvalho" title="Aline Marins Paes Carvalho">
-      <img src="arquivos/Marta.jpeg" alt="Marta Mattoso" title="Marta Mattoso">
-      <img src="arquivos/Debora.jpeg" alt="Debora Pina" title="Debora Pina">
-      <img src="arquivos/Liliane.jpeg" alt="Liliane Neves" title="Liliane Neves">
-      <img src="arquivos/CamilaLopes.jpeg" alt="Camila Lopes" title="Camila Lopes">
-      <img src="arquivos/Lyncoln.jpeg" alt="Lyncoln S. de Oliveira" title="Lyncoln S. de Oliveira">
-    </div>
-  </div>
-
-  <div class="financiador">
-    <b>Funding Agency:</b><br>
-    <img src="arquivos/cnpq.png" alt="CNPq" style="height:60px;">
-  </div>
-</div>
-
-    <div class="project-card">
-  <h3>Execução e Análise de Workflows de Aprendizado de Máquina Federado para Astronomia em Ambientes de Computação de Alto Desempenho 🇧🇷 </h3>
-  <h3>Execution and Analysis of Federated Machine Learning Workflows for Astronomy in High-Performance Computing Environments 🇺🇸</h3>
-  <div class="project-meta grid grid-cols-2 gap-4 bg-gray-100 p-3 rounded-xl shadow-sm">
-  <div><b>📅 Period:</b> 2024 - Current</div>
-  <div><b>✅ Status:</b> Active</div>
-  <div><b>🔍 Nature:</b> Research</div>
-  <div><b>💲 Funding:</b> R$ 346,495.70</div>
-</div>
-  
-  <p><b>Description:</b> In recent decades, Machine Learning has received growing attention from both academia and industry. However, traditional Machine Learning approaches face critical challenges, especially regarding data privacy and the volume and transfer of information to be processed. To address these issues, Federated Learning has emerged as a promising solution. This approach allows different nodes in a network to train models collaboratively without the need for direct sharing of examples, thereby preserving privacy and minimizing the amount of data transmitted between parties. However, the training process in Federated Learning brings specific challenges, such as the heterogeneity of participating nodes, which vary in terms of computational capacity and data characteristics. The effective distribution of training tasks among these nodes is crucial to ensure the process is both efficient and fair. Another critical point involves the monitoring and analysis of workflows in Federated Learning. Although tasks generate and consume large amounts of data, the lack of clear provenance documentation makes it difficult to analyze the results obtained. Provenance data capture provides an effective solution, increasing reliability, reproducibility, and offering mechanisms for interpreting the resulting models. Nevertheless, in the specific context of Federated Learning, the use of provenance data is still at an early stage, with current solutions showing limitations in capturing relevant metadata and in leveraging it for training monitoring and optimization. This project aims to address these gaps by proposing the development of algorithms and techniques that enable the extraction, modeling, and management of provenance data in the Federated Learning environment. The goal is not only to improve the allocation and scheduling of training tasks, but also to provide robust analytical support to users by integrating provenance data into existing frameworks. As a case study, we will use an application for identifying outlier objects in large astronomical catalogs. This application is part of the Legacy Survey of Space and Time (LSST) project, which generates 20 TB of raw data per night and has a naturally distributed processing infrastructure. The project thus seeks to contribute to making Federated Learning more efficient and explainable, with a special focus on Astronomy applications, where scalability and proper data handling are essential for scientific advances..</p>
-  
-  <div>
-    <b>Team:</b>
-    <div class="integrantes-grid">
-      <img src="arquivos/Daniel.jpeg" alt="Daniel Cardoso Moraes de Oliveira" title="Daniel Cardoso Moraes de Oliveira (Coordenador)">
-      <img src="arquivos/Isabel.jpeg" alt="Isabel Rosseti" title="Isabel Rosseti">
-      <img src="arquivos/MarcosLage.jpeg" alt="Marcos Lage" title="Marcos Lage">
-      <img src="arquivos/Aline.jpeg" alt="Aline Marins Paes Carvalho" title="Aline Marins Paes Carvalho">
-      <img src="arquivos/Renan.jpeg" alt="Renan Santos Souza" title="Renan Santos Souza">
-      <img src="arquivos/Yuri.jpeg" alt="Yuri Frota" title="Yuri Frota">
-      <img src="arquivos/Nicolaci.jpeg" alt="Luiz Alberto Nicolaci da Costa" title="Luiz Alberto Nicolaci da Costa">
-      <img src="arquivos/FabioMiranda.jpeg" alt="Fábio Markus Nunes Miranda" title="Fábio Markus Nunes Miranda">
-      <img src="arquivos/Rafael.jpeg" alt="Rafael Ferreira da Silva" title="Rafael Ferreira da Silva">
-      <img src="arquivos/Julia.jpeg" alt="Julia Gschwend" title="Julia Gschwend">
-    </div>
-  </div>
-
-  <div class="financiador">
-    <b>Funding Agency:</b><br>
-    <img src="arquivos/cnpq.png" alt="CNPq" style="height:60px;">
-  </div>
-</div>
-
-
-<div class="project-card">
-  <h3>FedProv - Gerência de Dados de Proveniência em Aplicações de Aprendizado de Máquina Federado 🇧🇷</h3>
-  <h3>FedProv - Provenance Data Management in Federated Machine Learning Applications 🇺🇸</h3>
-  <div class="project-meta grid grid-cols-2 gap-4 bg-gray-100 p-3 rounded-xl shadow-sm">
-  <div><b>📅 Period:</b> 2024 - Current</div>
-  <div><b>✅ Status:</b> Active</div>
-  <div><b>🔍 Nature:</b> Research</div>
-  <div><b>💲 Funding:</b> R$ 108,000.00</div>
-</div>
-  
-  <p><b>Description:</b> Federated Machine Learning (or simply Federated Learning) is a distributed technique that enables collaboration among multiple users in training Machine Learning models (e.g., Deep Neural Networks). Federated Learning has been applied in various domains such as Medicine, Biology, and Pharmacy, as it eliminates the need to access the entire dataset for model training, since part of the data may be private or sensitive. In a Federated Learning application, each client node (e.g., a mobile phone, computer, or cluster) trains a model locally and then sends the model updates to a server node, where they are aggregated into a global model. This global model is redistributed for a new training round across client nodes.  
-
-  Training such models can require several iterations, making the process time-consuming, since each iteration depends on configuration choices such as the global aggregation method, hyperparameters, and the datasets used. Analyzing aggregation methods, hyperparameters, and metrics (e.g., accuracy) during distributed training allows for better understanding of the trained model and opens opportunities for improvements such as automated hyperparameter tuning and fault tolerance. Provenance data emerges as an interesting alternative to represent the derivation path of data during training, enabling analysis, monitoring, and necessary interventions.  
-
-  The FedProv project aims to develop algorithms and techniques for capturing, modeling, storing, and managing provenance data of artifacts involved in the lifecycle of a Federated Learning application. These artifacts include datasets, data transformations, and users associated with preprocessing, training, testing, and validation steps, in addition to the trained models themselves. Furthermore, FedProv intends to support additional actions through the captured provenance data, such as configuration adaptations, parameter tuning, and fault tolerance (since a distributed application is more susceptible to failures). By integrating provenance metadata and data into a database, we expect queries to this database to assist users during distributed training.</p>
-  
-  <div>
-    <b>Team:</b>
-    <div class="integrantes-grid">
-      <img src="arquivos/Daniel.jpeg" alt="Daniel Cardoso Moraes de Oliveira" title="Daniel Cardoso Moraes de Oliveira (Coordinator)">
-      <img src="arquivos/MarcosLage.jpeg" alt="Marcos Lage" title="Marcos Lage">
-      <img src="arquivos/Aline.jpeg" alt="Aline Marins Paes Carvalho" title="Aline Marins Paes Carvalho">
-      <img src="arquivos/Marta.jpeg" alt="Marta Mattoso" title="Marta Mattoso">
-      <img src="arquivos/Debora.jpeg" alt="Debora Pina" title="Debora Pina">
-      <img src="arquivos/Liliane.jpeg" alt="Liliane Neves" title="Liliane Neves">
-      <img src="arquivos/CamilaLopes.jpeg" alt="Camila Lopes" title="Camila Lopes">
-      <img src="arquivos/Lyncoln.jpeg" alt="Lyncoln S. de Oliveira" title="Lyncoln S. de Oliveira">
-    </div>
-  </div>
-
-  <div class="financiador">
-    <b>Funding Agency:</b><br>
-    <img src="arquivos/faperj.png" alt="FAPERJ" style="height:60px;">
-  </div>
-</div>
-
-
-
+  <main id="inicio">
+    <section class="page-intro">
+      <div class="kicker"><span></span> PROJECTS / FUNDING / TEAMS</div>
+      <h1>Research Projects</h1>
+      <p>This page highlights the main research projects coordinated by Daniel de Oliveira.</p>
+    </section>
+    <section class="section ">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">ACTIVE PROJECTS</div>
+          <h2>Coordinated projects</h2>
+        </div>
+        <span class="source-label"><span class="status-dot"></span>3 active projects</span>
+      </div>
+      <div class="project-directory">
+        <article class="project-entry">
+          <div class="project-entry-header">
+            <div class="project-entry-info">
+              <h3>PROV4DistML: Provenance Data Management for the Analysis of Distributed Machine Learning Applications</h3>
+              <p class="project-alt-title">PROV4DistML: Gerência de Dados de Proveniência para Análise de Aplicações de Aprendizado de Máquina Distribuído</p>
+              <div class="project-meta"><div><span>Period</span>2025 - Current</div><div class="active"><span>Status</span>Active</div><div><span>Nature</span>Research</div><div><span>Funding</span>R$ 75,600.00</div></div>
+              <div class="expandable">
+                <div class="expandable-body"><p>Distributed Machine Learning (or simply Distributed Learning) and its branches, such as Federated Learning, represent approaches that enable collaboration among multiple devices or users in training Machine Learning models, including deep neural networks and clustering algorithms. These techniques have been widely applied in areas such as Astronomy, Medicine, and Biology due to their ability to accelerate the training of complex models by distributing the processing across multiple machines. In particular, Federated Learning allows training to occur without the need to centralize data, thereby preserving privacy and security, making it ideal for scenarios involving sensitive data, such as personal information. In a typical configuration, each worker (e.g., smartphones, computers, or clusters) trains a model locally and sends model updates to a central server. This server combines the contributions into a global model, which is redistributed for new training rounds. Distributed training is an iterative process that can be time-intensive, with its duration influenced by factors such as aggregation methods, hyperparameter choices, and the characteristics of the datasets used. The analysis of metrics such as accuracy and fine-tuning of configurations during distributed training enables important improvements, such as increased efficiency, better model interpretability, and higher fault tolerance. In this context, provenance data emerges as a promising solution to represent and track the lifecycle of artifacts generated during the distributed learning process, such as datasets, applied transformations, trained models, and adopted configurations. These data not only enable the monitoring and analysis of training but also allow interventions, such as dynamic parameter adjustments and configuration adaptations. The PROV4DistML project aims to develop solutions to capture, model, store, and manage provenance data in Distributed and Federated Learning applications. Additionally, the project seeks to leverage these data to support actions such as automatic parameter tuning, improving result interpretability, and increasing the robustness of training. In this way, PROV4DistML contributes to the development of more efficient, transparent, and resilient solutions in Distributed Learning.</p></div>
+                <button type="button" class="expand-toggle" aria-expanded="false">Read full description <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+              </div>
+            </div>
+            <aside class="project-side">
+              <span>TEAM</span>
+              <div class="avatar-stack"><img src="arquivos/Daniel.jpeg" alt="Daniel Cardoso Moraes de Oliveira" title="Daniel Cardoso Moraes de Oliveira (Coordinator)" loading="lazy"><img src="arquivos/MarcosLage.jpeg" alt="Marcos Lage" title="Marcos Lage" loading="lazy"><img src="arquivos/Aline.jpeg" alt="Aline Marins Paes Carvalho" title="Aline Marins Paes Carvalho" loading="lazy"><img src="arquivos/Marta.jpeg" alt="Marta Mattoso" title="Marta Mattoso" loading="lazy"><img src="arquivos/Debora.jpeg" alt="Debora Pina" title="Debora Pina" loading="lazy"><img src="arquivos/Liliane.jpeg" alt="Liliane Neves" title="Liliane Neves" loading="lazy"><img src="arquivos/CamilaLopes.jpeg" alt="Camila Lopes" title="Camila Lopes" loading="lazy"><img src="arquivos/Lyncoln.jpeg" alt="Lyncoln S. de Oliveira" title="Lyncoln S. de Oliveira" loading="lazy"></div>
+              <span>FUNDING AGENCY</span>
+              <img class="funder" src="arquivos/cnpq.png" alt="CNPq">
+            </aside>
+          </div>
+        </article>
+        <article class="project-entry">
+          <div class="project-entry-header">
+            <div class="project-entry-info">
+              <h3>Execution and Analysis of Federated Machine Learning Workflows for Astronomy in High-Performance Computing Environments</h3>
+              <p class="project-alt-title">Execução e Análise de Workflows de Aprendizado de Máquina Federado para Astronomia em Ambientes de Computação de Alto Desempenho</p>
+              <div class="project-meta"><div><span>Period</span>2024 - Current</div><div class="active"><span>Status</span>Active</div><div><span>Nature</span>Research</div><div><span>Funding</span>R$ 346,495.70</div></div>
+              <div class="expandable">
+                <div class="expandable-body"><p>In recent decades, Machine Learning has received growing attention from both academia and industry. However, traditional Machine Learning approaches face critical challenges, especially regarding data privacy and the volume and transfer of information to be processed. To address these issues, Federated Learning has emerged as a promising solution. This approach allows different nodes in a network to train models collaboratively without the need for direct sharing of examples, thereby preserving privacy and minimizing the amount of data transmitted between parties. However, the training process in Federated Learning brings specific challenges, such as the heterogeneity of participating nodes, which vary in terms of computational capacity and data characteristics. The effective distribution of training tasks among these nodes is crucial to ensure the process is both efficient and fair. Another critical point involves the monitoring and analysis of workflows in Federated Learning. Although tasks generate and consume large amounts of data, the lack of clear provenance documentation makes it difficult to analyze the results obtained. Provenance data capture provides an effective solution, increasing reliability, reproducibility, and offering mechanisms for interpreting the resulting models. Nevertheless, in the specific context of Federated Learning, the use of provenance data is still at an early stage, with current solutions showing limitations in capturing relevant metadata and in leveraging it for training monitoring and optimization. This project aims to address these gaps by proposing the development of algorithms and techniques that enable the extraction, modeling, and management of provenance data in the Federated Learning environment. The goal is not only to improve the allocation and scheduling of training tasks, but also to provide robust analytical support to users by integrating provenance data into existing frameworks. As a case study, we will use an application for identifying outlier objects in large astronomical catalogs. This application is part of the Legacy Survey of Space and Time (LSST) project, which generates 20 TB of raw data per night and has a naturally distributed processing infrastructure. The project thus seeks to contribute to making Federated Learning more efficient and explainable, with a special focus on Astronomy applications, where scalability and proper data handling are essential for scientific advances..</p></div>
+                <button type="button" class="expand-toggle" aria-expanded="false">Read full description <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+              </div>
+            </div>
+            <aside class="project-side">
+              <span>TEAM</span>
+              <div class="avatar-stack"><img src="arquivos/Daniel.jpeg" alt="Daniel Cardoso Moraes de Oliveira" title="Daniel Cardoso Moraes de Oliveira (Coordenador)" loading="lazy"><img src="arquivos/Isabel.jpeg" alt="Isabel Rosseti" title="Isabel Rosseti" loading="lazy"><img src="arquivos/MarcosLage.jpeg" alt="Marcos Lage" title="Marcos Lage" loading="lazy"><img src="arquivos/Aline.jpeg" alt="Aline Marins Paes Carvalho" title="Aline Marins Paes Carvalho" loading="lazy"><img src="arquivos/Renan.jpeg" alt="Renan Santos Souza" title="Renan Santos Souza" loading="lazy"><img src="arquivos/Yuri.jpeg" alt="Yuri Frota" title="Yuri Frota" loading="lazy"><img src="arquivos/Nicolaci.jpeg" alt="Luiz Alberto Nicolaci da Costa" title="Luiz Alberto Nicolaci da Costa" loading="lazy"><img src="arquivos/FabioMiranda.jpeg" alt="Fábio Markus Nunes Miranda" title="Fábio Markus Nunes Miranda" loading="lazy"><img src="arquivos/Rafael.jpeg" alt="Rafael Ferreira da Silva" title="Rafael Ferreira da Silva" loading="lazy"><img src="arquivos/Julia.jpeg" alt="Julia Gschwend" title="Julia Gschwend" loading="lazy"></div>
+              <span>FUNDING AGENCY</span>
+              <img class="funder" src="arquivos/cnpq.png" alt="CNPq">
+            </aside>
+          </div>
+        </article>
+        <article class="project-entry">
+          <div class="project-entry-header">
+            <div class="project-entry-info">
+              <h3>FedProv - Provenance Data Management in Federated Machine Learning Applications</h3>
+              <p class="project-alt-title">FedProv - Gerência de Dados de Proveniência em Aplicações de Aprendizado de Máquina Federado</p>
+              <div class="project-meta"><div><span>Period</span>2024 - Current</div><div class="active"><span>Status</span>Active</div><div><span>Nature</span>Research</div><div><span>Funding</span>R$ 108,000.00</div></div>
+              <div class="expandable">
+                <div class="expandable-body"><p>Federated Machine Learning (or simply Federated Learning) is a distributed technique that enables collaboration among multiple users in training Machine Learning models (e.g., Deep Neural Networks). Federated Learning has been applied in various domains such as Medicine, Biology, and Pharmacy, as it eliminates the need to access the entire dataset for model training, since part of the data may be private or sensitive. In a Federated Learning application, each client node (e.g., a mobile phone, computer, or cluster) trains a model locally and then sends the model updates to a server node, where they are aggregated into a global model. This global model is redistributed for a new training round across client nodes. Training such models can require several iterations, making the process time-consuming, since each iteration depends on configuration choices such as the global aggregation method, hyperparameters, and the datasets used. Analyzing aggregation methods, hyperparameters, and metrics (e.g., accuracy) during distributed training allows for better understanding of the trained model and opens opportunities for improvements such as automated hyperparameter tuning and fault tolerance. Provenance data emerges as an interesting alternative to represent the derivation path of data during training, enabling analysis, monitoring, and necessary interventions. The FedProv project aims to develop algorithms and techniques for capturing, modeling, storing, and managing provenance data of artifacts involved in the lifecycle of a Federated Learning application. These artifacts include datasets, data transformations, and users associated with preprocessing, training, testing, and validation steps, in addition to the trained models themselves. Furthermore, FedProv intends to support additional actions through the captured provenance data, such as configuration adaptations, parameter tuning, and fault tolerance (since a distributed application is more susceptible to failures). By integrating provenance metadata and data into a database, we expect queries to this database to assist users during distributed training.</p></div>
+                <button type="button" class="expand-toggle" aria-expanded="false">Read full description <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+              </div>
+            </div>
+            <aside class="project-side">
+              <span>TEAM</span>
+              <div class="avatar-stack"><img src="arquivos/Daniel.jpeg" alt="Daniel Cardoso Moraes de Oliveira" title="Daniel Cardoso Moraes de Oliveira (Coordinator)" loading="lazy"><img src="arquivos/MarcosLage.jpeg" alt="Marcos Lage" title="Marcos Lage" loading="lazy"><img src="arquivos/Aline.jpeg" alt="Aline Marins Paes Carvalho" title="Aline Marins Paes Carvalho" loading="lazy"><img src="arquivos/Marta.jpeg" alt="Marta Mattoso" title="Marta Mattoso" loading="lazy"><img src="arquivos/Debora.jpeg" alt="Debora Pina" title="Debora Pina" loading="lazy"><img src="arquivos/Liliane.jpeg" alt="Liliane Neves" title="Liliane Neves" loading="lazy"><img src="arquivos/CamilaLopes.jpeg" alt="Camila Lopes" title="Camila Lopes" loading="lazy"><img src="arquivos/Lyncoln.jpeg" alt="Lyncoln S. de Oliveira" title="Lyncoln S. de Oliveira" loading="lazy"></div>
+              <span>FUNDING AGENCY</span>
+              <img class="funder" src="arquivos/faperj.png" alt="FAPERJ">
+            </aside>
+          </div>
+        </article>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <div><b>Phone: +55 (21) 2629-5637<br>Fax: +55 (21) 2629-5627</b></div>
-    <div><b>danielcmo (at) ic (dot) uff (dot) br</b></div>
+    <div class="footer-brand">
+      <img src="arquivos/Daniel.jpeg" alt="" width="60" height="60" style="border-radius:50%;object-fit:cover">
+      <p>Daniel de Oliveira
+        <small>Associate Professor · Institute of Computing · Universidade Federal Fluminense</small>
+      </p>
+    </div>
+    <div class="footer-contact">
+      Phone <b>+55 (21) 2629-5637</b> · Fax <b>+55 (21) 2629-5627</b><br>
+      <b>danielcmo (at) ic (dot) uff (dot) br</b>
+    </div>
+    <div class="footer-institutions" aria-label="Institutional affiliations">
+      <a href="https://uffescience.ic.uff.br" target="_blank" rel="noreferrer"><img src="assets/uffescience-logo.png" alt="UFFeScience Research Group" width="52" height="52"></a>
+      <a href="https://www.ic.uff.br/" target="_blank" rel="noreferrer"><img src="assets/ic-uff-logo.png" alt="Institute of Computing — UFF" width="69" height="52"></a>
+      <a href="https://www.uff.br/" target="_blank" rel="noreferrer"><img src="assets/uff-logo.svg" alt="Universidade Federal Fluminense" width="84" height="40" style="height:40px"></a>
+    </div>
+    <a href="#inicio">Back to top ↑</a>
   </footer>
 </body>
 </html>

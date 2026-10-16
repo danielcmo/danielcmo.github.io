@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C4TVS1004P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-C4TVS1004P');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Software - Daniel de Oliveira</title>
+  <meta name="description" content="Open-source software developed by the UFFeScience Research Group at the Institute of Computing, Universidade Federal Fluminense">
+  <meta name="keywords" content="Software, Open Source, UFFeScience, AkôFlow, Scientific Workflows, Provenance, UFF, IC-UFF">
+  <link rel="icon" href="arquivos/uff.png">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js" defer></script>
+  <style>
+    /* Page-specific additions for the Software page (can be moved into assets/site.css) */
+    /* With an 11th nav item ("Software"), the header needs slightly tighter spacing and
+       must wrap the menu below the logo a little earlier than the 1240px rule in site.css. */
+    nav { gap: 20px; }
+    @media (max-width: 1280px) {
+      .site-header { flex-wrap: wrap; gap: 16px 24px; padding: 14px 40px 0; }
+      nav { order: 3; width: 100%; padding: 10px 0 8px; border-top: 1px solid var(--line); overflow-x: auto; scrollbar-width: none; }
+      nav::-webkit-scrollbar { display: none; }
+    }
+    @media (max-width: 700px) {
+      .site-header { padding: 10px 22px 0; gap: 12px 16px; }
+    }
+    .jump-links { display: flex; flex-wrap: wrap; gap: 10px 26px; margin-top: 28px; }
+    .jump-links a { font-size: 12px; font-weight: 500; color: var(--ink); border-bottom: 1px solid var(--line); padding-bottom: 3px; }
+    .jump-links a:hover { color: var(--blue); border-bottom-color: var(--blue); }
+    .featured-tool img { padding: 14px; background: #fff; object-fit: contain; }
+    .featured-tool h3 { font-size: 24px; font-weight: 500; letter-spacing: -0.5px; margin: 0 0 4px; }
+    .featured-tool .tagline { font-size: 13px; color: var(--blue); margin: 0 0 14px; }
+    .featured-tool p { font-size: 13px; }
+    .tool-card .kicker { gap: 6px; }
+    .tool-card .publication-read { justify-content: flex-start; gap: 22px; }
+    .tool-card .publication-read a { display: inline-flex; align-items: center; gap: 6px; }
+    .tool-card .publication-read a:hover { color: var(--ink); }
+    .ecosystem-list .paper-year { font-size: 11px; }
+    .ecosystem-list h3 a:hover { color: var(--blue); }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo-link" href="index.html" aria-label="Daniel de Oliveira — home">
+      <img src="arquivos/uff.png" alt="Universidade Federal Fluminense" width="72" height="72">
+      <span>Daniel de Oliveira<small>Institute of Computing / UFF</small></span>
+    </a>
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="cv.html">Publications</a>
+        <a href="books.html">Books</a>
+        <a href="ap.html">Research Areas</a>
+        <a href="cur.html">Teaching</a>
+        <a href="collab.html">Collaborations</a>
+        <a href="li.html">Students</a>
+        <a href="awards.html">Awards</a>
+        <a href="projects.html">Projects</a>
+        <a href="software.html" aria-current="page">Software</a>
+        <a href="per.html">News</a>
+    </nav>
+    <a class="header-group" href="https://uffescience.ic.uff.br" target="_blank" rel="noreferrer">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="1"/><path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z"/><path d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z"/></svg><span>UFFeScience</span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+    </a>
+  </header>
+
+  <main id="inicio">
+    <section class="page-intro">
+      <div class="kicker"><span></span> SOFTWARE / OPEN SOURCE / UFFESCIENCE</div>
+      <h1>Software</h1>
+      <p>Open-source tools, middleware, and research artifacts developed by the <a href="https://github.com/UFFeScience" target="_blank" rel="noreferrer">UFFeScience Research Group</a> at the Institute of Computing, UFF. They cover workflow execution, provenance data management, scheduling, and data analysis for computational science.</p>
+      <p>All repositories are public. If you use one of these tools in your research, please cite the associated paper.</p>
+      <div class="jump-links" aria-label="Sections on this page">
+        <a href="#akoflow">AkôFlow</a>
+        <a href="#engines">Workflow engines</a>
+        <a href="#provenance">Provenance &amp; analysis</a>
+        <a href="#scheduling">Scheduling &amp; optimization</a>
+        <a href="#artifacts">Research artifacts</a>
+        <a href="#ecosystem">AkôFlow ecosystem</a>
+      </div>
+    </section>
+
+    <!-- Featured -->
+    <section class="section tinted" id="akoflow">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">FEATURED / FLAGSHIP PROJECT</div>
+          <h2>AkôFlow</h2>
+        </div>
+        <span class="source-label"><span class="status-dot"></span>Actively developed</span>
+      </div>
+      <div class="banner-card featured-tool">
+        <img src="arquivos/akoflow.png" alt="AkôFlow architecture: client, server with scheduler and monitor, proxies, workers, and a provenance manager">
+        <div>
+          <h3>Run scientific workflows anywhere</h3>
+          <p class="tagline">Go · open-source workflow engine</p>
+          <p>AkôFlow orchestrates container-based scientific workflows across heterogeneous environments: Kubernetes clusters on AWS, Google Cloud, and Azure, Singularity on HPC systems, and the SDumont supercomputer at LNCC. It schedules each activity in its own container, scales them in parallel, and captures provenance data natively.</p>
+          <p>It began as an undergraduate final project and is now the group's most widely used tool. It won the Best Demo Award at SBBD 2025.</p>
+          <div class="intro-actions">
+            <a class="primary-button" href="https://github.com/UFFeScience/akoflow" target="_blank" rel="noreferrer">View on GitHub <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+            <a class="quiet-link" href="https://akoflow.com" target="_blank" rel="noreferrer">Documentation <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+            <a class="quiet-link" href="https://sol.sbc.org.br/index.php/sbbd/article/view/30680" target="_blank" rel="noreferrer">Paper (SBBD 2024) <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Workflow engines -->
+    <section class="section" id="engines">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">EXECUTION / MIDDLEWARE</div>
+          <h2>Workflow engines and middleware</h2>
+        </div>
+        <span class="source-label"><span class="status-dot"></span>4 repositories</span>
+      </div>
+      <div class="publication-grid">
+        <article class="publication-preview tool-card">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span>Java · Cloud workflows</div>
+            <h3><a href="https://github.com/UFFeScience/SciCumulus" target="_blank" rel="noreferrer">SciCumulus</a></h3>
+            <p>Workflow engine for running parameter-sweep experiments on distributed and cloud resources. This repository is a full architectural refactoring of the original UFF system, keeping its execution semantics with a modular, testable codebase.</p>
+            <div class="publication-read">
+              <a href="https://github.com/UFFeScience/SciCumulus" target="_blank" rel="noreferrer">Code <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+              <a href="https://ieeexplore.ieee.org/document/5557969" target="_blank" rel="noreferrer">Paper <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+            </div>
+          </div>
+        </article>
+        <article class="publication-preview tool-card">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span>Scala · Apache Spark</div>
+            <h3><a href="https://github.com/UFFeScience/SAMbA" target="_blank" rel="noreferrer">SAMbA-RaP</a></h3>
+            <p>Extension of Apache Spark that runs black-box scientific programs over raw data files while capturing provenance and domain-specific data, with built-in version control of the files produced.</p>
+            <div class="publication-read">
+              <a href="https://github.com/UFFeScience/SAMbA" target="_blank" rel="noreferrer">Code <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+              <a href="https://www.sciencedirect.com/science/article/pii/S2352711024002978" target="_blank" rel="noreferrer">Paper <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+            </div>
+          </div>
+        </article>
+        <article class="publication-preview tool-card">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span>Python · Serverless</div>
+            <h3><a href="https://github.com/UFFeScience/denethor" target="_blank" rel="noreferrer">Denethor</a></h3>
+            <p>Execution monitoring and provenance collection for scientific workflows whose activities run as AWS Lambda functions. Runs either locally or in serverless mode.</p>
+            <div class="publication-read">
+              <a href="https://github.com/UFFeScience/denethor" target="_blank" rel="noreferrer">Code <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+            </div>
+          </div>
+        </article>
+        <article class="publication-preview tool-card">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span>Java · Spring Boot</div>
+            <h3><a href="https://github.com/UFFeScience/Phenomanager" target="_blank" rel="noreferrer">PhenoManager</a></h3>
+            <p>REST API and worker service for managing computational experiments and their executions (workflows, executables, commands, and web services) on cloud and cluster environments.</p>
+            <div class="publication-read">
+              <a href="https://github.com/UFFeScience/Phenomanager" target="_blank" rel="noreferrer">Code <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Provenance & analysis -->
+    <section class="section tinted" id="provenance">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">PROVENANCE / OPEN SCIENCE / VISUALIZATION</div>
+          <h2>Provenance, analysis, and open science</h2>
+        </div>
+        <span class="source-label"><span class="status-dot"></span>7 repositories</span>
+      </div>
+      <div class="publication-grid">
+        <article class="publication-preview tool-card">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span>Python · Deep learning</div>
+            <h3><a href="https://github.com/UFFeScience/dlprov" target="_blank" rel="noreferrer">DLProv</a></h3>
+            <p>Provenance services for deep learning workflows, covering pre-processing, training, and evaluation. Supports online analysis in MonetDB, W3C PROV documents, and Neo4j graphs. Distributed as a Docker image.</p>
+            <div class="publication-read">
+              <a href="https://github.com/UFFeScience/dlprov" target="_blank" rel="noreferrer">Code <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+              <a href="https://peerj.com/articles/cs-2985/" target="_blank" rel="noreferrer">Paper <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+            </div>
+          </div>
+        </article>
+        <article class="publication-preview tool-card">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span>Python · Agentic workflows</div>
+            <h3><a href="https://github.com/UFFeScience/anchor" target="_blank" rel="noreferrer">ANCHOR</a></h3>
+            <p>Captures and analyzes the provenance of agentic workflows with an interaction-centric model of agents, tools, users, model calls, and delegations, so multi-agent runs can be traced, audited, and reproduced.</p>
+            <div class="publication-read">
+              <a href="https://github.com/UFFeScience/anchor" target="_blank" rel="noreferrer">Code <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+            </div>
+          </div>
+        </article>
+        <article class="publication-preview tool-card">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span>TypeScript · Open science</div>
+            <h3><a href="https://github.com/UFFeScience/triptych" target="_blank" rel="noreferrer">Triptych</a></h3>
+            <p>Links research data, source code, and publications spread across GitHub, Zenodo, OSF, and arXiv, so the full lifecycle of a scientific project can be traced and reproduced.</p>
+            <div class="publication-read">
+              <a href="https://github.com/UFFeScience/triptych" target="_blank" rel="noreferrer">Code <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+            </div>
+          </div>
+        </article>
+        <article class="publication-preview tool-card">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span>Jupyter · Urban visualization</div>
+            <h3><a href="https://github.com/UFFeScience/UTK-PROV" target="_blank" rel="noreferrer">UTK-PROV</a></h3>
+            <p>Provenance-aware extension of the Urban Toolkit. Records how grammar-based urban visualizations evolve during construction and stores the history in a relational database for querying.</p>
+            <div class="publication-read">
+              <a href="https://github.com/UFFeScience/UTK-PROV" target="_blank" rel="noreferrer">Code <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+            </div>
+          </div>
+        </article>
+        <article class="publication-preview tool-card">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span>Python · Federated learning</div>
+            <h3><a href="https://github.com/UFFeScience/flare_prov" target="_blank" rel="noreferrer">FLARE-PROV</a></h3>
+            <p>Federated k-means clustering with scikit-learn, using MiniBatch-style aggregation, instrumented with DfAnalyzer to capture prospective and retrospective provenance of each round.</p>
+            <div class="publication-read">
+              <a href="https://github.com/UFFeScience/flare_prov" target="_blank" rel="noreferrer">Code <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+            </div>
+          </div>
+        </article>
+        <article class="publication-preview tool-card">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span>JavaScript · Federated learning</div>
+            <h3><a href="https://github.com/UFFeScience/FedObserve" target="_blank" rel="noreferrer">FedObserve</a></h3>
+            <p>Web application for managing and visualizing federated learning experiments, with a t-SNE service for model inspection. Uses AkôFlow for AWS provisioning and execution monitoring.</p>
+            <div class="publication-read">
+              <a href="https://github.com/UFFeScience/FedObserve" target="_blank" rel="noreferrer">Code <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+            </div>
+          </div>
+        </article>
+        <article class="publication-preview tool-card">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span>Python · Data repositories</div>
+            <h3><a href="https://github.com/UFFeScience/Dataverse-Dados-de-Rede" target="_blank" rel="noreferrer">Dataverse Dados de Rede</a></h3>
+            <p>Scripts that prepare, transform, and load network and machine learning datasets, with their metadata, into Dataverse repositories through an automated workflow.</p>
+            <div class="publication-read">
+              <a href="https://github.com/UFFeScience/Dataverse-Dados-de-Rede" target="_blank" rel="noreferrer">Code <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Scheduling -->
+    <section class="section" id="scheduling">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">SCHEDULING / METAHEURISTICS</div>
+          <h2>Scheduling and optimization</h2>
+        </div>
+        <span class="source-label"><span class="status-dot"></span>3 repositories</span>
+      </div>
+      <div class="publication-grid">
+        <article class="publication-preview tool-card">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span>Jupyter · Confidentiality</div>
+            <h3><a href="https://github.com/UFFeScience/cyclops" target="_blank" rel="noreferrer">CYCLOPS</a></h3>
+            <p>Schedules cloud-based workflows under data confidentiality constraints. Builds a conflict graph between data files and jointly decides activity scheduling and data placement in public clouds.</p>
+            <div class="publication-read">
+              <a href="https://github.com/UFFeScience/cyclops" target="_blank" rel="noreferrer">Code <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+              <a href="https://link.springer.com/article/10.1007/s42979-025-04582-1" target="_blank" rel="noreferrer">Paper <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+            </div>
+          </div>
+        </article>
+        <article class="publication-preview tool-card">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span>C++ · GRASP</div>
+            <h3><a href="https://github.com/UFFeScience/MemoirGRASP" target="_blank" rel="noreferrer">MemoirGRASP</a></h3>
+            <p>GRASP-based execution strategy for multisite cloud workflows that reuses previously computed intermediate data, weighing recomputation against storage cost and letting users prioritize makespan or financial cost.</p>
+            <div class="publication-read">
+              <a href="https://github.com/UFFeScience/MemoirGRASP" target="_blank" rel="noreferrer">Code <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+            </div>
+          </div>
+        </article>
+        <article class="publication-preview tool-card">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span>Rust · Urban routing</div>
+            <h3><a href="https://github.com/UFFeScience/protector" target="_blank" rel="noreferrer">Protector</a></h3>
+            <p>Heuristics for the Routing of Police Vehicles in Large Urban Centers (RVP-Urb) problem: plans preventive patrol routes that maximize coverage of crime hotspots under route-length, fleet, and territorial constraints.</p>
+            <div class="publication-read">
+              <a href="https://github.com/UFFeScience/protector" target="_blank" rel="noreferrer">Code <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Research artifacts -->
+    <section class="section tinted" id="artifacts">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">APPLICATIONS / REPRODUCIBILITY</div>
+          <h2>Research artifacts and applications</h2>
+        </div>
+        <span class="source-label"><span class="status-dot"></span>4 repositories</span>
+      </div>
+      <p class="section-description">Code and data that accompany recent papers, published so results can be reproduced and extended.</p>
+      <div class="publication-grid">
+        <article class="publication-preview tool-card">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span>Python · Bioinformatics</div>
+            <h3><a href="https://github.com/UFFeScience/CellLens" target="_blank" rel="noreferrer">CellLens+</a></h3>
+            <p>Interpretable cell-type annotation for single-cell RNA-seq data. Combines graph-based community detection with a deterministic scoring engine, plus an LLM layer that explains, but never decides, the predicted identities.</p>
+            <div class="publication-read">
+              <a href="https://github.com/UFFeScience/CellLens" target="_blank" rel="noreferrer">Code <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+            </div>
+          </div>
+        </article>
+        <article class="publication-preview tool-card">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span>JavaScript · Phylogenetics</div>
+            <h3><a href="https://github.com/UFFeScience/phylotreeminer" target="_blank" rel="noreferrer">PhyloTreeMiner</a></h3>
+            <p>Mining of patterns in phylogenetic trees, available as a command-line workflow and as an interactive web demo.</p>
+            <div class="publication-read">
+              <a href="https://github.com/UFFeScience/phylotreeminer" target="_blank" rel="noreferrer">Code <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+              <a href="http://phylotreeminer.ic.uff.br/" target="_blank" rel="noreferrer">Live demo <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+            </div>
+          </div>
+        </article>
+        <article class="publication-preview tool-card">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span>Python · Graph databases</div>
+            <h3><a href="https://github.com/UFFeScience/Eval-Graph-DB-Graph-Modeling-Strategies" target="_blank" rel="noreferrer">Graph Modeling Benchmark</a></h3>
+            <p>Benchmark built on mgBench that measures how four graph modeling transformations affect throughput, latency, CPU, memory, and storage across seven analytical queries.</p>
+            <div class="publication-read">
+              <a href="https://github.com/UFFeScience/Eval-Graph-DB-Graph-Modeling-Strategies" target="_blank" rel="noreferrer">Code <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+            </div>
+          </div>
+        </article>
+        <article class="publication-preview tool-card">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span>Python · LLMs for workflows</div>
+            <h3><a href="https://github.com/UFFeScience/sscad-2026" target="_blank" rel="noreferrer">Can LLMs Engineer Parallel Workflows?</a></h3>
+            <p>Artifacts of a study on LLM-generated and LLM-translated workflows: k-means, matrix multiplication, and lysozyme pipelines in Nextflow, Parsl, and PyCOMPSs, with human-written reference implementations.</p>
+            <div class="publication-read">
+              <a href="https://github.com/UFFeScience/sscad-2026" target="_blank" rel="noreferrer">Code <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- AkôFlow ecosystem -->
+    <section class="section" id="ecosystem">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">AKÔFLOW / DRIVERS / EXAMPLES</div>
+          <h2>AkôFlow ecosystem</h2>
+        </div>
+        <span class="source-label"><span class="status-dot"></span>5 repositories</span>
+      </div>
+      <p class="section-description">Companion repositories with runnable examples and storage drivers for <a href="https://github.com/UFFeScience/akoflow" target="_blank" rel="noreferrer">AkôFlow</a>.</p>
+      <ul class="papers-list ecosystem-list">
+        <li class="paper-entry">
+          <span class="paper-year">Python</span>
+          <div>
+            <h3><a href="https://github.com/UFFeScience/akoflow-examples" target="_blank" rel="noreferrer">akoflow-examples</a></h3>
+            <p class="paper-authors">Runnable workflows, infrastructure templates, and experiment tooling, from local and Slurm runs to machine learning, generative AI, and agentic showcase workflows.</p>
+          </div>
+        </li>
+        <li class="paper-entry">
+          <span class="paper-year">Python</span>
+          <div>
+            <h3><a href="https://github.com/UFFeScience/akoflow-example-wf-etl-clothing" target="_blank" rel="noreferrer">akoflow-example-wf-etl-clothing</a></h3>
+            <p class="paper-authors">Example ETL pipeline where each transformation runs as an independent container invocation from a single image.</p>
+          </div>
+        </li>
+        <li class="paper-entry">
+          <span class="paper-year">Python</span>
+          <div>
+            <h3><a href="https://github.com/UFFeScience/akoflow-driver-s3-uploader" target="_blank" rel="noreferrer">akoflow-driver-s3-uploader</a></h3>
+            <p class="paper-authors">Containerized utility that recursively uploads workflow outputs to Amazon S3 or LocalStack.</p>
+          </div>
+        </li>
+        <li class="paper-entry">
+          <span class="paper-year">Python</span>
+          <div>
+            <h3><a href="https://github.com/UFFeScience/akoflow-driver-gcs-uploader" target="_blank" rel="noreferrer">akoflow-driver-gcs-uploader</a></h3>
+            <p class="paper-authors">Containerized uploader for Google Cloud Storage, with support for a local emulator.</p>
+          </div>
+        </li>
+        <li class="paper-entry">
+          <span class="paper-year">Python</span>
+          <div>
+            <h3><a href="https://github.com/UFFeScience/akoflow-driver-dataverse-uploader" target="_blank" rel="noreferrer">akoflow-driver-dataverse-uploader</a></h3>
+            <p class="paper-authors">Driver for publishing workflow outputs to Dataverse repositories.</p>
+          </div>
+        </li>
+      </ul>
+      <p class="directory-note">This page highlights a selection of repositories. The full list, including older and archived projects, is on the <a href="https://github.com/UFFeScience" target="_blank" rel="noreferrer">UFFeScience GitHub organization</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">
+      <img src="arquivos/Daniel.jpeg" alt="" width="60" height="60" style="border-radius:50%;object-fit:cover">
+      <p>Daniel de Oliveira
+        <small>Associate Professor · Institute of Computing · Universidade Federal Fluminense</small>
+      </p>
+    </div>
+    <div class="footer-contact">
+      Phone <b>+55 (21) 2629-5637</b> · Fax <b>+55 (21) 2629-5627</b><br>
+      <b>danielcmo (at) ic (dot) uff (dot) br</b>
+    </div>
+    <div class="footer-institutions" aria-label="Institutional affiliations">
+      <a href="https://uffescience.ic.uff.br" target="_blank" rel="noreferrer"><img src="assets/uffescience-logo.png" alt="UFFeScience Research Group" width="52" height="52"></a>
+      <a href="https://www.ic.uff.br/" target="_blank" rel="noreferrer"><img src="assets/ic-uff-logo.png" alt="Institute of Computing — UFF" width="69" height="52"></a>
+      <a href="https://www.uff.br/" target="_blank" rel="noreferrer"><img src="assets/uff-logo.svg" alt="Universidade Federal Fluminense" width="84" height="40" style="height:40px"></a>
+    </div>
+    <a href="#inicio">Back to top ↑</a>
+  </footer>
+</body>
+</html>

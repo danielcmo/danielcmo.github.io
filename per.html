@@ -16,6 +16,66 @@
   <link rel="icon" href="arquivos/uff.png">
   <link rel="stylesheet" href="assets/site.css">
   <script src="assets/site.js" defer></script>
+  <style>
+    /* ---------- Two-level navigation ---------- */
+    .main-nav {
+      --nav-menu-bg: #ffffff;
+      --nav-menu-fg: #1f2933;
+      --nav-menu-border: rgba(0,0,0,.08);
+      --nav-menu-hover: rgba(0,0,0,.06);
+      --nav-menu-shadow: 0 12px 32px rgba(0,0,0,.14);
+    }
+    .nav-group { position: relative; display: inline-flex; }
+    .nav-toggle {
+      font: inherit; color: inherit; letter-spacing: inherit; text-transform: inherit;
+      background: none; border: 0; margin: 0; padding: 0; cursor: pointer;
+      display: inline-flex; align-items: center; gap: 4px;
+    }
+    .nav-toggle svg { width: 14px; height: 14px; transition: transform .2s ease; }
+    .nav-group.is-open > .nav-toggle svg { transform: rotate(180deg); }
+    .nav-group.has-current > .nav-toggle { font-weight: 600; }
+
+    .nav-menu {
+      position: absolute; top: calc(100% + 10px); left: 50%;
+      min-width: 190px; margin: 0; padding: 6px; list-style: none;
+      background: var(--nav-menu-bg); color: var(--nav-menu-fg);
+      border: 1px solid var(--nav-menu-border); border-radius: 10px;
+      box-shadow: var(--nav-menu-shadow);
+      opacity: 0; visibility: hidden; transform: translate(-50%, -4px);
+      transition: opacity .18s ease, transform .18s ease, visibility .18s;
+      z-index: 50;
+    }
+    /* invisible bridge so the menu doesn't close while the mouse crosses the gap */
+    .nav-menu::before { content: ""; position: absolute; left: 0; right: 0; top: -12px; height: 12px; }
+    .nav-group.is-open > .nav-menu { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
+    @media (hover: hover) {
+      .nav-group:hover > .nav-menu { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
+      .nav-group:hover > .nav-toggle svg { transform: rotate(180deg); }
+    }
+    .nav-menu li { margin: 0; padding: 0; }
+    .nav-menu a {
+      display: block; padding: 8px 12px; border-radius: 6px;
+      color: inherit; text-decoration: none; white-space: nowrap;
+    }
+    .nav-menu a:hover, .nav-menu a:focus-visible { background: var(--nav-menu-hover); }
+    .nav-menu a[aria-current="page"] { font-weight: 600; }
+
+    @media (max-width: 760px) {
+      .nav-group { flex-wrap: wrap; }
+      .nav-group.is-open { flex-basis: 100%; }
+      .nav-menu {
+        position: static; transform: none; display: none;
+        min-width: 0; width: 100%; margin-top: 6px;
+        box-shadow: none; transition: none;
+      }
+      .nav-menu::before { display: none; }
+      .nav-group.is-open > .nav-menu { display: block; transform: none; }
+      .nav-group:hover > .nav-menu { transform: none; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .nav-menu, .nav-toggle svg { transition: none; }
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -23,18 +83,39 @@
       <img src="arquivos/uff.png" alt="Universidade Federal Fluminense" width="72" height="72">
       <span>Daniel de Oliveira<small>Institute of Computing / UFF</small></span>
     </a>
-    <nav aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="cv.html">Publications</a>
-        <a href="books.html">Books</a>
-        <a href="ap.html">Research Areas</a>
-        <a href="cur.html">Teaching</a>
-        <a href="collab.html">Collaborations</a>
-        <a href="li.html">Students</a>
-        <a href="awards.html">Awards</a>
-        <a href="projects.html">Projects</a>
-        <a href="software.html" aria-current="page">Software</a>
-        <a href="per.html">News</a>
+    <!-- Same block can be pasted unchanged on every page: the current page is marked by the script at the bottom. -->
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+
+      <div class="nav-group">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-publications">
+          Publications
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <ul class="nav-menu" id="menu-publications">
+          <li><a href="cv.html">Papers</a></li>
+          <li><a href="books.html">Books</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-group">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-research">
+          Research
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <ul class="nav-menu" id="menu-research">
+          <li><a href="ap.html">Research Areas</a></li>
+          <li><a href="collab.html">Collaborations</a></li>
+          <li><a href="li.html">Students</a></li>
+          <li><a href="awards.html">Awards</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="software.html">Software</a></li>
+        </ul>
+      </div>
+
+      <a href="cur.html">Teaching</a>
+      <a href="personal.html">Personal</a>
+      <a href="per.html">News</a>
     </nav>
     <a class="header-group" href="https://uffescience.ic.uff.br" target="_blank" rel="noreferrer">
       <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="1"/><path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z"/><path d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z"/></svg><span>UFFeScience</span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
@@ -371,5 +452,57 @@
     </div>
     <a href="#inicio">Back to top ↑</a>
   </footer>
+  <script>
+    /* ---------- Two-level navigation ---------- */
+    (function () {
+      function init() {
+        const nav = document.querySelector('.main-nav');
+        if (!nav) return;
+        const groups = Array.from(nav.querySelectorAll('.nav-group'));
+
+        // Mark the current page automatically, so the same nav markup works on every page
+        const here = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+        nav.querySelectorAll('a[href]').forEach(a => {
+          if (a.getAttribute('href').toLowerCase() === here) {
+            a.setAttribute('aria-current', 'page');
+            const g = a.closest('.nav-group');
+            if (g) g.classList.add('has-current');
+          }
+        });
+
+        function setOpen(group, open) {
+          group.classList.toggle('is-open', open);
+          group.querySelector('.nav-toggle').setAttribute('aria-expanded', open ? 'true' : 'false');
+        }
+        function closeAll(except) { groups.forEach(g => { if (g !== except) setOpen(g, false); }); }
+
+        groups.forEach(group => {
+          const toggle = group.querySelector('.nav-toggle');
+          toggle.addEventListener('click', () => {
+            const open = !group.classList.contains('is-open');
+            closeAll(group);
+            setOpen(group, open);
+          });
+          group.addEventListener('keydown', e => {
+            if (e.key === 'Escape' && group.classList.contains('is-open')) {
+              setOpen(group, false);
+              toggle.focus();
+            }
+          });
+          group.addEventListener('focusout', e => {
+            if (!group.contains(e.relatedTarget)) setOpen(group, false);
+          });
+          if (window.matchMedia('(hover: hover)').matches) {
+            group.addEventListener('mouseleave', () => setOpen(group, false));
+          }
+        });
+
+        document.addEventListener('click', e => { if (!nav.contains(e.target)) closeAll(); });
+      }
+
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+      else init();
+    })();
+  </script>
 </body>
 </html>

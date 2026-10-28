@@ -10,9 +10,9 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daniel de Oliveira - Featured Book</title>
-  <meta name="description" content="Featured Book of Professor Daniel de Oliveira">
-  <meta name="keywords" content="IC-UFF, Data Science, Cloud Computing, Bioinformatics, Provenance, Scientific Workflows">
+  <title>Personal - Daniel de Oliveira</title>
+  <meta name="description" content="Personal interests of Daniel de Oliveira: tennis and Fluminense Football Club">
+  <meta name="keywords" content="Personal, Tennis, ATP, WTA, Roger Federer, Fluminense, Daniel de Oliveira">
   <link rel="icon" href="arquivos/uff.png">
   <link rel="stylesheet" href="assets/site.css">
   <style>
@@ -75,6 +75,20 @@
     @media (prefers-reduced-motion: reduce) {
       .nav-menu, .nav-toggle svg { transition: none; }
     }
+
+    /* ---------- Personal page ---------- */
+    .card-logo {
+      display: block; height: 44px; width: auto; max-width: 140px;
+      object-fit: contain; margin: 0 0 14px;
+    }
+    .flu-card { align-items: center; }
+    .flu-card .flu-photo {
+      width: 100%; aspect-ratio: 4 / 5; height: auto;
+      object-fit: cover; object-position: center top; border-radius: 12px;
+    }
+    .flu-title { display: flex; align-items: center; gap: 14px; margin: 0 0 14px; }
+    .flu-title img { height: 64px; width: auto; object-fit: contain; flex: none; }
+    .flu-title h3 { margin: 0; }
   </style>
 </head>
 <body>
@@ -124,29 +138,69 @@
 
   <main id="inicio">
     <section class="page-intro">
-      <div class="kicker"><span></span> BOOKS / SPRINGER</div>
-      <h1>Featured Book</h1>
-
+      <div class="kicker"><span></span> PERSONAL / TENNIS / FOOTBALL</div>
+      <h1>Personal Interests</h1>
+      <p>Outside of research and teaching, two sports take up most of my free time: tennis, which I follow closely on both the men's and women's tours, and football, where my heart belongs to Fluminense.</p>
     </section>
-    <section class="section">
-      <div class="book-layout">
-        <img src="https://m.media-amazon.com/images/I/71fV2uEquWL._SY385_.jpg" alt="Provenance and Data Management for Scientific Workflows">
+
+    <section class="section tinted" id="tennis">
+      <div class="section-heading">
         <div>
-          <div class="kicker"><span></span> SYNTHESIS LECTURES ON DATA MANAGEMENT · SPRINGER</div>
-          <h3 style="margin-top:14px"><a href="https://link.springer.com/book/10.1007/978-3-031-01872-5" target="_blank" rel="noreferrer">Data-Intensive Workflow Management</a></h3>
-          <p class="book-authors">Daniel de Oliveira, Ji Liu and Esther Pacitti</p>
-          <p>I would like to highlight the book <strong><a href="https://link.springer.com/book/10.1007/978-3-031-01872-5" target="_blank">Data-Intensive Workflow Management</a></strong>, co-authored by <strong>Daniel de Oliveira, Ji Liu, and Esther Pacitti</strong>. This work provides a thorough exploration of managing data-intensive workflows in scientific research, focusing on reproducibility, transparency, and efficiency.</p>
-          <div class="kicker" style="margin-top:28px">KEY TOPICS COVERED</div>
-          <ul class="topic-list">
-          <li>Workflow management principles and best practices</li>
-          <li>Workflow Execution in a Single-Site Cloud</li>
-          <li>Workflow Execution in a Multi-Site Cloud</li>
-          <li>Real-world case studies in bioinformatics, astronomy, and engineering</li>
-          <li>Workflow Execution in DISC Environments</li>
-          </ul>
-          <p>This book is a valuable resource for researchers, data scientists, and professionals interested in practical and theoretical insights on scientific workflow management.</p>
+          <div class="kicker">TENNIS / ATP / WTA</div>
+          <h2>Tennis</h2>
+        </div>
+      </div>
+      <p class="section-description">Tennis is my favorite sport to watch and follow. These are the places I go for results, rankings, and tournament news, and the player who made me fall in love with the game.</p>
+      <div class="publication-grid">
+        <article class="publication-preview">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span> ROGER FEDERER</div>
+            <h3><a href="https://www.rogerfederer.com/" target="_blank" rel="noreferrer">Roger Federer</a></h3>
+            <p>My all-time favorite player. Twenty Grand Slam titles, eight at Wimbledon, and a style of play that made tennis look effortless. He retired in 2022, at the Laver Cup in London.</p>
+            <a class="publication-read" href="https://www.rogerfederer.com/" target="_blank" rel="noreferrer">rogerfederer.com <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <div class="publication-preview-content">
+            <img class="card-logo" src="arquivos/atp.png" alt="ATP Tour logo" loading="lazy">
+            <div class="kicker"><span></span> MEN'S TOUR</div>
+            <h3><a href="https://www.atptour.com/" target="_blank" rel="noreferrer">ATP Tour</a></h3>
+            <p>The official site of the men's professional tour: live scores, rankings, the tournament calendar, and player profiles.</p>
+            <a class="publication-read" href="https://www.atptour.com/" target="_blank" rel="noreferrer">atptour.com <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <div class="publication-preview-content">
+            <img class="card-logo" src="arquivos/wta.png" alt="WTA logo" loading="lazy">
+            <div class="kicker"><span></span> WOMEN'S TOUR</div>
+            <h3><a href="https://www.wtatennis.com/" target="_blank" rel="noreferrer">WTA</a></h3>
+            <p>The official site of the Women's Tennis Association, with results, rankings, and news from the women's tour.</p>
+            <a class="publication-read" href="https://www.wtatennis.com/" target="_blank" rel="noreferrer">wtatennis.com <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+      </div>
+      <div class="intro-actions">
+        <a class="quiet-link" href="https://www.atptour.com/en/players/roger-federer/f324/overview" target="_blank" rel="noreferrer">Federer's career stats on the ATP site <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+      </div>
+    </section>
+
+    <section class="section" id="fluminense">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">FOOTBALL / RIO DE JANEIRO</div>
+          <h2>Fluminense Football Club</h2>
+        </div>
+      </div>
+      <div class="banner-card flu-card">
+        <img class="flu-photo" src="arquivos/DanielFlu.jpeg" alt="Daniel de Oliveira wearing the Fluminense jersey">
+        <div>
+          <div class="flu-title">
+            <img src="arquivos/fluminense.png" alt="Fluminense Football Club shield">
+            <h3>Proud Tricolor</h3>
+          </div>
+          <p>Founded in 1902 in the Laranjeiras neighborhood of Rio de Janeiro, Fluminense is one of the most traditional clubs in Brazilian football, and in 2023 it won its first Copa Libertadores at the Maracanã.</p>
           <div class="intro-actions">
-            <a class="primary-button" href="https://link.springer.com/book/10.1007/978-3-031-01872-5" target="_blank" rel="noreferrer">View on Springer <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+            <a class="primary-button" href="https://www.fluminense.com.br/" target="_blank" rel="noreferrer">Fluminense official site <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
           </div>
         </div>
       </div>

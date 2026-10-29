@@ -77,9 +77,18 @@
     }
 
     /* ---------- Certificate link ---------- */
-    .award-certificate { margin: 6px 0 0; font-size: .9em; }
-    .award-certificate a { display: inline-flex; align-items: center; gap: 4px; font-weight: 600; }
-    .award-certificate .icon { width: 14px; height: 14px; }
+    .award-certificate {
+      display: block; width: 100%; max-width: 280px; margin: 12px 0 0;
+      border-radius: 8px; overflow: hidden;
+      border: 1px solid rgba(127,127,127,.3);
+      box-shadow: 0 4px 14px rgba(0,0,0,.08);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .award-certificate img { display: block; width: 100%; height: auto; }
+    .award-certificate:hover, .award-certificate:focus-visible {
+      transform: translateY(-2px); box-shadow: 0 8px 22px rgba(0,0,0,.14);
+    }
+    @media (prefers-reduced-motion: reduce) { .award-certificate { transition: none; } }
   </style>
 </head>
 <body>
@@ -235,7 +244,9 @@
             <h3>Teaching Excellence Award · Highlight 2022</h3>
             <p class="paper-venue">Universidade Federal Fluminense · Office of the Dean of Undergraduate Studies (PROGRAD/UFF)</p>
             <p class="paper-authors"><span class="paper-kind">Teaching</span>“Prêmio de Excelência em Docência – Destaque 2022”, for dedication to undergraduate teaching</p>
-            <p class="award-certificate"><a href="arquivos/premio-docencia-uff-2022.jpg" target="_blank" rel="noreferrer">View certificate <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a></p>
+            <a class="award-certificate" href="arquivos/premio-docencia-uff-2022.jpg" target="_blank" rel="noreferrer" title="Open full-size certificate">
+              <img src="arquivos/premio-docencia-uff-2022-thumb.jpg" alt="Certificate of the Teaching Excellence Award (Prêmio de Excelência em Docência – Destaque 2022) granted by UFF to Daniel Cardoso Moraes de Oliveira" width="600" height="425" loading="lazy">
+            </a>
           </div>
         </li>
       </ol>

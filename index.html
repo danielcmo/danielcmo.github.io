@@ -112,6 +112,37 @@
     @media (prefers-reduced-motion: reduce) {
       .carousel-track > figure { transition: none; }
     }
+
+    /* ---------- Location / mailing address ---------- */
+    .location-grid {
+      display: grid; grid-template-columns: minmax(240px, 1fr) 2fr;
+      gap: 28px; align-items: stretch; margin-top: 18px;
+    }
+    .location-card {
+      display: flex; flex-direction: column; gap: 14px;
+      padding: 22px 24px; border-radius: 12px;
+      border: 1px solid rgba(127,127,127,.28);
+    }
+    .location-card address { font-style: normal; line-height: 1.6; margin: 0; }
+    .location-card address strong { display: block; font-weight: 600; margin-bottom: 2px; }
+    .location-label {
+      font-size: .78em; font-weight: 600; letter-spacing: .06em;
+      text-transform: uppercase; opacity: .65; margin: 0 0 4px;
+    }
+    .location-contact { margin: 0; line-height: 1.7; }
+    .location-actions { display: flex; flex-wrap: wrap; gap: 10px 18px; margin-top: auto; }
+    .location-map {
+      position: relative; min-height: 340px; overflow: hidden;
+      border-radius: 12px; border: 1px solid rgba(127,127,127,.28);
+      background: rgba(127,127,127,.1);
+    }
+    .location-map iframe {
+      position: absolute; inset: 0; width: 100%; height: 100%; border: 0;
+    }
+    @media (max-width: 760px) {
+      .location-grid { grid-template-columns: 1fr; gap: 18px; }
+      .location-map { min-height: 280px; }
+    }
   </style>
 </head>
 <body>
@@ -246,6 +277,45 @@
           <div class="intro-actions">
             <a class="quiet-link" href="https://uffescience.ic.uff.br" target="_blank" rel="noreferrer">Visit uffescience.ic.uff.br <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tinted" id="location">
+      <div class="kicker">CONTACT / MAILING ADDRESS / LOCATION</div>
+      <h2>Where to find me</h2>
+      <div class="location-grid">
+        <div class="location-card">
+          <div>
+            <p class="location-label">Mailing address</p>
+            <address>
+              <strong>Daniel de Oliveira</strong>
+              Institute of Computing (IC/UFF)<br>
+              Universidade Federal Fluminense<br>
+              Av. Gal. Milton Tavares de Souza, s/n<br>
+              Campus da Praia Vermelha, Boa Viagem<br>
+              Niterói, RJ, 24210-346, Brazil
+            </address>
+          </div>
+          <div>
+            <p class="location-label">Contact</p>
+            <p class="location-contact">
+              Phone <b>+55 (21) 2629-5637</b><br>
+              <b>danielcmo (at) ic (dot) uff (dot) br</b>
+            </p>
+          </div>
+          <div class="location-actions">
+            <a class="quiet-link" href="https://www.google.com/maps/search/?api=1&amp;query=Instituto+de+Computa%C3%A7%C3%A3o+UFF+Campus+Praia+Vermelha+Niter%C3%B3i" target="_blank" rel="noreferrer">Open in Google Maps <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+            <a class="quiet-link" href="https://www.google.com/maps/dir/?api=1&amp;destination=Instituto+de+Computa%C3%A7%C3%A3o+UFF+Campus+Praia+Vermelha+Niter%C3%B3i" target="_blank" rel="noreferrer">Get directions <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </div>
+        <div class="location-map">
+          <iframe
+            src="https://maps.google.com/maps?q=Instituto%20de%20Computa%C3%A7%C3%A3o%20UFF%2C%20Av.%20Gal.%20Milton%20Tavares%20de%20Souza%2C%20Niter%C3%B3i&amp;z=16&amp;hl=en&amp;output=embed"
+            title="Map showing the Institute of Computing at UFF, Campus Praia Vermelha, Niterói"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
         </div>
       </div>
     </section>

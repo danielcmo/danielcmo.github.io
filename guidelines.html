@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C4TVS1004P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-C4TVS1004P');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guidelines - Daniel de Oliveira</title>
+  <meta name="description" content="Advising guidelines for students supervised by Daniel de Oliveira at the Institute of Computing, UFF: meetings, communication, deadlines, autonomy and research practice">
+  <meta name="keywords" content="Guidelines, Advising, Mentoring, Students, Supervision, Daniel de Oliveira, UFF, IC-UFF, UFFeScience">
+  <link rel="icon" href="arquivos/uff.png">
+  <link rel="stylesheet" href="assets/site.css">
+  <style>
+    /* ---------- Two-level navigation ---------- */
+    .main-nav {
+      --nav-menu-bg: #ffffff;
+      --nav-menu-fg: #1f2933;
+      --nav-menu-border: rgba(0,0,0,.08);
+      --nav-menu-hover: rgba(0,0,0,.06);
+      --nav-menu-shadow: 0 12px 32px rgba(0,0,0,.14);
+    }
+    .main-nav { overflow: visible; }
+    .nav-group { position: relative; display: inline-flex; }
+    .nav-toggle {
+      font: inherit; color: inherit; letter-spacing: inherit; text-transform: inherit;
+      background: none; border: 0; margin: 0; padding: 0; cursor: pointer;
+      display: inline-flex; align-items: center; gap: 4px;
+    }
+    .nav-toggle svg { width: 14px; height: 14px; transition: transform .2s ease; }
+    .nav-group.is-open > .nav-toggle svg { transform: rotate(180deg); }
+    .nav-group.has-current > .nav-toggle { font-weight: 600; }
+
+    .nav-menu {
+      position: absolute; top: calc(100% + 10px); left: 50%;
+      min-width: 190px; margin: 0; padding: 6px; list-style: none;
+      background: var(--nav-menu-bg); color: var(--nav-menu-fg);
+      border: 1px solid var(--nav-menu-border); border-radius: 10px;
+      box-shadow: var(--nav-menu-shadow);
+      opacity: 0; visibility: hidden; transform: translate(-50%, -4px);
+      transition: opacity .18s ease, transform .18s ease, visibility .18s;
+      z-index: 50;
+    }
+    /* invisible bridge so the menu doesn't close while the mouse crosses the gap */
+    .nav-menu::before { content: ""; position: absolute; left: 0; right: 0; top: -12px; height: 12px; }
+    .nav-group.is-open > .nav-menu { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
+    @media (hover: hover) {
+      .nav-group:hover > .nav-menu { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
+      .nav-group:hover > .nav-toggle svg { transform: rotate(180deg); }
+    }
+    .nav-menu li { margin: 0; padding: 0; }
+    .nav-menu a {
+      display: block; padding: 8px 12px; border-radius: 6px;
+      color: inherit; text-decoration: none; white-space: nowrap;
+    }
+    .nav-menu a:hover, .nav-menu a:focus-visible { background: var(--nav-menu-hover); }
+    .nav-menu a[aria-current="page"] { font-weight: 600; }
+
+    @media (max-width: 760px) {
+      .nav-group { flex-wrap: wrap; }
+      .nav-group.is-open { flex-basis: 100%; }
+      .nav-menu {
+        position: static; transform: none; display: none;
+        min-width: 0; width: 100%; margin-top: 6px;
+        box-shadow: none; transition: none;
+      }
+      .nav-menu::before { display: none; }
+      .nav-group.is-open > .nav-menu { display: block; transform: none; }
+      .nav-group:hover > .nav-menu { transform: none; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .nav-menu, .nav-toggle svg { transition: none; }
+    }
+
+    /* ---------- Guidelines ---------- */
+    .guide-lead { max-width: 760px; }
+    .guide-toc {
+      display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; padding: 0; list-style: none;
+    }
+    .guide-toc a {
+      display: inline-block; padding: 5px 12px; border-radius: 999px;
+      border: 1px solid rgba(127,127,127,.38);
+      color: inherit; text-decoration: none; font-size: .88em;
+      transition: background .15s ease, border-color .15s ease;
+    }
+    .guide-toc a:hover, .guide-toc a:focus-visible { background: rgba(127,127,127,.12); border-color: rgba(127,127,127,.6); }
+
+    .guide-group + .guide-group { margin-top: 30px; }
+    .guide-group-title {
+      margin: 0 0 12px; font-size: .8em; font-weight: 600;
+      letter-spacing: .07em; text-transform: uppercase; opacity: .7;
+    }
+    .guide-list {
+      display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px;
+      margin: 0; padding: 0; list-style: none;
+    }
+    .guide-item {
+      display: grid; grid-template-columns: auto 1fr; gap: 14px; align-items: start;
+      padding: 16px 18px; border-radius: 12px;
+      border: 1px solid rgba(127,127,127,.26);
+    }
+    .guide-num {
+      display: grid; place-items: center;
+      width: 34px; height: 34px; border-radius: 50%;
+      border: 1px solid rgba(127,127,127,.45);
+      font-weight: 600; font-size: .9em; font-variant-numeric: tabular-nums;
+    }
+    .guide-item h3 { margin: 4px 0 6px; font-size: 1.02em; line-height: 1.35; }
+    .guide-item p { margin: 0; font-size: .93em; line-height: 1.55; }
+
+    .guide-callout {
+      max-width: 760px; margin-top: 18px; padding: 16px 20px; border-radius: 12px;
+      border-left: 4px solid currentColor; background: rgba(127,127,127,.08);
+    }
+    .guide-callout p { margin: 0; }
+    .guide-callout p + p { margin-top: 8px; }
+
+    @media (max-width: 760px) {
+      .guide-list { grid-template-columns: 1fr; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .guide-toc a { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo-link" href="index.html" aria-label="Daniel de Oliveira — home">
+      <img src="arquivos/uff.png" alt="Universidade Federal Fluminense" width="72" height="72">
+      <span>Daniel de Oliveira<small>Institute of Computing / UFF</small></span>
+    </a>
+    <!-- Same block can be pasted unchanged on every page: the current page is marked by the script at the bottom. -->
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+
+      <div class="nav-group">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-publications">
+          Publications
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <ul class="nav-menu" id="menu-publications">
+          <li><a href="cv.html">Papers</a></li>
+          <li><a href="books.html">Books</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-group">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-research">
+          Research
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <ul class="nav-menu" id="menu-research">
+          <li><a href="ap.html">Research Areas</a></li>
+          <li><a href="collab.html">Collaborations</a></li>
+          <li><a href="li.html">Students</a></li>
+          <li><a href="guidelines.html">Guidelines</a></li>
+          <li><a href="awards.html">Awards</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="software.html">Software</a></li>
+        </ul>
+      </div>
+
+      <a href="cur.html">Teaching</a>
+      <a href="personal.html">Personal</a>
+      <a href="per.html">News</a>
+    </nav>
+    <a class="header-group" href="https://uffescience.ic.uff.br" target="_blank" rel="noreferrer">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="1"/><path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z"/><path d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z"/></svg><span>UFFeScience</span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+    </a>
+  </header>
+
+  <main id="inicio">
+    <section class="page-intro">
+      <div class="kicker"><span></span> STUDENTS / SUPERVISION / MENTORING</div>
+      <h1>Guidelines</h1>
+      <p class="guide-lead">A good advising relationship is built by both sides. This page explains what I expect from the undergraduate, master’s and Ph.D. students I supervise at the Institute of Computing (IC/UFF) and in the <a href="https://uffescience.ic.uff.br" target="_blank" rel="noreferrer">UFFeScience Research Group</a>, and what you can expect from me in return. If you are thinking about working with me, please read it before we talk.</p>
+      <ul class="guide-toc" aria-label="On this page">
+        <li><a href="#expect-from-you">What I expect from you</a></li>
+        <li><a href="#expect-from-me">What you can expect from me</a></li>
+        <li><a href="#difficulties">When things get difficult</a></li>
+      </ul>
+    </section>
+
+    <section class="section" id="expect-from-you">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">STUDENTS / RESPONSIBILITIES</div>
+          <h2>What I expect from you</h2>
+        </div>
+      </div>
+
+      <div class="guide-group">
+        <h3 class="guide-group-title">Meetings and communication</h3>
+        <ol class="guide-list">
+          <li class="guide-item">
+            <span class="guide-num" aria-hidden="true">1</span>
+            <div>
+              <h3>Meet every two weeks</h3>
+              <p>We meet regularly, every 15 days. These meetings are the backbone of your work: they keep the research moving and help us catch problems early.</p>
+            </div>
+          </li>
+          <li class="guide-item">
+            <span class="guide-num" aria-hidden="true">2</span>
+            <div>
+              <h3>Be on time, and cancel in advance</h3>
+              <p>Please arrive on time. If you cannot attend, let me know as early as possible so we can reschedule.</p>
+            </div>
+          </li>
+          <li class="guide-item">
+            <span class="guide-num" aria-hidden="true">3</span>
+            <div>
+              <h3>Come with an agenda</h3>
+              <p>Bring a short agenda to every meeting: what you did, what you found, where you are stuck and what you plan next. Preparing it will help you organize your own ideas.</p>
+            </div>
+          </li>
+          <li class="guide-item">
+            <span class="guide-num" aria-hidden="true">4</span>
+            <div>
+              <h3>Keep me updated</h3>
+              <p>Keep me informed about the progress of your work, including between meetings. Good news and bad news are both useful; surprises close to a deadline are not.</p>
+            </div>
+          </li>
+          <li class="guide-item">
+            <span class="guide-num" aria-hidden="true">5</span>
+            <div>
+              <h3>When in doubt, ask</h3>
+              <p>There are no silly questions. Asking early saves days of work going in the wrong direction.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <div class="guide-group">
+        <h3 class="guide-group-title">Planning and deadlines</h3>
+        <ol class="guide-list" start="6">
+          <li class="guide-item">
+            <span class="guide-num" aria-hidden="true">6</span>
+            <div>
+              <h3>Know your program’s deadlines and rules</h3>
+              <p>Stay on top of the deadlines and regulations of your program: course credits, qualifying exams, proficiency tests, scholarship reports and defense dates are your responsibility.</p>
+            </div>
+          </li>
+          <li class="guide-item">
+            <span class="guide-num" aria-hidden="true">7</span>
+            <div>
+              <h3>Don’t leave things to the last minute</h3>
+              <p>Plan ahead. Papers, reports and theses need time for review and revision, by you, by me and by your co-authors.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <div class="guide-group">
+        <h3 class="guide-group-title">Autonomy and guidance</h3>
+        <ol class="guide-list" start="8">
+          <li class="guide-item">
+            <span class="guide-num" aria-hidden="true">8</span>
+            <div>
+              <h3>Ask for help, and explore on your own</h3>
+              <p>Come to me when you are having difficulties, but don’t stop there: look for alternatives independently, read, test ideas and bring what you tried. Building this autonomy is a central goal of graduate training.</p>
+            </div>
+          </li>
+          <li class="guide-item">
+            <span class="guide-num" aria-hidden="true">9</span>
+            <div>
+              <h3>Follow the guidance you receive</h3>
+              <p>Follow the directions and suggestions given in our meetings. If you disagree with one, tell me and explain why; a good argument is always welcome.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <div class="guide-group">
+        <h3 class="guide-group-title">Research practice</h3>
+        <ol class="guide-list" start="10">
+          <li class="guide-item">
+            <span class="guide-num" aria-hidden="true">10</span>
+            <div>
+              <h3>Act with research integrity</h3>
+              <p>Report results honestly, cite the work you build on and never copy text, data or code without proper credit. Discuss authorship and the use of AI tools openly with me and your co-authors.</p>
+            </div>
+          </li>
+          <li class="guide-item">
+            <span class="guide-num" aria-hidden="true">11</span>
+            <div>
+              <h3>Make your work reproducible</h3>
+              <p>Keep code, data and experiment scripts versioned and documented, preferably in the group’s repositories, so that others, including your future self, can rerun and extend what you did.</p>
+            </div>
+          </li>
+          <li class="guide-item">
+            <span class="guide-num" aria-hidden="true">12</span>
+            <div>
+              <h3>Be part of the group</h3>
+              <p>Take part in group meetings and seminars, share what you learn and help colleagues when you can. Treat everyone in the group with respect.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section tinted" id="expect-from-me">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">ADVISOR / COMMITMENTS</div>
+          <h2>What you can expect from me</h2>
+        </div>
+      </div>
+      <ol class="guide-list">
+        <li class="guide-item">
+          <span class="guide-num" aria-hidden="true">A</span>
+          <div>
+            <h3>Regular meetings</h3>
+            <p>I keep our meeting schedule and give you advance notice if I need to reschedule.</p>
+          </div>
+        </li>
+        <li class="guide-item">
+          <span class="guide-num" aria-hidden="true">B</span>
+          <div>
+            <h3>Honest, constructive feedback</h3>
+            <p>I read your drafts and results and tell you clearly what works and what needs to improve.</p>
+          </div>
+        </li>
+        <li class="guide-item">
+          <span class="guide-num" aria-hidden="true">C</span>
+          <div>
+            <h3>A feasible research direction</h3>
+            <p>I help you define a topic that is relevant, doable within your program’s timeline and of interest to both of us.</p>
+          </div>
+        </li>
+        <li class="guide-item">
+          <span class="guide-num" aria-hidden="true">D</span>
+          <div>
+            <h3>Support for your growth</h3>
+            <p>I support you in publishing, presenting at conferences, building collaborations and planning your next career step.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section" id="difficulties">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">COMMUNICATION / WELL-BEING</div>
+          <h2>When things get difficult</h2>
+        </div>
+      </div>
+      <div class="guide-callout">
+        <p>Research has hard moments: experiments fail, papers get rejected and personal life gets in the way. If something is affecting your work, talk to me early. We can almost always find a way to adjust the plan when we know about a problem in time.</p>
+        <p>If an issue cannot be solved between us, you can also contact the coordination of your graduate program.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">
+      <img src="arquivos/Daniel.jpeg" alt="" width="60" height="60" style="border-radius:50%;object-fit:cover">
+      <p>Daniel de Oliveira
+        <small>Associate Professor · Institute of Computing · Universidade Federal Fluminense</small>
+      </p>
+    </div>
+    <div class="footer-contact">
+      Phone <b>+55 (21) 2629-5637</b> · Fax <b>+55 (21) 2629-5627</b><br>
+      <b>danielcmo (at) ic (dot) uff (dot) br</b>
+    </div>
+    <div class="footer-institutions" aria-label="Institutional affiliations">
+      <a href="https://uffescience.ic.uff.br" target="_blank" rel="noreferrer"><img src="assets/uffescience-logo.png" alt="UFFeScience Research Group" width="52" height="52"></a>
+      <a href="https://www.ic.uff.br/" target="_blank" rel="noreferrer"><img src="assets/ic-uff-logo.png" alt="Institute of Computing — UFF" width="69" height="52"></a>
+      <a href="https://www.uff.br/" target="_blank" rel="noreferrer"><img src="assets/uff-logo.svg" alt="Universidade Federal Fluminense" width="84" height="40" style="height:40px"></a>
+    </div>
+    <a href="#inicio">Back to top ↑</a>
+  </footer>
+  <script>
+    /* ---------- Two-level navigation ---------- */
+    (function () {
+      function init() {
+        const nav = document.querySelector('.main-nav');
+        if (!nav) return;
+        const groups = Array.from(nav.querySelectorAll('.nav-group'));
+
+        // Mark the current page automatically, so the same nav markup works on every page
+        const here = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+        nav.querySelectorAll('a[href]').forEach(a => {
+          if (a.getAttribute('href').toLowerCase() === here) {
+            a.setAttribute('aria-current', 'page');
+            const g = a.closest('.nav-group');
+            if (g) g.classList.add('has-current');
+          }
+        });
+
+        function setOpen(group, open) {
+          group.classList.toggle('is-open', open);
+          group.querySelector('.nav-toggle').setAttribute('aria-expanded', open ? 'true' : 'false');
+        }
+        function closeAll(except) { groups.forEach(g => { if (g !== except) setOpen(g, false); }); }
+
+        groups.forEach(group => {
+          const toggle = group.querySelector('.nav-toggle');
+          toggle.addEventListener('click', () => {
+            const open = !group.classList.contains('is-open');
+            closeAll(group);
+            setOpen(group, open);
+          });
+          group.addEventListener('keydown', e => {
+            if (e.key === 'Escape' && group.classList.contains('is-open')) {
+              setOpen(group, false);
+              toggle.focus();
+            }
+          });
+          group.addEventListener('focusout', e => {
+            if (!group.contains(e.relatedTarget)) setOpen(group, false);
+          });
+          if (window.matchMedia('(hover: hover)').matches) {
+            group.addEventListener('mouseleave', () => setOpen(group, false));
+          }
+        });
+
+        document.addEventListener('click', e => { if (!nav.contains(e.target)) closeAll(); });
+      }
+
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+      else init();
+    })();
+  </script>
+</body>
+</html>

@@ -11,8 +11,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Courses - Daniel de Oliveira</title>
-  <meta name="description" content="Courses taught by Daniel de Oliveira at UFF">
-  <meta name="keywords" content="Courses, Teaching, Daniel de Oliveira, UFF, IC-UFF">
+  <meta name="description" content="Courses taught by Daniel de Oliveira at UFF, with recorded video lectures on databases, data warehousing, NoSQL, distributed databases and big data">
+  <meta name="keywords" content="Courses, Teaching, Video Lectures, YouTube, Databases, NoSQL, Big Data, Daniel de Oliveira, UFF, IC-UFF">
   <link rel="icon" href="arquivos/uff.png">
   <link rel="stylesheet" href="assets/site.css">
   <style>
@@ -75,6 +75,60 @@
     @media (prefers-reduced-motion: reduce) {
       .nav-menu, .nav-toggle svg { transition: none; }
     }
+
+    /* ---------- Video lectures ---------- */
+    .video-intro { max-width: 760px; margin: 0 0 6px; }
+    .video-stats {
+      display: flex; flex-wrap: wrap; gap: 8px 20px;
+      margin: 0 0 22px; padding: 0; list-style: none;
+      font-size: .92em; opacity: .8;
+    }
+    .video-stats b { font-weight: 600; }
+
+    .video-thumb {
+      position: relative; display: block; overflow: hidden;
+      aspect-ratio: 16 / 9; margin-bottom: 16px; border-radius: 10px;
+      background: #111;
+    }
+    .video-thumb img {
+      display: block; width: 100%; height: 100%; object-fit: cover;
+      transition: transform .3s ease;
+    }
+    .video-thumb:hover img, .video-thumb:focus-visible img { transform: scale(1.03); }
+    .video-thumb .play {
+      position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+      width: 56px; height: 56px; border-radius: 50%;
+      background: rgba(0,0,0,.62); color: #fff;
+      display: grid; place-items: center;
+    }
+    .video-thumb .play svg { width: 24px; height: 24px; margin-left: 3px; }
+    .video-thumb .count {
+      position: absolute; right: 8px; bottom: 8px;
+      padding: 3px 8px; border-radius: 6px;
+      background: rgba(0,0,0,.72); color: #fff;
+      font-size: .78em; font-weight: 600; letter-spacing: .02em;
+    }
+
+    .video-original { margin: -4px 0 8px; font-size: .88em; font-style: italic; opacity: .7; }
+    .video-editions-label {
+      margin: 14px 0 8px; font-size: .78em; font-weight: 600;
+      letter-spacing: .06em; text-transform: uppercase; opacity: .65;
+    }
+    .video-editions { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+    .video-editions a {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 5px 12px; border-radius: 999px;
+      border: 1px solid rgba(127,127,127,.38);
+      color: inherit; text-decoration: none; font-size: .88em; white-space: nowrap;
+      transition: background .15s ease, border-color .15s ease;
+    }
+    .video-editions a:hover, .video-editions a:focus-visible {
+      background: rgba(127,127,127,.12); border-color: rgba(127,127,127,.6);
+    }
+    .video-editions a span { opacity: .65; }
+    @media (prefers-reduced-motion: reduce) {
+      .video-thumb img, .video-editions a { transition: none; }
+    }
   </style>
 </head>
 <body>
@@ -126,7 +180,7 @@
     <section class="page-intro">
       <div class="kicker"><span></span> TEACHING / UNDERGRADUATE / GRADUATE</div>
       <h1>Courses</h1>
-      <p>This page presents undergraduate and graduate courses taught at UFF.</p>
+      <p>This page presents undergraduate and graduate courses taught at UFF, along with recorded video lectures that are freely available on YouTube.</p>
     </section>
     <section class="section ">
       <div class="section-heading">
@@ -168,6 +222,124 @@
             <span class="publication-read disabled">Google Classroom · link coming soon</span>
           </div>
         </article>
+      </div>
+    </section>
+
+    <section class="section" id="videos">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">YOUTUBE / RECORDED LECTURES / OPEN ACCESS</div>
+          <h2>Video Lectures</h2>
+        </div>
+      </div>
+      <p class="video-intro">Full recorded courses from undergraduate and graduate classes at UFF, open to anyone. Lectures are in Portuguese. Each course links to every edition that was recorded.</p>
+      <ul class="video-stats" aria-label="Video lecture summary">
+        <li><b>5</b> courses</li>
+        <li><b>9</b> playlists</li>
+        <li><b>110</b> recorded lectures</li>
+      </ul>
+
+      <div class="publication-grid two">
+
+        <!-- Principles of Databases -->
+        <article class="publication-preview">
+          <a class="video-thumb" href="https://www.youtube.com/watch?v=GvJ-U58br6U&amp;list=PLT6HFRb9UYD0WKI7o8SwKDB7A5VfFK2cf" target="_blank" rel="noreferrer" aria-label="Watch Principles of Databases on YouTube">
+            <img src="https://i.ytimg.com/vi/GvJ-U58br6U/hqdefault.jpg" alt="" width="480" height="360" loading="lazy">
+            <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+            <span class="count">29 videos</span>
+          </a>
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span> TCC00334 · UNDERGRADUATE</div>
+            <h3>Principles of Databases</h3>
+            <p class="video-original" lang="pt-BR">Princípios de Bancos de Dados</p>
+            <p>Conceptual modeling, the relational model, logical design and normalization, relational algebra, and SQL with PostgreSQL, including triggers, functions and views.</p>
+            <div class="video-editions-label">Editions</div>
+            <ul class="video-editions">
+              <li><a href="https://www.youtube.com/playlist?list=PLT6HFRb9UYD0WKI7o8SwKDB7A5VfFK2cf" target="_blank" rel="noreferrer">2021.2 <span>· 13 videos</span></a></li>
+              <li><a href="https://www.youtube.com/playlist?list=PLT6HFRb9UYD1lZ1enRZBQFmFcubW3F0gY" target="_blank" rel="noreferrer">Earlier edition <span>· 16 videos</span></a></li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Database Design for Information Systems -->
+        <article class="publication-preview">
+          <a class="video-thumb" href="https://www.youtube.com/watch?v=MZJd1xpF1cc&amp;list=PLT6HFRb9UYD2Y4MxHrbBTpkFgvQqQUf7n" target="_blank" rel="noreferrer" aria-label="Watch Database Design for Information Systems on YouTube">
+            <img src="https://i.ytimg.com/vi/MZJd1xpF1cc/hqdefault.jpg" alt="" width="480" height="360" loading="lazy">
+            <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+            <span class="count">6 videos</span>
+          </a>
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span> TCC00335 · UNDERGRADUATE</div>
+            <h3>Database Design for Information Systems</h3>
+            <p class="video-original" lang="pt-BR">Projeto de Banco de Dados para Sistemas de Informação</p>
+            <p>Indexing, horizontal partitioning, query processing, views, programming in PostgreSQL, and transactions and concurrency control.</p>
+            <div class="video-editions-label">Editions</div>
+            <ul class="video-editions">
+              <li><a href="https://www.youtube.com/playlist?list=PLT6HFRb9UYD2Y4MxHrbBTpkFgvQqQUf7n" target="_blank" rel="noreferrer">2022.1 <span>· 6 videos</span></a></li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Non-Conventional Databases -->
+        <article class="publication-preview">
+          <a class="video-thumb" href="https://www.youtube.com/watch?v=KLsZjB13aXM&amp;list=PLT6HFRb9UYD1HTby6wouS6tZxH0ycqmYM" target="_blank" rel="noreferrer" aria-label="Watch Non-Conventional Databases on YouTube">
+            <img src="https://i.ytimg.com/vi/KLsZjB13aXM/hqdefault.jpg" alt="" width="480" height="360" loading="lazy">
+            <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+            <span class="count">41 videos</span>
+          </a>
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span> TCC00336 · UNDERGRADUATE</div>
+            <h3>Non-Conventional Databases</h3>
+            <p class="video-original" lang="pt-BR">Bancos de Dados Não Convencionais</p>
+            <p>Business intelligence, data warehousing and ETL with KNIME, data fragmentation, NoSQL fundamentals with DynamoDB and Neo4j, MapReduce, and hands-on Hadoop, Spark and Hive.</p>
+            <div class="video-editions-label">Editions</div>
+            <ul class="video-editions">
+              <li><a href="https://www.youtube.com/playlist?list=PLT6HFRb9UYD1HTby6wouS6tZxH0ycqmYM" target="_blank" rel="noreferrer">2021.1 <span>· 17 videos</span></a></li>
+              <li><a href="https://www.youtube.com/playlist?list=PLT6HFRb9UYD2nUbfmSLeAHjdiODA41T5R" target="_blank" rel="noreferrer">2020.2 <span>· 15 videos</span></a></li>
+              <li><a href="https://www.youtube.com/playlist?list=PLT6HFRb9UYD3hXXabqlnFlHccGA6CjIuv" target="_blank" rel="noreferrer">2020.1 <span>· 9 videos</span></a></li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Distributed Databases -->
+        <article class="publication-preview">
+          <a class="video-thumb" href="https://www.youtube.com/watch?v=H_ayS_8PVmY&amp;list=PLT6HFRb9UYD16u08cSYyTScAjdew7A7K6" target="_blank" rel="noreferrer" aria-label="Watch Distributed Databases on YouTube">
+            <img src="https://i.ytimg.com/vi/H_ayS_8PVmY/hqdefault.jpg" alt="" width="480" height="360" loading="lazy">
+            <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+            <span class="count">23 videos</span>
+          </a>
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span> PPGC/UFF · GRADUATE</div>
+            <h3>Distributed Databases</h3>
+            <p class="video-original" lang="pt-BR">Bancos de Dados Distribuídos</p>
+            <p>Distribution design, horizontal, vertical and hybrid fragmentation, fragment allocation, distributed and parallel query processing, ParGRES and virtual partitioning, and NoSQL fundamentals.</p>
+            <div class="video-editions-label">Editions</div>
+            <ul class="video-editions">
+              <li><a href="https://www.youtube.com/playlist?list=PLT6HFRb9UYD16u08cSYyTScAjdew7A7K6" target="_blank" rel="noreferrer">2021.1 <span>· 11 videos</span></a></li>
+              <li><a href="https://www.youtube.com/playlist?list=PLT6HFRb9UYD1XXo1oKmWQbpmhDuqluaVb" target="_blank" rel="noreferrer">Earlier edition <span>· 12 videos</span></a></li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Big Data Management -->
+        <article class="publication-preview">
+          <a class="video-thumb" href="https://www.youtube.com/watch?v=8N1PjRQcSj0&amp;list=PLT6HFRb9UYD1thZaTD6Fmv9tcsskpUJWX" target="_blank" rel="noreferrer" aria-label="Watch Big Data Management on YouTube">
+            <img src="https://i.ytimg.com/vi/8N1PjRQcSj0/hqdefault.jpg" alt="" width="480" height="360" loading="lazy">
+            <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+            <span class="count">11 videos</span>
+          </a>
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span> BIG DATA · FULL COURSE</div>
+            <h3>Big Data Management</h3>
+            <p class="video-original" lang="pt-BR">Gerência de Grandes Volumes de Dados</p>
+            <p>Big data foundations, the MapReduce paradigm, running applications on Hadoop, Apache Spark, online data analysis, and querying with Hive, Impala and Drill.</p>
+            <div class="video-editions-label">Editions</div>
+            <ul class="video-editions">
+              <li><a href="https://www.youtube.com/playlist?list=PLT6HFRb9UYD1thZaTD6Fmv9tcsskpUJWX" target="_blank" rel="noreferrer">Full course <span>· 11 videos</span></a></li>
+            </ul>
+          </div>
+        </article>
+
       </div>
     </section>
   </main>

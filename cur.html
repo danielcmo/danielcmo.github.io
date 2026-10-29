@@ -126,6 +126,24 @@
       background: rgba(127,127,127,.12); border-color: rgba(127,127,127,.6);
     }
     .video-editions a span { opacity: .65; }
+
+    /* Three compact cards per row */
+    .video-grid {
+      display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px; align-items: start;
+    }
+    .video-grid .publication-preview { margin: 0; min-width: 0; }
+    .video-grid .video-thumb { margin-bottom: 12px; border-radius: 8px; }
+    .video-grid .video-thumb .play { width: 42px; height: 42px; }
+    .video-grid .video-thumb .play svg { width: 18px; height: 18px; }
+    .video-grid h3 { font-size: 1.05em; line-height: 1.3; margin: 4px 0; }
+    .video-grid .video-original { font-size: .82em; margin: 0 0 6px; }
+    .video-grid .publication-preview-content > p:not(.video-original) { font-size: .88em; line-height: 1.5; margin: 0; }
+    .video-grid .video-editions-label { margin: 10px 0 6px; }
+    .video-grid .video-editions { gap: 6px; }
+    .video-grid .video-editions a { padding: 3px 10px; font-size: .8em; }
+    @media (max-width: 980px) { .video-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 600px) { .video-grid { grid-template-columns: 1fr; } }
     @media (prefers-reduced-motion: reduce) {
       .video-thumb img, .video-editions a { transition: none; }
     }
@@ -182,49 +200,6 @@
       <h1>Courses</h1>
       <p>This page presents undergraduate and graduate courses taught at UFF, along with recorded video lectures that are freely available on YouTube.</p>
     </section>
-    <section class="section ">
-      <div class="section-heading">
-        <div>
-          <div class="kicker">COURSES / IC-UFF</div>
-          <h2>Undergraduate Courses</h2>
-        </div>
-      </div>
-      <div class="publication-grid two">
-        <article class="publication-preview">
-          <div class="publication-preview-content">
-            <div class="kicker"><span></span> TCC00334 · 2025.2</div>
-            <h3>Principles of Databases</h3>
-            <p>Introduction to database concepts, SQL, relational model and design.</p>
-            <a class="publication-read" href="https://classroom.google.com/c/Nzc0MjA2MjAyMDU5" target="_blank" rel="noreferrer">Google Classroom <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
-          </div>
-        </article>
-        <article class="publication-preview">
-          <div class="publication-preview-content">
-            <div class="kicker"><span></span> TCC00336 · 2025.2</div>
-            <h3>Data Warehouse, NoSQL and Big Data</h3>
-            <p>Big data systems, Spark, Hadoop and distributed processing.</p>
-            <a class="publication-read" href="https://classroom.google.com/c/Nzc0MjA2Mjc4NzM5" target="_blank" rel="noreferrer">Google Classroom <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
-          </div>
-        </article>
-        <article class="publication-preview">
-          <div class="publication-preview-content">
-            <div class="kicker"><span></span> TCC00334 · 2026.1</div>
-            <h3>Principles of Databases</h3>
-            <p>Updated edition covering relational databases, SQL optimization and transactions.</p>
-            <span class="publication-read disabled">Google Classroom · link coming soon</span>
-          </div>
-        </article>
-        <article class="publication-preview">
-          <div class="publication-preview-content">
-            <div class="kicker"><span></span> TCC00336 · 2026.1</div>
-            <h3>Data Warehouse, NoSQL and Big Data</h3>
-            <p>Modern distributed systems, cloud data platforms and analytics pipelines.</p>
-            <span class="publication-read disabled">Google Classroom · link coming soon</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
     <section class="section" id="videos">
       <div class="section-heading">
         <div>
@@ -239,7 +214,7 @@
         <li><b>110</b> recorded lectures</li>
       </ul>
 
-      <div class="publication-grid two">
+      <div class="video-grid">
 
         <!-- Principles of Databases -->
         <article class="publication-preview">
@@ -340,6 +315,49 @@
           </div>
         </article>
 
+      </div>
+    </section>
+
+    <section class="section ">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">COURSES / IC-UFF</div>
+          <h2>Undergraduate Courses</h2>
+        </div>
+      </div>
+      <div class="publication-grid two">
+        <article class="publication-preview">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span> TCC00334 · 2025.2</div>
+            <h3>Principles of Databases</h3>
+            <p>Introduction to database concepts, SQL, relational model and design.</p>
+            <a class="publication-read" href="https://classroom.google.com/c/Nzc0MjA2MjAyMDU5" target="_blank" rel="noreferrer">Google Classroom <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span> TCC00336 · 2025.2</div>
+            <h3>Data Warehouse, NoSQL and Big Data</h3>
+            <p>Big data systems, Spark, Hadoop and distributed processing.</p>
+            <a class="publication-read" href="https://classroom.google.com/c/Nzc0MjA2Mjc4NzM5" target="_blank" rel="noreferrer">Google Classroom <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span> TCC00334 · 2026.1</div>
+            <h3>Principles of Databases</h3>
+            <p>Updated edition covering relational databases, SQL optimization and transactions.</p>
+            <span class="publication-read disabled">Google Classroom · link coming soon</span>
+          </div>
+        </article>
+        <article class="publication-preview">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span> TCC00336 · 2026.1</div>
+            <h3>Data Warehouse, NoSQL and Big Data</h3>
+            <p>Modern distributed systems, cloud data platforms and analytics pipelines.</p>
+            <span class="publication-read disabled">Google Classroom · link coming soon</span>
+          </div>
+        </article>
       </div>
     </section>
   </main>

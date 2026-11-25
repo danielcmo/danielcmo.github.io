@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C4TVS1004P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-C4TVS1004P');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Federated Learning Workflows for Astronomy - Projects - Daniel de Oliveira</title>
+  <meta name="description" content="Execution and analysis of federated machine learning workflows for astronomy in HPC environments: provenance, scheduling, and outlier detection in LSST-scale catalogs. CNPq/MCTI/FNDCT project coordinated by Daniel de Oliveira (IC/UFF).">
+  <meta name="keywords" content="federated learning, astronomy, LSST, outlier detection, provenance, scheduling, HPC, CNPq, UFF">
+  <link rel="icon" href="arquivos/uff.png">
+  <link rel="stylesheet" href="assets/site.css">
+  <link rel="stylesheet" href="assets/project-page.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body data-nav-current="projects.html">
+  <header class="site-header">
+    <a class="logo-link" href="index.html" aria-label="Daniel de Oliveira — home">
+      <img src="arquivos/uff.png" alt="Universidade Federal Fluminense" width="72" height="72">
+      <span>Daniel de Oliveira<small>Institute of Computing / UFF</small></span>
+    </a>
+    <!-- Same block can be pasted unchanged on every page: the current page is marked by the script at the bottom. -->
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+
+      <div class="nav-group">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-publications">
+          Publications
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <ul class="nav-menu" id="menu-publications">
+          <li><a href="cv.html">Papers</a></li>
+          <li><a href="books.html">Books</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-group">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-research">
+          Research
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <ul class="nav-menu" id="menu-research">
+          <li><a href="ap.html">Research Areas</a></li>
+          <li><a href="collab.html">Collaborations</a></li>
+          <li><a href="li.html">Students</a></li>
+          <li><a href="awards.html">Awards</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="software.html">Software</a></li>
+        </ul>
+      </div>
+
+      <a href="cur.html">Teaching</a>
+      <a href="personal.html">Personal</a>
+      <a href="per.html">News</a>
+    </nav>
+    <a class="header-group" href="https://uffescience.ic.uff.br" target="_blank" rel="noreferrer">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="1"/><path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z"/><path d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z"/></svg><span>UFFeScience</span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+    </a>
+  </header>
+
+  <main id="inicio">
+    <section class="project-hero">
+      <div>
+        <ol class="breadcrumb" aria-label="Breadcrumb">
+          <li><a href="ap.html">Research</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li aria-current="page">Federated Learning for Astronomy</li>
+        </ol>
+        <div class="kicker"><span></span> CNPQ / MCTI / FNDCT · RESEARCH GRANT · 2024 –</div>
+        <h1 class="long-title">Execution and Analysis of Federated Machine Learning Workflows for Astronomy in High-Performance Computing Environments</h1>
+        
+        <p class="project-alt-title"><span class="lang">PT-BR</span>Execução e Análise de Workflows de Aprendizado de Máquina Federado para Astronomia em Ambientes de Computação de Alto Desempenho</p>
+        <p class="project-lead">The project develops algorithms and techniques to extract, model, and manage provenance data in Federated Learning, so that training tasks can be allocated and scheduled better across heterogeneous nodes and users get analytical support. The case study is the detection of outlier objects in large astronomical catalogs of the Legacy Survey of Space and Time (LSST).</p>
+        <div class="badge-row"><span class="badge active">Active</span><span class="badge">Research</span><span class="badge role">Coordinator: Daniel de Oliveira</span></div>
+      </div>
+      <aside class="facts-card" aria-label="Project at a glance">
+        <div class="kicker">AT A GLANCE</div>
+        <dl><div class="fact"><dt>Period</dt><dd>2024 – Current</dd></div><div class="fact"><dt>Status</dt><dd class="active">Active</dd></div><div class="fact"><dt>Nature</dt><dd>Research</dd></div><div class="fact"><dt>Modality</dt><dd>Research grant<small>Auxílio financeiro · CNPq/MCTI/FNDCT</small></dd></div><div class="fact"><dt>Funding</dt><dd>R$ 346,495.70</dd></div><div class="fact"><dt>Agency</dt><dd><img class="funder" src="arquivos/cnpq.png" alt="CNPq"></dd></div><div class="fact"><dt>Coordinator</dt><dd><a href="index.html">Daniel de Oliveira</a><small>Institute of Computing, UFF</small></dd></div><div class="fact"><dt>Students</dt><dd>3 MSc · 6 PhD</dd></div></dl>
+      </aside>
+    </section>
+    <div class="jump-bar"><nav class="jump-links" aria-label="On this page"><a href="#overview">Overview</a><a href="#objectives">Objectives</a><a href="#approach">Approach</a><a href="#team">Team</a><a href="#publications">Publications</a><a href="#software">Software</a><a href="#outreach">Talks</a><a href="#funding">Funding</a></nav></div>
+    <section class="section" id="overview">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">SUMMARY / RESUMO</div>
+          <h2>Overview</h2>
+        </div>
+      </div>
+      <div class="overview-grid">
+        <div class="prose"><p>In recent decades, Machine Learning has received growing attention from both academia and industry. However, traditional Machine Learning approaches face critical challenges, especially regarding data privacy and the volume and transfer of information to be processed. To address these issues, Federated Learning has emerged as a promising solution. This approach allows different nodes in a network to train models collaboratively without the need for direct sharing of examples, thereby preserving privacy and minimizing the amount of data transmitted between parties.</p><p>However, the training process in Federated Learning brings specific challenges, such as the heterogeneity of participating nodes, which vary in terms of computational capacity and data characteristics. The effective distribution of training tasks among these nodes is crucial to ensure the process is both efficient and fair. Another critical point involves the monitoring and analysis of workflows in Federated Learning. Although tasks generate and consume large amounts of data, the lack of clear provenance documentation makes it difficult to analyze the results obtained.</p><p>Provenance data capture provides an effective solution, increasing reliability, reproducibility, and offering mechanisms for interpreting the resulting models. Nevertheless, in the specific context of Federated Learning, the use of provenance data is still at an early stage, with current solutions showing limitations in capturing relevant metadata and in leveraging it for training monitoring and optimization.</p><p>This project aims to address these gaps by proposing the development of algorithms and techniques that enable the extraction, modeling, and management of provenance data in the Federated Learning environment. The goal is not only to improve the allocation and scheduling of training tasks, but also to provide robust analytical support to users by integrating provenance data into existing frameworks.</p><p>As a case study, we will use an application for identifying outlier objects in large astronomical catalogs. This application is part of the Legacy Survey of Space and Time (LSST) project, which generates 20 TB of raw data per night and has a naturally distributed processing infrastructure. The project thus seeks to contribute to making Federated Learning more efficient and explainable, with a special focus on Astronomy applications, where scalability and proper data handling are essential for scientific advances.</p></div>
+        <aside>
+          <div class="side-block">
+            <div class="kicker">KEYWORDS</div>
+            <ul class="chips"><li>Federated Learning</li><li>Provenance data</li><li>Workflow scheduling</li><li>High-performance computing</li><li>Cloud computing</li><li>Outlier detection</li><li>Astronomy</li><li>LSST</li></ul>
+          </div>
+          <div class="side-block">
+            <details class="pt-summary">
+              <summary>Resumo em português <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+              <div class="pt-body" lang="pt-BR"><p>Nas últimas décadas, o Aprendizado de Máquina tem recebido crescente atenção tanto da academia quanto da indústria. No entanto, as abordagens tradicionais de Aprendizado de Máquina enfrentam desafios críticos, especialmente no que se refere à privacidade dos dados e ao volume e transferência de informações a serem processadas. Para lidar com essas questões, o Aprendizado Federado surge como uma solução promissora. Tal abordagem permite que diferentes nós de uma rede treinem modelos colaborativamente, sem a necessidade de compartilhamento direto dos exemplos, preservando a privacidade e minimizando o volume de dados transmitidos entre as partes.</p><p>No entanto, o processo de treinamento no Aprendizado Federado traz desafios particulares, como a heterogeneidade dos nós participantes, que variam em termos de capacidade computacional e características dos dados. A distribuição eficaz das tarefas de treinamento entre esses nós é fundamental para garantir que o processo ocorra de forma eficiente e justa. Outro ponto crítico envolve o monitoramento e a análise do workflow no Aprendizado Federado. Embora as tarefas gerem e consumam grandes quantidades de dados, a falta de uma documentação clara da proveniência torna difícil analisar os resultados obtidos.</p><p>A captura de dados de proveniência oferece uma solução eficaz, aumentando a confiabilidade, a reprodutibilidade, e fornecendo mecanismos para a interpretação dos modelos resultantes. No entanto, no contexto específico do Aprendizado Federado, o uso de dados de proveniência ainda está em estágio inicial, com as soluções atuais demonstrando limitações na captura de metadados relevantes e no seu uso para fins de monitoramento e otimização do treinamento.</p><p>Este projeto visa abordar essas lacunas, propondo o desenvolvimento de algoritmos e técnicas que permitam a extração, modelagem e gestão de dados de proveniência no ambiente do Aprendizado Federado. A intenção é não apenas aprimorar a alocação e escalonamento das tarefas de treinamento, mas também oferecer um suporte analítico robusto ao usuário, integrando dados de proveniência a frameworks existentes.</p><p>Como estudo de caso, utilizaremos uma aplicação de identificação de objetos <i>outliers</i> em grandes catálogos astronômicos. Essa aplicação se encontra no contexto do projeto Legacy Survey of Space and Time (LSST), que gera 20 TB de dados brutos por noite e possui uma infraestrutura naturalmente distribuída de processamento. O projeto busca, portanto, contribuir para tornar o Aprendizado Federado mais eficiente e explicável, com foco especial em aplicações da Astronomia, onde a escalabilidade e o tratamento adequado de dados são essenciais para avanços científicos.</p></div>
+            </details>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <section class="section" id="objectives">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">GOALS</div>
+          <h2>Objectives</h2>
+        </div>
+      </div>
+      <ol class="objective-list"><li><div><h3>Extract and model provenance in FL workflows</h3><p>Capture provenance data and the relevant metadata of federated training workflows, which current Federated Learning solutions record only partially.</p></div></li><li><div><h3>Integrate provenance into existing frameworks</h3><p>Manage provenance inside the Federated Learning frameworks that users already rely on, instead of requiring a new programming model.</p></div></li><li><div><h3>Allocate and schedule training tasks</h3><p>Use provenance to distribute training tasks among heterogeneous nodes, which differ in computational capacity and data characteristics, so that training is efficient and fair.</p></div></li><li><div><h3>Support analysis and interpretation</h3><p>Give users analytical support to monitor training, interpret the resulting models, and reproduce experiments.</p></div></li><li><div><h3>Validate at astronomical scale</h3><p>Evaluate the techniques on outlier detection in large astronomical catalogs, in high-performance and cloud computing environments.</p></div></li></ol>
+    </section>
+    <section class="section tinted" id="approach">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">RESEARCH AXES</div>
+          <h2>Three axes and one case study</h2>
+        </div>
+      </div>
+      <div class="axis-grid"><article class="axis-card"><div class="axis-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg></div><h3>Provenance</h3><p>Algorithms and techniques to extract, model, and manage provenance data of federated training, integrated into existing frameworks.</p></article><article class="axis-card"><div class="axis-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/><path d="M8 14h2"/><path d="M14 14h2"/><path d="M8 18h2"/></svg></div><h3>Scheduling</h3><p>Allocation and scheduling of training tasks over heterogeneous nodes, weighing training time against the financial cost of the resources.</p></article><article class="axis-card"><div class="axis-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></div><h3>Visual analysis</h3><p>Visual exploration of training rounds, client participation, and resulting models to help users interpret what was learned.</p></article></div>
+      <div class="case-study">
+        <figure><img src="arquivos/outlier.png" alt="Federated outlier detection in astronomical catalogs" loading="lazy"></figure>
+        <div class="case-study-body">
+          <div class="kicker"><span></span>CASE STUDY</div>
+          <h3>Outlier detection in LSST-scale astronomical catalogs</h3>
+          <p>The Legacy Survey of Space and Time (LSST), carried out at the Vera C. Rubin Observatory, generates about 20&nbsp;TB of raw data per night and relies on a naturally distributed processing infrastructure. Moving whole catalogs to a single site to train a model runs into data transfer bottlenecks and storage constraints, so Federated Learning trains the model where the data are.</p>
+          <p>The project uses catalogs from the Dark Energy Survey (DES) as a proxy for LSST and emulates federated deployments on commercial clouds, measuring the trade-offs between training time and financial cost.</p>
+          <ul class="case-facts">
+            <li><span>Survey</span>LSST · Vera C. Rubin Observatory</li>
+            <li><span>Data volume</span>~20 TB of raw data per night</li>
+            <li><span>Proxy data</span>Dark Energy Survey (DES) catalogs</li>
+            <li><span>Task</span>Federated outlier detection (clustering)</li>
+            <li><span>Environments</span>HPC and commercial clouds</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="team">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">PEOPLE</div>
+          <h2>Team</h2>
+        </div>
+        <span class="source-label"><span class="status-dot"></span>10 members</span>
+      </div>
+      
+      <div class="team-group">
+        <h3>Coordination and UFF researchers <span class="people-count">5</span></h3>
+        <div class="people-grid"><div class="person-card"><img src="arquivos/Daniel.jpeg" alt="Daniel Cardoso Moraes de Oliveira" loading="lazy"><div><h4><a href="index.html">Daniel Cardoso Moraes de Oliveira</a></h4><small>IC/UFF</small><span class="person-tag lead">COORDINATOR</span></div></div><div class="person-card"><img src="arquivos/Isabel.jpeg" alt="Isabel Rosseti" loading="lazy"><div><h4><a href="https://www.ic.uff.br/~rosseti" target="_blank" rel="noreferrer">Isabel Rosseti</a></h4><small>IC/UFF</small></div></div><div class="person-card"><img src="arquivos/MarcosLage.jpeg" alt="Marcos Lage" loading="lazy"><div><h4><a href="https://www.ic.uff.br/~mlage" target="_blank" rel="noreferrer">Marcos Lage</a></h4><small>IC/UFF</small></div></div><div class="person-card"><img src="arquivos/Aline.jpeg" alt="Aline Marins Paes Carvalho" loading="lazy"><div><h4><a href="https://www.ic.uff.br/~alinepaes" target="_blank" rel="noreferrer">Aline Marins Paes Carvalho</a></h4><small>IC/UFF</small></div></div><div class="person-card"><img src="arquivos/Yuri.jpeg" alt="Yuri Frota" loading="lazy"><div><h4><a href="https://www.ic.uff.br/~yuri" target="_blank" rel="noreferrer">Yuri Frota</a></h4><small>IC/UFF</small></div></div></div>
+      </div>
+      <div class="team-group">
+        <h3>Partner researchers <span class="people-count">5</span></h3>
+        <div class="people-grid"><div class="person-card"><img src="arquivos/Nicolaci.jpeg" alt="Luiz Alberto Nicolaci da Costa" loading="lazy"><div><h4><a href="http://lattes.cnpq.br/1349310682644311" target="_blank" rel="noreferrer">Luiz Alberto Nicolaci da Costa</a></h4><small>LIneA</small></div></div><div class="person-card"><img src="arquivos/Julia.jpeg" alt="Julia Gschwend" loading="lazy"><div><h4><a href="https://orcid.org/0000-0003-3023-8362" target="_blank" rel="noreferrer">Julia Gschwend</a></h4><small>LIneA</small></div></div><div class="person-card"><img src="arquivos/Rafael.jpeg" alt="Rafael Ferreira da Silva" loading="lazy"><div><h4><a href="https://www.ornl.gov/staff-profile/rafael-ferreira-da-silva" target="_blank" rel="noreferrer">Rafael Ferreira da Silva</a></h4><small>Oak Ridge National Laboratory · USA</small></div></div><div class="person-card"><img src="arquivos/Renan.jpeg" alt="Renan Santos Souza" loading="lazy"><div><h4><a href="https://renansouza.org/" target="_blank" rel="noreferrer">Renan Santos Souza</a></h4><small>Oak Ridge National Laboratory · USA</small></div></div><div class="person-card"><img src="arquivos/FabioMiranda.jpeg" alt="Fábio Markus Nunes Miranda" loading="lazy"><div><h4><a href="https://cs.uic.edu/profiles/miranda-fabio/" target="_blank" rel="noreferrer">Fábio Markus Nunes Miranda</a></h4><small>University of Illinois Chicago · USA</small></div></div></div>
+      </div><p class="team-note"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg> The project involves 3 MSc and 6 PhD students.</p><div class="partner-row"><div class="partner"><b>IC/UFF</b><small>Institute of Computing, Universidade Federal Fluminense · Brazil</small></div><div class="partner"><b>LIneA</b><small>Interinstitutional Laboratory for e-Astronomy · Brazil</small></div><div class="partner"><b>ORNL</b><small>Oak Ridge National Laboratory · USA</small></div><div class="partner"><b>UIC</b><small>University of Illinois Chicago · USA</small></div></div>
+    </section>
+    <section class="section" id="publications">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">OUTPUTS</div>
+          <h2>Publications</h2>
+        </div>
+      </div>
+      <p class="section-description">Publications by the team on the project's themes. Each entry links to the publisher's page.</p>
+      <div class="pub-group">
+        <div class="kicker"><span></span>SINCE THE START OF THE PROJECT (2024 –)</div>
+        <ol class="papers-list">
+        <li class="paper-entry">
+          <span class="paper-year">2025</span>
+          <div>
+            <h3>Federated Outlier Detection for Astronomical Data: Performance Analysis on Commercial Clouds</h3>
+            <p class="paper-authors">Camila Lopes, Wesley Ferreira, Julia Gschwend, Luiz Nicolaci da Costa, Rafael Ferreira da Silva, Marta Mattoso, Aline Paes, <b>Daniel de Oliveira</b></p>
+            <p class="paper-venue"><span class="paper-kind">Conference</span>XXVI Brazilian Symposium on High Performance Computing Systems (SSCAD 2025), pp. 362–373</p>
+            <div class="paper-links"><a href="https://doi.org/10.5753/sscad.2025.16731" target="_blank" rel="noreferrer">DOI 10.5753/sscad.2025.16731 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a></div>
+          </div>
+        </li>
+        <li class="paper-entry">
+          <span class="paper-year">2025</span>
+          <div>
+            <h3>A Weighted Bi-objective Strategy for Executing Scientific Workflows in Containerized Environments</h3>
+            <p class="paper-authors">Wesley Ferreira, Liliane Kunstmann, Yuri Frota, Luan Teylo, <b>Daniel de Oliveira</b></p>
+            <p class="paper-venue"><span class="paper-kind">Conference</span>XXVI Brazilian Symposium on High Performance Computing Systems (SSCAD 2025)</p>
+            <div class="paper-links"><a href="https://proceedings-sol.sbc.org.br/index.php/sscad/article/view/37911" target="_blank" rel="noreferrer">Paper <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a></div>
+          </div>
+        </li>
+        <li class="paper-entry">
+          <span class="paper-year">2024</span>
+          <div>
+            <h3>AkôFlow: um Middleware para Execução de Workflows Científicos em Múltiplos Ambientes Conteinerizados</h3>
+            <p class="paper-authors">Wesley Ferreira, Liliane N. O. Kunstmann, Aline Paes, Marcos Bedo, <b>Daniel de Oliveira</b></p>
+            <p class="paper-venue"><span class="paper-kind">Conference</span>Brazilian Symposium on Databases (SBBD 2024), pp. 27–39</p>
+            <div class="paper-links"><a href="https://sol.sbc.org.br/index.php/sbbd/article/view/30680" target="_blank" rel="noreferrer">Paper <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a></div>
+          </div>
+        </li>
+        <!-- Uncomment once the journal paper is online and add its DOI:
+        <li class="paper-entry">
+          <span class="paper-year">2026</span>
+          <div>
+            <h3>Federated Outlier Detection for LSST-Scale Astronomical Data in Clouds: an Empirical Evaluation</h3>
+            <p class="paper-authors">Camila Lopes, ..., Aline Paes, <b>Daniel de Oliveira</b></p>
+            <p class="paper-venue"><span class="paper-kind">Journal</span>Concurrency and Computation: Practice and Experience (special issue)</p>
+            <div class="paper-links"><a href="https://doi.org/..." target="_blank" rel="noreferrer">DOI</a></div>
+          </div>
+        </li>
+        -->
+        </ol>
+      </div>
+      <div class="pub-group">
+        <div class="kicker"><span></span>PRELIMINARY WORK</div>
+        <ol class="papers-list">
+        <li class="paper-entry">
+          <span class="paper-year">2023</span>
+          <div>
+            <h3>Provenance-Based Dynamic Fine-Tuning of Cross-Silo Federated Learning</h3>
+            <p class="paper-authors">Camila R. Lopes, Alan L. Nunes, Cristina Boeres, Lúcia M. A. Drummond, <b>Daniel de Oliveira</b></p>
+            <p class="paper-venue"><span class="paper-kind">Conference</span>Latin America High Performance Computing Conference (CARLA 2023), CCIS 1887, pp. 113–127</p>
+            <div class="paper-links"><a href="https://link.springer.com/chapter/10.1007/978-3-031-52186-7_8" target="_blank" rel="noreferrer">Paper <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a></div>
+          </div>
+        </li>
+        <li class="paper-entry">
+          <span class="paper-year">2023</span>
+          <div>
+            <h3>Flower-PROV: Captura Distribuída de Dados de Proveniência em Experimentos de Aprendizado Federado</h3>
+            <p class="paper-authors">Camila Lopes, Alan L. Nunes, Cristina Boeres, Lúcia M. A. Drummond, <b>Daniel de Oliveira</b></p>
+            <p class="paper-venue"><span class="paper-kind">Demo / tool</span>Companion Proceedings of the Brazilian Symposium on Databases (SBBD 2023)</p>
+            <div class="paper-links"><a href="https://doi.org/10.5753/sbbd_estendido.2023.233337" target="_blank" rel="noreferrer">DOI 10.5753/sbbd_estendido.2023.233337 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a></div>
+          </div>
+        </li>
+        </ol>
+      </div>
+    </section>
+    <section class="section tinted" id="software">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">OPEN SOURCE / ARTIFACTS</div>
+          <h2>Software</h2>
+        </div>
+        <a class="text-link" href="software.html">All software <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      </div>
+      <p class="section-description">Open-source tools used in the project for provenance capture, experiment visualization, and resource orchestration.</p>
+      <div class="publication-grid">
+        <article class="publication-preview tool-card">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span>Python · Federated learning</div>
+            <h3><a href="https://github.com/UFFeScience/flare_prov" target="_blank" rel="noreferrer">FLARE-PROV</a></h3>
+            <p>Federated k-means clustering with scikit-learn, using MiniBatch-style aggregation, instrumented with DfAnalyzer to capture prospective and retrospective provenance of each round.</p>
+            <div class="publication-read"><a href="https://github.com/UFFeScience/flare_prov" target="_blank" rel="noreferrer">Code <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a></div>
+          </div>
+        </article>
+        <article class="publication-preview tool-card">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span>JavaScript · Federated learning</div>
+            <h3><a href="https://github.com/UFFeScience/FedObserve" target="_blank" rel="noreferrer">FedObserve</a></h3>
+            <p>Web application for managing and visualizing federated learning experiments, with a t-SNE service for model inspection. Uses AkôFlow for AWS provisioning and execution monitoring.</p>
+            <div class="publication-read"><a href="https://github.com/UFFeScience/FedObserve" target="_blank" rel="noreferrer">Code <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a></div>
+          </div>
+        </article>
+        <article class="publication-preview tool-card">
+          <div class="publication-preview-content">
+            <div class="kicker"><span></span>Go · Workflow engine</div>
+            <h3><a href="https://github.com/UFFeScience/akoflow" target="_blank" rel="noreferrer">AkôFlow</a></h3>
+            <p>Orchestrates container-based workflows across Kubernetes clusters on public clouds, Singularity on HPC systems, and the SDumont supercomputer, capturing provenance natively.</p>
+            <div class="publication-read"><a href="https://github.com/UFFeScience/akoflow" target="_blank" rel="noreferrer">Code <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="section" id="outreach">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">TALKS / MEDIA</div>
+          <h2>Talks and outreach</h2>
+        </div>
+      </div>
+      <ul class="outreach-list"><li><span class="outreach-kind">Talk</span><div><h3><a href="per.html" target="_blank" rel="noreferrer">Federated Outlier Detection for LSST-Scale Astronomical Data in Clouds</a></h3><p>Presented by Daniel de Oliveira at INRIA Bordeaux (TADaaM group), during a UFFeScience visit within the DECoHPC Équipe Associée.</p></div></li><li><span class="outreach-kind">Interview</span><div><h3><a href="https://www.youtube.com/live/uEAy256MvNk" target="_blank" rel="noreferrer">Boletim Ciência (FioCruz): research in the context of the LSST project</a></h3><p>Interview with Luiz Nicolaci (LIneA) and Daniel de Oliveira, in Portuguese.</p></div></li><li><span class="outreach-kind">Press</span><div><h3><a href="https://olhardigital.com.br/2025/06/23/ciencia-e-espaco/observatorio-vera-c-rubin-conta-com-a-participacao-de-mais-de-200-brasileiros/" target="_blank" rel="noreferrer">Vera C. Rubin Observatory counts on the participation of over 200 Brazilians</a></h3><p>Olhar Digital, June 2025: Brazilian participation in processing LSST data (in Portuguese).</p></div></li></ul>
+    </section>
+    <section class="section" id="funding">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">SUPPORT</div>
+          <h2>Funding</h2>
+        </div>
+      </div>
+      <div class="funding-box"><img src="arquivos/cnpq.png" alt="CNPq"><p>This project is funded by the Brazilian National Council for Scientific and Technological Development (CNPq) through a research grant (Auxílio financeiro) of the CNPq/MCTI/FNDCT program.</p></div>
+    </section>
+    <section class="section" id="related">
+      <div class="section-heading">
+        <div>
+          <div class="kicker">SEE ALSO</div>
+          <h2>Related projects</h2>
+        </div>
+      </div>
+      <div class="related-grid">
+        <a class="related-card" href="project-prov4distml.html">
+          <div class="kicker"><span></span>CNPQ · 2025 –</div>
+          <h3>PROV4DistML: Provenance Data Management for the Analysis of Distributed Machine Learning Applications</h3>
+          <span class="text-link">View project <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </a>
+        <a class="related-card" href="project-fedprov.html">
+          <div class="kicker"><span></span>FAPERJ · 2024 –</div>
+          <h3>FedProv: Provenance Data Management in Federated Machine Learning Applications</h3>
+          <span class="text-link">View project <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+        </a>
+      </div>
+      <div class="back-row">
+        <a href="projects.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg> All projects</a>
+        <span class="updated">Page updated November 2026</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">
+      <img src="arquivos/Daniel.jpeg" alt="" width="60" height="60" style="border-radius:50%;object-fit:cover">
+      <p>Daniel de Oliveira
+        <small>Associate Professor · Institute of Computing · Universidade Federal Fluminense</small>
+      </p>
+    </div>
+    <div class="footer-contact">
+      Phone <b>+55 (21) 2629-5637</b> · Fax <b>+55 (21) 2629-5627</b><br>
+      <b>danielcmo (at) ic (dot) uff (dot) br</b>
+    </div>
+    <div class="footer-institutions" aria-label="Institutional affiliations">
+      <a href="https://uffescience.ic.uff.br" target="_blank" rel="noreferrer"><img src="assets/uffescience-logo.png" alt="UFFeScience Research Group" width="52" height="52"></a>
+      <a href="https://www.ic.uff.br/" target="_blank" rel="noreferrer"><img src="assets/ic-uff-logo.png" alt="Institute of Computing — UFF" width="69" height="52"></a>
+      <a href="https://www.uff.br/" target="_blank" rel="noreferrer"><img src="assets/uff-logo.svg" alt="Universidade Federal Fluminense" width="84" height="40" style="height:40px"></a>
+    </div>
+    <a href="#inicio">Back to top ↑</a>
+  </footer>
+  <script>
+    /* ---------- Two-level navigation ---------- */
+    (function () {
+      function init() {
+        const nav = document.querySelector('.main-nav');
+        if (!nav) return;
+        const groups = Array.from(nav.querySelectorAll('.nav-group'));
+
+        // Project pages highlight "Projects" through <body data-nav-current>
+        const here = (document.body.dataset.navCurrent || location.pathname.split('/').pop() || 'index.html').toLowerCase();
+        nav.querySelectorAll('a[href]').forEach(a => {
+          if (a.getAttribute('href').toLowerCase() === here) {
+            a.setAttribute('aria-current', 'page');
+            const g = a.closest('.nav-group');
+            if (g) g.classList.add('has-current');
+          }
+        });
+
+        function setOpen(group, open) {
+          group.classList.toggle('is-open', open);
+          group.querySelector('.nav-toggle').setAttribute('aria-expanded', open ? 'true' : 'false');
+        }
+        function closeAll(except) { groups.forEach(g => { if (g !== except) setOpen(g, false); }); }
+
+        groups.forEach(group => {
+          const toggle = group.querySelector('.nav-toggle');
+          toggle.addEventListener('click', () => {
+            const open = !group.classList.contains('is-open');
+            closeAll(group);
+            setOpen(group, open);
+          });
+          group.addEventListener('keydown', e => {
+            if (e.key === 'Escape' && group.classList.contains('is-open')) {
+              setOpen(group, false);
+              toggle.focus();
+            }
+          });
+          group.addEventListener('focusout', e => {
+            if (!group.contains(e.relatedTarget)) setOpen(group, false);
+          });
+          if (window.matchMedia('(hover: hover)').matches) {
+            group.addEventListener('mouseleave', () => setOpen(group, false));
+          }
+        });
+
+        document.addEventListener('click', e => { if (!nav.contains(e.target)) closeAll(); });
+      }
+
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+      else init();
+    })();
+  </script>
+</body>
+</html>
